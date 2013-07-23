@@ -1,5 +1,3 @@
-:tocdepth: 2
-
 =============================
 COMP XXX - Tools of the Trade
 =============================
@@ -16,7 +14,6 @@ COMP XXX - Tools of the Trade
 
     -- `GitHub Blog, April 2013 <https://github.com/blog/1470-five-years>`_
 
-
 Summary
 =======
 
@@ -30,24 +27,24 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
 
-   /syllabus
-   /assignments/index
-   /sessions/intro
-   /sessions/basic
-   /sessions/version
-   /sessions/python
-   /sessions/javascript
-   /sessions/web
-   /sessions/server
-   /sessions/public
-   /sessions/ruby
-   /sessions/auto
-   /sessions/tdd
-   /sessions/dist
-   /sessions/data
-   /sessions/week14
-   /sessions/week15
-   /other
+   syllabus
+   assignments/index
+   sessions/intro
+   sessions/basic
+   sessions/version
+   sessions/python
+   sessions/javascript
+   sessions/web
+   sessions/server
+   sessions/public
+   sessions/ruby
+   sessions/auto
+   sessions/tdd
+   sessions/dist
+   sessions/data
+   sessions/week14
+   sessions/week15
+   other
 
 Fork This Course
 ================
