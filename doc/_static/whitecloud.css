@@ -1,0 +1,136 @@
+@import 'cloud.css';
+
+body {
+    background-color: white;
+    font-weight: 300;
+    font-size: 15.5px;
+    margin: 0;
+    background: url('./bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div.body {
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 100%;
+    background-color: transparent;
+}
+
+div.body a {
+    color: #5682AD;
+}
+
+td.field-body {
+    line-height: 133%;
+}
+
+div.body h1 {
+    text-align: left;
+    padding: 0;
+    font-weight: 300;
+}
+
+div.body h2.highlighted {
+    border: 0px solid transparent;
+}
+
+div.body h1,
+div.body h2,
+div.body p.rubric,
+div.body h3,
+div.body h4,
+div.body h5,
+div.body h6
+{
+    background-color: transparent;
+    margin: 1.5em 0 1em 0;
+    padding: 0;
+    border-width: 0;
+    font-weight: 300;
+    text-shadow: none;
+    font-style: normal;
+    border-radius: 0;
+    --webkit-border-radius: 0;
+    ---moz-border-radius: 0;
+}
+
+div.body .admonition {
+    margin: 1.5em 0;
+}
+
+div.sphinxsidebar input {
+    border: 1px solid #ccc;
+}
+
+div.sphinxsidebar .searchtip {
+    color: #777;
+    display:none;
+}
+
+div.relbar-top div.related,
+div.relbar-bottom div.related {
+    border-radius: 0;
+    --webkit-border-radius: 0;
+    ---moz-border-radius: 0;
+}
+
+div.documentwrapper {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+div.related,
+div.document {
+    background-color: rgba(255,255,255,0.97);
+}
+
+div.sphinxsidebar {
+    padding-bottom: 30px;
+}
+
+div.sphinxsidebarwrapper {
+    padding-left: 20px;
+}
+
+div.footer {
+    display: none;
+}
+
+div.footer {
+    color: white;
+    font-weight: 500;
+}
+
+div.footer a {
+    color: white;
+}
+
+div.sidebartoggle button {
+    left: 0px;
+    right: auto;
+    border-radius: 0;
+    --webkit-border-radius: 0;
+    ---moz-border-radius: 0;
+}
+
+div.document.collapsed-sidebar div.sidebartoggle button {
+    border-radius: 0;
+    --webkit-border-radius: 0;
+    ---moz-border-radius: 0;
+}
+
+div.document blockquote.epigraph p {
+    margin: 0;
+}
+
+div.document blockquote.epigraph p.attribution {
+    margin-top: 0.25em;
+}
+
+div.admonition dt {
+    font-weight: bold;
+    font-size: 1em;
+}

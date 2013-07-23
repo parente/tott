@@ -1,0 +1,1 @@
+Gratefully cloned from https://github.com/riywo/packer-example.

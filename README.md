@@ -1,4 +1,6 @@
-tott
-====
+COMP XXX: Tools of the Trade
+============================
 
-Forthcoming ...
+This repository hosts the web site and other materials for a proposed course on software development tools.
+
+More info forthcoming ...

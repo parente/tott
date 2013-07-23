@@ -1,0 +1,8 @@
+doc/_build
+.vagrant/
+*.box
+packer_cache/
+Vagrantfile
+*.sublime-workspace
+sandbox
+.vagrant/
