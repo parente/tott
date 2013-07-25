@@ -4,10 +4,6 @@ List of items I need or want to handle for the TotT course.
 
 ## Must-Haves
 
-* private git hosting that supports partnering
-    * try bitbucket private repos with sharing invites
-    * try web app fronting web faction api controling git spaces
-* public github or bitbucket org for read/write shared playspace
 * write complete setup instructions for assignment #0 on mac, windows, linux
 * complete writeup of evaluation assignment #1
 * decide where assignment #1 fits (maybe need more experience)
