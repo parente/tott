@@ -1,10 +1,10 @@
 .PHONY: clean doc push watch-doc
 
-clean:
-	@make -C doc clean
-
 doc:
 	@make -C doc clean html
+
+clean:
+	@make -C doc clean
 
 push:
 	@rsync -avz \
