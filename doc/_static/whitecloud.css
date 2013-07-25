@@ -3,34 +3,61 @@
 body {
     background-color: white;
     font-weight: 300;
-    font-size: 15.5px;
+    font-size: 18px;
     margin: 0;
-    background: url('./bg.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url('diamond_upholstery.png') repeat fixed;
+}
+
+div.document {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 div.body {
     padding-left: 50px;
     padding-right: 50px;
-    line-height: 100%;
     background-color: transparent;
+}
+
+div.body p {
+    line-height: 133%;
 }
 
 div.body a {
     color: #5682AD;
 }
 
-td.field-body {
-    line-height: 133%;
+table.field-list td,
+table.field-list th {
+    padding: 0 0.5em;
 }
 
+/*td.field-body {
+    line-height: 133%;
+}
+*/
 div.body h1 {
     text-align: left;
     padding: 0;
-    font-weight: 300;
+    font-size: 28px;
+}
+
+div.body h2 {
+    font-size: 24px;
+}
+
+div.sphinxsidebar h3 {
+    font-size: 16px;
+}
+
+div.sphinxsidebar h4 {
+    font-size: 15px;
+}
+
+div.sphinxsidebar {
+    font-size: 15px;
 }
 
 div.body h2.highlighted {
@@ -46,7 +73,7 @@ div.body h5,
 div.body h6
 {
     background-color: transparent;
-    margin: 1.5em 0 1em 0;
+    margin: 32px 0 32px 0;
     padding: 0;
     border-width: 0;
     font-weight: 300;
@@ -72,13 +99,15 @@ div.sphinxsidebar .searchtip {
 
 div.relbar-top div.related,
 div.relbar-bottom div.related {
+    font-size: 15px;
     border-radius: 0;
     --webkit-border-radius: 0;
     ---moz-border-radius: 0;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 
-div.documentwrapper {
-    border-top: 1px solid #ccc;
+div.relbar-bottom div.related {
     border-bottom: 1px solid #ccc;
 }
 

@@ -57,5 +57,5 @@ Attribution
 ===========
 
 * Sphinx_ with a modified version of the `Cloud Sphinx Theme <http://pythonhosted.org/cloud_sptheme/>`_ compiled this site.
-* `mtneer_man <http://www.flickr.com/photos/mtneer_man/4104381425>`_ licensed the background photo under under `CC BY-ND 2.0 <http://creativecommons.org/licenses/by-nd/2.0/deed.en>`_.
+* The `background pattern <http://subtlepatterns.com/diamond-upholstery/>`_ is by `Dimitar Karaytchev <http://hellogrid.com>`_.
 * Fred Brooks's writings on computer scientists as toolsmiths inspired the course content.
