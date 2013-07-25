@@ -56,6 +56,6 @@ Students who enroll in the course should treat the class website as the authorat
 Attribution
 ===========
 
-* Sphinx_ with a modified version of the `Cloud Sphinx Theme <http://pythonhosted.org/cloud_sptheme/>`_ compiled this site.
-* The `background pattern <http://subtlepatterns.com/diamond-upholstery/>`_ is by `Dimitar Karaytchev <http://hellogrid.com>`_.
+* Sphinx_ generated this site using a modified version of the `Cloud Sphinx Theme <http://pythonhosted.org/cloud_sptheme/>`_.
+* `Dimitar Karaytchev <http://hellogrid.com>`_ created the `background pattern <http://subtlepatterns.com/diamond-upholstery/>`_.
 * Fred Brooks's writings on computer scientists as toolsmiths inspired the course content.
