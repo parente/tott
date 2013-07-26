@@ -4,6 +4,7 @@
 .. _IRC: http://en.wikipedia.org/wiki/Internet_Relay_Chat
 .. _VirtualBox: https://www.virtualbox.org/
 .. _Vagrant: http://www.vagrantup.com/
+.. _BitBucket: http://bitbucket.org
 
 .. _bash: http://www.tldp.org/LDP/Bash-Beginners-Guide/html/Bash-Beginners-Guide.html
 .. _screen: http://www.gnu.org/software/screen/manual/screen.html
@@ -88,3 +89,10 @@
 .. _SciPy: http://scipy.org
 .. _d3.js: http://d3js.org
 .. _three.js: http://threejs.org/
+
+.. _Firefox: http://www.mozilla.org/en-US/firefox/new/
+.. _Safari: http://www.apple.com/safari/
+.. _Google Chrome: https://www.google.com/intl/en/chrome/browser/
+.. _Opera: http://www.opera.com/
+.. _Internet Explorer: http://windows.microsoft.com/en-us/internet-explorer/download-ie
+.. _GitHub: https://github.com
