@@ -100,6 +100,8 @@ rst_epilog = '''
 
 # -- Options for HTML output ---------------------------------------------------
 
+html_compact_lists = True
+
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 html_theme = 'cloud'

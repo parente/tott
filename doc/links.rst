@@ -96,3 +96,4 @@
 .. _Opera: http://www.opera.com/
 .. _Internet Explorer: http://windows.microsoft.com/en-us/internet-explorer/download-ie
 .. _GitHub: https://github.com
+.. _Cygwin: http://cygwin.org
