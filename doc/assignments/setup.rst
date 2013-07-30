@@ -88,6 +88,8 @@ VirtualBox_ is an open source virtualizer, an application that can run entire op
 1. A common, consistent environment for running code and tools
 2. The ability to "reset-to-zero" at any time
 
+Do the following to install VirtualBox.
+
 #. Visit the VirtualBox home page.
 #. Click the Downloads link.
 #. Download the installer matching your laptop operating system under *Virtualbox platform packages*.
