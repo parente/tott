@@ -6,3 +6,5 @@ Vagrantfile
 *.sublime-workspace
 sandbox
 .vagrant/
+.ssh/
+.gitconfig

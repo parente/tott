@@ -49,6 +49,7 @@
         "scripts/vagrant.sh",
         "scripts/virtualbox.sh",
         "scripts/tools.sh",
+        "scripts/keys.sh",
         "scripts/cleanup.sh",
         "scripts/zerodisk.sh"
       ],
