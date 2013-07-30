@@ -20,7 +20,7 @@ Some of the steps will vary depending on your operating system (e.g., Windows, M
 SublimeText
 -----------
 
-SublimeText 2 is a cross-platform programmer's text editor with a powerful extension system. To get a sense of what it can do, visit http://www.sublimetext.com/, watch the animation on the front page, and read some of the features further down the page. While I will not go so far as to require you to use a particular editor in this course, I highly recommend it. I've been through Emacs, Eclipse, TextMate, and others: Sublime and its extension ecosystem have improved my productivity the most.
+SublimeText 2 is a cross-platform programmer's text editor with a powerful extension system. To get a sense of what it can do, visit http://www.sublimetext.com/, watch the animation on the front page, and read some of the features further down the page. While I will not go so far as to require you to use a particular editor in this course, I highly recommend it. I've been through Emacs, Eclipse, TextMate, and others: I've been the most productive with Sublime.
 
 #. Visit the SublimeText home page.
 #. Click the download link for your operating system below the animation or visit the Download tab.
@@ -236,9 +236,11 @@ Your BitBucket account is now ready for use. We'll test it in a few minutes to c
 
 10. Complete the setup following the same steps you did for BitBucket.
 
-When all is said and done, your ``/vagrant`` directory on your ``tottbox`` and equivalent folder on your host box should look something like::
+When all is said and done, your ``/vagrant`` directory on your ``tottbox`` and equivalent folder on your host box should look something like:
 
-   /vagrant
+.. code-block:: console
+
+   vagrant
    ├── .gitconfig
    ├── .ssh
    │   ├── bitbucket
@@ -257,3 +259,15 @@ Verification
 ------------
 
 .. todo:: verification procedure
+
+   * create a new git repo on bitbucket
+   * setup the POST service hook
+   * destroy the VM
+   * bring it up
+   * ensure prompted for creds
+   * clone the empty repo into assignment 0 folder under tott project area
+   * seed a README.md in it
+   * put the following information into the file: full name, email address, bitbucket username, github username
+   * add, commit
+   * create a tag
+   * push

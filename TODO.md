@@ -2,9 +2,13 @@
 
 List of items I need or want to handle for the TotT course.
 
-## Must-Haves
+## Must-Haves for Fall Experiment
 
 * write complete setup instructions for assignment #0 on mac, windows, linux
+* week 13 materials data exploration
+
+## Must-Haves
+
 * complete writeup of evaluation assignment #1
 * decide where assignment #1 fits (maybe need more experience)
 * complete writeup of assignment #2
@@ -32,13 +36,13 @@ List of items I need or want to handle for the TotT course.
 * week 10 materials automation
 * week 11 materials test
 * week 12 materials distribution
-* week 13 materials data explore
 * week 14 materials
 * week 15 materials
 
 ## Should-Haves
 
 * automated pull, deploy, test system
+    * student uses POST service to well-known URL, webhook scans for submit tag; pulls, builds, tests code in fresh VM; dumps report of test plus commit history
 * smoke tests for the course box
 * topical guest lecturers (visualization? security? poll the students)
 
