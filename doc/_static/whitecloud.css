@@ -21,23 +21,25 @@ div.body {
     background-color: transparent;
 }
 
+div.body p,
+div.body li {
+    line-height: 150%;
+}
+
 div.body p {
-    line-height: 133%;
+    margin: 24px 0;
 }
 
 div.body a {
     color: #5682AD;
 }
 
+
 table.field-list td,
 table.field-list th {
     padding: 0 0.5em;
 }
 
-/*td.field-body {
-    line-height: 133%;
-}
-*/
 div.body h1 {
     text-align: left;
     padding: 0;
@@ -49,7 +51,7 @@ div.body h2 {
 }
 
 div.body h3 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 div.sphinxsidebar h3 {
@@ -83,13 +85,20 @@ div.body h6
     font-weight: 300;
     text-shadow: none;
     font-style: normal;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
     border-radius: 0;
-    --webkit-border-radius: 0;
-    ---moz-border-radius: 0;
+    border-bottom: 1px solid #ddd;
 }
 
 div.body .admonition {
-    margin: 1.5em 0;
+    margin: 32px 0;
+    font-size: 16px;
+    padding-right: 2em;
+    border-width: 1px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 
 div.sphinxsidebar input {
@@ -104,9 +113,9 @@ div.sphinxsidebar .searchtip {
 div.relbar-top div.related,
 div.relbar-bottom div.related {
     font-size: 15px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
     border-radius: 0;
-    --webkit-border-radius: 0;
-    ---moz-border-radius: 0;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
 }
@@ -144,15 +153,15 @@ div.footer a {
 div.sidebartoggle button {
     left: 0px;
     right: auto;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
     border-radius: 0;
-    --webkit-border-radius: 0;
-    ---moz-border-radius: 0;
 }
 
 div.document.collapsed-sidebar div.sidebartoggle button {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
     border-radius: 0;
-    --webkit-border-radius: 0;
-    ---moz-border-radius: 0;
 }
 
 div.document blockquote.epigraph p {
@@ -166,4 +175,12 @@ div.document blockquote.epigraph p.attribution {
 div.admonition dt {
     font-weight: bold;
     font-size: 1em;
+}
+
+div.highlight pre {
+    background-color: transparent;
+    border-width: 1px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
