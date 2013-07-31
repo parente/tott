@@ -1,0 +1,39 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+$script = <<SCRIPT
+cd /tmp
+wget https://gist.github.com/parente/6049886/raw/provision.sh
+sh ./provision.sh
+SCRIPT
+
+$current_box = "tottbox_2013_07_21.box"
+
+Vagrant.configure("2") do |config|
+  # All Vagrant configuration is done here. The most common configuration
+  # options are documented and commented below. For a complete reference,
+  # please see the online documentation at vagrantup.com.
+
+  # Every Vagrant virtual environment requires a box to build off of.
+  config.vm.box = "tottbox_2013_07_21"
+
+  # The url from where the 'config.vm.box' box will be fetched if it
+  # doesn't already exist on the user's system.
+  if ! ENV['TOTT_DEV']
+    config.vm.box_url = "https://dl.dropboxusercontent.com/u/264241/#{$current_box}"
+  else
+    config.vm.box_url = "~/Dropbox/Public/#{$current_box}"
+  end
+
+  # Create a forwarded port mapping which allows access to a specific port
+  # within the machine from a port on the host machine. In the example below,
+  # accessing "localhost:8080" will access port 80 on the guest machine.
+  # config.vm.network :forwarded_port, guest: 80, host: 8080
+
+  # Create a private network, which allows host-only access to the machine
+  # using a specific IP.
+  config.vm.network :private_network, ip: "192.168.33.10"
+
+  # Basic provisioning using inline bash script
+  config.vm.provision :shell, :inline => $script
+end

@@ -2,7 +2,7 @@ doc/_build
 .vagrant/
 *.box
 packer_cache/
-Vagrantfile
+./Vagrantfile
 *.sublime-workspace
 sandbox
 .vagrant/
