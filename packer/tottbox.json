@@ -57,7 +57,11 @@
     }
   ],
   "post-processors": [
-    "vagrant"
+    {
+      "type": "vagrant",
+      "keep_input_artifact": false,
+      "output": "tottbox.box"
+    }
   ]
 }
 
