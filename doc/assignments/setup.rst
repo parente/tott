@@ -271,7 +271,7 @@ Create
 ~~~~~~
 
 #. Visit BitBucket_ and login.
-#. Visit https://bitbucket.org/peter_parente/assignment_0.
+#. Visit https://bitbucket.org/unctott/assignment_0.
 #. Click the Fork button.
 #. On the dashboard page, click Create repository (or Create, or Create a repository).
 #. Enter *assignment_0* for the repository name.
@@ -346,8 +346,8 @@ Tag and Release
 
 #. Celebrate. You've submitted your assignment.
 
-What Happend?
-~~~~~~~~~~~~~
+What Happened?
+~~~~~~~~~~~~~~
 
 You might wonder what just happened behind the scenes. Here's the gist.
 
