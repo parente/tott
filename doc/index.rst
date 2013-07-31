@@ -51,7 +51,7 @@ Fork This Course
 
 I plan to build out the material for this course entirely in the public eye. The source for the course web site, code samples, student Vagrant box, lab exercises, assignment starter templates, and so on all live or will live at http://github.com/parente/tott. If you have a suggestion or see a problem, `open an issue <https://github.com/parente/tott/issues>`_ or `fork and submit a pull request <https://github.com/parente/tott/fork>`_.
 
-Students who enroll in the course should treat the class website as the authoratative reference for assignments, due dates, prepatory reading, etc. On the class site, any page marked as a draft at the top or section having a TODO is subject to change.
+Students who enroll in the course should treat the class website as the authoratative reference for assignments, due dates, preparatory reading, etc. On the class site, any page marked as a draft at the top or section having a TODO is subject to change.
 
 Attribution
 ===========
