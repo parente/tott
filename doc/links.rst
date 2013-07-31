@@ -13,6 +13,7 @@
 
 .. _git: http://git-scm.com/book
 .. _GitHub: https://github.com
+.. _Pro Git: http://git-scm.com/book
 
 .. _Python: http://www.python.org/
 .. _IPython: http://ipython.org/

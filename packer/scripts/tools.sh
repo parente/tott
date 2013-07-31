@@ -12,8 +12,9 @@ bind R eval "source $HOME/.screenrc" "echo '.screenrc reloaded!'"
 EOP
 ) > ~vagrant/.screenrc
 
-# git
+# git and .gitconfig pointer
 sudo apt-get -y install git
+ln -s /vagrant/.gitconfig ~/.gitconfig
 
 # ipython, virtualenv, pip
 sudo apt-get -y install python-dev python-pip

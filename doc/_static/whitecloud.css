@@ -101,6 +101,10 @@ div.body .admonition {
     border-radius: 0;
 }
 
+div.body .admonition p {
+    margin: 0;
+}
+
 div.sphinxsidebar input {
     border: 1px solid #ccc;
 }
@@ -178,7 +182,7 @@ div.admonition dt {
 }
 
 div.highlight pre {
-    background-color: transparent;
+    background-color: #fafffa;
     border-width: 1px;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;

@@ -20,3 +20,9 @@ sudo apt-get clean
 
 # Install NFS client
 sudo apt-get -y install nfs-common
+
+# Set vi as default editor
+( cat <<'EOP'
+export EDITOR=vi
+EOP
+) >> ~/.bashrc

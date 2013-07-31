@@ -35,6 +35,3 @@ else
 fi
 EOP
 ) >> ~vagrant/.bashrc
-
-# read .gitconfig out of the shared folder too
-ln -s /vagrant/.gitconfig ~/.gitconfig
