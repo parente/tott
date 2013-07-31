@@ -207,11 +207,11 @@ At this point you've got a BitBucket account, but no way to push code to it for 
 #. Enter *tottbox public key* in the Label field.
 #. Switch to your *tottbox* terminal and enter the following commands.
 
-.. code-block:: console
+   .. code-block:: console
 
-   mkdir -p /vagrant/.ssh
-   cd /vagrant/.ssh
-   ssh-keygen -f /vagrant/.ssh/bitbucket
+      mkdir -p /vagrant/.ssh
+      cd /vagrant/.ssh
+      ssh-keygen -f /vagrant/.ssh/bitbucket
 
 8. When prompted, enter a password of your choosing to protect the key pair.
 #. Run ``less bitbucket.pub``.
@@ -231,13 +231,13 @@ Your BitBucket account is now ready for use. We'll test it in a few minutes to c
 #. Enter *tottbox public key* in the Label field.
 #. Switch to your *tottbox* terminal and enter the following commands. **NOTE** that the last command now says *github* instead of *bitbucket*.
 
-.. code-block:: console
+   .. code-block:: console
 
-   mkdir -p /vagrant/.ssh
-   cd /vagrant/.ssh
-   ssh-keygen -f /vagrant/.ssh/github
+      mkdir -p /vagrant/.ssh
+      cd /vagrant/.ssh
+      ssh-keygen -f /vagrant/.ssh/github
 
-10. Complete the setup following the same steps you did for BitBucket.
+#. Complete the setup following the same steps you did for BitBucket.
 
 When all is said and done, your ``/vagrant`` directory on your *tottbox* and the course folder on your host box should look something like:
 
@@ -292,20 +292,20 @@ Clone
 #. In the *tottbox* terminal, type ``exit`` to terminate the SSH connection to the ``tottbox``.
 #. Destroy, rebuild, and then connect to your *tottbox* by running the following commands in the course folder on your host box.
 
-.. code-block:: console
+   .. code-block:: console
 
-   vagrant destroy
-   vagrant up
-   vagrant ssh
+      vagrant destroy
+      vagrant up
+      vagrant ssh
 
 #. Run ``vagrant ssh`` to access the clean *tottbox*.
 #. Enter the passphrases you assigned to the BitBucket and GitHub keys you created when prompted.
 #. Clone the *assignment_0* repository you forked from me with the following commands, replacing ``your_username`` with your BitBucket username.
 
-.. code-block:: console
+   .. code-block:: console
 
-   cd /vagrant
-   git clone ssh://git@bitbucket.org/your_username/assignment_0.git
+      cd /vagrant
+      git clone ssh://git@bitbucket.org/your_username/assignment_0.git
 
 Edit, Commit and Push
 ~~~~~~~~~~~~~~~~~~~~~
@@ -323,11 +323,11 @@ Edit, Commit and Push
 
 #. In the *tottbox* terminal, run the following commands to commit your changes to your local git repository and then push them to the copy of your repository on BitBucket.
 
-.. code-block:: console
+   .. code-block:: console
 
-   cd /vagrant/assignment_0
-   git commit -a -m "Replaced user info in README"
-   git push origin master
+      cd /vagrant/assignment_0
+      git commit -a -m "Replaced user info in README"
+      git push origin master
 
 #. Visit your BitBucket dashboard again.
 #. Confirm that the front page of your dashboard shows the README with the changes you just made.
@@ -335,14 +335,14 @@ Edit, Commit and Push
 Tag and Release
 ~~~~~~~~~~~~~~~
 
-#. Back in *tottbox*, run these final commands to tag your changes as a version #1 release / assignment submission.
+#. Back in *tottbox*, run these final commands to tag your changes as a *v1* (version #1) assignment submission.
 
-.. code-block:: console
+   .. code-block:: console
 
-   git tag -a v1
-   git push origin v1
+      git tag -a v1
+      git push origin v1
 
-.. todo:: where to look for results of submission test run? email?
+   .. todo:: where to look for results of submission test run? email?
 
 #. Celebrate. You've submitted your assignment.
 

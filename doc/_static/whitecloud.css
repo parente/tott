@@ -30,6 +30,10 @@ div.body p {
     margin: 24px 0;
 }
 
+div.body li p {
+    margin: 0;
+}
+
 div.body a {
     color: #5682AD;
 }
