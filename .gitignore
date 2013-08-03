@@ -9,3 +9,5 @@ sandbox
 .ssh/
 .gitconfig
 node_modules/
+doc/slides/_build/*.html
+vagrant/assignment*

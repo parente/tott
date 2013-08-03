@@ -48,11 +48,11 @@ help:
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
 
 clean:
-	rm -rf $(BUILDDIR)/*
+	@-rm -rf $(BUILDDIR)/*
+	@-rm slides/_build/*.html
 
 slides:
-	$(SPHINXBUILD) -c . -b slides $(ALLSPHINXOPTS)/slides $(BUILDDIR)/slides
-	@echo
+	@cd slides; npm install; npm run-script build
 	@echo "Build finished. The HTML slides are in $(BUILDDIR)/slides."
 
 html:

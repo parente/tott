@@ -43,8 +43,6 @@ List of items I need or want to handle for the TotT course.
 ## Should-Haves
 
 * automated pull, deploy, test system
-    * student uses POST service to well-known URL, webhook scans for submit tag; pulls, builds, tests code in fresh VM; dumps report of test plus commit history
-    * students can see their test-driven grades in realtime somewhere after tagging; how to privatize?
 * smoke tests for the course box
 * topical guest lecturers (visualization? security? poll the students)
 
