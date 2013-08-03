@@ -137,7 +137,7 @@ tottbox
 
 With VirtualBox and Vagrant installed, you're now ready to bring up the virtual machine running Ubuntu Linux Server 12.04 we'll be using throughout the course, affectionally named *tottbox*. This VM already has most of the tools we will explore pre-installed pre-configured, and ready-for-use.
 
-.. note:: To make it clear where we are running commands, from now on we will call the operating system running on your laptop the *host box* and the virtual machine *tottbox*.
+To make it clear where we are running commands, from now on we will call the operating system running on your laptop the *host box* and the virtual machine *tottbox*.
 
 #. Create a folder that will serve as the container for all of your work in this course. Some suggestions:
 
@@ -172,7 +172,7 @@ You are now in a shell running on your copy of *tottbox*. Leave this shell open 
 
 If you want to explore, feel free. Anything you do on the VM filesystem is temporary. You can reset your *tottbox* at any time by running ``vagrant destroy`` followed by ``vagrant up`` on your host box.
 
-.. note:: There is one exception to the reset rule: the ``/vagrant`` directory on *tottbox* is a synchronized mirror of the course folder in which you ran ``vagrant up`` on your host box. Anything you do in ``/vagrant`` on the VM will also happen in the corresponding folder on your host box. Likewise, anything you do in the course folder on your host box will appear in the ``/vagrant`` folder on *tottbox*. **This feature is critical**: it will allow us to edit code and view web apps in our desktop environment, but run them in the stable *tottbox* environment.
+There is one exception to the reset rule: the ``/vagrant`` directory on *tottbox* is a synchronized mirror of the course folder in which you ran ``vagrant up`` on your host box. Anything you do in ``/vagrant`` on the VM will also happen in the corresponding folder on your host box. Likewise, anything you do in the course folder on your host box will appear in the ``/vagrant`` folder on *tottbox*. **This feature is critical**: it will allow us to edit code and view web apps in our desktop environment, but run them in the stable *tottbox* environment.
 
 git
 ---
@@ -263,12 +263,27 @@ Verification
 
 We'll now run a quick test of your environment. We won't test everything, but we will at least kick the tires.
 
-By following these steps, you'll fork the repository I created on BitBucket for this assignment, hook your fork to our class assignment submission system, clone the repository locally, fill in a little README text file template with some basic information, commit your changes the repository, and push the changes back up to BitBucket.
+By following these steps, you'll start with a fresh *tottbox* instance, fork the repository I created on BitBucket for this assignment, clone the repository locally, fill in a little README text file template with some basic information, run a test suite I wrote to check your owkr, commit your changes to the repository, and push the changes back up to BitBucket.
 
-.. note:: Again, don't let the jargon scare you: we're going to get lots of practice using git for version control and cover all of these terms. If you want to jumpstart your understanding, start reading the first two chapters of the `Pro Git`_ book and playing with git on ``tottbox``.
+Again, don't let the jargon scare you: we're going to get lots of practice using git for version control and cover all of these terms. If you want to jumpstart your understanding, start reading the first two chapters of the `Pro Git`_ book and playing with git on *tottbox*.
 
-Create
-~~~~~~
+Destroy
+~~~~~~~
+
+#. In the *tottbox* terminal, type ``exit`` to terminate the SSH connection to the ``tottbox``.
+#. Destroy, rebuild, and then connect to your *tottbox* by running the following commands in the course folder on your host box.
+
+   .. code-block:: console
+
+      vagrant destroy
+      vagrant up
+      vagrant ssh
+
+#. Run ``vagrant ssh`` to access the clean *tottbox*.
+#. Enter the passphrases you assigned to the BitBucket and GitHub keys you created when prompted on login.
+
+Create and Clone
+~~~~~~~~~~~~~~~~
 
 #. Visit BitBucket_ and login.
 #. Visit https://bitbucket.org/unctott/assignment_0.
@@ -282,33 +297,15 @@ Create
 #. After the fork completes, click the gear icon (right-side).
 #. Click Access management.
 #. Enter username *peter_parente*, select Read access, and click Add.
-#. Click Services on the left.
-#. Select POST from the drop down and click Add service.
-#. Enter TODO in the URL box and click Save.
-
-Clone
-~~~~~
-
-#. In the *tottbox* terminal, type ``exit`` to terminate the SSH connection to the ``tottbox``.
-#. Destroy, rebuild, and then connect to your *tottbox* by running the following commands in the course folder on your host box.
-
-   .. code-block:: console
-
-      vagrant destroy
-      vagrant up
-      vagrant ssh
-
-#. Run ``vagrant ssh`` to access the clean *tottbox*.
-#. Enter the passphrases you assigned to the BitBucket and GitHub keys you created when prompted.
-#. Clone the *assignment_0* repository you forked from me with the following commands, replacing ``your_username`` with your BitBucket username.
+#. Clone your *assignment_0* fork for local editing with the following commands on *tottbox*, replacing ``your_username`` with your BitBucket username.
 
    .. code-block:: console
 
       cd /vagrant
       git clone ssh://git@bitbucket.org/your_username/assignment_0.git
 
-Edit, Commit and Push
-~~~~~~~~~~~~~~~~~~~~~
+Edit and Test
+~~~~~~~~~~~~~
 
 #. Open SublimeText on your host box.
 #. Use it to open the README.md file in the ``assignment_0`` directory git created in the course folder.
@@ -320,6 +317,22 @@ Edit, Commit and Push
 #. Replace the information about me with the equivalent information about you.
 
    * If you're using SublimeText and have installed GitGutter, you should see little markers in the left gutter of the editor when you save. These are the lines you've modified in comparison with the latest copy of the README in version control.
+   * **Make sure you get this information right.** It's how I'll know you're enrolled, check your submissions, and send out your grades.
+
+#. Open the `features/readme.features` file and review its content.
+#. Back at the *tottbox* prompt, do the following to execute a test suite checking the README.md against the feature spec.
+
+   .. code-block:: console
+
+      cd /vagrant/assignment_0
+      behave
+
+#. Address any failures reported by fixing your README.md until the tests pass.
+
+For this assignment, specifications and tests are overkill. However, I want you to get a glimpse of behavior-driven development (BDD), a topic we'll cover later in the course. I will provide feature files and complete test suites with most of your assignments. You can check your work against these tests as you implement your code. When you submit the assignment, I'll run the same tests with slightly different values to grade your work.
+
+Commit and Push
+~~~~~~~~~~~~~~~
 
 #. In the *tottbox* terminal, run the following commands to commit your changes to your local git repository and then push them to the copy of your repository on BitBucket.
 
@@ -339,10 +352,9 @@ Tag and Release
 
    .. code-block:: console
 
+      cd /vagrant/assignment_0
       git tag -a v1
       git push origin v1
-
-   .. todo:: where to look for results of submission test run? email?
 
 #. Celebrate. You've submitted your assignment.
 
@@ -351,17 +363,18 @@ What Happened?
 
 You might wonder what just happened behind the scenes. Here's the gist.
 
-* You created a read-write copy of the read-only *peter_parente/assignment_0* git repository on BitBucket, called a fork.
-* You made a read-write clone of your fork in your course folder for local editing on your laptop.
-* You committed your edits to the README in your local clone of the repository using git on the *tottbox* virtual machine.
-* You pushed the commit from your local clone up to the repository on BitBucket.
+* You destroyed your *tottbox* VM and brought up a new one.
+* You created a read-write copy, a fork, of the read-only *peter_parente/assignment_0* git repository on BitBucket.
+* You made a read-write clone of your fork in your course folder on your laptop for local editing.
+* You edited the README.md to note your personal information.
+* You ran the test suit I provided to check that you README.md conforms to spec.
+* You committed your edits to the README in your local clone of the repository.
+* You pushed the commit from your local clone up to your private fork on BitBucket.
 * After confirming the edits, you tagged the commit as a release and pushed that tag to BitBucket as well.
-* Each time you pushed, BitBucket contacted URL you configured in your fork of the repository.
-* A little web service I wrote received the BitBucket request and scanned it for a release tag.
-* When the web service saw your tag, it spawned a fresh *tottbox* virtual machine, cloned your repository, switched to the tagged commit, and ran a test suite on the contents.
-* The test runner spat out a report which it then emailed to you.
 
-Voila. Automated, stable, test-driven assignment submission, feedback, and grading. We'll be using this scheme throughout the course and will review it in more detail in the next assignment.
+Later, after the assignment due date, an automated process will scan my BitBucket account feed and identify your assignment repositories. For each repository, it will bring up a fresh *tottbox* on my machine, clone your repository, switch to the newest taggged commit, run the test suite, and generate a report of the outcome. This report will be the basis for your grade on the assignment.
+
+We'll be using this scheme throughout the course and will review it in more detail in the next assignment.
 
 Going Further
 -------------
