@@ -22,3 +22,6 @@ clean:
 
 watch-doc:
 	@wr "make -C doc clean html" doc
+
+watch-slides:
+	@cd doc/slides; npm run-script watch

@@ -4,7 +4,6 @@ List of items I need or want to handle for the TotT course.
 
 ## Must-Haves for Fall Experiment
 
-* write complete setup instructions for assignment #0 on mac, windows, linux
 * week 1 introduction slides
 * week 1 topic slides
 * week 1 prep material
