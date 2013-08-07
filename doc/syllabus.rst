@@ -10,7 +10,7 @@ General Course Info
 :Section Number: 001
 :Time: TR, HH:MM – HH:MM
 :Location: TBD
-:Announcements: Follow `@unctott on Twitter <https://twitter.com/unctott>`_
+:Announcements: In the `UNC TotT community on Google+ <https://plus.google.com/communities/110747799653894553777>`_
 
 Instructor
 ----------

@@ -4,10 +4,8 @@ List of items I need or want to handle for the TotT course.
 
 ## Must-Haves for Fall Experiment
 
-* week 1 introduction slides
 * week 1 topic slides
 * week 1 prep material
-* week 1 lab materials
 * week 13 materials data exploration
 
 ## Must-Haves

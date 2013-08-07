@@ -18,19 +18,20 @@ Session #1
 Exercises
 ~~~~~~~~~
 
+* Create a Google+ account so I can add you to our `TotT Google+ community <https://plus.google.com/communities/110747799653894553777>`_ before you leave today.
+* Review the course syllabus and schedule so you have an idea about how the course will run.
 * Begin following the instructions for assignment #0 to setup the course tools on your laptop. This assignment is due next week, but it will require some time to execute all the steps. Plus you can't do much until you've worked through it.
 * If you've installed SublimeText and need a break from following rote instructions, try the following:
 
-    * Copy/pasting from TODO into a new text document and replace all instances of the word "Sally" with "Shelly" using multi-caret selection.
+    * Copy/paste from `sally.txt <https://gist.github.com/parente/6171058>`_ into a new text document and replace all instances of the word "Sally" with "Shelly" using multi-caret selection.
     * Create a new project, add multiple files to it, and save it off. Reopen it.
-    * Split the editor window into multiple panes. Open TODO and TODO side by side. Can you figure out what they are?
+    * Split the editor window into multiple panes. Open `readme.feature <https://bitbucket.org/unctott/assignment_0/raw/315847b9423986835e53d4e11bc86b1eedfbae12/features/readme.feature>`_ and `readme.py <https://bitbucket.org/unctott/assignment_0/src/315847b9423986835e53d4e11bc86b1eedfbae12/features/steps/readme.py?at=master>`_ side by side. Can you figure out what they are?
     * Use Package Control to find and install another useful tool.
-
 
 Session #2
 ----------
 
-in which we realize the benefits of a virtual development environment and practice managing one using Vagrant.
+... in which we realize the benefits of a virtual development environment and practice managing one using Vagrant.
 
 :Prep: TODO
 :Slides: `Virtual Dev <../slides/intro_2.html>`_
