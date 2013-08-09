@@ -1,18 +1,19 @@
 .PHONY: clean doc push watch-doc
 
-TMP_TOTT_DOC := /tmp/tott_doc
+TMP_TOTT_DOC := /tmp/unctott.bitbucket.org
+YEAR := 2014
 
 push:
 	@-rm -rf $(TMP_TOTT_DOC)
 	@make -C doc clean html slides
-	@git clone -b gh-pages -- https://github.com/parente/tott $(TMP_TOTT_DOC)
-	@cp -r doc/_build/html/* $(TMP_TOTT_DOC)
-	@cp -r doc/slides/_build/* $(TMP_TOTT_DOC)/slides
+	@git clone git@bitbucket.org:unctott/unctott.bitbucket.org.git $(TMP_TOTT_DOC)
+	@-rm -r $(TMP_TOTT_DOC)/$(YEAR)
+	@cp -r doc/_build/html $(TMP_TOTT_DOC)/$(YEAR)
+	@cp -r doc/slides/_build $(TMP_TOTT_DOC)/$(YEAR)/slides
 	@cd $(TMP_TOTT_DOC) && \
 		git add -A && \
 		git commit && \
-		git remote add public https://github.com/parente/tott && \
-		git push public gh-pages
+		git push origin master
 
 doc:
 	@make -C doc clean html slides
