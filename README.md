@@ -8,7 +8,7 @@ From the website:
 
 ## Contents
 
-```
+```bash
 /
     doc/                # course website, reST / Sphinx
         assignments/
@@ -24,7 +24,7 @@ From the website:
 
 ## Fork This Course
 
-I plan to build out the material for this course entirely in the public eye. The source for the course web site, code samples, student Vagrant box, lab exercises, assignment starter templates, and so on all live or will live under http://bitbucket.org/unctott/tott. If you have a suggestion or see a problem, `open an issue <https://bitbucket.org/unctott/tott/issues>`_ or `fork and submit a pull request <https://bitbucket.org/unctott/tott/fork>`_.
+I plan to build out the material for this course entirely in the public eye. The source for the course web site, code samples, student Vagrant box, lab exercises, assignment starter templates, and so on all live or will live under [http://bitbucket.org/unctott/tott](http://bitbucket.org/unctott/tott). If you have a suggestion or see a problem, [open an issue](https://bitbucket.org/unctott/tott/issues) or fork and submit a pull request](https://bitbucket.org/unctott/tott/fork).
 
 ## License
 
