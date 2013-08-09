@@ -1,5 +1,5 @@
-Assignment #2 - Wallpaper Collage
-=================================
+Assignment - Wallpaper Collage
+==============================
 
 .. note:: This page is a draft.
 

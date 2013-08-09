@@ -1,11 +1,23 @@
-Week 7 - Server-Side Web
-========================
+Server-Side Web
+===============
 
 .. note:: This page is a draft.
 
 :Topics: Web servers, REST, non-relational data stores (aka NoSQL)
 :Tools: Bottle_, ExpressJS_, MongoDB_
+
+Session #1
+----------
+
 :Prep: TODO
+:Slides: `The Web We Don't (See) <../slides/server_1.html>`_
+:In Progress: :doc:`/assignments/collabin`
+
+Session #2
+----------
+
+:Prep: TODO
+:Slides: `NoSQL <../slides/server_2.html>`_
 :In Progress: :doc:`/assignments/collabin`
 
 .. todo:: Lab ideas

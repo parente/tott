@@ -18,7 +18,7 @@ Instructor
 :Name: Peter Parente
 :Office: N/A
 :Email: parente@cs.unc.edu
-:Office hours: in-person TBD, Google Hangout TBD
+:Office hours: in-person TBD, `Google Hangout TBD <https://plus.google.com/communities/110747799653894553777>`_
 
 Course Description
 ------------------

@@ -1,12 +1,33 @@
-Week 12 - Distribution and Metadata
-===================================
+Distribution and Metadata
+=========================
+
+.. rst-class:: hidden
+
+.. toctree::
+    :titlesonly:
+
+    /assignments/tdd
 
 .. note:: This page is a draft.
 
 :Topics: Code licenses, project packaging, final project planning
-:Tools: `OSS licenses`_, `package.json`_, `setup.py`_
+:Tools: `OSS licenses`_,  `setup.py`_, `package.json`_, `Gemfile`_
+
+Session #1
+----------
+
 :Prep: TODO
+:Slides: `Packaging <../slides/dist_1.html>`_
+:In Progress: :doc:`/assignments/factoid`
+:Assigned: :doc:`/assignments/tdd`
+
+Session #2
+----------
+
+:Prep: TODO
+:Slides: `IANAL <../slides/dist_2.html>`_
 :In Progress: :doc:`/assignments/tdd`
+
 
 .. todo::
 

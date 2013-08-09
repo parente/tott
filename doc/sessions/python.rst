@@ -1,13 +1,32 @@
-Week 4 - Python
-===============
+Python
+======
+
+.. rst-class:: hidden
+
+.. toctree::
+    :titlesonly:
+
+    /assignments/wallpaper
 
 .. note:: This page is a draft.
 
 :Topics: Language basics, language highlights, the standard library, virtual environments, package management
-:Tools: Python_, IPython_, virtualenv_, pip_
+:Tools: `Python <http://python.org>`_, IPython_, virtualenv_, pip_
+
+Session #1
+----------
+
 :Prep: TODO
+:Slides: `Python <../slides/python_1.html>`_
 :Due: :doc:`/assignments/eval`
 :Assigned: :doc:`/assignments/wallpaper`
+
+Session #2
+----------
+
+:Prep: TODO
+:Slides: `Python Ecosystem <../slides/python_2.html>`_
+:In Progress: :doc:`/assignments/wallpaper`
 
 .. todo::
 

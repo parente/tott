@@ -25,10 +25,11 @@ Table of Contents
 =================
 
 .. toctree::
-   :maxdepth: 1
+   :titlesonly:
+   :maxdepth: 2
+   :numbered:
 
    syllabus
-   assignments/index
    sessions/intro
    sessions/basic
    sessions/version
@@ -42,14 +43,13 @@ Table of Contents
    sessions/tdd
    sessions/dist
    sessions/data
-   sessions/week14
-   sessions/week15
+   sessions/extra
    other
 
 Fork This Course
 ================
 
-I plan to build out the material for this course entirely in the public eye. The source for the course web site, code samples, student Vagrant box, lab exercises, assignment starter templates, and so on all live or will live at http://github.com/parente/tott. If you have a suggestion or see a problem, `open an issue <https://github.com/parente/tott/issues>`_ or `fork and submit a pull request <https://github.com/parente/tott/fork>`_.
+I plan to build out the material for this course entirely in the public eye. The source for the course web site, code samples, student Vagrant box, lab exercises, assignment starter templates, and so on all live or will live at http://bitbucket.org/unctott/tott. If you have a suggestion or see a problem, `open an issue <https://bitbucket.org/unctott/tott/issues>`_ or `fork and submit a pull request <https://bitbucket.org/unctott/tott/fork>`_.
 
 Students who enroll in the course should treat the class website as the authoratative reference for assignments, due dates, preparatory reading, etc. On the class site, any page marked as a draft at the top or section having a TODO is subject to change.
 

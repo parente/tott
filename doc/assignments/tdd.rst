@@ -1,5 +1,5 @@
-Assignment #5 - Bug Hunter
-==========================
+Assignment - Bug Hunter
+=======================
 
 .. note:: This page is a draft.
 

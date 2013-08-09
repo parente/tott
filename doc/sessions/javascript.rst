@@ -1,11 +1,23 @@
-Week 5 - JavaScript
-===================
+JavaScript
+==========
 
 .. note:: This page is a draft.
 
 :Topics: Language basics, "The Good Parts", NodeJS, standard libary, virtual environments, package management
 :Tools: JavaScript_, NodeJS_, nvm_, npm_
+
+Session #1
+----------
+
 :Prep: TODO
+:Slides: `JavaScript <../slides/javascript_1.html>`_
+:Assigned: :doc:`/assignments/wallpaper`
+
+Session #2
+----------
+
+:Prep: TODO
+:Slides: `JS Ecosystem <../slides/javascript_2.html>`_
 :In Progress: :doc:`/assignments/wallpaper`
 
 .. todo:: Lab ideas

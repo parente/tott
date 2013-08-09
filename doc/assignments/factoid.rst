@@ -1,5 +1,5 @@
-Assignment #4 - Factoids
-========================
+Assignment - Factoids
+=====================
 
 .. note:: This page is a draft.
 

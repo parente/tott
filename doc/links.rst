@@ -15,7 +15,7 @@
 .. _GitHub: https://github.com
 .. _Pro Git: http://git-scm.com/book
 
-.. _Python: http://www.python.org/
+.. _Python: http://python.org/
 .. _IPython: http://ipython.org/
 .. _virtualenv: http://virtualenv.org
 .. _pip: http://www.pip-installer.org/en/latest/
@@ -56,6 +56,7 @@
 .. _Heroku: https://www.heroku.com/
 .. _Other PaaSes: http://en.wikipedia.org/wiki/Platform_as_a_service#Notable_PaaS
 .. _Other Preso Tools: http://www.impressivewebs.com/html-slidedeck-toolkits/
+.. _Behave: http://pythonhosted.org/behave/
 
 .. _Ruby: http://www.ruby-lang.org/en/
 .. _rvm: https://rvm.io/

@@ -1,12 +1,25 @@
-Week 8 - Going Public
-=====================
+Going Public
+============
 
 .. note:: This page is a draft.
 
 :Topics: Cloud hosting, Platform as a Service (PaaS), writing documentation, generating documentation, presenting without PPT, long-live the static web!
-:Tools: Sphinx_, Hieroglyph_, groc_, `Cloud Foundry`_
+:Tools: `Cloud Foundry`_, Sphinx_, deck.js_, groc_
+
+Session #1
+----------
+
 :Prep: TODO
+:Slides: `The Cloud <../slides/public_1.html>`_
 :In Progress: :doc:`/assignments/collabin`
+
+Session #2
+----------
+
+:Prep: TODO
+:Slides: `Knowledge Sharing <../slides/public_2.html>`_
+:In Progress: :doc:`/assignments/collabin`
+
 
 .. todo::
     Lab ideas:

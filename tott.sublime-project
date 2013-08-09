@@ -2,7 +2,8 @@
 	"folders":
 	[
 		{
-			"path": "/Users/parente/projects/tott"
+			"path": "/Users/parente/projects/tott",
+            "folder_exclude_patterns": [".vagrant", "doc/_build", "packer_cache"]
 		}
 	]
 }

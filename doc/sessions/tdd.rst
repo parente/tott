@@ -1,13 +1,24 @@
-Week 11 - Test-Driven Development
-=================================
+Test-Driven Development
+=======================
 
 .. note:: This page is a draft.
 
 :Topics: Unit testing, test first mindset, red-green-refactor cycle, behavior driven development
-:Tools: Nose_, Mocha_, `Should.js`_
+:Tools: Behave_, Mocha_, `Should.js`_
+
+Session #1
+----------
+
 :Prep: TODO
-:Due: :doc:`/assignments/factoid`
-:Homework: :doc:`/assignments/tdd`
+:Slides: `Specs and Tests <../slides/tdd_1.html>`_
+:In Progress: :doc:`/assignments/factoid`
+
+Session #2
+----------
+
+:Prep: TODO
+:Slides: `Test Driven Development <../slides/tdd_2.html>`_
+:In Progress: :doc:`/assignments/factoid`
 
 .. todo:: Lab ideas:
 

@@ -1,5 +1,5 @@
-Assignment #1 - Evaluating Tools
-================================
+Assignment - Evaluating Tools
+=============================
 
 .. note:: This page is a draft.
 

@@ -1,5 +1,12 @@
-Week 1 - Introduction and Setup
-===============================
+Introduction and Setup
+======================
+
+.. rst-class:: hidden
+
+.. toctree::
+    :titlesonly:
+
+    /assignments/setup
 
 .. note:: This page is a draft.
 
@@ -20,7 +27,7 @@ Exercises
 
 * Create a Google+ account so I can add you to our `TotT Google+ community <https://plus.google.com/communities/110747799653894553777>`_ before you leave today.
 * Review the course syllabus and schedule so you have an idea about how the course will run.
-* Begin following the instructions for assignment #0 to setup the course tools on your laptop. This assignment is due next week, but it will require some time to execute all the steps. Plus you can't do much until you've worked through it.
+* Begin following the assignment instructions to setup the course tools on your laptop. This assignment is due next week, but it will require some time to execute all the steps. Plus you can't do much else in this course until you've worked through it.
 * If you've installed SublimeText and need a break from following rote instructions, try the following:
 
     * Copy/paste from `sally.txt <https://gist.github.com/parente/6171058>`_ into a new text document and replace all instances of the word "Sally" with "Shelly" using multi-caret selection.
@@ -40,6 +47,6 @@ Session #2
 Exercises
 ~~~~~~~~~
 
-* Continue with assignment #0 if you have not yet run *tottbox* successfully.
+* Continue with the setup assignment if you have not yet run *tottbox* successfully.
 * Use git to clone the etherpad-lite project on GitHub. Figure out how to run it with the default settings (hint: find the docs). Figure out what it does and how another classmate can access it to try it with you.
 * Modify the Vagrant file to mount a second directory shared between your host box and *tottbox*. Use the NodeJS package manager to install `http-server`. Start it running. Visit the port on localhost. What do you see?

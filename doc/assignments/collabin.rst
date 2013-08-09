@@ -1,5 +1,5 @@
-Assignment #3 - Collabin'
-=========================
+Assignment - Collabin'
+======================
 
 .. note:: This page is a draft.
 

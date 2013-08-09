@@ -1,16 +1,41 @@
-Week 13 - Data Exploration and Analysis
-=======================================
+Data Exploration and Analysis
+=============================
+
+.. rst-class:: hidden
+
+.. toctree::
+    :titlesonly:
+
+    /assignments/storytime
+    /assignments/final
 
 .. note:: This page is a draft.
 
-:Topics: Scientific computing, empirical systems (ala IBM Watson), data science, visualization
+:Topics: Scientific computing, empirical systems, data science, visualization
 :Tools: `IPython Notebook`_, Pandas_, Matplotlib_
-:Prep: TODO
-:Due: :doc:`/assignments/tdd`
-:Assigned: :doc:`/assignments/storytime`
 
-.. image:: http://imgs.xkcd.com/comics/empirical.png
+Session #1
+----------
+
+:Prep: TODO
+:Slides: `It's Empirical <../slides/data_1.html>`_
+:Due: :doc:`/assignments/tdd`
+:Assigned: :doc:`/assignments/storytime`, :doc:`/assignments/final`
+
+Sesssion #2
+-----------
+
+:Prep: TODO
+:Slides: `Visualization <../slides/data_2.html>`_
+:In Progress: :doc:`/assignments/storytime`, :doc:`/assignments/final`
+
+.. figure:: http://imgs.xkcd.com/comics/empirical.png
+    :target: http://xkcd.com/943/
     :align: center
+    :alt: I'm as surprised as you!
+
+    Empirical - http://xkcd.com/943/
+
 
 .. todo:: Lab ideas, I'll furnish some datasets here or ask around for some in the department
 

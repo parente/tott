@@ -1,13 +1,33 @@
-Week 6 - Client-Side Web
-========================
+Client-Side Web
+===============
+
+.. rst-class:: hidden
+
+.. toctree::
+    :titlesonly:
+
+    /assignments/collabin
+
 
 .. note:: This page is a draft.
 
 :Topics: Web documents vs apps, HTML5, CSS3, DOM, XHR, frameworks and microlibs
 :Tools: `Chrome developer tools`_, `Yeoman`_, `jQuery`_, `Dojo`_
+
+Session #1
+----------
+
 :Prep: TODO
+:Slides: `The Web We See <../slides/web_1.html>`_
 :Due: :doc:`/assignments/wallpaper`
 :Assigned: :doc:`/assignments/collabin`
+
+Session #2
+----------
+
+:Prep: TODO
+:Slides: `Web Ecosystem <../slides/web_2.html>`_
+:In Progress: :doc:`/assignments/collabin`
 
 .. todo:: Lab ideas
 

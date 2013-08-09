@@ -1,12 +1,29 @@
-Week 10 - Automation
-====================
+Automation
+==========
 
 .. note:: This page is a draft.
 
 :Topics: Build systems, automating your dev cycle, automating remote systems
-:Tools: Make_, Grunt_, Fabric_
+:Tools: Make_, Grunt_, Rake_, Fabric_
+
+Session #1
+----------
+
+... in which we learn to automate away the manual labor of preparing our projects to run.
+
 :Prep: TODO
+:Slides: `Build Systems <../slides/auto_1.html>`_
 :In Progress: :doc:`/assignments/factoid`
+
+Session #2
+----------
+
+... in which we learn how to control remote systems from the comfort of our own homes.
+
+:Prep: TODO
+:Slides: `Remote Control <../slides/auto_2.html>`_
+:In Progress: :doc:`/assignments/factoid`
+
 
 .. todo:: Lab ideas:
 

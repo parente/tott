@@ -1,5 +1,5 @@
-Assignment #0 - Setup
-=====================
+Assignment - Setup
+==================
 
 .. note:: This page is a draft.
 

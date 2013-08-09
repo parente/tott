@@ -1,5 +1,5 @@
-Assignment #6 - Storytime
-=========================
+Assignment - Storytime
+======================
 
 .. note:: This page is a draft.
 

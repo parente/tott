@@ -182,7 +182,6 @@ div.document blockquote.epigraph p.attribution {
 
 div.admonition dt {
     font-weight: bold;
-    font-size: 1em;
 }
 
 div.highlight pre {
@@ -191,4 +190,27 @@ div.highlight pre {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+div.toctree-wrapper ul {
+    list-style-type: none;
+}
+
+div.figure {
+    margin: 32px 0;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    padding: 24px;
+}
+
+div.figure .caption {
+    font-size: 15px;
+    margin: 0;
+    margin-top: 12px;
 }

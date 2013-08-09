@@ -1,13 +1,33 @@
-Week 9 - Ruby
-=============
+Ruby
+====
+
+.. rst-class:: hidden
+
+.. toctree::
+    :titlesonly:
+
+    /assignments/factoid
 
 .. note:: This page is a draft.
 
 :Topics: Language basics, language highlights, standard library, virtual environments, package management, web apps
 :Tools: Ruby_, rvm_, gem_, Sinatra_
+
+Session #1
+----------
+
 :Prep: TODO
+:Slides: `Ruby <../slides/ruby_1.html>`_
 :Due: :doc:`/assignments/collabin`
 :Assigned: :doc:`/assignments/factoid`
+
+Session #2
+----------
+
+:Prep: TODO
+:Slides: `Ruby Ecosystem <../slides/ruby_2.html>`_
+:Due: :doc:`/assignments/collabin`
+:In Progress: :doc:`/assignments/factoid`
 
 .. todo:: Lab ideas:
 
