@@ -11,7 +11,7 @@ Ruby
 .. note:: This page is a draft.
 
 :Topics: Language basics, language highlights, standard library, virtual environments, package management, web apps
-:Tools: Ruby_, rvm_, gem_, Sinatra_
+:Tools: `Ruby <http://www.ruby-lang.org/en/>`_, rvm_, gem_, Sinatra_
 
 Session #1
 ----------

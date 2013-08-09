@@ -15,14 +15,12 @@
 .. _GitHub: https://github.com
 .. _Pro Git: http://git-scm.com/book
 
-.. _Python: http://python.org/
 .. _IPython: http://ipython.org/
 .. _virtualenv: http://virtualenv.org
 .. _pip: http://www.pip-installer.org/en/latest/
 .. _PyPI: http://pypi.python.org
 .. _repl.it: http://repl.it
 
-.. _JavaScript: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 .. _NodeJS: http://nodejs.org/
 .. _nvm: https://github.com/creationix/nvm
 .. _npm: https://npmjs.org/
@@ -58,13 +56,13 @@
 .. _Other Preso Tools: http://www.impressivewebs.com/html-slidedeck-toolkits/
 .. _Behave: http://pythonhosted.org/behave/
 
-.. _Ruby: http://www.ruby-lang.org/en/
 .. _rvm: https://rvm.io/
 .. _gem: http://rubygems.org/
 .. _Sinatra: http://www.sinatrarb.com/
 .. _Ruby Doc: http://www.ruby-doc.org/
 .. _Ruby on Rails Tutorial: http://ruby.railstutorial.org/
 .. _The Ruby Toolbox: https://www.ruby-toolbox.com/
+.. _Gemfile: http://bundler.io/v1.3/gemfile.html
 
 .. _Make: http://en.wikipedia.org/wiki/Make_(software)
 .. _Fabric: http://docs.fabfile.org/en/1.6/
