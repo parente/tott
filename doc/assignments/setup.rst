@@ -144,7 +144,7 @@ To make it clear where we are running commands, from now on we will call the ope
    * Windows: ``C:\Users\your_username\projects\tott``
    * Mac/Linux: ``~/projects/tott``
 
-#. Download `the course Vagrantfile <https://raw.github.com/parente/tott/master/vagrant/Vagrantfile>`_, a config that tells Vagrant how to run *tottbox*.
+#. Download `the course Vagrantfile <https://bitbucket.org/unctott/tott/raw/master/vagrant/Vagrantfile>`_, a config that tells Vagrant how to run *tottbox*.
 #. Put the Vagrantfile you just downloaded into the folder you just created. We'll call this the course folder from now on.
 #. Open a terminal window.
 
@@ -179,7 +179,7 @@ git
 
 Git_ is an open source, fast, modern `distributed version control system <http://en.wikipedia.org/wiki/Distributed_revision_control>`_. Many high-profile projects have adopted Git for version control, and, according to the GitHub stats quoted on the front page of this site, many more are starting life in Git. We will practice using Git in almost everything we do in this course.
 
-Right now, you just need to tell Git who you are before we proceed. In the *tottbox* terminal, enter the following commands, replacing my fullname and email address with your own.
+Right now, you just need to tell Git who you are before we proceed. In the *tottbox* terminal, enter the following commands, replacing my name and email address with your own.
 
 .. code-block:: console
 
