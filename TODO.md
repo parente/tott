@@ -7,7 +7,6 @@ List of items I need or want to handle for the TotT course.
 * week 1, session #2 topic slides
 * week 1, session #2 summary video
 * week 1, session #2 other materials
-* packer config for 32bit tottbox
 * validate instructions for tottbox #0
 * decide topic for fall validation
 

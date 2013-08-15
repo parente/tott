@@ -16,9 +16,11 @@ EOP
 sudo apt-get -y install git
 ln -s /vagrant/.gitconfig ~/.gitconfig
 
-# ipython, virtualenv, pip
+# ipython, virtualenv + wrapper, pip
 sudo apt-get -y install python-dev python-pip
-sudo pip install virtualenv ipython
+sudo pip install virtualenv
+sudo pip install virtualenvwrapper
+sudo pip install ipython
 
 # nodejs, npm, nvm
 wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
@@ -27,8 +29,10 @@ echo '. /home/vagrant/.profile' >> /home/vagrant/.bash_profile
 nvm install v0.10.13
 nvm alias default v0.10.13
 
-# yeoman, grunt, bower + express template
-npm install -g yo grunt-cli bower generator-express
+# yeoman, grunt, bower, generators for yeoman
+# need fontconfig else phantomjs goes kaput
+sudo apt-get -y install fontconfig
+npm install -g phantomjs yo grunt-cli bower generator-express generator-backbone generator-mocha
 
 # mongodb
 sudo apt-get -y install mongodb
@@ -38,17 +42,20 @@ sudo pip install sphinx
 sudo pip install hieroglyph
 npm install -g groc
 
-# # ruby and cf
+# ruby, cf
 \curl -L https://get.rvm.io | bash -s stable
 . /home/vagrant/.rvm/scripts/rvm
 rvm install 1.9.3
-rvm gemset create cf
-rvm use 1.9.3@cf --default
+#rvm gemset create cf
+#rvm use 1.9.3@cf --default
 gem install cf --no-ri --no-rdoc
+# need compass for some yeoman grunt tasks
+gem install compass --no-ri --no-rdoc
 
-# python fabric, nose
+# python fabric, nose, behave
 sudo pip install fabric
 sudo pip install nose
+sudo pip install behave
 
 # mocha
 npm install -g mocha
