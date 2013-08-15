@@ -82,7 +82,7 @@ Class Prep
 
 You must review the materials I post on this site before each class session. I will briefly review what I post here, but I will assume you've read through it. I want you to spend as much time as possible in class using the tools, helping one another, and asking me questions, **not** listening to me as I flip through charts.
 
-You should also spend some time outside class researching tools on your own to share with us in class.
+You should also spend some time outside class researching tools on your own and sharing them in the class `Google+ community <TotT community>`_.
 
 In-Class
 ~~~~~~~~
@@ -90,11 +90,13 @@ In-Class
 In nearly every class, we will:
 
 #. Study a software development problem (e.g., I need to perform full-text search on a large set of documents)
-#. Find and evaluate tools that might help solve the problem (e.g., Lucene, Solr, Whoosh, ...)
+#. Find and evaluate tools that might help solve the problem (e.g., Solr, Whoosh, Elasticsearch...)
 #. Practice applying one of the tools to the problem (e.g., creating an index in Lucene)
 #. Review the experience (e.g. applicability, learning curve, API quality, etc.)
 
 **You must bring your laptop to every class session.** Getting practice finding, learning, applying, and evaluating tools quickly is the crux of the course.
+
+You will informally document and share your solutions and findings from the in-class exercises in the `TotT community`_. I will not grade your in-class work, per se, but will use it to decide your class participation grade.
 
 Assignments
 ~~~~~~~~~~~
@@ -102,6 +104,8 @@ Assignments
 You will complete a handful of programming assignments spread throughout the semester. The assignments will require integration of tools we cover in class and exploration of new tools on your own.
 
 You will also complete a final project. The project will be similar to the assignments, but on a larger scale.
+
+I will grade both the assignments and final projects against specs and test suites. I will make both available to you at the start of each assignment so that you have a continuous objective measure of your progress.
 
 Grading Criteria
 ----------------
@@ -133,7 +137,7 @@ Attending and participating in class account for part of your grade. That said, 
 Late Assignments
 ~~~~~~~~~~~~~~~~
 
-I will post assignments and their deadlines on this site, and announce them on Twitter and in class. You will use git to submit your assignments. You can submit as many times as you wish. I will not grade your assignment until sometime after the due date and time. When I do, I'll grade your latest submission alone. If you haven't submitted anything by that time, you will get a zero on the assignment. I will not grant any other grace period.
+I will post assignments and their deadlines on this site, and announce them in the G+ community and in class. You will use git to submit your assignments. You can submit as many times as you wish. I will not grade your assignment until sometime after the due date and time. When I do, I'll grade your latest submission alone. If you haven't submitted anything by that time, you will get a zero on the assignment. I will not grant any other grace period.
 
 So, submit early, submit often, and at the very least submit once!
 

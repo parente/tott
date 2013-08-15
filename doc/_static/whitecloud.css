@@ -214,3 +214,11 @@ div.figure .caption {
     margin: 0;
     margin-top: 12px;
 }
+
+.exercises li {
+    margin-top: 24px;
+}
+
+tt.literal {
+    background-color: #f7f7f7;
+}

@@ -1,3 +1,5 @@
+.. _TotT community: https://plus.google.com/communities/110747799653894553777
+
 .. _SublimeText: http://www.sublimetext.com/
 .. _Package Control: http://wbond.net/sublime_packages/package_control
 .. _Google Chrome: https://www.google.com/intl/en/chrome/browser/
@@ -97,3 +99,5 @@
 .. _Internet Explorer: http://windows.microsoft.com/en-us/internet-explorer/download-ie
 .. _GitHub: https://github.com
 .. _Cygwin: http://cygwin.org
+
+.. |star| unicode:: U+2605 .. black star
