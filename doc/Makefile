@@ -53,7 +53,7 @@ clean:
 
 slides:
 	@cd slides; npm install; npm run-script build
-	@echo "Build finished. The HTML slides are in $(BUILDDIR)/slides."
+	@echo "Build finished. The HTML slides are in slides/_build."
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html

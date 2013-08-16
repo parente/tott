@@ -1,18 +1,25 @@
 .deck-container {
     font-family: "Helvetica Neue", sans-serif;
-    font-size:1.75em;
+    font-size:2.75em;
     background:#fff;
 
     .slide {
+        padding: 0 96px !important;
         background:#fff;
 
         h1 {
-            font-size: 3em;
+            font-size: 2.5em;
         }
 
         h2 {
             color: #003a6b;
             border-bottom-color:#ccc;
+            font-size: 2em;
+        }
+
+        blockquote {
+            padding: 1em !important;
+            font-size: 1em !important;
         }
 
         .smaller {

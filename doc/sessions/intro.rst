@@ -50,8 +50,8 @@ Session #2
 
 ... in which we realize the benefits of a virtual development environment and practice managing one using Vagrant.
 
-:Prep: TODO
-:Slides: `Virtual Dev <../slides/intro_2.html>`_
+:Prep: Read `Hardware virtualization <http://en.wikipedia.org/wiki/Hardware_virtualization>`_, `How Vagrant Benefits You <http://docs.vagrantup.com/v2/why-vagrant/index.html>`_, TODO
+:Slides: `Dev VMs <../slides/intro_2.html>`_
 :In Progress: :doc:`/assignments/setup`
 
 Exercises
