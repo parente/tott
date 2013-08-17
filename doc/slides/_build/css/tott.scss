@@ -7,6 +7,10 @@
         padding: 0 96px !important;
         background:#fff;
 
+        .CodeMirror {
+            font-size: 0.65em;
+        }
+
         h1 {
             font-size: 2.5em;
         }
@@ -15,6 +19,10 @@
             color: #003a6b;
             border-bottom-color:#ccc;
             font-size: 2em;
+        }
+
+        ul {
+            margin-left: 1em;
         }
 
         blockquote {

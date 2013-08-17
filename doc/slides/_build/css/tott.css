@@ -5,12 +5,16 @@
   .deck-container .slide {
     padding: 0 96px !important;
     background: #fff; }
+    .deck-container .slide .CodeMirror {
+      font-size: 0.65em; }
     .deck-container .slide h1 {
       font-size: 2.5em; }
     .deck-container .slide h2 {
       color: #003a6b;
       border-bottom-color: #ccc;
       font-size: 2em; }
+    .deck-container .slide ul {
+      margin-left: 1em; }
     .deck-container .slide blockquote {
       padding: 1em !important;
       font-size: 1em !important; }

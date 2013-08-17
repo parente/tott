@@ -11,3 +11,4 @@ sandbox
 node_modules/
 doc/slides/_build/*.html
 vagrant/assignment*
+doc/slides/npm-debug.log

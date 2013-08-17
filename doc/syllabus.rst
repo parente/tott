@@ -114,7 +114,8 @@ I will determine final grades based on the following percentages:
 
 * 55% programming assignments
 * 35% final project
-* 10% class attendance, participation, and effort broken down as:
+* 10% class attendance, participation, and effort
+
     * 2% for showing up to all classes
     * 5% for attempting the in-class exercises
     * 3% for contributing to the class discussions and evaluations

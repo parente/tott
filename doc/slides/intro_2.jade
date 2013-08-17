@@ -12,9 +12,10 @@ block slides
 
   section.slide#reminders
     h2 Reminders
-    li I assume you read the prep materials before class.
-    li The setup assignment is due next time we meet.
-    li You're going to work on it today.
+    ul
+      li I assume you read the prep materials before class.
+      li The setup assignment is due the next time we meet.
+      li You're going to work on it today.
 
   section.slide#vm
     h2 System VM
@@ -22,21 +23,67 @@ block slides
 
   section.slide#use-cases
     h2 Use Cases
-    li Multiple OSes on a single box
-    li Emulation of other architectures
-    li On-demand provisioning
-    li Workload migration
-    li Disaster recovery
-    li <strong>Environment consistency</strong>
+    ul
+      li Multiple OSes
+      li Archiecture emulation
+      li On-demand provisioning
+      li Workload migration
+      li Disaster recovery
+      li <strong>Environment consistency</strong>
 
   section.slide#team-dev
-    h2 Dev Consistency
+    h2 Consistency
+    ul
+      li <strong>Working with a team</strong>
+      li Developing across machines
+      li Deploying to production
+      li Shipping to a customer
+
+  section.slide#virtualbox
+    h2 VirtualBox
+    ul
+      li Type 2 Hypervisor <br />
+        small English: It runs VMs on your laptop
+      li Manages VM <em>images</em>
+      li Runs VM <em>instances</em>
 
   section.slide#vagrant
     h2 Vagrant
+    p Developer-centric VM management
+    ol
+      li Get a base image
+      li Write a config file
+      li Script your installs
+      li Share with your team
 
   section.slide#cli
     h2 Vagrant CLI
+    p Three commands to master
+    pre.
+      $ vagrant up
+      $ vagrant ssh
+      $ vagrant destroy
 
   section.slide#config
     h2 Vagrantfile
+    textarea.code(name="code", mode="ruby", style="display: none;").
+      # fetches a box (i.e., VM image)
+      config.vm.box = "tottbox_2013_07_31"
+      config.vm.box_url = "https://dl.dropboxusercontent.com/u/264241/\#{config.vm.box}.box"
+
+      # configures it
+      config.vm.network :private_network, ip: "192.168.33.10"
+      config.vm.network :forwarded_port, guest: 8080, host: 8080
+
+      # runs scripts on it
+      config.vm.provision :shell, :inline => "sudo apt-get -y update"
+
+  section.slide#tottbox
+    h2 tottbox
+    ul
+      li Our Vagrant box
+      li Our shared dev / grading environment
+      li Pre-configured with many tools
+
+  section.slide#today
+    h2 Today

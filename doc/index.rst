@@ -57,5 +57,6 @@ Attribution
 ===========
 
 * Sphinx_ generated this site using a modified version of the `Cloud Sphinx Theme <http://pythonhosted.org/cloud_sptheme/>`_.
+* `Ryan Roemer <https://github.com/ryan-roemer>`_ created the `deck.js starter template <https://github.com/ryan-roemer/deck.js-starter>`_ used for all the course slides.
 * `Dimitar Karaytchev <http://hellogrid.com>`_ created the `background pattern <http://subtlepatterns.com/diamond-upholstery/>`_.
 * Fred Brooks's writings on computer scientists as toolsmiths inspired the course content.
