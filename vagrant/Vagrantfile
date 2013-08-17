@@ -7,8 +7,6 @@ wget https://gist.github.com/parente/6049886/raw/provision.sh
 sh ./provision.sh
 SCRIPT
 
-$current_box = "tottbox_2013_07_31.box"
-
 Vagrant.configure("2") do |config|
   # All Vagrant configuration is done here. The most common configuration
   # options are documented and commented below. For a complete reference,
@@ -20,9 +18,9 @@ Vagrant.configure("2") do |config|
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
   if ! ENV['TOTT_DEV']
-    config.vm.box_url = "https://dl.dropboxusercontent.com/u/264241/#{$current_box}"
+    config.vm.box_url = "https://dl.dropboxusercontent.com/u/264241/#{config.vm.box}.box"
   else
-    config.vm.box_url = "~/Dropbox/Public/#{$current_box}"
+    config.vm.box_url = "~/Dropbox/Public/#{config.vm.box}.box"
   end
 
   # Create a forwarded port mapping which allows access to a specific port
