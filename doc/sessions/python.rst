@@ -3,11 +3,6 @@ Python
 
 .. rst-class:: hidden
 
-.. toctree::
-    :titlesonly:
-
-    /assignments/wallpaper
-
 .. note:: This page is a draft.
 
 :Topics: Language basics, language highlights, the standard library, virtual environments, package management
@@ -16,17 +11,20 @@ Python
 Session #1
 ----------
 
+... in which we learn a well-rounded, friendly language, Python.
+
 :Prep: TODO
 :Slides: `Python <../slides/python_1.html>`_
-:Due: :doc:`/assignments/eval`
-:Assigned: :doc:`/assignments/wallpaper`
+:In Progress: :doc:`/assignments/uttt`
 
 Session #2
 ----------
 
+... in which we explore the ecosystem of Python tools.
+
 :Prep: TODO
 :Slides: `Python Ecosystem <../slides/python_2.html>`_
-:In Progress: :doc:`/assignments/wallpaper`
+:In Progress: :doc:`/assignments/uttt`
 
 .. todo::
 

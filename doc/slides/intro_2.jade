@@ -67,16 +67,18 @@ block slides
   section.slide#config
     h2 Vagrantfile
     textarea.code(name="code", mode="ruby", style="display: none;").
-      # fetches a box (i.e., VM image)
-      config.vm.box = "tottbox_2013_07_31"
-      config.vm.box_url = "https://dl.dropboxusercontent.com/u/264241/\#{config.vm.box}.box"
+      Vagrant.configure("2") do |config|
+        # fetches a box (i.e., VM image)
+        config.vm.box = "tottbox_2013_07_31"
+        config.vm.box_url = "https://dl.dropboxusercontent.com/u/264241/\#{config.vm.box}.box"
 
-      # configures it
-      config.vm.network :private_network, ip: "192.168.33.10"
-      config.vm.network :forwarded_port, guest: 8080, host: 8080
+        # configures it
+        config.vm.network :private_network, ip: "192.168.33.10"
+        config.vm.network :forwarded_port, guest: 8080, host: 8080
 
-      # runs scripts on it
-      config.vm.provision :shell, :inline => "sudo apt-get -y update"
+        # runs scripts on it
+        config.vm.provision :shell, :inline => "sudo apt-get -y update"
+      end
 
   section.slide#tottbox
     h2 tottbox

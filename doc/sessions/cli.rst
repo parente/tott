@@ -1,13 +1,6 @@
 Working at the CLI
 ==================
 
-.. rst-class:: hidden
-
-.. toctree::
-    :titlesonly:
-
-    /assignments/eval
-
 .. note:: This page is a draft.
 
 :Topics: Command line tools, working remotely, long-running jobs
@@ -21,7 +14,6 @@ Session #1
 :Prep: TODO
 :Slides: `CLI <../slides/basic_1.html>`_
 :Due: :doc:`/assignments/setup`
-:Assigned: :doc:`/assignments/eval`
 
 Session #2
 ----------
@@ -30,7 +22,6 @@ Session #2
 
 :Prep: TODO
 :Slides: `UNIX Philosophy <../slides/basic_2.html>`_
-:In Progress: :doc:`/assignments/eval`
 
 ..
    .. todo::

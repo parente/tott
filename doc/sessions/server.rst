@@ -1,6 +1,13 @@
 Server-Side Web
 ===============
 
+.. rst-class:: hidden
+
+.. toctree::
+    :titlesonly:
+
+    /assignments/hof
+
 .. note:: This page is a draft.
 
 :Topics: Web servers, REST, non-relational data stores (aka NoSQL)
@@ -11,14 +18,15 @@ Session #1
 
 :Prep: TODO
 :Slides: `The Web We Don't (See) <../slides/server_1.html>`_
-:In Progress: :doc:`/assignments/collabin`
+:Due: :doc:`/assignments/uttt`
+:Assigned: :doc:`/assignments/hof`
 
 Session #2
 ----------
 
 :Prep: TODO
 :Slides: `NoSQL <../slides/server_2.html>`_
-:In Progress: :doc:`/assignments/collabin`
+:In Progress: :doc:`/assignments/hof`
 
 .. todo:: Lab ideas
 

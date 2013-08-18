@@ -96,7 +96,7 @@ In nearly every class, we will:
 
 **You must bring your laptop to every class session.** Getting practice finding, learning, applying, and evaluating tools quickly is the crux of the course.
 
-You will informally document and share your solutions and findings from the in-class exercises in the `TotT community`_. I will not grade your in-class work, per se, but will use it to decide your class participation grade.
+You will document and share your work on the in-class exercises in the `TotT community`_. Occassionally, we will discuss your work at the end of our class sessions too. I will grade your class participation based on these contributions.
 
 Assignments
 ~~~~~~~~~~~
@@ -105,7 +105,7 @@ You will complete a handful of programming assignments spread throughout the sem
 
 You will also complete a final project. The project will be similar to the assignments, but on a larger scale.
 
-I will grade both the assignments and final projects against specs and test suites. I will make both available to you at the start of each assignment so that you have a continuous objective measure of your progress.
+I will grade both the assignments and final projects against specs and test suites. I will make both available to you at the start of each assignment so that you have a continuous, objective measure of your progress.
 
 Grading Criteria
 ----------------
@@ -113,12 +113,12 @@ Grading Criteria
 I will determine final grades based on the following percentages:
 
 * 55% programming assignments
-* 35% final project
-* 10% class attendance, participation, and effort
+* 30% final project
+* 15% class attendance, participation, and effort
 
+    * 10% for sharing your work on the in-class exercises
+    * 3% for contributing to the class discussions
     * 2% for showing up to all classes
-    * 5% for attempting the in-class exercises
-    * 3% for contributing to the class discussions and evaluations
 
 Policies
 --------

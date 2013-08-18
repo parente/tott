@@ -1,6 +1,13 @@
 Test-Driven Development
 =======================
 
+.. rst-class:: hidden
+
+.. toctree::
+    :titlesonly:
+
+    /assignments/tdd
+
 .. note:: This page is a draft.
 
 :Topics: Unit testing, test first mindset, red-green-refactor cycle, behavior driven development
@@ -11,14 +18,14 @@ Session #1
 
 :Prep: TODO
 :Slides: `Specs and Tests <../slides/tdd_1.html>`_
-:In Progress: :doc:`/assignments/factoid`
+:Assigned: :doc:`/assignments/tdd`
 
 Session #2
 ----------
 
 :Prep: TODO
 :Slides: `Test Driven Development <../slides/tdd_2.html>`_
-:In Progress: :doc:`/assignments/factoid`
+:In Progress: :doc:`/assignments/tdd`
 
 .. todo:: Lab ideas:
 

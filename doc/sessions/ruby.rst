@@ -1,13 +1,6 @@
 Ruby
 ====
 
-.. rst-class:: hidden
-
-.. toctree::
-    :titlesonly:
-
-    /assignments/factoid
-
 .. note:: This page is a draft.
 
 :Topics: Language basics, language highlights, standard library, virtual environments, package management, web apps
@@ -16,18 +9,21 @@ Ruby
 Session #1
 ----------
 
+.. in which we learn a language designed to optimize developer happiness, Ruby.
+
 :Prep: TODO
 :Slides: `Ruby <../slides/ruby_1.html>`_
-:Due: :doc:`/assignments/collabin`
-:Assigned: :doc:`/assignments/factoid`
+:In Progress: :doc:`/assignments/storytime`
+
 
 Session #2
 ----------
 
+... in which we explore the ecosystem of Ruby tools.
+
 :Prep: TODO
 :Slides: `Ruby Ecosystem <../slides/ruby_2.html>`_
-:Due: :doc:`/assignments/collabin`
-:In Progress: :doc:`/assignments/factoid`
+:In Progress: :doc:`/assignments/storytime`
 
 .. todo:: Lab ideas:
 

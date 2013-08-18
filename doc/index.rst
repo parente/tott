@@ -31,19 +31,20 @@ Table of Contents
 
    syllabus
    sessions/intro
-   sessions/basic
+   sessions/cli
    sessions/version
-   sessions/python
    sessions/javascript
-   sessions/web
-   sessions/server
-   sessions/public
-   sessions/ruby
-   sessions/auto
    sessions/tdd
-   sessions/dist
+   sessions/web
+   sessions/python
+   sessions/server
+
+   sessions/doc
    sessions/data
+   sessions/ruby
+   sessions/dist
    sessions/extra
+   sessions/extra2
    other
 
 Fork This Course

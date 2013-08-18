@@ -1,24 +1,29 @@
-Going Public
-============
+Documentation
+=============
 
 .. note:: This page is a draft.
 
-:Topics: Cloud hosting, Platform as a Service (PaaS), writing documentation, generating documentation, presenting without PPT, long-live the static web!
-:Tools: `Cloud Foundry`_, Sphinx_, deck.js_, groc_
+:Topics: Code licenses, writing documentation, generating documentation, presenting without PPT
+:Tools: `OSS licenses`_, Sphinx_, groc_, deck.js_
 
 Session #1
 ----------
 
+... in which we study code licenses and understand their similarities and differences.
+
 :Prep: TODO
-:Slides: `The Cloud <../slides/public_1.html>`_
-:In Progress: :doc:`/assignments/collabin`
+:Slides: `Licenses <../slides/doc_1.html>`_
+:Due: TODO
+:In Progress: :doc:`/assignments/hof`
 
 Session #2
 ----------
 
+... in which we learn to document our ideas, code, APIs to make them consumable by other developers.
+
 :Prep: TODO
-:Slides: `Knowledge Sharing <../slides/public_2.html>`_
-:In Progress: :doc:`/assignments/collabin`
+:Slides: `Doc and Pres <../slides/doc_2.html>`_
+:In Progress: :doc:`/assignments/hof`
 
 
 .. todo::

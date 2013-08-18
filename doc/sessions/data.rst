@@ -1,5 +1,5 @@
-Data Exploration and Analysis
-=============================
+Data Exploration
+================
 
 .. rst-class:: hidden
 
@@ -7,7 +7,6 @@ Data Exploration and Analysis
     :titlesonly:
 
     /assignments/storytime
-    /assignments/final
 
 .. note:: This page is a draft.
 
@@ -17,17 +16,21 @@ Data Exploration and Analysis
 Session #1
 ----------
 
+... in which we learn to analyze and posit ideas about data we collect from our projects.
+
 :Prep: TODO
-:Slides: `It's Empirical <../slides/data_1.html>`_
-:Due: :doc:`/assignments/tdd`
-:Assigned: :doc:`/assignments/storytime`, :doc:`/assignments/final`
+:Slides: `Data Analysis <../slides/data_1.html>`_
+:Due: :doc:`/assignments/hof`
+:Assigned: :doc:`/assignments/storytime`
 
 Sesssion #2
 -----------
 
+... in which we try our hand at creating basic plots and visualizations of our data.
+
 :Prep: TODO
-:Slides: `Visualization <../slides/data_2.html>`_
-:In Progress: :doc:`/assignments/storytime`, :doc:`/assignments/final`
+:Slides: `Plotting <../slides/data_2.html>`_
+:In Progress: :doc:`/assignments/storytime`
 
 .. figure:: http://imgs.xkcd.com/comics/empirical.png
     :target: http://xkcd.com/943/
@@ -35,7 +38,6 @@ Sesssion #2
     :alt: I'm as surprised as you!
 
     Empirical - http://xkcd.com/943/
-
 
 .. todo:: Lab ideas, I'll furnish some datasets here or ask around for some in the department
 

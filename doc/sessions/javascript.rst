@@ -9,16 +9,20 @@ JavaScript
 Session #1
 ----------
 
+... in which we learn the lingua franca of the web, JavaScript.
+
 :Prep: TODO
 :Slides: `JavaScript <../slides/javascript_1.html>`_
-:Assigned: :doc:`/assignments/wallpaper`
+:Assigned: :doc:`/assignments/git`
 
 Session #2
 ----------
 
+... in which we explore the ecosystem of JavaScript tools.
+
 :Prep: TODO
 :Slides: `JS Ecosystem <../slides/javascript_2.html>`_
-:In Progress: :doc:`/assignments/wallpaper`
+:Due: :doc:`/assignments/git`
 
 .. todo:: Lab ideas
 

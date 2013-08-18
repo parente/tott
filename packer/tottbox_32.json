@@ -60,7 +60,7 @@
     {
       "type": "vagrant",
       "keep_input_artifact": false,
-      "output": "tottbox.box"
+      "output": "tottbox_32.box"
     }
   ]
 }
