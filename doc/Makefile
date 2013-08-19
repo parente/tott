@@ -53,6 +53,7 @@ clean:
 
 slides:
 	@cd slides; npm install; npm run-script build
+	@-cp -r slides/_build $(BUILDDIR)/html/slides
 	@echo "Build finished. The HTML slides are in slides/_build."
 
 html:

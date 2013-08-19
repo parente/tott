@@ -15,6 +15,54 @@ Session #1
 :Slides: `CLI <../slides/cli_1.html>`_
 :Due: :doc:`/assignments/setup`
 
+Exercises
+~~~~~~~~~
+
+|star| The setup assignment was due at the start of class. If you haven't finished it, **do so today**. Otherwise, you'll be unable to participate in-class or work on the upcoming assignment.
+
+SSH into *tottbox* to perform all of today's exercises. Remember to `document what you find in a gist <https://gist.github.com/>`_ and share it in the `TotT community`_ later.
+
+Figuring out commands
+#####################
+
+Run the following command:
+
+.. code-block:: console
+
+  wc /vagrant/Vagrantfile
+
+What does the ``wc`` command do? What does the output mean? Try ``man wc`` or Googling.
+
+Background jobs and screen
+##########################
+
+Run the following commands:
+
+.. code-block:: console
+
+  cd ~
+  git clone https://github.com/ether/etherpad-lite.git
+  cd etherpad-lite
+  bin/run.sh &
+
+Wait for a bit. When the console finally states "You can access your Etherpad-Lite instance at http://0.0.0.0:9001/", visit http://192.168.33.10:9001 in your web browser. Enter a pad name. Click new pad and enter some text.
+
+The ampersand (&) on the last command you entered tells bash to run the command in the background. Control over the terminal returns to you immediate when you press enter, but the command continues to run in the background. Enter ``ls`` in the console to prove it.
+
+Type ``exit`` in the *tottbox* terminal. What do you see in your browser? What does this tell you about background tasks?
+
+Open a new ssh connection to *tottbox*. Run the commands:
+
+.. code-block:: console
+
+  cd ~/etherpad-lite
+  screen -d -m ./bin/run.sh
+
+Refresh your web browser. What happens? Type ``exit`` in the *tottbox* terminal. What do you see in the browser? What's different this time?
+
+SSH back into *tottbox* and type ``pkill screen``. What does ``pkill`` do?
+
+
 Session #2
 ----------
 
@@ -161,7 +209,7 @@ Session #2
    * See a few more
        * Example #1: Pipes
            * find | grep > file
-       * Example #2: rsync
+       * Example #2: Background processes
    * Do a few more
        * (More lab exercise work. This page will have a ton of them at the ready so we can't possibly run out.)
    * Teach a few more

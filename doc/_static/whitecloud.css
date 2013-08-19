@@ -8,6 +8,14 @@ body {
     background: url('diamond_upholstery.png') repeat fixed;
 }
 
+div.sphinxsidebar {
+    width: 280px;
+}
+
+div.bodywrapper {
+    margin-left: 280px;
+}
+
 div.document {
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
@@ -44,6 +52,27 @@ table.field-list th {
     padding: 0 0.5em;
 }
 
+div.body h1,
+div.body h2,
+div.body p.rubric,
+div.body h3,
+div.body h4,
+div.body h5,
+div.body h6
+{
+    margin: 64px 0 24px 0;
+    background-color: transparent;
+    padding: 0;
+    border-width: 0;
+    font-weight: 300;
+    text-shadow: none;
+    font-style: normal;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #ddd;
+}
+
 div.body h1 {
     text-align: left;
     padding: 0;
@@ -52,11 +81,17 @@ div.body h1 {
 
 div.body h2 {
     font-size: 24px;
+    margin: 64px 0 24px 0;
 }
 
 div.body h3 {
     font-size: 20px;
 }
+
+div.body h4 {
+    font-size: 19px;
+}
+
 
 div.sphinxsidebar h3 {
     font-size: 16px;
@@ -72,27 +107,6 @@ div.sphinxsidebar {
 
 div.body h2.highlighted {
     border: 0px solid transparent;
-}
-
-div.body h1,
-div.body h2,
-div.body p.rubric,
-div.body h3,
-div.body h4,
-div.body h5,
-div.body h6
-{
-    background-color: transparent;
-    margin: 32px 0 32px 0;
-    padding: 0;
-    border-width: 0;
-    font-weight: 300;
-    text-shadow: none;
-    font-style: normal;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    border-bottom: 1px solid #ddd;
 }
 
 div.body .admonition {
@@ -187,6 +201,12 @@ div.admonition dt {
 div.highlight pre {
     background-color: #fafffa;
     border-width: 1px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+div#searchbox input[type="submit"] {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
