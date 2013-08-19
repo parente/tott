@@ -12,7 +12,7 @@ Session #1
 ... in which we practice working in *tottbox* at the command line and write a few simple bash scripts.
 
 :Prep: TODO
-:Slides: `CLI <../slides/basic_1.html>`_
+:Slides: `CLI <../slides/cli_1.html>`_
 :Due: :doc:`/assignments/setup`
 
 Session #2
@@ -21,8 +21,12 @@ Session #2
 ... in which we test the UNIX philosophy by stringing together simple tools for grander purposes.
 
 :Prep: TODO
-:Slides: `UNIX Philosophy <../slides/basic_2.html>`_
+:Slides: `UNIX Philosophy <../slides/cli_2.html>`_
 
+.. seealso::
+
+       `The Command Line in 2004 <http://garote.bdmonkeys.net/commandline/index.html>`_
+           Garrett Birkel's response to Neal Stephenson's 1999 *In the Beginning...was the Command Line* essay, interspersed in the original text
 ..
    .. todo::
 
@@ -165,7 +169,3 @@ Session #2
    * What's next
        * Reminder to review prep materials for next week
 
-   .. seealso::
-
-       `The Command Line in 2004 <http://garote.bdmonkeys.net/commandline/index.html>`_
-           Garrett Birkel's response to Neal Stephenson's 1999 *In the Beginning...was the Command Line* essay, interspersed in the original text

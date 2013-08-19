@@ -1,11 +1,11 @@
 .deck-container {
     font-family: "Helvetica Neue", sans-serif;
     font-size:2.75em;
-    background:#fff;
+    background-color: #fff;
 
     .slide {
         padding: 0 96px !important;
-        background:#fff;
+        background-color: #fff;
 
         .CodeMirror {
             font-size: 0.65em;
@@ -31,7 +31,7 @@
         }
 
         .smaller {
-            font-size: 0.75em;
+            font-size: 0.6em;
         }
 
         .vcenter {

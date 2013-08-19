@@ -1,10 +1,10 @@
 .deck-container {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 2.75em;
-  background: #fff; }
+  background-color: #fff; }
   .deck-container .slide {
     padding: 0 96px !important;
-    background: #fff; }
+    background-color: #fff; }
     .deck-container .slide .CodeMirror {
       font-size: 0.65em; }
     .deck-container .slide h1 {
@@ -19,7 +19,7 @@
       padding: 1em !important;
       font-size: 1em !important; }
     .deck-container .slide .smaller {
-      font-size: 0.75em; }
+      font-size: 0.6em; }
     .deck-container .slide .vcenter h2 {
       color: #444;
       border-bottom-color: transparent;
