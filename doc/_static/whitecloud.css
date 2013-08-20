@@ -206,10 +206,11 @@ div.highlight pre {
     border-radius: 0;
 }
 
-div#searchbox input[type="submit"] {
+div.sphinxsidebar #searchbox input[type="submit"] {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
+    width: inherit;
 }
 
 .hidden {

@@ -34,8 +34,8 @@ Prep for the course
 
 Review the course syllabus and schedule so you have an idea about how the course will run. Ask questions.
 
-Setup your laptop
-#################
+Prepare your laptop
+###################
 
 Begin following the assignment instructions to setup the course tools on your laptop. This assignment is due next week, but it will require some time to execute all the steps. Plus, you can't do much else in this course until you've worked through it.
 

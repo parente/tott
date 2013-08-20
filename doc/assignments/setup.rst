@@ -364,7 +364,7 @@ What Happened?
 You might wonder what just happened behind the scenes. Here's the gist.
 
 * You destroyed your *tottbox* VM and brought up a new one.
-* You created a read-write copy, a fork, of the read-only *peter_parente/assignment_0* git repository on BitBucket.
+* You created a read-write copy, a fork, of the read-only `unctott/assignment_0 <https://bitbucket.org/unctott/assignment_0>`_ git repository on BitBucket.
 * You made a read-write clone of your fork in your course folder on your laptop for local editing.
 * You edited the README.md to note your personal information.
 * You ran the test suit I provided to check that you README.md conforms to spec.
