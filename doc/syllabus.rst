@@ -105,7 +105,7 @@ You will complete a handful of programming assignments spread throughout the sem
 
 You will also complete a final project. The project will be similar to the assignments, but on a larger scale.
 
-I will grade both the assignments and final projects against specs and test suites. I will make both available to you at the start of each assignment so that you have a continuous, objective measure of your progress.
+I will grade the assignments and final project against specs and test suites. I will make both available to you at the start of each assignment so that you have a continuous, objective measure of your progress.
 
 Grading Criteria
 ----------------
