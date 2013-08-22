@@ -6,7 +6,6 @@ List of items I need or want to handle for the TotT course.
 
 * week 2 materials CLI
 * week 3 materials git
-* week 1, session #2 prep video
 * validate instructions for tottbox #0
 
 ## Must-Haves
@@ -40,6 +39,7 @@ List of items I need or want to handle for the TotT course.
 * automated pull, deploy, test system
 * smoke tests for the course box
 * topical guest lecturers (visualization? security? poll the students)
+* upgrade code mirror in deck.js starter
 
 ## Candy
 
