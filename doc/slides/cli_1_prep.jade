@@ -1,0 +1,170 @@
+extends layout
+
+block head
+  title Tools of the Trade
+
+block slides
+
+  section.slide#title
+    .vcenter
+      h1 Prep: CLI
+      p.subtitle TotT: 2014
+
+  section.slide#definition
+    h2 Command Line Interface
+    blockquote "a means of interacting with a computer program where the user (or client) issues commands to the program in the form of successive lines of text." - <a href="http://en.wikipedia.org/wiki/Command-line_interface">Wikipedia</a>
+
+  section.slide#use-cases
+    h2 Use Cases
+    ul
+      li Large vocab interaction
+      li Remote work
+      li Constrained environments
+      li Automation
+      li Toolchains
+
+  section.slide#tools
+    h2 Tools
+    p We'll bootstrap our work with four:
+    ol
+      li bash
+      li ssh
+      li screen
+      li vi
+
+  section.slide#bash
+    h2 Bash Shell
+    ul
+      li Command language interpretter
+      li Reads commands from user or script
+      li Concerned with manipulation of files, execution of other programs
+
+  section.slide#bash-language
+    h2 Bash Language
+    ul
+      li Scripting language to automate shell functions
+      li Has constructs like loops and conditionals
+    textarea.code(name="code", mode="shell", style="display: none;").
+        #!/bin/bash
+
+        if [ -z "$1" ]; then
+          echo "Hello, World!"
+        else
+          echo "Hello, $1!"
+        fi
+
+  section.slide#bash-concepts
+    h2 Basic Bash Concepts
+    ul
+      li File
+      li Directory
+      li Session
+      li Process
+      li Script
+
+  section.slide#demo-basics
+    .vcenter
+      h2 Demo: Bash Basics
+      h3 pwd, ls, cd, mkdir, touch, cp, mv, less, man
+
+  section.slide#demo-utils
+    .vcenter
+      h2 Demo: Bash Basics++
+      h3 find, grep, history, pkill
+
+  section.slide#secure-shell
+    h2 Secure Shell (SSH)
+    blockquote "cryptographic network protocol for secure data communication, remote command-line login, remote command execution, and other secure network services between two networked computers" - <a href="http://en.wikipedia.org/wiki/Secure_Shell">Wikipedia</a>
+
+  section.slide#ssh
+    h2 SSH Client
+    ul
+      li <tt>ssh</tt>
+      li Establishes a secure connection with a remote machine
+      li Runs a shell session through the connection
+      li Can tunnel other traffic too
+
+  section.slide#ssh-basics
+    h2 SSH Basics
+    textarea.code(name="code", mode="shell", style="display: none;").
+      # start a remote shell session
+      $ ssh some.machine.com
+
+      # run a remote command
+      $ ssh some.machine.com 'cd my_scripts; ./do_stuff.sh'
+
+      # start a remote shell session on a vagrant box
+      $ vagrant ssh
+
+      # copy a file from remote to local
+      $ scp some.machine.com:my_scripts/do_stuff.sh .
+
+  section.slide#ssh-advanced
+    h2 Other SSH Topics
+    p Google these if interested:
+    ul
+      li Tunneling
+      li Port forwarding
+      li Secure file transfer
+      li Pub-key auth
+      li <tt>~/.ssh/config</tt>
+
+  section.slide#vi
+    h2 vi
+    ul
+      li Screen oriented text editor
+      li Modal: <em>insert</em> or <em>normal</em> mode
+      li Good for remote editing over ssh
+      li Some people swear by it for all work
+
+  section.slide#vi-demo
+    .vcenter
+      h2 Demo: Simple Editing
+      h3 Navigation, switching modes, yanking, pasting, deleting, saving, quitting
+
+  section.slide#vi-commands
+    h2 More vi Commands
+    ul
+      li Google for a vi cheat sheet. There's tons.
+      li For example: <a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html">vi Graphical Cheat Sheet</a>
+
+  section.slide#screen
+    h2 GNU Screen
+    ul
+      li CLI window manager
+      li Allows fast switching among shell sessions
+      li Allows detached process execution
+
+  section.slide#screen-run
+    h2 Running / Resuming Screens
+    textarea.code(name="code", mode="shell", style="display: none;").
+      # start a new screen
+      $ screen
+
+      # start a new named screen
+      $ screen -S my_name
+
+      # list running screens
+      $ screen -ls
+
+      # connect to a running screen
+      $ screen -rx my_name
+
+  section.slide#screen-demo
+    .vcenter
+      h2 Demo: Working in Screen
+      h3 Create window, switch window, kill window, rename window, scrollback, disconnect
+
+  section.slide#screen-demo
+    h2 More screen commands
+    ul
+      li Again, Google for a cheat sheet.
+      li Or see the <a href="http://www.gnu.org/software/screen/manual/screen.html">GNU Screen manual</a>.
+
+  section.slide#meet
+    h2 When We Meet Again
+    ul
+      li I will summarize this material.
+      li I will demonstrate more uses of these tools.
+      li You will practice working at the CLI.
+      li We will discuss what you learned.
