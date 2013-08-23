@@ -11,7 +11,7 @@ Session #1
 
 ... in which we practice working in *tottbox* at the command line and write a few simple bash scripts.
 
-:Prep: Read the `Learning the Shell "Why Bother?" and "What is The Shell?" sections <http://linuxcommand.org/lc3_learning_the_shell.php>`_, the `vi intro and Interface sections on Wikipedia <http://en.wikipedia.org/wiki/Vi>`_, and the `GNU Screen Intro section <http://aperiodic.net/screen/start>`_ and `Screen details section <http://aperiodic.net/screen/detailed_description>`_. Then watch TODO
+:Prep: Read the `Learning the Shell "Why Bother?" and "What is The Shell?" sections <http://linuxcommand.org/lc3_learning_the_shell.php>`_, the `vi intro and Interface sections on Wikipedia <http://en.wikipedia.org/wiki/Vi>`_, and the `GNU Screen Intro section <http://aperiodic.net/screen/start>`_ and `Screen details section <http://aperiodic.net/screen/detailed_description>`_. Then watch TODO.
 :Slides: `CLI <../slides/cli_1.html>`_
 :Due: :doc:`/assignments/setup`
 
@@ -112,7 +112,7 @@ Session #2
 
 ... in which we test the UNIX philosophy by stringing together simple tools for grander purposes.
 
-:Prep: TODO
+:Prep: Read `Unix Philosophy <http://en.wikipedia.org/wiki/Unix_philosophy>`_ and `Unix Pipeline <http://en.wikipedia.org/wiki/Pipeline_(Unix)>`_ on Wikpedia. Then watch TODO.
 :Slides: `UNIX Philosophy <../slides/cli_2.html>`_
 
 .. seealso::
