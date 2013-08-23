@@ -4,9 +4,9 @@ Introduction and Setup
 .. rst-class:: hidden
 
 .. toctree::
-    :titlesonly:
+  :titlesonly:
 
-    /assignments/setup
+  /assignments/setup
 
 .. note:: This page is a draft.
 

@@ -12,6 +12,11 @@ div.sphinxsidebar {
     width: 280px;
 }
 
+div.sphinxsidebar ul ul {
+    margin-left: 5px;
+    list-style: none;
+}
+
 div.bodywrapper {
     margin-left: 280px;
 }
@@ -196,7 +201,8 @@ div.admonition dt {
     font-weight: bold;
 }
 
-div.highlight pre {
+div.highlight pre,
+div.highlight-python pre {
     background-color: #fafffa;
     border-width: 1px;
     -webkit-border-radius: 0;
