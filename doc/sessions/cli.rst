@@ -120,6 +120,8 @@ Session #2
 Exercises
 ~~~~~~~~~
 
+SSH into *tottbox* to perform all of today's exercises. Remember to `document what you find in a gist <https://gist.github.com/>`_ and share it in the `TotT community`_ later.
+
 Play with pipes
 ###############
 
@@ -187,5 +189,8 @@ Construct commands or scripts to perform other interesting analyses on the word 
 
 .. seealso::
 
-       `The Command Line in 2004 <http://garote.bdmonkeys.net/commandline/index.html>`_
-           Garrett Birkel's response to Neal Stephenson's 1999 *In the Beginning...was the Command Line* essay, interspersed in the original text
+  `Learn vim Progressively <http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/>`_
+    "You start by learning the minimal to survive, then you integrate all the tricks slowly."
+
+  `The Command Line in 2004 <http://garote.bdmonkeys.net/commandline/index.html>`_
+    Garrett Birkel's response to Neal Stephenson's 1999 *In the Beginning...was the Command Line* essay, interspersed in the original text
