@@ -11,7 +11,7 @@ Session #1
 
 ... in which we practice working in *tottbox* at the command line and write a few simple bash scripts.
 
-:Prep: Read the `Learning the Shell "Why Bother?" and "What is The Shell?" sections <http://linuxcommand.org/lc3_learning_the_shell.php>`_, the `vi intro and Interface sections on Wikipedia <http://en.wikipedia.org/wiki/Vi>`_, and the `GNU Screen Intro section <http://aperiodic.net/screen/start>`_ and `Screen details section <http://aperiodic.net/screen/detailed_description>`_. Then watch TODO.
+:Prep: Read the `Learning the Shell "Why Bother?" and "What is The Shell?" sections <http://linuxcommand.org/lc3_learning_the_shell.php>`_, the `vi intro and Interface sections on Wikipedia <http://en.wikipedia.org/wiki/Vi>`_, and the `GNU Screen Intro <http://aperiodic.net/screen/start>`_ and `Screen details sections on aperiodic.net <http://aperiodic.net/screen/detailed_description>`_ (~15 minutes). Then watch the `TotT CLI screencast <https://www.youtube.com/watch?v=OEcdQX7MOAM>`_ (~37 minutes).
 :Slides: `CLI <../slides/cli_1.html>`_
 :Due: :doc:`/assignments/setup`
 
@@ -47,7 +47,7 @@ Run the following commands:
   cd etherpad-lite
   bin/run.sh &
 
-Wait a bit. When the console finally states "You can access your Etherpad-Lite instance at http://0.0.0.0:9001/", visit http://192.168.33.10:9001 in your web browser. Enter a pad name. Click new pad and enter some text.
+Wait a bit. When the console finally states "You can access your Etherpad-Lite instance at http://0.0.0.0:9001/", visit http://192.168.33.10:9001 in your web browser. Enter a pad name. Click new pad and enter some text. (Bonus: What happens when you try to access 0.0.0.0? What is 0.0.0.0? Why does it tell you this?)
 
 The ampersand (&) on the last command you entered tells bash to run the command in the background. Control over the terminal returns to you immediately and the command continues to run in the background. Enter ``ls`` in the console to prove it.
 
@@ -69,14 +69,14 @@ Automate with bash
 
 Start ``screen``. Create a second screen window (Ctrl-A, c). Start ``vi``. Practice flipping back and forth between the ``vi`` editor and prompt with the screen hotkey: Ctrl-A, Space.
 
-When you're comfortable, use ``vi`` to write a script named ``etherpad.sh`` that automates the cloning and running steps your performed in the last section (the path using screen, that is). Use the terminal in the other screen window to try running your script. Flip back and forth between the two windows to debug any problems.
+When you're comfortable, use ``vi`` to write a script named ``etherpad.sh`` that automates the cloning and running steps you performed in the last section (the path using ``screen``, that is). Use the terminal in the other screen window to try running your script. Flip back and forth between the two windows to debug any problems.
 
-Include your script in your gist. When complete it should:
+Include your script in your gist. When complete, it should:
 
-#. Clone etherpad-line from GitHub
-#. Start a screen session
-#. Run etherpad-lite in screen
-#. Disconnect from the screen session immediately
+#. Clone etherpad-lite from GitHub
+#. Start a ``screen`` session
+#. Run etherpad-lite in ``screen``
+#. Disconnect from the ``screen`` session immediately
 
 Provision on ``vagrant up``
 ###########################
@@ -112,9 +112,9 @@ Extend your script to support any or all of the following. Share your solutions 
 Session #2
 ----------
 
-... in which we test the UNIX philosophy by stringing together simple tools for grander purposes.
+... in which we test the Unix philosophy by stringing together simple tools for grander purposes.
 
-:Prep: Read `Unix Philosophy <http://en.wikipedia.org/wiki/Unix_philosophy>`_ and `Unix Pipeline <http://en.wikipedia.org/wiki/Pipeline_(Unix)>`_ on Wikpedia. Then watch TODO.
+:Prep: Read `Unix Philosophy <http://en.wikipedia.org/wiki/Unix_philosophy>`_ and `Unix Pipeline <http://en.wikipedia.org/wiki/Pipeline_(Unix)>`_ on Wikpedia. Then watch the `TotT Unix Philosophy screencast <http://youtu.be/egEtqnBMiy8>`_.
 :Slides: `UNIX Philosophy <../slides/cli_2.html>`_
 
 Exercises

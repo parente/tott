@@ -57,7 +57,7 @@ Session #2
 
 ... in which we realize the benefits of a virtual development environment and practice managing one using Vagrant.
 
-:Prep: Read `Hardware virtualization <http://en.wikipedia.org/wiki/Hardware_virtualization>`_ and `How Vagrant Benefits You <http://docs.vagrantup.com/v2/why-vagrant/index.html>`_, then watch TODO
+:Prep: Read `Hardware virtualization <http://en.wikipedia.org/wiki/Hardware_virtualization>`_ and `How Vagrant Benefits You <http://docs.vagrantup.com/v2/why-vagrant/index.html>`_ (~10 minutes), then watch the `TotT Virtual Machines screencast <https://www.youtube.com/watch?v=W15ZNZFc9BY>`_ (~23 minutes).
 :Slides: `Virtual Machines <../slides/intro_2.html>`_
 :In Progress: :doc:`/assignments/setup`
 

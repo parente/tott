@@ -88,7 +88,6 @@ div.body h1 {
 
 div.body h2 {
     font-size: 24px;
-    margin: 64px 0 24px 0;
 }
 
 div.body h3 {
@@ -120,6 +119,10 @@ div.body .admonition {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
+}
+
+div.body .seealso {
+    margin: 64px 0 24px 0;
 }
 
 div.body .admonition p {
@@ -176,7 +179,7 @@ div.footer a {
 }
 
 div.sidebartoggle button {
-    left: 0px;
+    left: 0;
     right: auto;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
