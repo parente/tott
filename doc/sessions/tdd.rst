@@ -18,6 +18,7 @@ Session #1
 
 :Prep: TODO
 :Slides: `Specs and Tests <../slides/tdd_1.html>`_
+:Due: :doc:`/assignments/git`
 :Assigned: :doc:`/assignments/tdd`
 
 Session #2

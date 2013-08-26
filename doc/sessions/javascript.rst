@@ -13,7 +13,7 @@ Session #1
 
 :Prep: TODO
 :Slides: `JavaScript <../slides/javascript_1.html>`_
-:Assigned: :doc:`/assignments/git`
+:In Progress: :doc:`/assignments/git`
 
 Session #2
 ----------
@@ -22,7 +22,7 @@ Session #2
 
 :Prep: TODO
 :Slides: `JS Ecosystem <../slides/javascript_2.html>`_
-:Due: :doc:`/assignments/git`
+:In Progress: :doc:`/assignments/git`
 
 .. todo:: Lab ideas
 
