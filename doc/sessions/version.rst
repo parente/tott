@@ -16,7 +16,7 @@ Distributed Version Control
 Session #1
 ----------
 
-:Prep: Read `Why Should I Use Source Control? <http://whyshouldiuse.com/source-control>`_, `Pro Git Chapter 1, Sections 1.1 through 1.3 <http://git-scm.com/book>`, and then watch the `TotT Git Basics screencast <>`_.
+:Prep: Read `Why Should I Use Source Control? <http://whyshouldiuse.com/source-control>`_, `Pro Git Chapter 1, Sections 1.1 through 1.3 <http://git-scm.com/book>`_, and the highly opinionated `Why Git is Better Than X <http://thkoch2001.github.io/whygitisbetter/#git-is-standard>`_ (~60 minutes). Then watch the `TotT Git Basics screencast <>`_.
 :Slides: `Git Basics <../slides/version_1.html>`_
 :Assigned: :doc:`/assignments/git`
 
@@ -33,14 +33,11 @@ Find a partner
 Immerse yourself
 ################
 
-Visit the `Git Immersion <http://gitimmersion.com/>`_ web site. Starting on `lab #3 <http://gitimmersion.com/lab_03.html>`_, complete all the labs up through #28, skipping #22 and #23. The labs will take you through cloning, staging, committing, branching, and merging in a practice Ruby project. It will also teach you some handy commands supporting the typical git workflow.
+Visit the `Git Immersion <http://gitimmersion.com/>`_ web site. Starting on `lab #3 <http://gitimmersion.com/lab_03.html>`_, complete all the labs up through #28, skipping #22 and #23. The labs will take you through cloning, staging, committing, branching, and merging in a practice Ruby project. It will also teach you some handy commands supporting a typical git workflow.
+
+You should perform all the lab exercises in a subfolder under ``/vagrant`` on *tottbox*. For instance, ``/vagrant/git_immersion`` or similar will work. Remember, this directory also appears on your laptop in the folder you setup for your course work in the first assignment. Feel free to use SublimeText or your preferred text editor to create and edit the files in the tutorials, but execute the git commands in a *tottbox* terminal.
 
 .. note:: Don't worry about the Ruby code. It's there to help you practice Git, not learn Ruby. We'll cover Ruby later in the course.
-
-Branch for features
-###################
-
-.. todo:: exercise
 
 Diagram git
 ###########
@@ -61,15 +58,15 @@ Exercises
 
 SSH into *tottbox* to perform all of today's exercises. Remember to `document what you find in a gist <https://gist.github.com/>`_ and share it in the `TotT community`_ later.
 
-Git Immersion++
-###############
+Continue the Immersion
+######################
 
-Visit the `Git Immersion <http://gitimmersion.com/>`_ web site again. Start on `lab #29 <http://gitimmersion.com/lab_29.html>`_ and work through lab #49. They will take you through branching, merging, pulling, and pushing.
+Visit the `Git Immersion <http://gitimmersion.com/>`_ web site again. Start on `lab #29 <http://gitimmersion.com/lab_29.html>`_ and work through lab #49. These labs will take you through branching, merging, pulling, and pushing.
 
-Send a pull request
-###################
+Push to BitBucket
+#################
 
-.. todo:: exercise
+Clone the `unctott/ex_class_roster <https://bitbucket.org/unctott/ex_class_roster/>`_ repository. Add your BitBucket username to the README according to the instructions in that file. Commit and push the changes back to BitBucket. If you have a conflict, resolve it without losing any names in the roster.
 
 Update your diagram
 ###################
@@ -78,6 +75,15 @@ Update the diagram you drew in the last class session to include the concepts of
 
 .. seealso::
 
+  `Try Git <http://try.github.io/>`_
+    Interactive Git tutorial right in your browser
+
   `Ten Git Tutorials for Beginners <http://sixrevisions.com/resources/git-tutorials-beginners/>`_
     A nice top-10 list of Git tutorials to review if you want alternatives to the prep material.
+
+  `Interactive Git Cheatsheet <http://ndpsoftware.com/git-cheatsheet.html>`_
+    Visualization show what components common Git commands affect
+
+  `A Visual Git Guide <http://marklodato.github.io/visual-git-guide/index-en.html>`_
+    Visual reference of how common Git commands work
 
