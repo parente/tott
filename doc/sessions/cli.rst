@@ -114,7 +114,7 @@ Session #2
 
 ... in which we test the Unix philosophy by stringing together simple tools for grander purposes.
 
-:Prep: Read `Unix Philosophy <http://en.wikipedia.org/wiki/Unix_philosophy>`_ and `Unix Pipeline <http://en.wikipedia.org/wiki/Pipeline_(Unix)>`_ on Wikpedia. Then watch the `TotT Unix Philosophy screencast <http://youtu.be/egEtqnBMiy8>`_.
+:Prep: Read `Unix Philosophy <http://en.wikipedia.org/wiki/Unix_philosophy>`_ and `Unix Pipeline <http://en.wikipedia.org/wiki/Pipeline_(Unix)>`_ on Wikpedia (~30 minutes). Then watch the `TotT Unix Philosophy screencast <http://youtu.be/egEtqnBMiy8>`_ (~27 minutes).
 :Slides: `UNIX Philosophy <../slides/cli_2.html>`_
 
 Exercises
