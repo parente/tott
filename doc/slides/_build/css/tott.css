@@ -20,6 +20,12 @@
       font-size: 1em !important; }
     .deck-container .slide .smaller {
       font-size: 0.6em; }
+    .deck-container .slide .footnote {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      font-size: 0.4em;
+      text-align: left; }
     .deck-container .slide .vcenter h2 {
       color: #444;
       border-bottom-color: transparent;

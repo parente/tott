@@ -1,0 +1,87 @@
+extends layout
+
+block head
+  title Tools of the Trade
+
+block slides
+
+  section.slide#title
+    .vcenter
+      h1 Prep: Git Collaboration
+      p.subtitle TotT: 2014
+
+  section.slide#personal
+    h2 Personal Git
+    ul
+      li Create a repository.
+      li Stage and commit changes.
+      li Branch and merge histories.
+
+  section.slide#collborative
+    h2 Collaborative Git
+    ul
+      li Clone a repository.
+      li Pull changes downstream.
+      li Push changes upstream.
+
+  section.slide#workflows
+    h2 Collaborative Workflows
+    ul
+      li Centralized
+      li Integration Manager
+      li Dictator and Lieutenants
+
+  section.slide#ours
+    h2 TotT Workflow
+    img(src="images/tott-workflow.svg", style="width: 100%;")
+
+    //- http://interactive.blockdiag.com/?compression=deflate&src=eJyr5lJQyMtPSY0vz0wpyVCwVTA0N7WGiWWkZqZnlAAFTQ1AYsUlpSmpeSWGCja6dgrFGYlFqSlIwkZIwgpAVkhqYnJGahFYBUQwOicxKTUHaJxSQFFmWWJJqkIwRCIotSC_OLMkv6hSKRbFIoSOYIgQirwRdvlaAFXfQww
+
+  section.slide#own-hosting
+    h2 DIY Git Hosting
+    ul
+      li Git understands dumb and smart  protocols.
+      li You can host read-only Git repositories on simple web servers.
+      li You can enable read/write shared repositories over SSH.
+      li DIY is best when your data is sensitive.
+
+  section.slide#cloud-hosting
+    h2 Git Cloud Hosting
+    ul
+      li It's just Git.
+      li Many add bells and whistles.
+
+  section.slide#github
+    h2 GitHub
+    ul
+      li Social coding mantra
+      li Growing by leaps and bounds
+      li Issue trackers, wikis
+      li Forks and pull requests
+      li Free for public projects
+
+  section.slide#bitbucket
+    h2 BitBucket
+    ul
+      li Used to host Mercurial alone
+      li Now hosts Hg and Git
+      li Similar features as GitHub
+      li Free private, shared repos for academics
+
+  section.slide#demo-shared
+    .vcenter
+      h2 Demo: Central Repository Workflow
+      h3 pull, merge, push
+
+  section.slide#demo-pull-request
+    .vcenter
+      h2 Demo: Pull-Request Workflow
+      h3 fork<sup>*</sup>, clone, branch, push, notify<sup>*</sup>
+    .footnote <sup>*</sup> Not Git commands
+
+  section.slide#meet
+    h2 When We Meet Again
+    ul
+      li I will summarize this material.
+      li You will practice using Git more.
+      li We will discuss what you learned.
