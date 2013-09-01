@@ -26,13 +26,14 @@ sudo pip install ipython
 wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
 . /home/vagrant/.profile
 echo '. /home/vagrant/.profile' >> /home/vagrant/.bash_profile
-nvm install v0.10.13
-nvm alias default v0.10.13
+nvm install v0.10.17
+nvm alias default v0.10.17
 
 # yeoman, grunt, bower, generators for yeoman
 # need fontconfig else phantomjs goes kaput
 sudo apt-get -y install fontconfig
-npm install -g phantomjs yo grunt-cli bower generator-express generator-backbone generator-mocha
+npm install -g mocha phantomjs yo grunt-cli bower
+npm cache clean
 
 # mongodb
 sudo apt-get -y install mongodb
