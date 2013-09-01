@@ -1,4 +1,4 @@
-# COMP XXX: Tools of the Trade
+# Tools of the Trade
 
 This repository hosts the web site and related materials for a proposed course on software development tools.
 
