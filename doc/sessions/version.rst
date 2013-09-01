@@ -16,7 +16,7 @@ Distributed Version Control
 Session #1
 ----------
 
-:Prep: Read `Why Should I Use Source Control? <http://whyshouldiuse.com/source-control>`_, `Pro Git Chapter 1, Sections 1.1 through 1.3 <http://git-scm.com/book>`_, and the highly opinionated `Why Git is Better Than X <http://thkoch2001.github.io/whygitisbetter/#git-is-standard>`_ (~60 minutes). Then watch the `TotT Git Basics screencast <>`_.
+:Prep: Read `Why Should I Use Source Control? <http://whyshouldiuse.com/source-control>`_, `Pro Git Chapter 1, Sections 1.1 through 1.3 <http://git-scm.com/book>`_, and the highly opinionated `Why Git is Better Than X <http://thkoch2001.github.io/whygitisbetter/#git-is-standard>`_ (~60 minutes). Then watch the `TotT Git Basics screencast <https://youtu.be/hYi33nTxSck>`_ (~30 minutes).
 :Slides: `Git Basics <../slides/version_1.html>`_
 :Assigned: :doc:`/assignments/git`
 
@@ -49,7 +49,7 @@ Use plain text to create the diagram or an online tool like `actdiag <http://int
 Session #2
 ----------
 
-:Prep: Read `Pro Git Chapter 5 Section 5.1 <http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows>`_ and then watch the `TotT Git Collaboration screencast <>`_
+:Prep: Read `Pro Git Chapter 5 Section 5.1 <http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows>`_ and `Section 5.2 <http://git-scm.com/book/en/Distributed-Git-Contributing-to-a-Project>`_ (~60 minutes). Then watch the `TotT Git Collaboration screencast <http://youtu.be/SWgfT8ygg8I>`_ (~28 minutes).
 :Slides: `Git Collaboration <../slides/version_2.html>`_
 :In Progress: :doc:`/assignments/git`
 
