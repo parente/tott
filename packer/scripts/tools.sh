@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set +e
 cd /tmp
 
 # screen and a decent default config
@@ -20,6 +20,7 @@ ln -s /vagrant/.gitconfig ~/.gitconfig
 sudo apt-get -y install python-dev python-pip
 sudo pip install virtualenv
 sudo pip install virtualenvwrapper
+sudo pip install -U distribute
 sudo pip install ipython
 
 # nodejs, npm, nvm
