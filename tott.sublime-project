@@ -3,7 +3,7 @@
 	[
 		{
 			"path": "/Users/parente/projects/tott",
-            "folder_exclude_patterns": [".vagrant", "doc/_build", "packer_cache"]
+            "folder_exclude_patterns": [".vagrant", "doc/_build", "packer_cache", "sandbox"]
 		}
 	]
 }
