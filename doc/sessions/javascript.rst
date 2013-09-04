@@ -3,7 +3,7 @@ JavaScript
 
 .. note:: This page is a draft.
 
-:Topics: Language basics, "The Good Parts", NodeJS, standard libary, virtual environments, package management
+:Topics: Language basics, "The Good Parts", NodeJS, standard library, virtual environments, package management
 :Tools: `JavaScript <https://developer.mozilla.org/en-US/docs/Web/JavaScript>`_, NodeJS_, nvm_, npm_
 
 Session #1
