@@ -135,7 +135,7 @@ Installing Cygwin just to get SSH is overkill for this course A lower-overhead s
 tottbox
 -------
 
-With VirtualBox and Vagrant installed, you're now ready to bring up the virtual machine running Ubuntu Linux Server 12.04 we'll be using throughout the course, affectionally named *tottbox*. This VM already has most of the tools we will explore pre-installed pre-configured, and ready-for-use.
+With VirtualBox and Vagrant installed, you're now ready to bring up the virtual machine running Ubuntu Linux Server 12.04 we'll be using throughout the course, affectionately named *tottbox*. This VM already has most of the tools we will explore pre-installed pre-configured, and ready-for-use.
 
 To make it clear where we are running commands, from now on we will call the operating system running on your laptop the *host box* and the virtual machine *tottbox*.
 
@@ -170,7 +170,7 @@ To make it clear where we are running commands, from now on we will call the ope
 
 You are now in a shell running on your copy of *tottbox*. Leave this shell open for the remainder of the steps in this assignment. If you close your laptop or reboot it, you can reconnect to *tottbox* by opening a terminal, returning to course folder you created, typing ``vagrant up``, and then ``vagrant ssh``.
 
-If you want to explore, feel free. Anything you do on the VM filesystem is temporary. You can reset your *tottbox* at any time by running ``vagrant destroy`` followed by ``vagrant up`` on your host box.
+If you want to explore, feel free. Anything you do on the VM file system is temporary. You can reset your *tottbox* at any time by running ``vagrant destroy`` followed by ``vagrant up`` on your host box.
 
 There is one exception to the reset rule: the ``/vagrant`` directory on *tottbox* is a synchronized mirror of the course folder in which you ran ``vagrant up`` on your host box. Anything you do in ``/vagrant`` on the VM will also happen in the corresponding folder on your host box. Likewise, anything you do in the course folder on your host box will appear in the ``/vagrant`` folder on *tottbox*. **This feature is critical**: it will allow us to edit code and view web apps in our desktop environment, but run them in the stable *tottbox* environment.
 
@@ -194,7 +194,7 @@ BitBucket and GitHub
 GitHub_ and BitBucket_ are two sites offering version control as a service. While GitHub is by far and away the most popular site for social coding, BitBucket offers unlimited private repositories to users with academic email addresses (i.e., you). You will use BitBucket to version and submit your homework solutions in private throughout the course. You will also use GitHub to pull sample code and lab materials.
 
 #. Visit the BitBucket home page.
-#. Create an account using your unversity email address (e.g., *email.unc.edu*, *cs.unc.edu*, something that ends in *.edu*).
+#. Create an account using your university email address (e.g., *email.unc.edu*, *cs.unc.edu*, something that ends in *.edu*).
 #. Confirm your account by clicking the link Atlassian sends you in your email.
 
 At this point you've got a BitBucket account, but no way to push code to it for version control. To finish the setup, you need to create a public-key pair. You will store the public half of the key on BitBucket and keep the private half local for use in your *tottbox*.
@@ -263,7 +263,7 @@ Verification
 
 We'll now run a quick test of your environment. We won't test everything, but we will at least kick the tires.
 
-By following these steps, you'll start with a fresh *tottbox* instance, fork the repository I created on BitBucket for this assignment, clone the repository locally, fill in a little README text file template with some basic information, run a test suite I wrote to check your owkr, commit your changes to the repository, and push the changes back up to BitBucket.
+By following these steps, you'll start with a fresh *tottbox* instance, fork the repository I created on BitBucket for this assignment, clone the repository locally, fill in a little README text file template with some basic information, run a test suite I wrote to check your work, commit your changes to the repository, and push the changes back up to BitBucket.
 
 Again, don't let the jargon scare you: we're going to get lots of practice using git for version control and cover all of these terms. If you want to jumpstart your understanding, start reading the first two chapters of the `Pro Git`_ book and playing with git on *tottbox*.
 
@@ -372,11 +372,11 @@ You might wonder what just happened behind the scenes. Here's the gist.
 * You pushed the commit from your local clone up to your private fork on BitBucket.
 * After confirming the edits, you tagged the commit as a release and pushed that tag to BitBucket as well.
 
-Later, after the assignment due date, an automated process will scan my BitBucket account feed and identify your assignment repositories. For each repository, it will bring up a fresh *tottbox* on my machine, clone your repository, switch to the newest taggged commit, run the test suite, and generate a report of the outcome. This report will be the basis for your grade on the assignment.
+Later, after the assignment due date, an automated process will scan my BitBucket account feed and identify your assignment repositories. For each repository, it will bring up a fresh *tottbox* on my machine, clone your repository, switch to the newest tagged commit, run the test suite, and generate a report of the outcome. This report will be the basis for your grade on the assignment.
 
 We'll be using this scheme throughout the course and will review it in more detail in the next assignment.
 
 Going Further
 -------------
 
-You just setup a virtually indestructable development environment on your laptop with numerous interesting, useful tools pre-installed. Play with it. Break it. Put it back together. Read more about the pieces. And, for now, just have fun.
+You just setup a virtually indestructible development environment on your laptop with numerous interesting, useful tools pre-installed. Play with it. Break it. Put it back together. Read more about the pieces. And, for now, just have fun.
