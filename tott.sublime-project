@@ -3,7 +3,8 @@
 	[
 		{
 			"path": "/Users/parente/projects/tott",
-            "folder_exclude_patterns": [".vagrant", "doc/_build", "packer_cache", "sandbox"]
+            "file_exclude_patterns": [".gitconfig"],
+            "folder_exclude_patterns": [".vagrant", "doc/_build", "doc/slides/_build", "packer_cache", "sandbox", "node_modules", ".ssh"]
 		}
 	]
 }
