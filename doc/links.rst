@@ -101,3 +101,4 @@
 .. _Cygwin: http://cygwin.org
 
 .. |star| unicode:: U+2605 .. black star
+.. |heart| unicode:: U+2665 .. black heart suit
