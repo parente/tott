@@ -5,7 +5,7 @@
   .deck-container .slide {
     padding: 0 96px !important;
     background-color: #fff; }
-    .deck-container .slide .CodeMirror {
+    .deck-container .slide .CodeMirror, .deck-container .slide .deck-codemirror-result {
       font-size: 0.65em; }
     .deck-container .slide h1 {
       font-size: 2.5em; }
