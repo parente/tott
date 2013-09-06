@@ -4,8 +4,6 @@ List of items I need or want to handle for the TotT course.
 
 ## Must-Haves for Fall Experiment
 
-* week 2 materials CLI
-* week 3 materials git
 * validate instructions for tottbox #0
 
 ## Must-Haves
