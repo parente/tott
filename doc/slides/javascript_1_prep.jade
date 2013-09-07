@@ -18,6 +18,7 @@ block slides
     h2 Major Attributes
     ul
       li C-derived syntax
+      li Runtime interpretation
       li Dynamic typing
       li First-class functions
       li Prototypical inheritence
@@ -49,17 +50,24 @@ block slides
   section.slide#example-sine
     h2 Example: Sine
     textarea.code(name="code", runnable="true", mode="javascript", style="display: none;").
-        // discretize a sine wave
-        var arr = [],
-            step = Math.PI / 10;
+        // object literal
+        var waves = {},
+            step = Math.PI / 3;
+
+        // array literals
+        waves.sin = [];
+        waves.cos = [];
         for(var i=0; i < Math.PI; i+=step) {
-          arr.push(Math.sin(i));
+          waves.sin.push(Math.sin(i));
+          waves.cos.push(Math.cos(i));
         }
-        console.log(arr);
+
+        console.log(waves);
 
   section.slide#example-animals
     h2 Example: Animals
     textarea.code(name="code", runnable="true", mode="javascript", style="display: none;").
+        // constructor
         var Mammal = function(name) {
           this.name = name;
         };
@@ -67,13 +75,13 @@ block slides
           console.log(this.name, 'says', this.greeting);
         };
 
-
         var Dog = function() {
           this.greeting = 'woof!'
+          // invoke Mammal bound to this
           Mammal.apply(this, arguments);
         };
+        // inherit from Mammal
         Dog.prototype = new Mammal();
-
 
         var Human = function() {
           this.greeting = 'hello!'
@@ -86,27 +94,50 @@ block slides
         d.speak();
         h.speak();
 
-  section.slide#idioms
-    h2 Common Idioms
-    ul
-      li Closures
-      li Callbacks
-      li Variadic functions
-
-  section.slide#demo-idoms
-    h2 Example: Closures
+  section.slide#example-evens
+    h2 Example: Evens
     textarea.code(name="code", runnable="true", mode="javascript", style="display: none;").
-      // todo
+      var evens = function() {
+        // lexical closure
+        var count = 0;
+        return function() {
+          return (count+=2);
+        }
+      };
 
-  section.slide#demo-idoms
-    h2 Example: Callbacks
-    textarea.code(name="code", runnable="true", mode="javascript", style="display: none;").
-      // todo
+      var next = evens();
+      console.log(next());
+      console.log(next());
+      console.log(next());
 
-  section.slide#demo-idoms
-    h2 Example: Variadic
+  section.slide#example-timers
+    h2 Example: Timers
     textarea.code(name="code", runnable="true", mode="javascript", style="display: none;").
-      // todo
+        // anonymous functions as callbacks
+        setTimeout(function() {
+          console.log('~1.5 s elapsed')
+        }, 1500);
+
+        setInterval(function() {
+          console.log('tick');
+        }, 1000);
+
+  section.slide#demo-cycle
+    h2 Example: Cycle
+    textarea.code(name="code", runnable="true", mode="javascript", style="display: none;").
+      // variadic function
+      var cycle = function(end) {
+        if(end === undefined) end = 3;
+        var count = 0;
+        return function() {
+          return (count++ % end);
+        }
+      };
+
+      var c1 = cycle(4);
+      var c2 = cycle();
+      console.log(c1(), c1(), c1(), c1(), c1(), c1());
+      console.log(c2(), c2(), c2(), c2(), c2(), c2());
 
   section.slide#gotchas
     h2 Gotchas
@@ -118,20 +149,18 @@ block slides
       li No multiline strings
       li Weird operators
 
-  section.slide#demo-gotchas
-    h2 Gotchas
-    textarea.code(name="code", runnable="true", mode="javascript", style="display: none;").
-      // todo
-
-  section.slide#platforms
-    h2 Common Platforms
-    ul
-      li Your Web browser - V8, OdinMonkey, Nitro, Carakan
-      li NodeJS
-
   section.slide#nodejs
+    h2 NodeJS
+    ul
+      li New, circa 2009
+      li Run JS server-side
+      li Uses Google V8 JS engine
+      li Small standard library
+      li Event loop, async I/O
 
   section.slide#demo
+    .vcenter
+      h2 Demo: Working with NodeJS
 
   section.slide#meet
     h2 When We Meet Again
