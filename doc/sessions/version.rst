@@ -30,12 +30,33 @@ Find a partner
 
 |star| The Git assignment requires that you work with a partner. Find a partner before the end of our session today. If you can't find someone, see me before class ends.
 
+Organize your work
+##################
+
+|star| Your shared *tottbox* directory (the one sync'ed between ``/vagrant`` and the ``tott`` folder you created in the setup assignment) is going to see more and more use from here on out. Have a plan for how you'd like to keep it organized so that you can reference your work later in the course. For example, you might consider organizing it by labs and assignments like so:
+
+.. code-block:: console
+
+  /vagrant/
+    labs/
+      cli/
+        install-etherpad.sh   # 3.1.1.3. Automate with bash
+        log-dupes.sh          # 3.2.1.3. Inspect logs
+      version/
+        git-immersion/        # 4.2.1.2. Immerse yourself
+      # etc.
+    assignments/
+      assignment_0/
+      assignment_1/
+
+All of your assignments will live in git on BitBucket so they are backed up "for free". If you are posting your lab solutions to GitHub gists, they too are backed up. If you do other work that you do not wish to lose, you should consider putting it in Git repositories, Gists, DropBox, etc.
+
 Immerse yourself
 ################
 
 Visit the `Git Immersion <http://gitimmersion.com/>`_ web site. Starting on `lab #3 <http://gitimmersion.com/lab_03.html>`_, complete all the labs up through #28, skipping #22 and #23. The labs will take you through cloning, staging, committing, branching, and merging in a practice Ruby project. It will also teach you some handy commands supporting a typical git workflow.
 
-You should perform all the lab exercises in a subfolder under ``/vagrant`` on *tottbox*. For instance, ``/vagrant/git_immersion`` or similar will work. Remember, this directory also appears on your laptop in the folder you setup for your course work in the first assignment. Feel free to use SublimeText or your preferred text editor to create and edit the files in the tutorials, but execute the git commands in a *tottbox* terminal.
+You should perform all the lab exercises in a subfolder under ``/vagrant`` on *tottbox*. For instance, ``/vagrant/version/git_immersion`` or similar will work. Remember, this directory also appears on your laptop in the folder you setup for your course work in the first assignment. Feel free to use SublimeText or your preferred text editor to create and edit the files in the tutorials, but execute the git commands in a *tottbox* terminal.
 
 .. note:: Don't worry about the Ruby code. It's there to help you practice Git, not learn Ruby. We'll cover Ruby later in the course.
 

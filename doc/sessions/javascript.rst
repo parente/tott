@@ -3,8 +3,8 @@ JavaScript
 
 .. note:: This page is a draft.
 
-:Topics: Language basics, "The Good Parts", NodeJS, standard library, virtual environments, package management
-:Tools: `JavaScript <https://developer.mozilla.org/en-US/docs/Web/JavaScript>`_, NodeJS_, nvm_, npm_
+:Topics: Language basics and idioms, NodeJS, NodeJS package management, JavaScript ecosystem
+:Tools: `JavaScript <https://developer.mozilla.org/en-US/docs/Web/JavaScript>`_, NodeJS_, npm_
 
 Session #1
 ----------
@@ -55,27 +55,74 @@ Write a JS program that pulls a quote from this site and displays it on stdout i
 Serve quotes
 ############
 
-Write a tiny web server using the NodeJS ``http`` module that fetches a quote from `I Heart Quotes <http://www.iheartquotes.com/>`_ and returns it to the requesting client. Run the web server in *tottbox* on port 9000 and test it by pointing Google Chrome on your laptop to http://192.168.33.10:9000. (Hint: Google for or look on the NodeJS site for the few lines of code you need to create a web server in NodeJS.)
+Write a tiny web server using the NodeJS ``http`` module that fetches a quote from `I Heart Quotes <http://www.iheartquotes.com/>`_ and returns it to the requesting client. Run the web server in *tottbox* on port 9000 and test it by pointing Google Chrome on your laptop to http://192.168.33.10:9000. (Hint: Google for or look on the NodeJS site for the few lines of code you need to create a web server in NodeJS. It's the example I gave at the start of class.)
 
 Session #2
 ----------
 
-... in which we explore the ecosystem of JavaScript tools.
+... in which we explore the ecosystem of JavaScript tools, particularly in NodeJS.
 
-:Prep: TODO
+:Prep: Read `The node.js Community is ... <http://caines.ca/blog/programming/the-node-js-community-is-quietly-changing-the-face-of-open-source/>`_ (~10 minutes) and then watch the `TotT JS Ecosystem screencast <>`_ (~XX minutes).
 :Slides: `JS Ecosystem <../slides/javascript_2.html>`_
 :In Progress: :doc:`/assignments/git`
 
-.. todo:: Lab ideas
+Exercises
+~~~~~~~~~
 
-    * JavaScript koans
-    * colors
-    * moment
-    * natural
-    * optimist
-    * underscore
-    * async
-    * take a seed project for a little app I started and flesh it out, add features
+SSH into *tottbox* to perform all of today's exercises. Remember to `document what you find in a gist <https://gist.github.com/>`_ and share it in the `TotT community`_ later.
+
+Paint a rainbow
+###############
+
+Make a new directory in your shared *tottbox* folder. Change to that directory and use npm to install the ``colors`` module locally into that folder.
+
+.. code-block::
+
+    mkdir -p /vagrant/js/rainbow
+    cd $!
+    npm install colors
+
+Google for ``nodejs colors``. Read about the features the module provides and view the examples. Now write a JS program that iterates over all the colors provided and outputs their names in their respective colors.
+
+Show time til "freedom"
+#######################
+
+Make another folder and install the ``moment`` module using ``npm``. Look at the university calendar for the date that classes end this semester. Write a JS program using ``moment`` that output a human friendly description of the time left til classes end. (Hint: Look at ``moment.duration`` and its functions.)
+
+Handle args
+###########
+
+In the same "freedom" folder, NPM install ``optimist``.  Find its documentation and study the examples. Now use it to add support for command line arguments that let the user specify:
+
+#. The date of interest, with the end of semester date as the default.
+#. If the output should be humanized or not, with yes, humanize, as the default.
+
+Make it repeatable
+##################
+
+If you completed the two exerices directly above, your application now depends on ``moment`` and ``optimist``. Write a ``package.json`` file that installs these prerequisites when you type ``npm install``. (Hint: Refer to the interactive `package.json cheatsheet <http://package.json.nodejitsu.com/>`_).
+
+Analyze sentiment
+#################
+
+Sentiment analysis is an attempt to determine subjective information from text. For example, identifying the *polarity* of a statement, whether it is a positive or negative opinion, has almost become synonymous with with "doing sentiment analysis."
+
+Make another directory and install the ``natural`` NPM module. Find its documentation, read its summary, and focus on the section about classifiers.
+
+Download the `sample movie reviews polariy dataset v2.0 <http://www.cs.cornell.edu/people/pabo/movie-review-data/>`_ and extract it in the folder you created:
+
+.. code-block:: console
+
+    cd /vagrant/whatever_folder_you_created
+    wget http://www.cs.cornell.edu/people/pabo/movie-review-data/review_polarity.tar.gz
+    tar xzf review_polarity.tar.gz
+
+Spend a moment poking around in the contents of the extracted data. Then, write a JS program that reads in 50 positive reviews, 50 negative reviews, and trains a Naive Bayes classifier using them. Use the classifier example in ``natural`` as a guide. After training the classifier, test the classifier against a few more positive and negative examples from the dataset or your own custom test cases.
+
+Explore common libs
+###################
+
+Use NPM to install the ``underscore`` and ``async`` modules, two very popular JavaScript libraries. Read their documentation. Come up with an example of where one or both might be effective. What do the alternatives look like? Why might you prefer use of these libraries?
 
 .. seealso::
 
