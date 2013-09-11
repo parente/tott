@@ -21,8 +21,8 @@ Tools of the Trade (TotT) is an elective course for students who want more expos
 
 For more information, see the :doc:`syllabus` and planned schedule below.
 
-Table of Contents
-=================
+Course Contents
+===============
 
 .. toctree::
    :titlesonly:

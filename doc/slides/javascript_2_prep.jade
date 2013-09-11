@@ -11,7 +11,7 @@ block slides
       p.subtitle TotT: 2014
 
   section.slide#server-side
-    h2 Server Side (NodeJS)
+    h2 JS Server Side (NodeJS)
     ul
       li Has module definitions, imports
       li Has a slim standard library
@@ -65,30 +65,40 @@ block slides
       li Critically, lists dependencies
 
   section.slide#demo-package-json
-    .vcenter
-      h2 Demo: Declaring Packages
-      h3 init, dependencies, devDependencies
+    h2 Example: Declaring Packages
+    textarea.code(name="code", runnable="true", mode="javascript", style="display: none;").
+      // in package.json
+      {
+        "name": "totter",
+        "version": "0.0.1",
+        "description": "Demonstration module for TotT",
+        "main": "index.js",
+        "scripts": {
+          "test": "mocha"
+        },
+        "repository": {
+          "type": "git",
+          "url": "git@bitbucket.org:unctott/totter.git"
+        },
+        "keywords": [
+          "teaching",
+          "tott",
+          "unc"
+        ],
+        "author": "Peter Parente",
+        "license": "BSD",
+        "dependencies": {
+          "jade": "~0.27.6",
+          "markdown": "~0.4.0"
+        }
+      }
 
   section.slide#browser
-    h2 Client Side (Browsers)
+    h2 JS Client Side (Browsers)
     ul
-      li Originally: Hide cross-browser scripting issues
-      li Now: Support rich Web app development
-      li Some NodeJS modules are browser compatible
-
-  section.slide#bower
-    h2 Bower
-    ul
-      li A command line tool for managing front-end packages
-      li Uses Git to pull package versions
-      li That's it: a small, single-purpose tool
-
-  section.slide#problems
-    h2 Client Side Problems
-    ul
-      li &lt;script&gt;
-      li No import
-      li Cross-browser JS discrepancies
+      li Long ago: Snippets to add a tad of interactivity
+      li Then: Libs to hide cross-browser scripting issues
+      li Now: Libs to support rich Web app development
 
   section.slide#tbc
     .vcenter

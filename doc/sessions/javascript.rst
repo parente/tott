@@ -124,6 +124,11 @@ Explore common libs
 
 Use NPM to install the ``underscore`` and ``async`` modules, two very popular JavaScript libraries. Read their documentation. Come up with an example of where one or both might be effective. What do the alternatives look like? Why might you prefer use of these libraries?
 
+Explore node_modules
+####################
+
+Install a bunch of modules using NPM. Poke around in the ``node_modules`` directory. Read about how NPM works on the web. What can you deduce about how NPM and NodeJS manage packages and their dependencies?
+
 .. seealso::
 
   `Eloquent JavaScript <http://eloquentjavascript.net/>`_
