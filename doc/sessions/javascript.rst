@@ -76,7 +76,7 @@ Paint a rainbow
 
 Make a new directory in your shared *tottbox* folder. Change to that directory and use npm to install the ``colors`` module locally into that folder.
 
-.. code-block::
+.. code-block:: console
 
     mkdir -p /vagrant/js/rainbow
     cd $!
