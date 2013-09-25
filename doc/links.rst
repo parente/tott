@@ -1,4 +1,4 @@
-.. _TotT community: https://plus.google.com/communities/110747799653894553777
+.. _TotT community: https://plus.google.com/communities/110370068185265330545
 
 .. _SublimeText: http://www.sublimetext.com/
 .. _Package Control: http://wbond.net/sublime_packages/package_control
@@ -17,6 +17,7 @@
 .. _GitHub: https://github.com
 .. _Pro Git: http://git-scm.com/book
 
+.. _Python: http://python.org
 .. _IPython: http://ipython.org/
 .. _virtualenv: http://virtualenv.org
 .. _pip: http://www.pip-installer.org/en/latest/
@@ -29,6 +30,7 @@
 
 .. _Chrome developer tools: https://developers.google.com/chrome-developer-tools/
 .. _Yeoman: http://yeoman.io/
+.. _Bower: http://bower.io/
 .. _jQuery: http://jquery.org
 .. _Dojo: http://dojotoolkit.org
 .. _Can I use...: http://caniuse.com/
@@ -42,6 +44,8 @@
 .. _MongoDB: http://mongodb.org‎
 .. _Lucene: http://lucene.apache.org/
 .. _Solr: http://lucene.apache.org/solr/
+.. _ElasticSearch: http://www.elasticsearch.org/
+.. _Whoosh: http://pythonhosted.org/Whoosh/
 .. _Redis: http://redis.io
 .. _CouchDB: http://couchdb.apache.org/
 .. _Django: https://www.djangoproject.com/
@@ -52,12 +56,14 @@
 .. _Hieroglyph: https://github.com/nyergler/hieroglyph
 .. _Cloud Foundry: http://cloudfoundry.com
 .. _deck.js: http://imakewebthings.com/deck.js/
+.. _reveal.js: http://lab.hakim.se/reveal-js/#/
 .. _Markdown: http://daringfireball.net/projects/markdown/
 .. _Heroku: https://www.heroku.com/
 .. _Other PaaSes: http://en.wikipedia.org/wiki/Platform_as_a_service#Notable_PaaS
 .. _Other Preso Tools: http://www.impressivewebs.com/html-slidedeck-toolkits/
 .. _Behave: http://pythonhosted.org/behave/
 
+.. _Ruby: http://ruby-lang.org
 .. _rvm: https://rvm.io/
 .. _gem: http://rubygems.org/
 .. _Sinatra: http://www.sinatrarb.com/
@@ -89,6 +95,7 @@
 .. _R: http://www.r-project.org/
 .. _Numpy: http://numpy.org
 .. _SciPy: http://scipy.org
+.. _scikit-learn: http://scikit-learn.org/stable/
 .. _d3.js: http://d3js.org
 .. _three.js: http://threejs.org/
 

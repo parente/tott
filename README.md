@@ -1,10 +1,10 @@
 # Tools of the Trade
 
-This repository hosts the web site and related materials for a proposed course on software development tools.
+This repository hosts the web site and related materials for a series of meet-ups about software development tools.
 
 From the website:
 
-> Tools of the Trade (TotT) is an elective course for students who want more exposure to the wide variety of tools used in modern software development. The goal of this course is to build student confidence in finding, learning, applying, and evaluating tools through practice. Students will prepare for class by reading and/or watching lectures online about version control, web development, data analysis, dynamic languages, and so on. Students will apply what they have learned in collaborative, hands-on, in-class sessions. Students will integrate the tools and topics introduced in small to moderate sized programming assignments throughout the course as well as a final project.
+> Tools of the Trade (TotT) is a recurring meet-up for students who want more practice finding, learning, applying, and evaluating tools used in modern software development. The goal is to build experience and confidence in a friendly, fun, collaborative environment. Every week we will:
 
 ## Contents
 
@@ -24,7 +24,7 @@ From the website:
 
 ## Fork This Course
 
-I plan to build out the material for this course entirely in the public eye. The source for the course web site, code samples, student Vagrant box, lab exercises, assignment starter templates, and so on all live or will live under [http://bitbucket.org/unctott/tott](http://bitbucket.org/unctott/tott). If you have a suggestion or see a problem, [open an issue](https://bitbucket.org/unctott/tott/issues) or [fork and submit a pull request](https://bitbucket.org/unctott/tott/fork).
+I plan to build out the material for our meetings entirely in the public eye. The source for the course web site, code samples, shared Vagrant box, lab exercises, and so on all live or will live under [http://github.com/parente/tott](http://github.com/parente/tott). If you have a suggestion or see a problem, [open an issue](https://github.com/parente/tott/issues) or [fork and submit a pull request](https://github.com/parente/tott/fork).
 
 ## License
 

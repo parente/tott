@@ -1,14 +1,28 @@
-Other Topics
-============
+Unscheduled Topics
+==================
 
-There will be time to discuss other tools you find, cover other topics of interest to you, or dive deeper in certain areas. For example, any of the following  would be in the spirit of the course. Let me know if you're interested in any of these or others.
+Over time, we can likely have a session on any or all of these topics, or other tools in the same vein. Please state your interests in the `TotT community`_ or at our meet-ups.
 
+* Test driven or behavior driven development with Behave_, Mocha_, Should.js_
+* Frontend web development using libraries and frameworks like jQuery_, Backbone_, Bootstrap_, and AngularJS_
+* Frontend debugging with the `Chrome developer tools`_
+* Package management with NPM_, Bower_, pip_, and gem_
+* Project distribution with setup.py_, package.json_, and Gemfile_
+* Project automation with make_, Grunt_, and Yeoman_
+* Web micro-frameworks like ExpressJS_, Bottle_, and Sinatra_
+* Heavy web frameworks like Django_ and `Ruby on Rails`_
+* Data science with `IPython Notebook`_, Pandas_, SciPy_, and `scikit-learn`_
 * Distributing work with `Celery <http://www.celeryproject.org/>`_, `kue <http://learnboost.github.io/kue/>`_
 * Cloud Infrastructure as a Service (`IaaS <http://en.wikipedia.org/wiki/Infrastructure_as_a_service#Infrastructure_as_a_service_.28IaaS.29>`_), namely `OpenStack <http://www.openstack.org/>`_, `AWS <http://aws.amazon.com/>`_, `or others <http://en.wikipedia.org/wiki/Infrastructure_as_a_service#Infrastructure_as_a_service_.28IaaS.29>`_
+* Cloud Platform as a Service (PaaS), namely `Cloud Foundry`_
+* Dynamic languages like Python_ and Ruby_
+* Documentation and presentation with Sphinx_, Markdown_, groc_, deck.js_, and reveal.js_
+* Non-relational data stores like Redis_, MongoDB_, and CouchDB_
+* Unstructured text indices like Solr_, ElasticSearch_, and Whoosh_
 * New languages like `Clojure <http://clojure.org/>`_ and `Go <http://golang.org>`_
 * Mobile web development with `jQuery Mobile <http://jquerymobile.com/>`_ and `weinre <http://people.apache.org/~pmuellr/weinre/docs/latest/>`_
 * "Big Data" processing with `IPython parallel <http://ipython.org/ipython-doc/dev/parallel/>`_, `Hadoop <http://hadoop.apache.org/>`_, or `Storm <http://storm-project.net/>`_
-* Machine learning with `scikit-learn <http://scikit-learn.org/stable/>`_
 * Remote management with tools like Fabric_, Puppet_, and Chef_
 * Authentication and authorization with `OpenID <http://en.wikipedia.org/wiki/OpenID>`_ and `OAuth <http://en.wikipedia.org/wiki/OAuth>`_
 * Visualization toolkits like `d3.js`_ and `three.js`_
+* Open source licenses like MIT, BSD, Apache, GPL, LGPL, and AGPL

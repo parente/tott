@@ -12,7 +12,7 @@
 # serve to show the default.
 
 import sys, os
-import cloud_sptheme as csp
+# import cloud_sptheme as csp
 
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -28,7 +28,6 @@ import cloud_sptheme as csp
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['sphinx.ext.todo']
-
 todo_include_todos = True
 
 # Add any paths that contain templates here, relative to this directory.
@@ -44,7 +43,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'COMP XXX Tools of the Trade'
+project = u'Tools of the Trade'
 copyright = u'2013, Peter Parente'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -68,7 +67,7 @@ release = '0.1'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build', 'links.rst']
+exclude_patterns = ['_build', 'links.rst', 'attic']
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
@@ -104,34 +103,34 @@ html_compact_lists = True
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'cloud'
+html_theme = 'default'
 
 # Override things in the theme.
-html_style = 'whitecloud.css'
+html_style = 'rtd.css'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = {
-    'min_height': '8in',
-    'max_width' : '11in',
-    'externalrefs': False,
-    'collapsiblesidebar': True,
-    'bodyfont': '"Helvetica Nueu", sans-serif',
-    'headfont': '"Helvetica Nueu", sans-serif',
-    'bodytrimcolor': 'transparent',
-    'sectionbgcolor': 'transparent',
-    'rubricbgcolor': 'transparent',
-    'sectiontextcolor': 'black',
-    'relbarbgcolor': 'transparent',
-    'relbartextcolor': 'black',
-    'relbarlinkcolor': '#5682AD',
-    'sidebarbgcolor': 'transparent',
-    'sidebartrimcolor': 'transparent'
-}
+# html_theme_options = {
+#     'min_height': '8in',
+#     'max_width' : '11in',
+#     'externalrefs': False,
+#     'collapsiblesidebar': True,
+#     'bodyfont': '"Helvetica Nueu", sans-serif',
+#     'headfont': '"Helvetica Nueu", sans-serif',
+#     'bodytrimcolor': 'transparent',
+#     'sectionbgcolor': 'transparent',
+#     'rubricbgcolor': 'transparent',
+#     'sectiontextcolor': 'black',
+#     'relbarbgcolor': 'transparent',
+#     'relbartextcolor': 'black',
+#     'relbarlinkcolor': '#5682AD',
+#     'sidebarbgcolor': 'transparent',
+#     'sidebartrimcolor': 'transparent'
+# }
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ['_themes', csp.get_theme_dir()]
+html_theme_path = ['_themes']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
