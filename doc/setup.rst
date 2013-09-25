@@ -142,7 +142,7 @@ To make it clear where we are running commands, from now on we will call the ope
    * Windows: ``C:\Users\your_username\projects\tott``
    * Mac/Linux: ``~/projects/tott``
 
-#. Download `the TotT Vagrantfile <https://bitbucket.org/unctott/tott/raw/master/vagrant/Vagrantfile>`_, a config that tells Vagrant how to run *tottbox*.
+#. Download `the TotT Vagrantfile <https://raw.github.com/parente/tott/master/vagrant/Vagrantfile>`_, a config that tells Vagrant how to run *tottbox*.
 #. Put the Vagrantfile you just downloaded into the folder you just created. We'll call this the ``tott_dir`` from now on.
 #. Open a terminal window.
 
