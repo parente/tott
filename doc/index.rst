@@ -29,8 +29,8 @@ We currently have materials and meet-ups planned on the following topics with :d
    :maxdepth: 2
    :numbered:
 
-   sessions/vms
-   sessions/cli
+   sessions/vagrant
+   sessions/bash
    sessions/git
    sessions/nodejs
 
