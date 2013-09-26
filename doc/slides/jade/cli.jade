@@ -1,20 +1,19 @@
 extends layout
 
 block head
-  title Tools of the Trade
+  title CLI - TotT
 
 block slides
 
-  section.slide#title
-    .vcenter
-      h1 Prep: CLI
-      p.subtitle TotT: 2014
+  section
+    h1 CLI
+    h2 TotT 2014
 
-  section.slide#definition
+  section
     h2 Command Line Interface
     blockquote "a means of interacting with a computer program where the user (or client) issues commands to the program in the form of successive lines of text." <br />- <a href="http://en.wikipedia.org/wiki/Command-line_interface">Wikipedia</a>
 
-  section.slide#use-cases
+  section
     h2 Use Cases
     ul
       li Large vocab interaction
@@ -23,28 +22,29 @@ block slides
       li Automation
       li Toolchains
 
-  section.slide#tools
+  section
     h2 Tools
     p We'll bootstrap our work with four:
     ol
-      li bash
-      li ssh
-      li vi
-      li screen
+      li Bash
+      li SSH
+      li Vi
+      li Screen
 
-  section.slide#bash
+  section
     h2 Bash Shell
     ul
       li Command language interpreter
       li Reads commands from user or script
       li Concerned with manipulation of files, execution of other programs
 
-  section.slide#bash-language
+  section
     h2 Bash Language
     ul
       li Scripting language to automate shell functions
       li Has constructs like loops and conditionals
-    textarea.code(name="code", mode="shell", style="display: none;").
+    pre
+      code.
         #!/bin/bash
 
         if [ -z "$1" ]; then
@@ -53,7 +53,7 @@ block slides
           echo "Hello, $1!"
         fi
 
-  section.slide#bash-concepts
+  section
     h2 Basic Bash Concepts
     ul
       li File
@@ -62,21 +62,19 @@ block slides
       li Process
       li Script
 
-  section.slide#demo-basics
-    .vcenter
-      h2 Demo: Bash Basics
-      h3 pwd, ls, cd, mkdir, touch, cp, mv, less, man
+  section
+    h2 Demo: Bash Basics
+    p pwd, ls, cd, mkdir, touch, cp, mv, less, man
 
-  section.slide#demo-utils
-    .vcenter
-      h2 Demo: Bash Basics++
-      h3 find, grep, history, pkill
+  section
+    h2 Demo: Bash Basics++
+    p find, grep, history, pkill
 
-  section.slide#secure-shell
+  section
     h2 Secure Shell (SSH)
-    blockquote "cryptographic network protocol for secure data communication, remote command-line login, remote command execution, and other secure network services between two networked computers" - <a href="http://en.wikipedia.org/wiki/Secure_Shell">Wikipedia</a>
+    blockquote "cryptographic network protocol for secure data communication, remote command-line login, remote command execution, and other secure network services between two networked computers" <br />- <a href="http://en.wikipedia.org/wiki/Secure_Shell">Wikipedia</a>
 
-  section.slide#ssh
+  section
     h2 SSH Client
     ul
       li <tt>ssh</tt>
@@ -84,22 +82,23 @@ block slides
       li Runs a shell session through the connection
       li Can tunnel other traffic too
 
-  section.slide#ssh-basics
+  section
     h2 SSH Basics
-    textarea.code(name="code", mode="shell", style="display: none;").
-      # start a remote shell session
-      $ ssh some.machine.com
+    pre
+      code.
+        # start a remote shell session
+        $ ssh some.machine.com
 
-      # run a remote command
-      $ ssh some.machine.com 'cd my_scripts; ./do_stuff.sh'
+        # run a remote command
+        $ ssh some.machine.com 'cd my_scripts; ./do_stuff.sh'
 
-      # start a remote shell session on a vagrant box
-      $ vagrant ssh
+        # start a remote shell session on a vagrant box
+        $ vagrant ssh
 
-      # copy a file from remote to local
-      $ scp some.machine.com:my_scripts/do_stuff.sh .
+        # copy a file from remote to local
+        $ scp some.machine.com:my_scripts/do_stuff.sh .
 
-  section.slide#ssh-advanced
+  section
     h2 Other SSH Topics
     p Google these if interested:
     ul
@@ -109,7 +108,7 @@ block slides
       li Pub-key auth
       li <tt>~/.ssh/config</tt>
 
-  section.slide#vi
+  section
     h2 vi
     ul
       li Screen oriented text editor
@@ -117,54 +116,58 @@ block slides
       li Good for remote editing over ssh
       li Some people swear by it for all work
 
-  section.slide#vi-demo
-    .vcenter
-      h2 Demo: Simple Editing
-      h3 Navigation, modes, yanking, pasting, deleting, saving, quitting
+  section
+    h2 Demo: Simple Editing
+    p Navigation, modes, yanking, pasting, deleting, saving, quitting
 
-  section.slide#vi-commands
+  section
     h2 More vi Commands
     ul
       li Google for a vi cheat sheet. There's tons.
       li For example: <a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html">vi Graphical Cheat Sheet</a>
 
-  section.slide#screen
+  section
     h2 GNU Screen
     ul
       li CLI window manager
       li Allows fast switching among shell sessions
       li Allows detached process execution
 
-  section.slide#screen-run
+  section
     h2 Running / Resuming Screens
-    textarea.code(name="code", mode="shell", style="display: none;").
-      # start a new screen
-      $ screen
+    pre
+      code.
+        # start a new screen
+        $ screen
 
-      # start a new named screen
-      $ screen -S my_name
+        # start a new named screen
+        $ screen -S my_name
 
-      # list running screens
-      $ screen -ls
+        # list running screens
+        $ screen -ls
 
-      # connect to a running screen
-      $ screen -rx my_name
+        # connect to a running screen
+        $ screen -rx my_name
 
-  section.slide#screen-demo
-    .vcenter
-      h2 Demo: Working in Screen
-      h3 Create window, switch window, kill window, rename window, scrollback, disconnect
+  section
+    h2 Demo: Working in Screen
+    p Create window, switch window, kill window, rename window, scrollback, disconnect
 
-  section.slide#screen-demo
+  section
     h2 More Screen Commands
     ul
       li Again, Google for a cheat sheet.
       li Or see the <a href="http://www.gnu.org/software/screen/manual/screen.html">GNU Screen manual</a>.
 
-  section.slide#meet
-    h2 When We Meet Again
+  section
+    h2 Demo: Writing Scripts Remotely
+    p ssh, screen, vi, bash
+
+  section
+    h2 Review
     ul
-      li I will summarize this material.
-      li I will demonstrate more uses of these tools.
-      li You will practice working at the CLI.
-      li We will discuss what you learned.
+      li CLI
+      li Bash
+      li SSH
+      li Vi
+      li Screen

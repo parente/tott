@@ -4,6 +4,8 @@ build:
 	@git submodule update --init
 	@cd doc/slides; npm install
 
+all: slides doc
+
 clean:
 	@make -C doc clean
 

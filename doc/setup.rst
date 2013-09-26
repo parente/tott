@@ -172,6 +172,20 @@ If you want to explore, feel free. Anything you do on the VM file system is temp
 
 There is one exception to the reset rule: the ``/vagrant`` directory on *tottbox* is a synchronized mirror of the ``tott_dir`` in which you ran ``vagrant up`` on your host box. Anything you do in ``/vagrant`` on the VM will also happen in the corresponding folder on your host box. Likewise, anything you do in the ``tott_dir`` on your host box will appear in the ``/vagrant`` folder on *tottbox*. **This feature is critical**: it will allow us to edit code and view web apps in our desktop environment, but run them in the stable *tottbox* environment.
 
+.. note: You should try to keep your ``/vagrant`` / ``tott_dir`` organized across our meet-ups. It's going to see a lot of use, and you don't want to get lost in a mess later. For example, you might consider organizing it by meet-up like so:
+
+.. code-block:: console
+
+   /vagrant/
+      bash/
+         install-etherpad.sh   # 2.3.3. Automate with bash
+         log-dupes.sh          # 2.3.9. Inspect logs
+      version/
+         git-immersion/        # 3.3.1. Immerse yourself
+      # etc.
+
+If you are posting your lab solutions to GitHub gists, they are backed up. If not and you do not wish to lose your work, you should consider putting them in Git repositories on GitHub, Gists, DropBox, etc.
+
 git
 ---
 

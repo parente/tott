@@ -1,4 +1,4 @@
-Unscheduled Topics
+Potential Sessions
 ==================
 
 Over time, we can likely have a session on any or all of these topics, or other tools in the same vein. Please state your interests in the `TotT community`_ or at our meet-ups.

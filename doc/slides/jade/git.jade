@@ -1,0 +1,76 @@
+extends layout
+
+block head
+  title Tools of the Trade
+
+block slides
+
+  section
+    h1 Git Basics
+    h2 TotT: 2014
+
+  section
+    h2 DVCS
+    blockquote "a distributed version control system ... keeps track of software revisions and allows many developers to work on a given project without requiring that they maintain a connection to a common network." <br />- <a href="http://en.wikipedia.org/wiki/Distributed_revision_control">Wikipedia</a>
+
+  section
+    h2 Use Cases
+    ul
+      li Keep backups
+      li Revert to old versions
+      li Track incremental changes
+      li Merge concurrent changes
+      li Explore alternatives safely
+      li Encourage collaboration
+
+  section
+    h2 Git
+    blockquote "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency." <br />- <a href="http://git-scm.com/">git-scm.com</a>
+
+  section
+    h2 Git by the Lingo
+    h3 A review if you've done the prep readings ...
+  section
+    h2 Git is a command line tool, <tt>git</tt>.
+    h3 Really, it's a set of tools.
+  section
+    h2 Git <em>repositories</em> track files and their changes over time.
+    h3 i.e., files and their history
+  section
+    h2 You edit the files in a <em>working copy</em> of a repository.
+    h3 i.e., a directory of files and subdirectories
+  section
+    h2 You <em>stage</em> working copy changes for tracking.
+    h3 e.g., code for features, not debugging
+  section
+    h2 You <em>commit</em> staged changes to the history.
+    h3 e.g., when unit tests pass, when code is stable
+  section
+    h2 Your repository may have many histories, or <em>branches</em>.
+    h3 e.g., for stable code, for feature dev, for experimentation
+  section
+    h2 You may <em>merge</em> branches at will.
+    h3 e.g., to merge a feature branch into the master branch
+  section
+    h2 You may <em>pull</em> commits into your repository from other repositories.
+    h3 e.g., to get code from a colleague
+  section
+    h2 You may <em>push</em> commits from your repository to other repositories.
+    h3 e.g., to deliver a feature
+  section
+    h2 Sometimes, you must resolve <em>conflicts</em> when merging.
+    h3 e.g., different changes to the same code across branches
+
+  section
+    h2 Demo: Personal, Single Branch Workflow
+    h3 init, add, checkout, status, commit, log
+
+  section
+    h2 Demo: Personal, Multi-Branch Workflow
+    h3 checkout, branch, merge
+
+  section
+    h2 Review
+    ul
+      li DVCS
+      li Git

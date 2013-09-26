@@ -8,10 +8,10 @@ Tools of the Trade
 
     -- `Abraham Maslow <http://en.wikipedia.org/wiki/Abraham_Maslow>`_
 
+.. note:: The plans for this meet-up are still in flux. If you'd like to contribute to the definition of TotT, `please take the TotT survey <https://docs.google.com/forms/d/1-Z_kdHNrd2en6Z_K4zpXXRbEFWtj1Z3Zoib8fC9FjVk/viewform>`_.
+
 What
 ====
-
-.. note:: The plans for this meet-up are still in flux. If you'd like to contribute to the definition of our meetings, `please take the TotT survey <https://docs.google.com/forms/d/1-Z_kdHNrd2en6Z_K4zpXXRbEFWtj1Z3Zoib8fC9FjVk/viewform>`_.
 
 Tools of the Trade (TotT) is a recurring meet-up for students who want more practice finding, learning, applying, and evaluating tools used in modern software development. The goal is to build experience and confidence in a friendly, fun, collaborative environment. Every week we will:
 
@@ -22,7 +22,7 @@ Tools of the Trade (TotT) is a recurring meet-up for students who want more prac
 
 .. rubric:: Tools and Topics
 
-We currently have materials and meet-ups planned on the following topics with :doc:`many more in the works <other>`.
+We currently have materials and meet-ups planned on the following topics with :doc:`many more possibilities for future sessions <other>`.
 
 .. toctree::
    :titlesonly:
@@ -44,7 +44,7 @@ Where
 
 We're still settling on a location for our face-to-face meetings. They'll be somewhere in Sitterson or Brooks Hall on the UNC-CH campus.
 
-We can also collaborate in the `UNC TotT community on Google+ <https://plus.google.com/communities/110370068185265330545>`_. The community is private, but you must request an invite to join in order to keep spam to a minimum.
+We will also collaborate in the `UNC TotT community on Google+ <https://plus.google.com/communities/110370068185265330545>`_. The community is public, but you must request an invite to join in order to keep spam to a minimum.
 
 Who
 ===
@@ -77,4 +77,4 @@ Most importantly, it improves our ability to wield the endless tools of our trad
 How
 ===
 
-In our first session, we will :doc:`setup a consistent, shared development environment <setup>` using Vagrant_ and VirtualBox_. If you join us after the first session, please go through the setup instructions on your own to prep your laptop before you attend.
+In our first session, we will :doc:`set up a consistent, shared development environment <setup>` using Vagrant_ and VirtualBox_. If you join us after the first session, please give the setup instructions a shot before you attend. If you get stuck, don't be afraid to show up and ask for help.
