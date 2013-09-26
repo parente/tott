@@ -1,6 +1,7 @@
 .PHONY: clean doc watch-doc watch-slides
 
 build:
+	@git submodule update --init
 	@cd doc/slides; npm install
 
 clean:

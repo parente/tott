@@ -52,7 +52,6 @@ clean:
 	@-rm slides/_build/*.html
 
 html:
-	@cd ..; git submodule update --init
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
