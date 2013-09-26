@@ -1,20 +1,18 @@
 {
-  "name": "deckjs-boilerplate",
+  "name": "tott-slides",
   "version": "0.0.1",
-  "description": "Configuration control for production node deployments",
-  "author": "Ryan Roemer <ryan@loose-bits.com>",
-  "homepage": "http://ryan-roemer.github.com/deckjs-boilerplate/",
+  "private": true,
   "dependencies": {
   },
   "devDependencies": {
-    "jade": "0.27.6",
-    "markdown": "0.4.0"
+    "jade": "~0.27.6",
+    "markdown": "~0.4.0"
   },
   "engines": {
     "node": ">0.6.x"
   },
   "scripts": {
-    "build": "./node_modules/.bin/jade *.jade -O _build/",
-    "watch": "./node_modules/.bin/jade -w *.jade -O _build/"
+    "build": "./node_modules/.bin/jade jade/*.jade -O casts",
+    "watch": "./node_modules/.bin/jade -w jade/*.jade -O casts"
   }
 }

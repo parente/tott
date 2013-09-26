@@ -1,0 +1,110 @@
+extends layout
+
+block head
+  title Vagrant - TotT
+
+block slides
+  section
+    h1 Vagrant
+    h2 TotT 2014
+
+  section
+    h2 System Virtual Machines
+    blockquote "a complete system platform which supports the execution of a complete operating system (OS)" <br />- <a href="http://en.wikipedia.org/wiki/Virtual_machine">Wikipedia</a>
+
+  section
+    h2 Use Cases
+    ul
+      li Multiple OSes
+      li Architecture emulation
+      li On-demand provisioning
+      li Workload migration
+      li Disaster recovery
+      li <strong>Environment consistency</strong>
+
+  section
+    h2 Consistency
+    ul
+      li <strong>Working with a team</strong>
+      li Developing across machines
+      li Deploying to production
+      li Shipping to a customer
+
+  section
+    h2 Downsides
+    ul
+      li Guest OS weight
+      li Reduced efficiency
+      li Resource competition
+      li Not entirely portable
+
+  section
+    h2 VirtualBox
+    ul
+      li Type 2 Hypervisor <br />
+        small English: It runs VMs on your laptop.
+      li Manages VM <em>images</em>
+      li Runs VM <em>instances</em>
+
+  section
+    h2 Vagrant
+    p Developer-centric VM management
+    ol
+      li Get / create a <em>box</em> (i.e., VM image).
+      li Write a config file.
+      li Script your installs.
+      li Run it.
+      li Share it with your team.
+
+  section
+    h2 Vagrant CLI
+    p Three commands to master:
+    pre
+      code.
+        $ vagrant up
+        $ vagrant ssh
+        $ vagrant destroy
+
+  section
+    h2 Demo: Vagrant Basics
+
+  section
+    h2 Vagrantfile
+    ol
+      li States the box to use
+      li States how to configure the box (e.g., networking)
+      li States how to provision software on the box
+
+  section
+    h2 Example: Simple Vagrantfile
+    pre
+      code.
+        Vagrant.configure("2") do |config|
+          # fetches a box (i.e., VM image)
+          config.vm.box = "tottbox_2013_07_31"
+          config.vm.box_url = "https://dl.dropboxusercontent.com/u/264241/\#{config.vm.box}.box"
+
+          # configures it
+          config.vm.network :private_network, ip: "192.168.33.10"
+          config.vm.network :forwarded_port, guest: 8080, host: 8080
+
+          # runs scripts on it
+          config.vm.provision :shell, :inline => "sudo apt-get -y update"
+        end
+
+  section
+    h2 tottbox
+    ul
+      li Our Vagrant box
+      li Our shared dev environment
+      li Pre-configured with many tools
+
+  section
+    h2 Demo: Vagrant Provisioning
+
+  section
+    h2 Review
+    ul
+      li Virtual machines
+      li VirtualBox
+      li Vagrant

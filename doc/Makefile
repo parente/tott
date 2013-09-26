@@ -51,12 +51,8 @@ clean:
 	@-rm -rf $(BUILDDIR)/*
 	@-rm slides/_build/*.html
 
-slides:
-	@cd slides; npm install; npm run-script build
-	@-cp -r slides/_build $(BUILDDIR)/html/slides
-	@echo "Build finished. The HTML slides are in slides/_build."
-
 html:
+	@cd ..; git submodule update --init
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."

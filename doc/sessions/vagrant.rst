@@ -1,5 +1,5 @@
-Vagrant and VirtualBox
-======================
+Vagrant
+=======
 
 Goals
 -----

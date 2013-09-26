@@ -12,7 +12,6 @@
 # serve to show the default.
 
 import sys, os
-# import cloud_sptheme as csp
 
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -67,7 +66,15 @@ release = '0.1'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build', 'links.rst', 'attic']
+exclude_patterns = [
+    '_build',
+    'links.rst',
+    'attic',
+    'slides/jade',
+    'slides/node_modules',
+    'slides/attic',
+    'slides/package.json'
+]
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
@@ -108,27 +115,6 @@ html_theme = 'default'
 # Override things in the theme.
 html_style = 'rtd.css'
 
-# Theme options are theme-specific and customize the look and feel of a theme
-# further.  For a list of options available for each theme, see the
-# documentation.
-# html_theme_options = {
-#     'min_height': '8in',
-#     'max_width' : '11in',
-#     'externalrefs': False,
-#     'collapsiblesidebar': True,
-#     'bodyfont': '"Helvetica Nueu", sans-serif',
-#     'headfont': '"Helvetica Nueu", sans-serif',
-#     'bodytrimcolor': 'transparent',
-#     'sectionbgcolor': 'transparent',
-#     'rubricbgcolor': 'transparent',
-#     'sectiontextcolor': 'black',
-#     'relbarbgcolor': 'transparent',
-#     'relbartextcolor': 'black',
-#     'relbarlinkcolor': '#5682AD',
-#     'sidebarbgcolor': 'transparent',
-#     'sidebartrimcolor': 'transparent'
-# }
-
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = ['_themes']
 
@@ -151,7 +137,7 @@ html_title = project
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ['_static', 'slides']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
