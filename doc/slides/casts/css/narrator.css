@@ -1,0 +1,15 @@
+.narrator {
+    position: absolute;
+    z-index: 30;
+    left: 10px;
+    bottom: 50px;
+    zoom: 0.5;
+}
+
+.narrator.disabled {
+    opacity: 0.5;
+}
+
+.narrator.hidden {
+    display: none;
+}

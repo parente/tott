@@ -5,15 +5,15 @@ block head
 
 block slides
 
-  section
+  section(data-narration="/git/0.mp3")
     h1 Git Basics
     h2 TotT: 2014
 
-  section
+  section(data-narration="/git/1.mp3")
     h2 DVCS
     blockquote "a distributed version control system ... keeps track of software revisions and allows many developers to work on a given project without requiring that they maintain a connection to a common network." <br />- <a href="http://en.wikipedia.org/wiki/Distributed_revision_control">Wikipedia</a>
 
-  section
+  section(data-narration="/git/2.mp3")
     h2 Use Cases
     ul
       li Keep backups
@@ -23,51 +23,54 @@ block slides
       li Explore alternatives safely
       li Encourage collaboration
 
-  section
+  section(data-narration="/git/3.mp3")
     h2 Git
     blockquote "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency." <br />- <a href="http://git-scm.com/">git-scm.com</a>
 
-  section
+  section(data-narration="/git/4.mp3")
     h2 Git by the Lingo
-    h3 A review if you've done the prep readings ...
-  section
+    p A review if you've done the prep readings ...
+  section(data-narration="/git/5.mp3")
     h2 Git is a command line tool, <tt>git</tt>.
-    h3 Really, it's a set of tools.
-  section
+    p Really, it's a set of tools.
+  section(data-narration="/git/6.mp3")
     h2 Git <em>repositories</em> track files and their changes over time.
-    h3 i.e., files and their history
-  section
+    p i.e., files and their history
+  section(data-narration="/git/7.mp3")
     h2 You edit the files in a <em>working copy</em> of a repository.
-    h3 i.e., a directory of files and subdirectories
-  section
+    p i.e., a directory of files and subdirectories
+  section(data-narration="/git/8.mp3")
     h2 You <em>stage</em> working copy changes for tracking.
-    h3 e.g., code for features, not debugging
-  section
+    p e.g., code for features, not debugging
+  section(data-narration="/git/9.mp3")
     h2 You <em>commit</em> staged changes to the history.
-    h3 e.g., when unit tests pass, when code is stable
-  section
+    p e.g., when unit tests pass, when code is stable
+  section(data-narration="/git/10.mp3")
     h2 Your repository may have many histories, or <em>branches</em>.
-    h3 e.g., for stable code, for feature dev, for experimentation
-  section
+    p e.g., for stable code, for feature dev, for experimentation
+  section(data-narration="/git/11.mp3")
     h2 You may <em>merge</em> branches at will.
-    h3 e.g., to merge a feature branch into the master branch
-  section
+    p e.g., to merge a feature branch into the master branch
+  section(data-narration="/git/12.mp3")
     h2 You may <em>pull</em> commits into your repository from other repositories.
-    h3 e.g., to get code from a colleague
-  section
+    p e.g., to get code from a colleague
+  section(data-narration="/git/13.mp3")
     h2 You may <em>push</em> commits from your repository to other repositories.
-    h3 e.g., to deliver a feature
-  section
+    p e.g., to deliver a feature
+  section(data-narration="/git/14.mp3")
     h2 Sometimes, you must resolve <em>conflicts</em> when merging.
-    h3 e.g., different changes to the same code across branches
+    p e.g., when you and another dev commit changes to the same line
+
+  section(data-narration="/git/15.mp3")
+    h2 Demo: Personal, Single Branch Workflow
+    p init, add, checkout, status, commit, log
 
   section
-    h2 Demo: Personal, Single Branch Workflow
-    h3 init, add, checkout, status, commit, log
+    video(src="#{process.env['VIDEO_ROOT']}/git/single-branch.mov", width="960", autoplay)
 
   section
     h2 Demo: Personal, Multi-Branch Workflow
-    h3 checkout, branch, merge
+    p checkout, branch, merge
 
   section
     h2 Review

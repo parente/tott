@@ -1,5 +1,8 @@
 .PHONY: clean doc watch-doc watch-slides
 
+export AUDIO_ROOT=https://dl.dropboxusercontent.com/u/264241/tott/audio
+export VIDEO_ROOT=https://dl.dropboxusercontent.com/u/264241/tott/video
+
 build:
 	@git submodule update --init
 	@cd doc/slides; npm install

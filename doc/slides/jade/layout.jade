@@ -13,6 +13,7 @@ html(lang="en")
     //- For syntax highlighting
     link(rel="stylesheet", href="reveal.js/lib/css/zenburn.css")
     link(rel="stylesheet", href="css/custom.css")
+    link(rel="stylesheet", href="css/narrator.css")
     //- If the query includes 'print-pdf', use the PDF print sheet
     script.
       document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
@@ -39,6 +40,7 @@ html(lang="en")
 
         theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
         transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+        narrationRoot: "#{process.env['AUDIO_ROOT']}",
 
         // Optional libraries used to extend on reveal.js
         dependencies: [
@@ -47,6 +49,7 @@ html(lang="en")
           { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'js/narrator.js', async: true, condition: function() { return !!document.body.classList; } }
         ]
       });

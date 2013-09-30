@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>CLI - TotT</title><link rel="stylesheet" href="reveal.js/css/reveal.min.css"><link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme"><link rel="stylesheet" href="reveal.js/lib/css/zenburn.css"><link rel="stylesheet" href="css/custom.css"><script>document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>CLI - TotT</title><link rel="stylesheet" href="reveal.js/css/reveal.min.css"><link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme"><link rel="stylesheet" href="reveal.js/lib/css/zenburn.css"><link rel="stylesheet" href="css/custom.css"><link rel="stylesheet" href="css/narrator.css"><script>document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 </script><!--[if lt IE 9]><script src="reveal.js/lib/js/html5shiv.js"></script><![endif]--></head><body><div class="reveal"><div class="slides"><section><h1>CLI</h1><h2>TotT 2014</h2></section><section><h2>Command Line Interface</h2><blockquote>"a means of interacting with a computer program where the user (or client) issues commands to the program in the form of successive lines of text." <br />- <a href="http://en.wikipedia.org/wiki/Command-line_interface">Wikipedia</a></blockquote></section><section><h2>Use Cases</h2><ul><li>Large vocab interaction</li><li>Remote work</li><li>Constrained environments</li><li>Automation</li><li>Toolchains</li></ul></section><section><h2>Tools</h2><p>We'll bootstrap our work with four:</p><ol><li>Bash</li><li>SSH</li><li>Vi</li><li>Screen</li></ol></section><section><h2>Bash Shell</h2><ul><li>Command language interpreter</li><li>Reads commands from user or script</li><li>Concerned with manipulation of files, execution of other programs</li></ul></section><section><h2>Bash Language</h2><ul><li>Scripting language to automate shell functions</li><li>Has constructs like loops and conditionals</li></ul><pre><code>#!/bin/bash
 
 if [ -z "$1" ]; then
@@ -38,6 +38,7 @@ Reveal.initialize({
   
   theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
   transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+  narrationRoot: "https://dl.dropboxusercontent.com/u/264241/tott/audio",
   
   // Optional libraries used to extend on reveal.js
   dependencies: [
@@ -46,6 +47,7 @@ Reveal.initialize({
     { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
     { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
     { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-    { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+    { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+    { src: 'js/narrator.js', async: true, condition: function() { return !!document.body.classList; } }
   ]
 });</script></body></html>
