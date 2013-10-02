@@ -15,6 +15,8 @@ Goals
 Prep Materials
 --------------
 
+If time permits, try to review these resources before the meet-up. If you can't, come anyway.
+
 * Read `Learning the Shell "Why Bother?" and "What is The Shell?" sections <http://linuxcommand.org/lc3_learning_the_shell.php>`_ on linuxcommand.org
 * Read the `vi intro and Interface sections on Wikipedia <http://en.wikipedia.org/wiki/Vi>`_
 * Read the `GNU Screen Intro <http://aperiodic.net/screen/start>`_ and `Screen details sections on aperiodic.net <http://aperiodic.net/screen/detailed_description>`_
@@ -109,7 +111,7 @@ Extend your script to support any or all of the following. Share your solutions 
   * Google for "bash command line arguments" or "bash getopts" for help parsing command line options.
   * Google for "last command exit code" for help detecting if certain commands worked or failed.
 
-3. Print a short line about how to use your script if the user does not provide the start or stop argument::
+3. Print a short line about how to use your script if the user does not provide the start or stop argument:
 
   .. code-block:: console
 

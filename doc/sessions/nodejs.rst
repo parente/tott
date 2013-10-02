@@ -14,6 +14,8 @@ Goals
 Prep Materials
 --------------
 
+If time permits, try to review these resources before the meet-up. If you can't, come anyway.
+
 * Skim `A Re-Introduction to JavaScript <https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript?redirectlocale=en-US&redirectslug=JavaScript%2FA_re-introduction_to_JavaScript>`_ (~20 minutes).
 * Enter some of the code examples from the above page into `repl.it`_ and toy with them.
 * Watch the TotT JavaScript screencast

@@ -13,6 +13,8 @@ Goals
 Prep Materials
 --------------
 
+If time permits, try to review these resources before the meet-up. If you can't, come anyway.
+
 * Read `Why Should I Use Source Control? <http://whyshouldiuse.com/source-control>`_
 * Read `Pro Git Chapter 1, Sections 1.1 through 1.3 <http://git-scm.com/book>`_
 * Read the highly opinionated `Why Git is Better Than X <http://thkoch2001.github.io/whygitisbetter/#git-is-standard>`_
