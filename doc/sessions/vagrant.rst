@@ -4,12 +4,14 @@ Vagrant
 Goals
 -----
 
-* Setup our shared development environment
+* :doc:`Setup our shared development environment </setup>`
 * Realize the benefits of a virtual development environment
 * Practice managing a dev environment using Vagrant
 
 Prep Materials
 --------------
+
+If time permits, try to review these resources before the meet-up. If you can't, come anyway.
 
 * Read `Hardware virtualization <http://en.wikipedia.org/wiki/Hardware_virtualization>`_ (~10 minutes)
 * Read `How Vagrant Benefits You <http://docs.vagrantup.com/v2/why-vagrant/index.html>`_ (~5 minutes)
@@ -33,9 +35,9 @@ Use the NodeJS package manager to install the ``http-server`` package globally o
 Explain Vagrant ports
 #####################
 
-Modify the course Vagrantfile to forward port 8080 on *tottbox* to port 8080 on your host box, *localhost*. (Hint: find the Vagrant documentation about config files. It's a one liner.) With the ``http-server`` still running from the last step, visit http://localhost:8080/ in your browser. What do you see? Write it up.
+Modify the *tottbox* Vagrantfile to forward port 8080 on *tottbox* to port 8080 on your host box, *localhost*. (Hint: find the Vagrant documentation about config files. It's a one liner.) With the ``http-server`` still running from the last step, visit http://localhost:8080/ in your browser. What do you see? Write it up.
 
 Try simple provisioning
 #######################
 
-Modify the course Vagrantfile so that it automatically installs ``http-server`` when you run ``vagrant up``. Note and share how you achieve it.
+Modify the *tottbox* Vagrantfile so that it automatically installs ``http-server`` when you run ``vagrant up``. Note and share how you achieve it.

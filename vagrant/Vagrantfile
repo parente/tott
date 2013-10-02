@@ -17,9 +17,14 @@ Vagrant.configure("2") do |config|
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
-  if ! ENV['TOTT_DEV']
+  if FileTest.(config.vm.box)
+    # local, copied from thumbdrive
+    config.vm.box_url = "./#{config.vm.box}.box"
+  elsif ! ENV['TOTT_DEV']
+    # remote in my dropbox
     config.vm.box_url = "https://dl.dropboxusercontent.com/u/264241/#{config.vm.box}.box"
   else
+    # local in my dropbox (dev)
     config.vm.box_url = "~/Dropbox/Public/#{config.vm.box}.box"
   end
 

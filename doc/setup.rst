@@ -25,7 +25,7 @@ SublimeText 2 is a cross-platform programmer's text editor with a powerful exten
 #. Click the download link for your operating system below the animation or visit the Download tab.
 #. Install SublimeText.
 
-   * Windows: Double-click the downloaded installer and follows its instructions.
+   * Windows: Double-click the downloaded installer and follow its instructions.
    * Mac: Double-click the downloaded disk image and drag SublimeText to your Applications folder.
    * Linux: ``tar xjf Sublime*.bz2`` and make sure the ``sublime_text`` executable is in your ``$PATH``.
 
@@ -82,7 +82,7 @@ Chrome will prompt you to create or login to a Google Account. You do not need t
 VirtualBox
 ----------
 
-VirtualBox_ is an open source virtualizer, an application that can run entire operating systems within their own virtual machines. For instance, you can create a virtual machine running Ubuntu Linux and bring up that machine right on your Windows 7 desktop. There are `many interesting uses and advantages of virtual machines <http://en.wikipedia.org/wiki/Virtualization>`_, two of which we'll heavily benefit from:
+VirtualBox_ is an open source virtualizer, an application that can run an entire operating system within its own virtual machine. For instance, you can create a virtual machine running Ubuntu Linux and bring up that machine right on your Windows 7 desktop. There are `many interesting uses and advantages of virtual machines <http://en.wikipedia.org/wiki/Virtualization>`_, two of which will benefit us greatly:
 
 1. A common, consistent environment for running code and tools
 2. The ability to "reset-to-zero" at any time
@@ -133,40 +133,51 @@ Installing Cygwin just to get SSH is overkill for our needs. A lower-overhead so
 tottbox
 -------
 
-With VirtualBox and Vagrant installed, you're now ready to bring up the virtual machine running Ubuntu Linux Server 12.04 we'll be using in our meetings, affectionately named *tottbox*. This VM already has most of the tools we will explore pre-installed pre-configured, and ready-for-use.
+With VirtualBox and Vagrant installed, you're now ready to bring up the virtual machine running Ubuntu Linux Server 12.04 we'll be using in our meet-ups, affectionately named *tottbox*. This VM already has most of the tools we will explore pre-installed, pre-configured, and ready-for-use.
 
 To make it clear where we are running commands, from now on we will call the operating system running on your laptop the *host box* and the virtual machine *tottbox*.
 
-#. Create a folder that will serve as the container for all of your practice work. Some suggestions:
+#. Create a folder that will serve as the container for all of your practice work on your host box. We'll call this the ``tott_dir`` from now on. Some suggestions:
 
    * Windows: ``C:\Users\your_username\projects\tott``
    * Mac/Linux: ``~/projects/tott``
 
-#. Download `the TotT Vagrantfile <https://raw.github.com/parente/tott/master/vagrant/Vagrantfile>`_, a config that tells Vagrant how to run *tottbox*.
-#. Put the Vagrantfile you just downloaded into the folder you just created. We'll call this the ``tott_dir`` from now on.
 #. Open a terminal window.
 
    * Windows: In the Start Menu, search for and run the Command Prompt application (cmd.exe). If you have Cygwin installed, you can run the Cygwin Bash Shell instead.
    * Mac: Run Terminal in the Applications folder.
    * Linux: You know what to do.
 
-#. Navigate to the folder containing the Vagrant file.
+#. Navigate to the folder you created in the terminal.
 
    * Windows: ``cd \Users\your_username\projects\tott``
    * Mac/Linux: ``cd ~/projects/tott``
 
-#. Pause here until you have a stable Internet connection and time to leave your laptop downloading the *tottbox* virtual machine image (~700 MB).
+#. Decide which of the following two statements applies to you and follow the related instructions.
+
+   #. You are following these steps in one of our meet-ups.
+
+      #. Ask me for a thumbdrive containing the *tottbox* VM image and Vagrantfile, a config that tells Vagrant how to run *tottbox*.
+      #. Copy the Vagrantfile from the thumbdrive into the ``tott_dir``.
+      #. Copy the file ending in ``.box`` from the thumbdrive to the same folder.
+
+   #. You are performing these steps on your own time.
+
+      #. Download `the TotT Vagrantfile <https://raw.github.com/parente/tott/master/vagrant/Vagrantfile>`_, a config that tells Vagrant how to run *tottbox*.
+      #. Put the Vagrantfile you just downloaded into the ``tott_dir``.
+      #. Pause here until you have a stable Internet connection and time to leave your laptop downloading the *tottbox* virtual machine image (~700 MB) in the next command.
+
 #. Enter the following command: ``vagrant up``.
 
-   * Vagrant will download the *tottbox* virtual machine image for safe keeping.
-   * It will make a copy of the image in the folder you created.
+   * Vagrant will download the *tottbox* virtual machine image or copy it off from ``tott_dir`` for safe keeping.
+   * It will make a hidden copy of the image in the folder you created.
    * It will launch and configure an instance of the virtual machine.
    * After some log messages and scary looking (but OK!) text, Vagrant returns you to the command prompt.
 
 #. Type ``vagrant ssh``.
 #. After a moment, you should land at a prompt like ``vagrant@tottbox:~$``.
 
-You are now in a shell running on your copy of *tottbox*. Leave this shell open for the remainder of the steps in this assignment. If you close your laptop or reboot it, you can reconnect to *tottbox* by opening a terminal, returning to ``tott_dir``, typing ``vagrant up``, and then ``vagrant ssh``.
+You are now in a shell running on your copy of *tottbox*. Leave this shell open for the remainder of the steps in this tutorial. If you close your laptop or reboot it, you can reconnect to *tottbox* by opening a terminal, returning to ``tott_dir``, typing ``vagrant up``, and then ``vagrant ssh``.
 
 If you want to explore, feel free. Anything you do on the VM file system is temporary. You can reset your *tottbox* at any time by running ``vagrant destroy`` followed by ``vagrant up`` on your host box.
 
@@ -174,17 +185,17 @@ There is one exception to the reset rule: the ``/vagrant`` directory on *tottbox
 
 .. note: You should try to keep your ``/vagrant`` / ``tott_dir`` organized across our meet-ups. It's going to see a lot of use, and you don't want to get lost in a mess later. For example, you might consider organizing it by meet-up like so:
 
-.. code-block:: console
+   .. code-block:: console
 
-   /vagrant/
-      bash/
-         install-etherpad.sh   # 2.3.3. Automate with bash
-         log-dupes.sh          # 2.3.9. Inspect logs
-      version/
-         git-immersion/        # 3.3.1. Immerse yourself
-      # etc.
+      /vagrant/
+         bash/
+            install-etherpad.sh   # 2.3.3. Automate with bash
+            log-dupes.sh          # 2.3.9. Inspect logs
+         version/
+            git-immersion/        # 3.3.1. Immerse yourself
+         # etc.
 
-If you are posting your lab solutions to GitHub gists, they are backed up. If not and you do not wish to lose your work, you should consider putting them in Git repositories on GitHub, Gists, DropBox, etc.
+   If you are posting your work to GitHub as Gists, they are backed up. If not and you do not wish to lose your work, you should consider putting them in Gists, true repositories on GitHub, DropBox, etc.
 
 git
 ---
@@ -203,7 +214,7 @@ This information will appear on all code changes you make. Make sure it is accur
 GitHub
 ------
 
-GitHub_ and BitBucket_ are two sites offering version control as a service. GitHub is by far and away the most popular site for social coding, but BitBucket offers unlimited private repositories to users with academic email addresses (i.e., you). Since we're not concerned about keeping our practice code private in this course, we will focus on GitHub.
+GitHub_ and BitBucket_ are two sites offering version control as a service. GitHub is by far and away the most popular site for social coding, but BitBucket offers unlimited private repositories to users with academic email addresses (i.e., you). Since we're not concerned about keeping our practice code private, we will focus on GitHub. But keep in mind you can get free, private hosting on BitBucket if you need it for other course work.
 
 #. Visit the GitHub home page.
 #. Click Sign up for GitHub.
@@ -216,7 +227,7 @@ At this point you've got a GitHub account, but no way to push code to it for ver
 #. Click SSH keys on the left.
 #. Click Add SSH key.
 #. Enter *tottbox public key* in the Label field.
-#. Switch to your *tottbox* terminal and enter the following commands.
+#. Switch to your *tottbox* terminal and enter the following commands in the *tottbox* shell.
 
    .. code-block:: console
 
@@ -230,7 +241,7 @@ At this point you've got a GitHub account, but no way to push code to it for ver
 #. Back on the GitHub site, paste the entire output into the Key field.
 #. Click Add key.
 
-Your GitHub account is now ready for use. We'll test it in a few minutes to confirm everything is configured. For the moment, confirm that your ``/vagrant`` directory on your *tottbox* and the ``tott_dir`` on your host box look something like:
+Your GitHub account is now ready for use. We'll test it in a few minutes to confirm your environment is configured properl. For the moment, check that the ``/vagrant`` directory on your *tottbox* and the ``tott_dir`` on your host box look something like:
 
 .. code-block:: console
 
@@ -243,7 +254,7 @@ Your GitHub account is now ready for use. We'll test it in a few minutes to conf
 
 .. note::
 
-   Typically, keypairs live in a ``.ssh`` directory in your home folder. We deviate from the norm here because we want our keys to continue to exist even if we destroy and recreate *tottbox*. So, instead, we store the keys in the ``/vagrant`` folder which keeps them safely synced on our host box.
+   Typically, keypairs live in a ``.ssh`` directory in your home folder. We deviate from the norm here because we want our keys to continue to exist even if we destroy and recreate *tottbox*. So, instead, we store the keys in the ``/vagrant`` folder which keeps them  synced with our host box.
 
    Vagrant does support `agent forwarding <http://docs.vagrantup.com/v2/vagrantfile/ssh_settings.html>`_ which would allow us to store the keys more securely on our host box. Setting up forwarding is a bit of a pain on some OSes, however, so we'll stick with the sync'ed folder approach.
 
@@ -252,7 +263,7 @@ Verification
 
 We'll now run a quick test of your environment. We won't test everything, but we will at least kick the tires.
 
-By following these steps, you'll start with a fresh *tottbox* instance, fork the repository I created on GitHub for this assignment, clone the repository locally, fill in a little README text file template with some basic information, run a test suite I wrote to check your work, commit your changes to the repository, and push the changes back up to GitHub.
+By following these steps, you'll start with a fresh *tottbox* instance, fork the repository I created on GitHub for this test, clone the repository locally, fill in a little README text file template with some basic information, run a test suite I wrote to check your work, commit your changes to the repository, and push the changes back up to GitHub.
 
 Again, don't let the jargon scare you: we're going to get lots of practice using git for version control and cover all of these terms. If you want to jumpstart your understanding, start reading the first two chapters of the `Pro Git`_ book and playing with git on *tottbox*.
 
@@ -260,7 +271,7 @@ Destroy
 ~~~~~~~
 
 #. In the *tottbox* terminal, type ``exit`` to terminate the SSH connection to the ``tottbox``.
-#. Destroy, rebuild, and then connect to your *tottbox* by running the following commands in the ``tott_dir`` on your host box.
+#. Destroy, rebuild, and then connect to a fresh *tottbox* instance by running the following commands in the ``tott_dir`` on your host box.
 
    .. code-block:: console
 
@@ -268,57 +279,49 @@ Destroy
       vagrant up
       vagrant ssh
 
-#. Run ``vagrant ssh`` to access the clean *tottbox*.
 #. Enter the passphrases you assigned to the GitHub key you created when prompted on login.
 
 Create and Clone
 ~~~~~~~~~~~~~~~~
 
-.. todo:: switch to github
-
 #. Visit GitHub_ and login.
-#. Visit https://github.com/parente/verify-tottbox.
+#. Visit https://github.com/parente/tott-verify.
 #. Click the Fork button.
 #. On the dashboard page, click Create repository (or Create, or Create a repository).
-#. Enter *assignment_0* for the repository name.
-#. Make sure the repository is private and is a Git repository.
-#. Click Create repository.
-#. Keep the name *assignment_0*, check the private repository box, and uncheck the permissions box.
-#. Click Fork repository.
-#. After the fork completes, click the gear icon (right-side).
-#. Clone your *assignment_0* fork for local editing with the following commands on *tottbox*, replacing ``your_username`` with your GitHub username.
+#. Clone your *tott-verify* fork for local editing with the following commands on *tottbox*, replacing ``your_username`` with your GitHub username.
 
    .. code-block:: console
 
       cd /vagrant
-      git clone ssh://git@bitbucket.org/your_username/assignment_0.git
+      git clone git@github.com:your_username/tott-verify.git
 
 Edit and Test
 ~~~~~~~~~~~~~
 
 #. Open SublimeText on your host box.
-#. Use it to open the README.md file in the ``assignment_0`` directory git created in the ``tott_dir``.
+#. Use it to open the README.md file in the ``tott-verify`` directory git created in the ``tott_dir``.
 
-   * On Windows, if you followed my ``tott_dir`` suggestion, it's in ``\Users\your_username\projects\tott\assignment_0\README.md``
-   * On Mac/Linux, if you followed my ``tott_dir`` suggestion, it's in ``~/projects/tott/assignment_0/README.md``.
+   * On Windows, if you followed my ``tott_dir`` suggestion, it's in ``\Users\your_username\projects\tott\tott-verify\README.md``
+   * On Mac/Linux, if you followed my ``tott_dir`` suggestion, it's in ``~/projects/tott/tott-verify/README.md``.
 
 #. Review the contents of the README.md file.
 #. Replace the information about me with the equivalent information about you.
 
    * If you're using SublimeText and have installed GitGutter, you should see little markers in the left gutter of the editor when you save. These are the lines you've modified in comparison with the latest copy of the README in version control.
-   * **Make sure you get this information right.** It's how I'll know you're enrolled, check your submissions, and send out your grades.
+   * You don't have to put your real information, but you should. When you push it to GitHub, the webhook you setup when creating your fork will push it to our meet-up roster which we might use later on.
 
-#. Open the `features/readme.features` file and review its content.
-#. Back at the *tottbox* prompt, do the following to execute a test suite checking the README.md against the feature spec.
+#. Open the `features/*.features` files and review their content.
+#. Back at the *tottbox* prompt, do the following to execute a test suite checking the README.md file and *tottbox* environment against the specs.
 
    .. code-block:: console
 
-      cd /vagrant/assignment_0
+      cd /vagrant/tott-verify
       behave
 
-#. Address any failures reported by fixing your README.md until the tests pass.
+#. Address any README.md failures reported by fixing your the file until the tests pass.
+#. Address any *tottbox* failures by asking for help. (They're probably my bugs, not yours.)
 
-For this assignment, specifications and tests are overkill. However, I want you to get a glimpse of behavior-driven development (BDD), a topic we'll likely cover later. I will provide feature files and complete test suites with most of your assignments. You can check your work against these tests as you implement your code. When you submit the assignment, I'll run the same tests with slightly different values to grade your work.
+.. note:: For this assignment, specifications and tests are overkill. However, I want you to get a glimpse of behavior-driven development (BDD), a topic we can cover later.
 
 Commit and Push
 ~~~~~~~~~~~~~~~
@@ -327,25 +330,12 @@ Commit and Push
 
    .. code-block:: console
 
-      cd /vagrant/assignment_0
+      cd /vagrant/tott-verify
       git commit -a -m "Replaced user info in README"
       git push origin master
 
 #. Visit your GitHub dashboard again.
 #. Confirm that the front page of your dashboard shows the README with the changes you just made.
-
-Tag and Release
-~~~~~~~~~~~~~~~
-
-#. Back in *tottbox*, run these final commands to tag your changes as a *v1* (version #1) assignment submission.
-
-   .. code-block:: console
-
-      cd /vagrant/assignment_0
-      git tag -a v1
-      git push origin v1
-
-#. Celebrate. You've submitted your assignment.
 
 What Happened?
 ~~~~~~~~~~~~~~
@@ -353,15 +343,14 @@ What Happened?
 You might wonder what just happened behind the scenes. Here's the gist.
 
 * You destroyed your *tottbox* VM and brought up a new one.
-* You created a read-write copy, a fork, of the read-only `unctott/assignment_0 <https://github.com/parente/verify-tott-setup>`_ git repository on GitHub.
+* You created a read-write copy, a *fork*, of the read-only `parente/tott-verify <https://github.com/parente/tott-verify>`_ git repository on GitHub.
 * You made a read-write clone of your fork in your ``tott_dir`` on your laptop for local editing.
 * You edited the README.md to note your personal information.
-* You ran the test suit I provided to check that you README.md conforms to spec.
-* You committed your edits to the README in your local clone of the repository.
+* You ran the test suit I provided to check that your README.md and environment conforms to a simple spec.
+* You committed your edits to the README.md in your local clone of the repository.
 * You pushed the commit from your local clone up to your fork on GitHub.
-* After confirming the edits, you tagged the commit as a release and pushed that tag to GitHub as well.
 
 Going Further
 -------------
 
-You just setup a virtually indestructible development environment on your laptop with numerous interesting, useful tools pre-installed. Play with it. Break it. Put it back together. Read more about the pieces. And, for now, just have fun.
+You just setup a virtually indestructible development environment on your laptop with `numerous interesting, useful tools pre-installed <https://github.com/parente/tott/blob/master/packer/scripts/tools.sh>`_. Play with it. Break it. Put it back together. Read more about the pieces. And just have fun.
