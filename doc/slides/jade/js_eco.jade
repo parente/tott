@@ -1,0 +1,120 @@
+extends layout
+
+block head
+  title JS Ecosystem - TotT
+
+block slides
+
+  section
+    h1 JS Ecosystem
+    h2 TotT: 2014
+
+  section
+    h2 JS Server Side (NodeJS)
+    ul
+      li Has module definitions, imports
+      li Has a slim standard library
+      li Has encouraged development and sharing of small tools
+
+  section
+    h2 Example: <tt>exports</tt>, <tt>require</tt>
+    pre
+      code.
+        // in foo.js
+        module.exports.double = function(x) {
+          return x * 2;
+        };
+
+        var triple = function(x) {
+          return x * 3;
+        };
+
+    pre
+      code.
+        // in bar.js
+        var foo = require('./foo');
+        var z = foo.double(5);
+        console.log(z);
+        var q = foo.triple(5) // ERROR!
+
+  section
+    h2 Node Packaged Modules
+    ul
+      li A method of distributing NodeJS modules
+      li A hosted index of published modules
+      li A command line tool for managing modules
+
+  section
+    h2 <tt>npm</tt>
+    p Commands to master:
+    pre.
+      $ npm search
+      $ npm install [-g]
+      $ npm init
+
+  section
+    h2 Demo: NPM Basics
+    p search, install, require
+    //- cli-table
+
+  section
+    h2 <tt>package.json</tt>
+    ul
+      li Package metadata
+      li States name, author, version, git repo, ...
+      li Critically, lists dependencies
+
+  section
+    h2 Example: Declaring Packages
+    pre
+      code.
+        // in package.json
+        {
+          "name": "totter",
+          "version": "0.0.1",
+          "description": "Demonstration module for TotT",
+          "main": "index.js",
+          "scripts": {
+            "test": "mocha"
+          },
+          "repository": {
+            "type": "git",
+            "url": "git@bitbucket.org:unctott/totter.git"
+          },
+          "keywords": [
+            "teaching",
+            "tott",
+            "unc"
+          ],
+          "author": "Peter Parente",
+          "license": "BSD",
+          "dependencies": {
+            "jade": "~0.27.6",
+            "markdown": "~0.4.0"
+          }
+        }
+
+  section
+    h2 Demo: Hacky Notebook
+    p wr, marked
+
+  section
+    h2 JS Client Side (Browsers)
+    ul
+      li Long ago: Snippets to add a tad of interactivity
+      li Then: Libs to hide cross-browser scripting issues
+      li Now: Libs to support rich Web app development
+
+  section.slide#tbc
+    h2 To Be Continued
+    p In sessions about front-end JS
+
+  section.slide#meet
+    h2 Review
+    ul
+      li NodeJS
+      li NodeJS Modules
+      li NodeJS Packaged Modules
+      li NPM
+      li <tt>package.json</tt>
+

@@ -1,0 +1,74 @@
+extends layout
+
+block head
+  title Git Collaboration - TotT
+
+block slides
+
+  section
+    h1 Git Collab
+    h2 TotT: 2014
+
+  section
+    h2 Personal Git
+    ul
+      li Create a repository.
+      li Stage and commit changes.
+      li Branch and merge histories.
+
+  section
+    h2 Collaborative Git
+    ul
+      li Clone a repository.
+      li Pull changes downstream.
+      li Push changes upstream.
+
+  section
+    h2 Collaborative Workflows
+    ul
+      li <a href="http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows#Centralized-Workflow">Centralized</a>
+      li <a href="http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows#Integration-Manager-Workflow">Integration Manager</a>
+      li <a href="http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows#Dictator-and-Lieutenants-Workflow">Dictator and Lieutenants</a>
+
+  section
+    h2 DIY Git Hosting
+    ul
+      li Git understands dumb and smart protocols.
+      li You can host read-only Git repositories on simple web servers.
+      li You can enable read/write shared repositories over SSH.
+      li DIY is best when your data is sensitive.
+
+  section
+    h2 Git Cloud Hosting
+    ul
+      li It's just Git.
+      li It will save you time.
+      li Many providers add bells and whistles.
+
+  section
+    h2 GitHub
+    ul
+      li Social coding mantra
+      li Growing by leaps and bounds
+      li Issue trackers, wikis
+      li Forks and pull requests
+      li Free for public projects
+
+  section
+    h2 Demo: Central Repository Workflow
+    p clone, pull, merge, push
+
+  section
+    h2 Demo: Pull-Request Workflow
+    p fork<sup>*</sup>, clone, branch, push, notify<sup>*</sup>
+    p
+      small <sup>*</sup> Not Git commands
+
+  section
+    h2 Review
+    ul
+      li Collaborative Workflows
+      li DIY Git Hosting
+      li Git Cloud Hosting
+      li Central Repository Workflow
+      li Pull-Request Workflow

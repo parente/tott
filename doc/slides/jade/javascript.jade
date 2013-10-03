@@ -1,20 +1,19 @@
 extends layout
 
 block head
-  title Tools of the Trade
+  title Javascript - TotT
 
 block slides
 
-  section.slide#title
-    .vcenter
-      h1 Prep: JavaScript
-      p.subtitle TotT: 2014
+  section
+    h1 JavaScript
+    p.subtitle TotT: 2014
 
-  section.slide#js
+  section
     h2 JavaScript
     blockquote "JavaScript is a prototype-based scripting language with dynamic typing and first-class functions." <br />- <a href="http://en.wikipedia.org/wiki/JavaScript">Wikipedia</a>
 
-  section.slide#attributes
+  section
     h2 Major Attributes
     ul
       li C-derived syntax
@@ -25,16 +24,17 @@ block slides
       li Garbage collection
       li Rich literal types
 
-  section.slide#use-cases
+  section
     h2 Use Cases
     ul
       li Embedded scripting
       li Frontend web development
       li Backend web development
 
-  section.slide#example-factorial
+  section
     h2 Example: Factorial
-    textarea.code(name="code", runnable="true", mode="javascript", style="display: none;").
+    pre
+      code.
         /*
          * Computes the factorial of a number.
          */
@@ -47,9 +47,10 @@ block slides
         var f = factorial(5);
         console.log(f);
 
-  section.slide#example-sine
+  section
     h2 Example: Sine
-    textarea.code(name="code", runnable="true", mode="javascript", style="display: none;").
+    pre
+      code.
         // object literal
         var waves = {},
             step = Math.PI / 3;
@@ -57,16 +58,17 @@ block slides
         // array literals
         waves.sin = [];
         waves.cos = [];
-        for(var i=0; i < Math.PI; i+=step) {
+        for(var i=0; i &lt; Math.PI; i+=step) {
           waves.sin.push(Math.sin(i));
           waves.cos.push(Math.cos(i));
         }
 
         console.log(waves);
 
-  section.slide#example-animals
+  section
     h2 Example: Animals
-    textarea.code(name="code", runnable="true", mode="javascript", style="display: none;").
+    pre
+      code.
         // constructor
         var Mammal = function(name) {
           this.name = name;
@@ -94,25 +96,27 @@ block slides
         d.speak();
         h.speak();
 
-  section.slide#example-evens
+  section
     h2 Example: Evens
-    textarea.code(name="code", runnable="true", mode="javascript", style="display: none;").
-      var evens = function() {
-        // lexical closure
-        var count = 0;
-        return function() {
-          return (count+=2);
-        }
-      };
+    pre
+      code.
+        var evens = function() {
+          // lexical closure
+          var count = 0;
+          return function() {
+            return (count+=2);
+          }
+        };
 
-      var next = evens();
-      console.log(next());
-      console.log(next());
-      console.log(next());
+        var next = evens();
+        console.log(next());
+        console.log(next());
+        console.log(next());
 
   section.slide#example-timers
     h2 Example: Timers
-    textarea.code(name="code", runnable="true", mode="javascript", style="display: none;").
+    pre
+      code.
         // anonymous functions as callbacks
         setTimeout(function() {
           console.log('~1.5 s elapsed')
@@ -124,22 +128,23 @@ block slides
 
   section.slide#demo-cycle
     h2 Example: Cycle
-    textarea.code(name="code", runnable="true", mode="javascript", style="display: none;").
-      // variadic function
-      var cycle = function(end) {
-        if(end === undefined) end = 3;
-        var count = 0;
-        return function() {
-          return (count++ % end);
-        }
-      };
+    pre
+      code.
+        // variadic function
+        var cycle = function(end) {
+          if(end === undefined) end = 3;
+          var count = 0;
+          return function() {
+            return (count++ % end);
+          }
+        };
 
-      var c1 = cycle(4);
-      var c2 = cycle();
-      console.log(c1(), c1(), c1(), c1(), c1(), c1());
-      console.log(c2(), c2(), c2(), c2(), c2(), c2());
+        var c1 = cycle(4);
+        var c2 = cycle();
+        console.log(c1(), c1(), c1(), c1(), c1(), c1());
+        console.log(c2(), c2(), c2(), c2(), c2(), c2());
 
-  section.slide#gotchas
+  section
     h2 Gotchas
     ul
       li Function scope
@@ -149,7 +154,7 @@ block slides
       li No multiline strings
       li Weird operators
 
-  section.slide#nodejs
+  section
     h2 NodeJS
     ul
       li New, circa 2009
@@ -158,14 +163,20 @@ block slides
       li Small standard library
       li Event loop, async I/O
 
-  section.slide#demo
-    .vcenter
-      h2 Demo: Working with NodeJS
+  section
+    h2 Demo: Working with NodeJS
 
-  section.slide#meet
-    h2 When We Meet Again
+  section
+    h2 Demo: Accidents!
+
+  section
+    h2 Review
     ul
-      li I will summarize this material.
-      li I will demonstrate some more examples.
-      li You will practice coding in JavaScript.
-      li We will discuss what you learned.
+      li Language Features
+      li Syntax
+      li Types
+      li Prototypes
+      li Function Closures, Callbacks, Parameters
+      li NodeJS
+      li Gotchas
+
