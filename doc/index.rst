@@ -64,7 +64,7 @@ Like most artisans, we software developers use many specialized tools to practic
 
 Choosing the right instruments requires awareness of their existence, knowledge of their function, practice in their application, and evaluation of their alternatives. Here, our discipline presents both a unique opportunity and challenge: the population of tools at our immediate disposal is mind-boggling and growing at an accelerating pace. There is almost certainly a perfect combination of tools for every software development project, and there is almost certainly a project using any particular combination of tools. We cannot hope to master, let alone know about, all of them a priori. We must be nimble in our ability to find, learn, apply, and evaluate tools as the situation (our problem, our team, our client, our employer, etc.) demands.
 
-.. figure:: _static/github.png
+.. figure:: _images/github.png
    :align: center
    :width: 600px
    :alt: Graph of GitHub repository growth since its inception.
