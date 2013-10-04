@@ -15,7 +15,12 @@ If time permits, try to review these resources before the meet-up. If you can't,
 
 * Read `Hardware virtualization <http://en.wikipedia.org/wiki/Hardware_virtualization>`_ (~10 minutes)
 * Read `How Vagrant Benefits You <http://docs.vagrantup.com/v2/why-vagrant/index.html>`_ (~5 minutes)
-* Watch the TotT Vagrant slidecast (~23 minutes)
+* Watch the `TotT Vagrant slidecast <../_static/casts/vagrant.html>`_ (~20 minutes)
+
+.. image:: /_images/thumbs/vagrant.png
+    :align: center
+    :alt: Tott Vagrant slidecast thumbnail
+    :target: ../_static/casts/vagrant.html
 
 Exercises
 ---------
@@ -41,3 +46,32 @@ Try simple provisioning
 #######################
 
 Modify the *tottbox* Vagrantfile so that it automatically installs ``http-server`` when you run ``vagrant up``. Note and share how you achieve it.
+
+"Up" multiple boxes
+###################
+
+Vagrant can manage and configure multiple boxes from a single Vagrantfile. This feature is handy when you want to simulate a true production deployment, say, where your database runs on one machine, your web server on another, and your job queue on yet another.
+
+Try modifying the *tottbox* Vagrantfile to start and configure a second instance of the *tottbox* image. Share your resulting Vagrantfile in a gist.
+
+Try complex provisioning
+########################
+
+`Puppet`_, `Chef`_, `Ansible`_, and `SaltStack`_ are all popular orchestration packages used to configure and manage virtual machines, typically on a large scale. Vagrant ships with plug-ins supporting software provisioning using most of these tools.
+
+Configure one or more of these popular provisioners to install `MongoDB`_ on ``vagrant up``. What does it take? Why might you use these more advanced tools over simple bash scripts? Document what you find.
+
+References
+----------
+
+VirtualBox_
+    VirtualBox hypervisor homepage
+
+`Vagrant Documentation <http://docs.vagrantup.com/v2/>`_
+    Documentation about the command line tools, builders, providers, configuration, etc.
+
+`Virtual machine <http://en.wikipedia.org/wiki/Virtual_machine>`_
+    Wikipedia article defining *virtual machine* and how their general implementation
+
+`Vagrantbox.es <http://www.vagrantbox.es/>`_
+    A list of base boxes for Vagrant

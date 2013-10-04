@@ -65,15 +65,15 @@ Update the diagram you drew in the last class session to include the concepts of
 References
 ----------
 
-  `Try Git <http://try.github.io/>`_
+`Try Git <http://try.github.io/>`_
     Interactive Git tutorial right in your browser
 
-  `Ten Git Tutorials for Beginners <http://sixrevisions.com/resources/git-tutorials-beginners/>`_
+`Ten Git Tutorials for Beginners <http://sixrevisions.com/resources/git-tutorials-beginners/>`_
     A nice top-10 list of Git tutorials to review if you want alternatives to the prep material.
 
-  `Interactive Git Cheatsheet <http://ndpsoftware.com/git-cheatsheet.html>`_
+`Interactive Git Cheatsheet <http://ndpsoftware.com/git-cheatsheet.html>`_
     Visualization show what components common Git commands affect
 
-  `A Visual Git Guide <http://marklodato.github.io/visual-git-guide/index-en.html>`_
+`A Visual Git Guide <http://marklodato.github.io/visual-git-guide/index-en.html>`_
     Visual reference of how common Git commands work
 

@@ -80,6 +80,7 @@
 .. _SaltStack: http://www.openstack.org/
 .. _Chef: http://www.opscode.com/chef/
 .. _Puppet: https://puppetlabs.com/
+.. _Ansible: http://www.ansibleworks.com/
 
 .. _Nose: https://nose.readthedocs.org/en/latest/
 .. _Should.js: https://github.com/visionmedia/should.js/
