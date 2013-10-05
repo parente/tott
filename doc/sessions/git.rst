@@ -50,12 +50,10 @@ Continue the Immersion
 
 Visit the `Git Immersion <http://gitimmersion.com/>`_ web site again. Start on `lab #29 <http://gitimmersion.com/lab_29.html>`_ and work through lab #49. These labs will take you through branching, merging, pulling, and pushing.
 
-Push to GitHub
-#################
+Practice pull requests
+######################
 
-.. todo: update for github
-
-Clone the `unctott/ex_class_roster <https://bitbucket.org/unctott/ex_class_roster/>`_ repository. Add your BitBucket username to the README according to the instructions in that file. Commit and push the changes back to BitBucket. If you have a conflict, resolve it without losing any names in the roster.
+GitHub supports the integration manager Git workflow by way of *pull requests*. Practice this model by visiting https://github.com/parente/tott-roster and following the instructions there.
 
 Update your diagram
 ###################
