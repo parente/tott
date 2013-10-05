@@ -15,15 +15,14 @@ From the website:
 
 ```bash
 /
-    doc/                # course website, reST / Sphinx
-        assignments/
-        sessions/
-        slides/         # deck.js format presentations
+    doc/
+        sessions/       # meetup material Sphinx / reST source
+        slides/         # slidecast Jade source
     packer/
-        scripts/        # scripts for provisioning
-        tottbox.json    # packer config for building student dev env
+        tottbox.json    # packer config for building common dev env
+        tottbox_32.json # because an early ver of packer couldn't handle 1 conf
     vagrant/
-        Vagrantfile     # vagrant config for managing student dev env
+        Vagrantfile     # vagrant config for managing common dev env
     Makefile            # automate all the things
 ```
 
