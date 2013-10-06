@@ -34,6 +34,16 @@ We currently have materials and meet-ups planned on the following topics with :d
    sessions/git
    sessions/nodejs
 
+.. sessions/express
+.. sessions/python
+.. sessions/behave
+.. sessions/ipython
+.. sessions/bootstrap
+.. sessions/jquery
+.. sessions/backbone
+.. sessions/ruby
+.. sessions/rails
+
 When
 ====
 
