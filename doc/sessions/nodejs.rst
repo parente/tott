@@ -7,7 +7,7 @@ Goals
 * Gain the ability to read and write JavaScript code
 * Recognize the gotchas of JavaScript
 * Know what `NodeJS`_ is
-* Understand how to tap the NodeJS ecosystem
+* Understand how to tap into the NodeJS ecosystem
 * Practice writing simple NodeJS applications
 * Practice using the Node Package Manager (npm_)
 

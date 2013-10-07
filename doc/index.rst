@@ -4,11 +4,11 @@ Tools of the Trade
 
 .. epigraph::
 
-    "If the only tool you have is a hammer, you tend to see every problem as a nail."
+   "If the only tool you have is a hammer, you tend to see every problem as a nail."
 
-    -- `Abraham Maslow <http://en.wikipedia.org/wiki/Abraham_Maslow>`_
+   -- `Abraham Maslow <http://en.wikipedia.org/wiki/Abraham_Maslow>`_
 
-.. note:: The plans for this meet-up are still in flux. If you'd like to contribute to the definition of TotT, `please take the TotT survey <https://docs.google.com/forms/d/1-Z_kdHNrd2en6Z_K4zpXXRbEFWtj1Z3Zoib8fC9FjVk/viewform>`_.
+.. important:: Our first session is tentatively scheduled for **Friday, January 10th 2014 at 3 PM in Sitterson Hall, Room 011** on the UNC-CH campus. Please join the `TotT Google+ Community <https://plus.google.com/communities/110370068185265330545>`_ to stay informed of any changes.
 
 What
 ====
@@ -16,13 +16,13 @@ What
 Tools of the Trade (TotT) is a recurring meet-up for students who want more practice finding, learning, applying, and evaluating tools used in modern software development. The goal is to build experience and confidence in a friendly, fun, collaborative environment. Every week we will:
 
 #. Pick a tool or topic of interest (e.g., Git, Ruby, Backbone, Pandas, BDD, ...)
-#. Do a bit of background reading or video watching as time permits  to prep for our meeting.
+#. Do a bit of background reading or video watching as time permits to prep for our meeting.
 #. Meet face-to-face to hack on practice problems or small projects together in a :doc:`common development environment <setup>`.
 #. Help one another and share our experience in-person and online.
 
 .. rubric:: Tools and Topics
 
-We currently have materials and meet-ups planned on the following topics with :doc:`many more possibilities for future sessions <other>`.
+We currently have meet-ups planned on the following topics with :doc:`many more possibilities for future sessions <other>`. Content and pages will continue to appear over time.
 
 .. toctree::
    :titlesonly:
@@ -33,28 +33,32 @@ We currently have materials and meet-ups planned on the following topics with :d
    sessions/bash
    sessions/git
    sessions/nodejs
-
-.. sessions/express
-.. sessions/python
-.. sessions/behave
-.. sessions/ipython
-.. sessions/bootstrap
-.. sessions/jquery
-.. sessions/backbone
-.. sessions/ruby
-.. sessions/rails
+   sessions/express
+   sessions/python
+   sessions/behave
+   sessions/ipython
+   sessions/bootstrap
+   sessions/jquery
+   sessions/backbone
+   sessions/ruby
+   sessions/rails
 
 When
 ====
 
-We're planning to hold our first session in the Spring 2014 semester. We're still settling on a day and time.
+We're planning to have our meet-ups most Fridays in the Spring 2014 starting at 3 PM. Try to arrive at the start of the session to catch the introductory materials and jump on the exercises at the same time as your peers. We'll have the room until 5 PM and you're welcome to stay for that long, but you can feel free to leave any time before then.
 
 Where
 =====
 
-We're still settling on a location for our face-to-face meetings. They'll be somewhere in Sitterson or Brooks Hall on the UNC-CH campus.
+We'll meet in Sitterson Hall, Room 011 on the UNC-CH campus.
 
-We will also collaborate in the `UNC TotT community on Google+ <https://plus.google.com/communities/110370068185265330545>`_. The community is public, but you must request an invite to join in order to keep spam to a minimum.
+We will also send announcements and collaborate in the `UNC TotT community on Google+ <https://plus.google.com/communities/110370068185265330545>`_. The community is public, but you must request an invite to join in order to keep spam to a minimum.
+
+How
+===
+
+In our first session, we will :doc:`set up a consistent, shared development environment <setup>` using Vagrant_ and VirtualBox_. If you join us after the first session, please give the setup instructions a shot before you attend. If you get stuck, don't be afraid to show up and ask for help.
 
 Who
 ===
@@ -64,7 +68,7 @@ Consider joining us if you:
 * want a gently guided introduction to a variety of software tools,
 * want dedicated time to practice coding in a collaborative environment,
 * want to improve your ability to tame unfamiliar languages and libraries,
-* think learning a bit about git, Python, jQuery, NodeJS, MongoDB, Sinatra, and other tools sounds like fun.
+* think learning a bit about tools such as git, Python, jQuery, NodeJS, MongoDB, and Sinatra sounds like fun.
 
 Why
 ===
@@ -83,8 +87,3 @@ Choosing the right instruments requires awareness of their existence, knowledge 
 I strongly believe practice "hacking" builds this agility. Taking time to discover a new tool, install it, run its "hello world", read its documentation, think about its use, create small examples, apply it to some pet project, compare it to other tools, and so on provides us invaluable experience. It builds our confidence so that we might step-up to unfamiliar tools, learn them quickly, and master them eventually. It adds tools to our belts, albeit few out of millions. It fulfills our desire to learn and build new things. It entertains and provides a chance for collaboration.
 
 Most importantly, it improves our ability to wield the endless tools of our trade.
-
-How
-===
-
-In our first session, we will :doc:`set up a consistent, shared development environment <setup>` using Vagrant_ and VirtualBox_. If you join us after the first session, please give the setup instructions a shot before you attend. If you get stuck, don't be afraid to show up and ask for help.
