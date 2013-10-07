@@ -15,11 +15,13 @@ If time permits, try to review these resources before the meet-up. If you can't,
 
 * Read `Hardware virtualization <http://en.wikipedia.org/wiki/Hardware_virtualization>`_ (~10 minutes)
 * Read `How Vagrant Benefits You <http://docs.vagrantup.com/v2/why-vagrant/index.html>`_ (~5 minutes)
-* Watch the `TotT Vagrant slidecast <../_static/casts/vagrant.html>`_ (~20 minutes)
+* Watch the `TotT Vagrant slidecast <../_static/casts/vagrant.html>`_ (~20 minutes) which includes a live demo of:
+
+    * `Vagrant basics <../_static/casts/vagrant.html>`_ (~10 minutes)
 
 .. image:: /_images/thumbs/vagrant.png
     :align: center
-    :alt: Tott Vagrant slidecast thumbnail
+    :alt: TotT Vagrant slidecast thumbnail
     :target: ../_static/casts/vagrant.html
 
 Exercises

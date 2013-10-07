@@ -17,13 +17,28 @@ Prep Materials
 
 If time permits, try to review these resources before the meet-up. If you can't, come anyway.
 
-* Read `Learning the Shell "Why Bother?" and "What is The Shell?" sections <http://linuxcommand.org/lc3_learning_the_shell.php>`_ on linuxcommand.org
-* Read the `vi intro and Interface sections on Wikipedia <http://en.wikipedia.org/wiki/Vi>`_
-* Read the `GNU Screen Intro <http://aperiodic.net/screen/start>`_ and `Screen details sections on aperiodic.net <http://aperiodic.net/screen/detailed_description>`_
-* Watch the TotT CLI screencast (~37 minutes)
-* Read `Unix Philosophy <http://en.wikipedia.org/wiki/Unix_philosophy>`_ on Wikipedia
-* Read `Unix Pipeline <http://en.wikipedia.org/wiki/Pipeline_(Unix)>`_ on Wikipedia
-* Watch the TotT Unix Philosophy screencast (~27 minutes)
+* Read `Learning the Shell "Why Bother?" and "What is The Shell?" sections <http://linuxcommand.org/lc3_learning_the_shell.php>`_ on linuxcommand.org (~5 minutes)
+* Read the `vi intro and Interface sections on Wikipedia <http://en.wikipedia.org/wiki/Vi>`_ (~5 minutes)
+* Read the `GNU Screen Intro <http://aperiodic.net/screen/start>`_ and `Screen details sections on aperiodic.net <http://aperiodic.net/screen/detailed_description>`_ (~5 minutes)
+* Watch the `TotT CLI slidecast <../_static/casts/cli.html>`_ (~30 minutes) which includes live demos of:
+
+  * `Bash Basics <../_static/casts/cli.html#/8>`_ (~6 minutes)
+  * `Bash Basics++ <../_static/casts/cli.html#/10>`_ (~4 minutes)
+  * `Vi Simple Editing <../_static/casts/cli.html#/17>`_ (~3 minutes)
+  * `Working in GNU Screen <../_static/casts/cli.html#/17>`_ (~8 minutes)
+
+.. image:: /_images/thumbs/cli.png
+    :align: center
+    :alt: TotT CLI slidecast thumbnail
+    :target: ../_static/casts/cli.html
+
+* Read `Unix Philosophy <http://en.wikipedia.org/wiki/Unix_philosophy>`_ on Wikipedia (~10 minutes)
+* Read `Unix Pipeline <http://en.wikipedia.org/wiki/Pipeline_(Unix)>`_ on Wikipedia (~10 minutes)
+* Watch the TotT Unix Philosophy screencast (~27 minutes) with live demos of:
+
+  * Small superlative tools
+  * Text everywhere
+  * Pipes and redirects
 
 Exercises
 ---------
