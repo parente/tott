@@ -34,11 +34,16 @@ If time permits, try to review these resources before the meet-up. If you can't,
 
 * Read `Unix Philosophy <http://en.wikipedia.org/wiki/Unix_philosophy>`_ on Wikipedia (~10 minutes)
 * Read `Unix Pipeline <http://en.wikipedia.org/wiki/Pipeline_(Unix)>`_ on Wikipedia (~10 minutes)
-* Watch the TotT Unix Philosophy screencast (~27 minutes) with live demos of:
+* Watch the TotT Unix Philosophy screencast (~25 minutes) with live demos of:
 
-  * Small superlative tools
-  * Text everywhere
-  * Pipes and redirects
+  * `Small Superlatives <../_static/casts/cli.html#/8>`_ (~3 minutes)
+  * `Text Everywhere <../_static/casts/cli.html#/10>`_ (~5 minutes)
+  * `Pipes and Redirects <../_static/casts/cli.html#/14>`_ (~8 minutes)
+
+.. image:: /_images/thumbs/unix.png
+    :align: center
+    :alt: TotT Unix Philosophy slidecast thumbnail
+    :target: ../_static/casts/unix.html
 
 Exercises
 ---------
