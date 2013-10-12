@@ -1,36 +1,36 @@
 extends layout
 
 block head
-  title Git Collaboration - TotT
+  title Social Git - TotT
 
 block slides
 
-  section
-    h1 Git Collab
+  section(data-narration="/github/0.mp3")
+    h1 Social Git
     h2 TotT: 2014
 
-  section
+  section(data-narration="/github/1.mp3")
     h2 Personal Git
     ul
       li Create a repository.
       li Stage and commit changes.
       li Branch and merge histories.
 
-  section
+  section(data-narration="/github/2.mp3")
     h2 Collaborative Git
     ul
       li Clone a repository.
       li Pull changes downstream.
       li Push changes upstream.
 
-  section
+  section(data-narration="/github/3.mp3")
     h2 Collaborative Workflows
     ul
       li <a href="http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows#Centralized-Workflow">Centralized</a>
       li <a href="http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows#Integration-Manager-Workflow">Integration Manager</a>
       li <a href="http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows#Dictator-and-Lieutenants-Workflow">Dictator and Lieutenants</a>
 
-  section
+  section(data-narration="/github/4.mp3")
     h2 DIY Git Hosting
     ul
       li Git understands dumb and smart protocols.
@@ -38,14 +38,14 @@ block slides
       li You can enable read/write shared repositories over SSH.
       li DIY is best when your data is sensitive.
 
-  section
+  section(data-narration="/github/5.mp3")
     h2 Git Cloud Hosting
     ul
       li It's just Git.
       li It will save you time.
       li Many providers add bells and whistles.
 
-  section
+  section(data-narration="/github/6.mp3")
     h2 GitHub
     ul
       li Social coding mantra
@@ -54,17 +54,25 @@ block slides
       li Forks and pull requests
       li Free for public projects
 
-  section
+  section(data-narration="/github/7.mp3")
     h2 Demo: Central Repository Workflow
     p clone, pull, merge, push
 
   section
+    h4 Demo: Central Repository Workflow
+    video(src="#{process.env['VIDEO_ROOT']}/github/central-repo.mov", width="100%", controls)
+
+  section(data-narration="/github/9.mp3")
     h2 Demo: Pull-Request Workflow
     p fork<sup>*</sup>, clone, branch, push, notify<sup>*</sup>
     p
       small <sup>*</sup> Not Git commands
 
   section
+    h4 Demo: Pull-Request Workflow
+    video(src="#{process.env['VIDEO_ROOT']}/github/pull-request.mov", width="100%", controls)
+
+  section(data-narration="/github/11.mp3")
     h2 Review
     ul
       li Collaborative Workflows
