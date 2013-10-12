@@ -1,16 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Javascript - TotT</title><link rel="stylesheet" href="reveal.js/css/reveal.min.css"><link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme"><link rel="stylesheet" href="reveal.js/lib/css/zenburn.css"><link rel="stylesheet" href="css/custom.css"><link rel="stylesheet" href="css/narrator.css"><script>document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-</script><!--[if lt IE 9]><script src="reveal.js/lib/js/html5shiv.js"></script><![endif]--></head><body><div class="reveal"><div class="slides"><section><h1>JavaScript</h1><p class="subtitle">TotT: 2014</p></section><section><h2>JavaScript</h2><blockquote>"JavaScript is a prototype-based scripting language with dynamic typing and first-class functions." <br />- <a href="http://en.wikipedia.org/wiki/JavaScript">Wikipedia</a></blockquote></section><section><h2>Major Attributes</h2><ul><li>C-derived syntax</li><li>Runtime interpretation</li><li>Dynamic typing</li><li>First-class functions</li><li>Prototypical inheritence</li><li>Garbage collection</li><li>Rich literal types</li></ul></section><section><h2>Use Cases</h2><ul><li>Embedded scripting</li><li>Frontend web development</li><li>Backend web development</li></ul></section><section><h2>Example: Factorial</h2><pre><code>/*
- * Computes the factorial of a number.
- */
-var factorial = function(n) {
-  if (n === 0) {
-    return 1;
-  }
-  return n * factorial(n - 1);
-};
-var f = factorial(5);
-console.log(f);
-</code></pre></section><section><h2>Example: Sine</h2><pre><code>// object literal
+</script><!--[if lt IE 9]><script src="reveal.js/lib/js/html5shiv.js"></script><![endif]--></head><body><div class="reveal"><div class="slides"><section data-narration="/js/0.mp3"><h1>JavaScript</h1><h2>TotT: 2014</h2></section><section data-narration="/js/1.mp3"><h2>JavaScript</h2><blockquote>"JavaScript is a prototype-based scripting language with dynamic typing and first-class functions." <br />- <a href="http://en.wikipedia.org/wiki/JavaScript">Wikipedia</a></blockquote></section><section data-narration="/js/2.mp3"><h2>Major Attributes</h2><ul><li>C-derived syntax</li><li>Runtime interpretation</li><li>Dynamic typing</li><li>First-class functions</li><li>Prototypical inheritence</li><li>Garbage collection</li><li>Rich literal types</li></ul></section><section data-narration="/js/3.mp3"><h2>Use Cases</h2><ul><li>Embedded scripting</li><li>Frontend web development</li><li>Backend web development</li></ul></section><section data-narration="/js/4.mp3"><h2>Example: Factorial</h2><div><a class="jsbin-embed" href="http://jsbin.com/iDEGuji/4/embed?js,console">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></div></section><section data-narration="/js/5.mp3"><h2>Example: Sine</h2><pre><code>// object literal
 var waves = {},
     step = Math.PI / 3;
     
@@ -23,7 +12,7 @@ for(var i=0; i &lt; Math.PI; i+=step) {
 }
 
 console.log(waves);
-</code></pre></section><section><h2>Example: Animals</h2><pre><code>// constructor
+</code></pre></section><section data-narration="/js/6.mp3"><h2>Example: Animals</h2><pre><code>// constructor
 var Mammal = function(name) {
   this.name = name;
 };
@@ -49,7 +38,7 @@ var d = new Dog('Fido'),
     h = new Human('Alice');
 d.speak();
 h.speak();
-</code></pre></section><section><h2>Example: Evens</h2><pre><code>var evens = function() {
+</code></pre></section><section data-narration="/js/7.mp3"><h2>Example: Evens</h2><pre><code>var evens = function() {
   // lexical closure
   var count = 0;
   return function() {
@@ -61,7 +50,7 @@ var next = evens();
 console.log(next());
 console.log(next());
 console.log(next());
-</code></pre></section><section id="example-timers" class="slide"><h2>Example: Timers</h2><pre><code>// anonymous functions as callbacks
+</code></pre></section><section data-narration="/js/8.mp3"><h2>Example: Timers</h2><pre><code>// anonymous functions as callbacks
 setTimeout(function() {
   console.log('~1.5 s elapsed')
 }, 1500);
@@ -69,7 +58,7 @@ setTimeout(function() {
 setInterval(function() {
   console.log('tick');
 }, 1000);
-</code></pre></section><section id="demo-cycle" class="slide"><h2>Example: Cycle</h2><pre><code>// variadic function
+</code></pre></section><section data-narration="/js/9.mp3"><h2>Example: Cycle</h2><pre><code>// variadic function
 var cycle = function(end) {
   if(end === undefined) end = 3;
   var count = 0;
@@ -82,7 +71,7 @@ var c1 = cycle(4);
 var c2 = cycle();
 console.log(c1(), c1(), c1(), c1(), c1(), c1());
 console.log(c2(), c2(), c2(), c2(), c2(), c2());
-</code></pre></section><section><h2>Gotchas</h2><ul><li>Function scope</li><li>Automatic semicolons</li><li>No true methods</li><li>No import statement</li><li>No multiline strings</li><li>Weird operators</li></ul></section><section><h2>NodeJS</h2><ul><li>New, circa 2009</li><li>Run JS server-side</li><li>Uses Google V8 JS engine</li><li>Small standard library</li><li>Event loop, async I/O</li></ul></section><section><h2>Demo: Working with NodeJS</h2></section><section><h2>Demo: Accidents!</h2></section><section><h2>Review</h2><ul><li>Language Features</li><li>Syntax</li><li>Types</li><li>Prototypes</li><li>Function Closures, Callbacks, Parameters</li><li>NodeJS</li><li>Gotchas</li></ul></section></div></div><script src="reveal.js/lib/js/head.min.js"></script><script src="reveal.js/js/reveal.min.js"></script><script>// Full list of configuration options available here:
+</code></pre></section><section data-narration="/js/10.mp3"><h2>Gotchas</h2><ul><li>Function scope</li><li>Automatic semicolons</li><li>No true methods</li><li>No import statement</li><li>No multiline strings</li><li>Weird operators</li></ul></section><section data-narration="/js/11.mp3"><h2>NodeJS</h2><ul><li>New, circa 2009</li><li>Run JS server-side</li><li>Uses Google V8 JS engine</li><li>Small standard library</li><li>Event loop, async I/O</li></ul></section><section data-narration="/js/12.mp3"><h2>Demo: Working with NodeJS</h2></section><section><h4>Demo: Working with NodeJS</h4><video src="https://dl.dropboxusercontent.com/u/264241/tott/video/nodejs/nodejs.mov" width="100%" controls></video></section><section data-narration="/js/14.mp3"><h2>Demo: Accidents!</h2></section><section><h4>Demo: Accidents!</h4><video src="https://dl.dropboxusercontent.com/u/264241/tott/video/nodejs/accidents.mov" width="100%" controls></video></section><section data-narration="/js/15.mp3"><h2>Review</h2><ul><li>Language Features</li><li>Syntax</li><li>Types</li><li>Prototypes</li><li>Function Closures, Callbacks, Parameters</li><li>NodeJS</li><li>Gotchas</li></ul></section></div></div><script src="reveal.js/lib/js/head.min.js"></script><script src="reveal.js/js/reveal.min.js"></script><script>// Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
   controls: true,
