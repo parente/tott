@@ -122,14 +122,29 @@ Explore node_modules
 
 Install a bunch of modules using NPM. Poke around in the ``node_modules`` directory. Read about how NPM works on the web. What can you deduce about how NPM and NodeJS manage packages and their dependencies?
 
+Projects
+~~~~~~~~
+
+If you want to try your hand at something larger than an exercise, consider one of the following.
+
+Markdown slides
+###############
+
+Write a utility that can take a Markdown document and convert it into a complete reveal.js slidedeck without forcing the user to write all of the boilerplate. Support slides, subslides, and incremental builds. Decide and document what valid markup will indicate these features.
+
+.jsjobs cron replacement
+########################
+
+Write a JavaScript program that executes a ``run()`` function exported by any JS module located in a folder named ``~/.jsjobs`` on an ``interval`` also exported by each module. Make the program support millisecond intervals to start, but then extend it to support human-readable intervals using a library like `Moment.js <http://momentjs.com/>`_.
+
 References
 ----------
 
-  `Eloquent JavaScript <http://eloquentjavascript.net/>`_
-    Introduction to programming in JavaScript
+`Eloquent JavaScript <http://eloquentjavascript.net/>`_
+  Introduction to programming in JavaScript
 
-  `JavaScript on the Mozilla Developer Network <https://developer.mozilla.org/en-US/docs/Web/JavaScript>`_
-    Comprehensive reference for all things JavaScript
+`JavaScript on the Mozilla Developer Network <https://developer.mozilla.org/en-US/docs/Web/JavaScript>`_
+  Comprehensive reference for all things JavaScript
 
-  `NodeJS Docs <http://nodejs.org/api/>`_
-    API reference for the NodeJS standard library
+`NodeJS Docs <http://nodejs.org/api/>`_
+  API reference for the NodeJS standard library

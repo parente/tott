@@ -197,10 +197,20 @@ View and save
 
 Change any of the commands you worked on today to pipe output both to a file and display it in the terminal. (Hint: Google.)
 
-Be creative
-###########
+Projects
+~~~~~~~~
 
-Construct commands or scripts to perform other interesting analyses on the word list, the log file, or some other data of your choosing. Share what you build.
+If you want to try your hand at something larger than an exercise, consider one of the following.
+
+Weather on the prompt
+#####################
+
+Write a Bash script that retrieves weather information from `OpenWeatherMap's API <http://openweathermap.org/api>`_ and displays it in the terminal. Support the current conditions and forecasts via different command line options. Consider using the `jq JSON library <http://stedolan.github.io/jq/>`_ to handle the API responses.
+
+Define input
+############
+
+Write a command line program that reads words on stdin, calls the `DuckDuckGo definition API <http://api.duckduckgo.com/?q=define+ostensibly&format=json&pretty=1>`_ to define each word, and writes them to stdout. Make sure it can be used in conjunction with other tools (e.g., `cat words.txt | define`).
 
 References
 ----------
