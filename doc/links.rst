@@ -40,7 +40,8 @@
 
 .. _REST: http://en.wikipedia.org/wiki/Representational_state_transfer
 .. _Bottle: http://bottlepy.org/docs/dev/
-.. _ExpressJS: http://expressjs.com/
+.. _Express: http://expressjs.com/
+.. _Jade: http://jade-lang.com/
 .. _MongoDB: http://mongodb.org‎
 .. _Lucene: http://lucene.apache.org/
 .. _Solr: http://lucene.apache.org/solr/

@@ -9,7 +9,7 @@ Over time, we can likely have a session on any or all of these topics, or other 
 * Package management with NPM_, Bower_, pip_, and gem_
 * Project distribution with setup.py_, package.json_, and Gemfile_
 * Project automation with make_, Grunt_, and Yeoman_
-* Web micro-frameworks like ExpressJS_, Bottle_, and Sinatra_
+* Web micro-frameworks like Express_, Bottle_, and Sinatra_
 * Heavy web frameworks like Django_ and `Ruby on Rails`_
 * Data science with `IPython Notebook`_, Pandas_, SciPy_, and `scikit-learn`_
 * Distributing work with `Celery <http://www.celeryproject.org/>`_, `kue <http://learnboost.github.io/kue/>`_
