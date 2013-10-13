@@ -5,15 +5,15 @@ block head
 
 block slides
 
-  section
+  section(data-narration="/js/0.mp3")
     h1 JavaScript
-    p.subtitle TotT: 2014
+    h2 TotT: 2014
 
-  section
+  section(data-narration="/js/1.mp3")
     h2 JavaScript
     blockquote "JavaScript is a prototype-based scripting language with dynamic typing and first-class functions." <br />- <a href="http://en.wikipedia.org/wiki/JavaScript">Wikipedia</a>
 
-  section
+  section(data-narration="/js/2.mp3")
     h2 Major Attributes
     ul
       li C-derived syntax
@@ -24,127 +24,40 @@ block slides
       li Garbage collection
       li Rich literal types
 
-  section
+  section(data-narration="/js/3.mp3")
     h2 Use Cases
     ul
       li Embedded scripting
       li Frontend web development
       li Backend web development
 
-  section
+  section(data-narration="/js/4.mp3")
     h2 Example: Factorial
-    pre
-      code.
-        /*
-         * Computes the factorial of a number.
-         */
-        var factorial = function(n) {
-          if (n === 0) {
-            return 1;
-          }
-          return n * factorial(n - 1);
-        };
-        var f = factorial(5);
-        console.log(f);
+    div <a class="jsbin-embed" href="http://jsbin.com/iDEGuji/4/embed?js,console">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+    p
+      small Hint: Show line numbers by double-clicking next to the JavaScript dropdown
 
-  section
-    h2 Example: Sine
-    pre
-      code.
-        // object literal
-        var waves = {},
-            step = Math.PI / 3;
+  section(data-narration="/js/5.mp3")
+    h2 Example: Sine/Cosine
+    div <a class="jsbin-embed" href="http://jsbin.com/OYOzuSu/3/embed?js,console">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
-        // array literals
-        waves.sin = [];
-        waves.cos = [];
-        for(var i=0; i &lt; Math.PI; i+=step) {
-          waves.sin.push(Math.sin(i));
-          waves.cos.push(Math.cos(i));
-        }
+  section(data-narration="/js/6.mp3")
+    h2 Example: Mammals
+    div <a class="jsbin-embed" href="http://jsbin.com/eKUwUYE/2/embed?js,console">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
-        console.log(waves);
-
-  section
-    h2 Example: Animals
-    pre
-      code.
-        // constructor
-        var Mammal = function(name) {
-          this.name = name;
-        };
-        Mammal.prototype.speak = function() {
-          console.log(this.name, 'says', this.greeting);
-        };
-
-        var Dog = function() {
-          this.greeting = 'woof!'
-          // invoke Mammal bound to this
-          Mammal.apply(this, arguments);
-        };
-        // inherit from Mammal
-        Dog.prototype = new Mammal();
-
-        var Human = function() {
-          this.greeting = 'hello!'
-          Mammal.apply(this, arguments);
-        };
-        Human.prototype = new Mammal();
-
-        var d = new Dog('Fido'),
-            h = new Human('Alice');
-        d.speak();
-        h.speak();
-
-  section
+  section(data-narration="/js/7.mp3")
     h2 Example: Evens
-    pre
-      code.
-        var evens = function() {
-          // lexical closure
-          var count = 0;
-          return function() {
-            return (count+=2);
-          }
-        };
+    div <a class="jsbin-embed" href="http://jsbin.com/ikIwiji/2/embed?js,console">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
-        var next = evens();
-        console.log(next());
-        console.log(next());
-        console.log(next());
-
-  section.slide#example-timers
+  section(data-narration="/js/8.mp3")
     h2 Example: Timers
-    pre
-      code.
-        // anonymous functions as callbacks
-        setTimeout(function() {
-          console.log('~1.5 s elapsed')
-        }, 1500);
+    div <a class="jsbin-embed" href="http://jsbin.com/oBeZuMU/2/embed?js,console">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
-        setInterval(function() {
-          console.log('tick');
-        }, 1000);
-
-  section.slide#demo-cycle
+  section(data-narration="/js/9.mp3")
     h2 Example: Cycle
-    pre
-      code.
-        // variadic function
-        var cycle = function(end) {
-          if(end === undefined) end = 3;
-          var count = 0;
-          return function() {
-            return (count++ % end);
-          }
-        };
+    div <a class="jsbin-embed" href="http://jsbin.com/ASoPEWi/2/embed?js,console">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
-        var c1 = cycle(4);
-        var c2 = cycle();
-        console.log(c1(), c1(), c1(), c1(), c1(), c1());
-        console.log(c2(), c2(), c2(), c2(), c2(), c2());
-
-  section
+  section(data-narration="/js/10.mp3")
     h2 Gotchas
     ul
       li Function scope
@@ -154,7 +67,7 @@ block slides
       li No multiline strings
       li Weird operators
 
-  section
+  section(data-narration="/js/11.mp3")
     h2 NodeJS
     ul
       li New, circa 2009
@@ -163,13 +76,14 @@ block slides
       li Small standard library
       li Event loop, async I/O
 
-  section
+  section(data-narration="/js/12.mp3")
     h2 Demo: Working with NodeJS
 
   section
-    h2 Demo: Accidents!
+    h4 Demo: Working with NodeJS
+    video(src="#{process.env['VIDEO_ROOT']}/nodejs/nodejs.mov", width="100%", controls)
 
-  section
+  section(data-narration="/js/14.mp3")
     h2 Review
     ul
       li Language Features
