@@ -16,11 +16,19 @@ Prep Materials
 
 If time permits, try to review these resources before the meet-up. If you can't, come anyway.
 
-* Skim `A Re-Introduction to JavaScript <https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript?redirectlocale=en-US&redirectslug=JavaScript%2FA_re-introduction_to_JavaScript>`_ (~20 minutes).
-* Enter some of the code examples from the above page into `repl.it`_ and toy with them.
-* Watch the TotT JavaScript screencast
+* Skim `A Re-Introduction to JavaScript <https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript?redirectlocale=en-US&redirectslug=JavaScript%2FA_re-introduction_to_JavaScript>`_ (~15 minutes).
+* Watch the `TotT JavaScript slidecast <../_static/casts/javascript.html>`_ (~35 minutes) which includes live demos of:
+
+  * `Syntax <../_static/casts/javascript.html#/6>`_ (~5 minutes)
+  * `Rich Types <../_static/javascript.html#/7>`_ (~2 minutes)
+  * `Protypical Inheritence <../_static/casts/javascript.html#/8>`_ (~5 minutes)
+  * `Closures <../_static/casts/javascript.html#/9>`_ (~3 minutes)
+  * `Anonymous Functions <../_static/casts/javascript.html#/10>`_ (~2 minutes)
+  * `Variadic Functions <../_static/casts/javascript.html#/11>`_ (~2 minutes)
+  * `Working with NodeJS <../_static/casts/javascript.html#/13>`_ (~7 minutes)
+
 * Read `The node.js Community is ... <http://caines.ca/blog/programming/the-node-js-community-is-quietly-changing-the-face-of-open-source/>`_ (~10 minutes)
-* Watch the TotT JS Ecosystem screencast
+* Watch the TotT JavaScript Ecosystem slidecast
 
 Exercises
 ---------
@@ -123,7 +131,7 @@ Explore node_modules
 Install a bunch of modules using NPM. Poke around in the ``node_modules`` directory. Read about how NPM works on the web. What can you deduce about how NPM and NodeJS manage packages and their dependencies?
 
 Projects
-~~~~~~~~
+--------
 
 If you want to try your hand at something larger than an exercise, consider one of the following.
 

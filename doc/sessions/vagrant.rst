@@ -19,11 +19,6 @@ If time permits, try to review these resources before the meet-up. If you can't,
 
   * `Vagrant basics <../_static/casts/vagrant.html>`_ (~10 minutes)
 
-.. image:: /_images/thumbs/vagrant.png
-   :align: center
-   :alt: TotT Vagrant slidecast thumbnail
-   :target: ../_static/casts/vagrant.html
-
 Exercises
 ---------
 
