@@ -5,22 +5,22 @@ block head
 
 block slides
 
-  section
+  section(data-narration="/npm/0.mp3")
     h1 JS Ecosystem
     h2 TotT: 2014
 
-  section
+  section(data-narration="/npm/1.mp3")
     h2 JS Server Side (NodeJS)
     ul
       li Has module definitions, imports
       li Has a slim standard library
       li Has encouraged development and sharing of small tools
 
-  section
+  section(data-narration="/npm/2.mp3")
     h2 Example: <tt>exports</tt>, <tt>require</tt>
+    p In <tt>foo.js</tt>
     pre
       code.
-        // in foo.js
         module.exports.double = function(x) {
           return x * 2;
         };
@@ -29,22 +29,22 @@ block slides
           return x * 3;
         };
 
+    p In <tt>bar.js</tt>
     pre
       code.
-        // in bar.js
         var foo = require('./foo');
         var z = foo.double(5);
         console.log(z);
         var q = foo.triple(5) // ERROR!
 
-  section
+  section(data-narration="/npm/3.mp3")
     h2 Node Packaged Modules
     ul
       li A method of distributing NodeJS modules
       li A hosted index of published modules
       li A command line tool for managing modules
 
-  section
+  section(data-narration="/npm/4.mp3")
     h2 <tt>npm</tt>
     p Commands to master:
     pre.
@@ -52,7 +52,7 @@ block slides
       $ npm install [-g]
       $ npm init
 
-  section
+  section(data-narration="/npm/5.mp3")
     h2 Demo: NPM Basics
     p search, install, require
 
@@ -60,18 +60,17 @@ block slides
     h4 Demo: NPM Basics
     video(src="#{process.env['VIDEO_ROOT']}/nodejs/npm.mov", width="100%", controls)
 
-  section
+  section(data-narration="/npm/7.mp3")
     h2 <tt>package.json</tt>
     ul
       li Package metadata
       li States name, author, version, git repo, ...
       li Critically, lists dependencies
 
-  section
-    h2 Example: Declaring Packages
+  section(data-narration="/npm/8.mp3")
+    h2 Example: <tt>package.json</tt>
     pre
       code.
-        // in package.json
         {
           "name": "totter",
           "version": "0.0.1",
@@ -97,7 +96,7 @@ block slides
           }
         }
 
-  section
+  section(data-narration="/npm/9.mp3")
     h2 Demo: Hacky Notebook
     p wr, marked
 
@@ -105,23 +104,23 @@ block slides
     h4 Demo: Hacky Notebook
     video(src="#{process.env['VIDEO_ROOT']}/nodejs/notebook.mov", width="100%", controls)
 
-  section
+  section(data-narration="/npm/11.mp3")
     h2 JS Client Side (Browsers)
     ul
       li Long ago: Snippets to add a tad of interactivity
       li Then: Libs to hide cross-browser scripting issues
       li Now: Libs to support rich Web app development
 
-  section.slide#tbc
+  section(data-narration="/npm/12.mp3")
     h2 To Be Continued
-    p In sessions about front-end JS
+    p In sessions about frontend JS
 
-  section.slide#meet
+  section(data-narration="/npm/13.mp3")
     h2 Review
     ul
       li NodeJS
       li NodeJS Modules
       li NodeJS Packaged Modules
-      li NPM
+      li <tt>npm</tt>
       li <tt>package.json</tt>
 
