@@ -15,10 +15,13 @@ Prep Materials
 
 If time permits, try to review these resources before the meet-up. If you can't, come anyway.
 
-* Read `Why Should I Use Source Control? <http://whyshouldiuse.com/source-control>`_
-* Read `Pro Git Chapter 1, Sections 1.1 through 1.3 <http://git-scm.com/book>`_
-* Read the highly opinionated `Why Git is Better Than X <http://thkoch2001.github.io/whygitisbetter/#git-is-standard>`_
-* Watch the TotT Git Basics slidecast (~30 minutes)
+* Read `Why Should I Use Source Control? <http://whyshouldiuse.com/source-control>`_ (~5 minutes)
+* Read `Pro Git Chapter 1, Sections 1.1 through 1.3 <http://git-scm.com/book>`_ (~10 minutes)
+* Read the highly opinionated `Why Git is Better Than X <http://thkoch2001.github.io/whygitisbetter/#git-is-standard>`_ (~5 minutes)
+* Watch the `TotT Git Basics slidecast <../_static/casts/git.html>`_ (~35 minutes) which includes a live demo of:
+
+  * `Personal, single-branch workflow <../_static/casts/git.html#/16>`_ (~14 minutes)
+  * `Personal, multi-branch workflow <../_static/casts/git.html#/18>`_ (~12 minutes)
 
 * Read `Pro Git Chapter 5 Section 5.1 <http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows>`_
 * Read `Pro Git Chapter 5 Section 5.2 <http://git-scm.com/book/en/Distributed-Git-Contributing-to-a-Project>`_

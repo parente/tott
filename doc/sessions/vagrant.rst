@@ -17,7 +17,7 @@ If time permits, try to review these resources before the meet-up. If you can't,
 * Read `How Vagrant Benefits You <http://docs.vagrantup.com/v2/why-vagrant/index.html>`_ (~5 minutes)
 * Watch the `TotT Vagrant slidecast <../_static/casts/vagrant.html>`_ (~20 minutes) which includes a live demo of:
 
-  * `Vagrant basics <../_static/casts/vagrant.html>`_ (~10 minutes)
+  * `Vagrant basics <../_static/casts/vagrant.html#/9>`_ (~10 minutes)
 
 Exercises
 ---------
