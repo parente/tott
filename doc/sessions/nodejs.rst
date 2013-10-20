@@ -70,7 +70,7 @@ Write a JS program that pulls a quote from this site and displays it on stdout i
 Serve quotes
 ############
 
-Write a tiny web server using the NodeJS ``http`` module that fetches a quote from `I Heart Quotes <http://www.iheartquotes.com/>`_ and returns it to the requesting client. Run the web server in *tottbox* on port 9000 and test it by pointing Google Chrome on your laptop to http://192.168.33.10:9000. (Hint: Google for or look on the NodeJS site for the few lines of code you need to create a web server in NodeJS. It's the example I gave at the start of class.)
+Write a tiny web server using the NodeJS ``http`` module that fetches a quote from `I Heart Quotes <http://www.iheartquotes.com/>`_ and returns it to the requesting client. Run the web server in *tottbox* on port 9000 and test it by pointing Google Chrome on your laptop to http://192.168.33.10:9000. (Hint: Google for or look on the NodeJS site for the few lines of code you need to create a web server in NodeJS.)
 
 Paint a rainbow
 ###############

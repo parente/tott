@@ -9,6 +9,7 @@ Goals
 * Know the basics of using `git`_ at the command line
 * Practice a personal Git workflow
 * Practice a collaborative Git workflow
+* Get acquainted with GitHub_
 
 Prep Materials
 --------------
