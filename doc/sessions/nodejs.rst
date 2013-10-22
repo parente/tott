@@ -28,7 +28,10 @@ If time permits, try to review these resources before the meet-up. If you can't,
   * `Working with NodeJS <../_static/casts/javascript.html#/13>`_ (~7 minutes)
 
 * Read `The node.js Community is ... <http://caines.ca/blog/programming/the-node-js-community-is-quietly-changing-the-face-of-open-source/>`_ (~10 minutes)
-* Watch the TotT JavaScript Ecosystem slidecast
+* Watch the `TotT JavaScript Ecosystem slidecast <../_static/casts/js_eco.html>`_ (~25 minutes) which includes live demos of:
+
+  * `NPM Basics <../_static/casts/js_eco.html#/6>`_ (~7 minutes)
+  * `package.json Pizzazz <../_static/casts/js_eco.html#/10>`_ (~7 minutes)
 
 Exercises
 ---------
