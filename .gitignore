@@ -2,14 +2,9 @@ doc/_build
 .vagrant/
 *.box
 packer_cache/
-./Vagrantfile
 *.sublime-workspace
 sandbox
-.vagrant/
 .ssh/
 .gitconfig
 node_modules/
-doc/slides/_build/*.html
-vagrant/assignment*
-vagrant/ex*
-doc/slides/npm-debug.log
+demo/

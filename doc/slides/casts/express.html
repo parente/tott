@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Express - TotT</title><link rel="stylesheet" href="reveal.js/css/reveal.min.css"><link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme"><link rel="stylesheet" href="reveal.js/lib/css/zenburn.css"><link rel="stylesheet" href="css/custom.css"><link rel="stylesheet" href="css/narrator.css"><script>document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+</script><!--[if lt IE 9]><script src="reveal.js/lib/js/html5shiv.js"></script><![endif]--></head><body><div class="reveal"><div class="slides"><section data-narration="/express/0.mp3"><h1>Express</h1><h2>TotT 2014</h2></section><section data-narration="/express/1.mp3"><h2>Express</h2><blockquote>"Express is a minimal and flexible node.js web application framework, providing a robust set of features for building single and multi-page, and hybrid web applications." <br />- <a href="http://expressjs.com/">expressjs.com</a></blockquote></section><section data-narration="/express/2.mp3"><h2>Use Cases</h2><ul><li>Single page web apps</li><li>Multi-page web apps</li><li>RESTful web APIs</li></ul></section><section data-narration="/express/3.mp3"><h2>Express Concepts</h2><ul><li>Application</li><li>Server</li><li>Routes</li><li>Request</li><li>Response</li><li>Middleware</li></ul></section><section data-narration="/express/4.mp3"><h2>Demo: Application, Server</h2><p>Host, port, event loop</p></section><section><h4>Demo: Application, Server</h4><video src="https://dl.dropboxusercontent.com/u/264241/tott/video/express/app.mov" width="100%" controls></video></section><section data-narration="/express/6.mp3"><h2>Demo: Routes, Request, Response</h2><p>Verbs, paths, parameters, format</p></section><section><h4>Demo: Routes, Request, Response</h4><video src="https://dl.dropboxusercontent.com/u/264241/tott/video/express/routes.mov" width="100%" controls></video></section><section data-narration="/express/8.mp3"><h2>Demo: Middleware</h2><p>Logging, error handling</p></section><section><h4>Demo: Middleware</h4><video src="https://dl.dropboxusercontent.com/u/264241/tott/video/express/middleware.mov" width="100%" controls></video></section><section data-narration="/express/10.mp3"><h2>Demo: Anon-Board</h2><p>RESTful postings</p></section><section><h4>Demo: Anon-Board</h4><video src="https://dl.dropboxusercontent.com/u/264241/tott/video/express/restful.mov" width="100%" controls></video></section><section data-narration="/express/12.mp3"><h2>Review</h2><ul><li>Application</li><li>Server</li><li>Routes</li><li>Requests</li><li>Responses</li><li>RESTful example</li></ul></section></div></div><script src="reveal.js/lib/js/head.min.js"></script><script src="reveal.js/js/reveal.min.js"></script><script>// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+  controls: true,
+  progress: true,
+  history: true,
+  center: true,
+  
+  theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+  transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+  narrationRoot: "https://dl.dropboxusercontent.com/u/264241/tott/audio",
+  
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+    { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+    { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+    { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+    { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+    { src: 'js/narrator.js', async: true, condition: function() { return !!document.body.classList; } }
+  ]
+});</script></body></html>

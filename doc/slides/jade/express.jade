@@ -1,0 +1,73 @@
+extends layout
+
+block head
+  title Express - TotT
+
+block slides
+
+  section(data-narration="/express/0.mp3")
+    h1 Express
+    h2 TotT 2014
+
+  section(data-narration="/express/1.mp3")
+    h2 Express
+    blockquote "Express is a minimal and flexible node.js web application framework, providing a robust set of features for building single and multi-page, and hybrid web applications." <br />- <a href="http://expressjs.com/">expressjs.com</a>
+
+  section(data-narration="/express/2.mp3")
+    h2 Use Cases
+    ul
+      li Single page web apps
+      li Multi-page web apps
+      li RESTful web APIs
+
+  section(data-narration="/express/3.mp3")
+    h2 Express Concepts
+    ul
+      li Application
+      li Server
+      li Routes
+      li Request
+      li Response
+      li Middleware
+
+  section(data-narration="/express/4.mp3")
+    h2 Demo: Application, Server
+    p Host, port, event loop
+
+  section
+    h4 Demo: Application, Server
+    video(src="#{process.env['VIDEO_ROOT']}/express/app.mov", width="100%", controls)
+
+  section(data-narration="/express/6.mp3")
+    h2 Demo: Routes, Request, Response
+    p Verbs, paths, parameters, format
+
+  section
+    h4 Demo: Routes, Request, Response
+    video(src="#{process.env['VIDEO_ROOT']}/express/routes.mov", width="100%", controls)
+
+  section(data-narration="/express/8.mp3")
+    h2 Demo: Middleware
+    p Logging, error handling
+
+  section
+    h4 Demo: Middleware
+    video(src="#{process.env['VIDEO_ROOT']}/express/middleware.mov", width="100%", controls)
+
+  section(data-narration="/express/10.mp3")
+    h2 Demo: Anon-Board
+    p RESTful postings
+
+  section
+    h4 Demo: Anon-Board
+    video(src="#{process.env['VIDEO_ROOT']}/express/restful.mov", width="100%", controls)
+
+  section(data-narration="/express/12.mp3")
+    h2 Review
+    ul
+      li Application
+      li Server
+      li Routes
+      li Requests
+      li Responses
+      li RESTful example
