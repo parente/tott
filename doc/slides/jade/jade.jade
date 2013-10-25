@@ -1,0 +1,55 @@
+extends layout
+
+block head
+  title Jade - TotT
+
+block slides
+
+  section(data-narration="/jade/0.mp3")
+    h1 Jade
+    h2 TotT 2014
+
+  section(data-narration="/jade/1.mp3")
+    h2 Jade
+    blockquote "Jade is designed primarily for server side templating in node.js ... It is only intended to produce XML like documents (HTML, RSS etc.)" <br />- <a href="http://jade-lang.com/tutorial">jade-lang.com</a>
+
+  section(data-narration="/jade/2.mp3")
+    h2 Use Cases
+    ul
+      li HTML Shorthand
+      li Templating
+
+  section(data-narration="/jade/3.mp3")
+    h2 Example: Static HTML
+
+  section(data-narration="/jade/4.mp3")
+    h2 Example: Embedded JS
+    div <a class="jsbin-embed" href="http://jsbin.com/eXEZuYi/5/embed?html,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+  section(data-narration="/jade/5.mp3")
+    h2 Example: Mixins
+
+  section(data-narration="/jade/6.mp3")
+    h2 Example: Extends
+
+  section(data-narration="/jade/7.mp3")
+    h2 A Word of Caution
+    p Like everything else, templates have their place.
+    p Don't write your whole app in a template!
+
+  section(data-narration="/jade/8.mp3")
+    h2 Demo: Express Jade Madlibs
+    p Views, context, POST
+
+  section
+    h4 Demo: Express Jade Madlibs
+    video(src="#{process.env['VIDEO_ROOT']}/jade/madlibs.mov", width="100%", controls)
+
+  section(data-narration="/express/10.mp3")
+    h2 Review
+    ul
+      li Static markup
+      li Loops and conditions
+      li Mixins
+      li Extensions
+      li Jade views in Express
