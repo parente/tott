@@ -26,8 +26,22 @@
         }
     };
 
+    var set_jsbin = function(slide) {
+        console.log(slide);
+        if(slide.dataset && slide.dataset.jsbin) {
+            var path = slide.dataset.jsbin;
+            var iframe = slide.querySelector('.jsbin-embed');
+            console.log('src', iframe.src);
+            if(!iframe.src) {
+                iframe.src = 'http://jsbin.com'+path;
+            }
+        }
+    };
+
     Reveal.addEventListener('slidechanged', function(event) {
         set_narration(event.currentSlide);
+        set_jsbin(event.currentSlide);
     });
     set_narration(Reveal.getCurrentSlide());
+    set_jsbin(Reveal.getCurrentSlide());
 }());

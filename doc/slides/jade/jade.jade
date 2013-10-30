@@ -19,25 +19,59 @@ block slides
       li HTML Shorthand
       li Templating
 
-  section(data-narration="/jade/3.mp3")
+  section(data-narration="/jade/3.mp3", data-jsbin="/iqUxemO/4/embed?html,output")
     h2 Example: Static HTML
+    iframe.jsbin-embed
 
-  section(data-narration="/jade/4.mp3")
+  section(data-narration="/jade/4.mp3", data-jsbin="/eXEZuYi/13/embed?html,output")
     h2 Example: Embedded JS
-    div <a class="jsbin-embed" href="http://jsbin.com/eXEZuYi/5/embed?html,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+    iframe.jsbin-embed
 
-  section(data-narration="/jade/5.mp3")
+  section(data-narration="/jade/5.mp3", data-jsbin="/uRAHEDe/5/embed?html,output")
     h2 Example: Mixins
+    iframe.jsbin-embed
 
   section(data-narration="/jade/6.mp3")
     h2 Example: Extends
+    pre
+      code.
+        // in layout.jade
+        doctype 5
+        html
+          head
+            block head
+            link(rel="stylesheet", href="css/common.css")
+          body
+            block body
+            script(src="js/common.js")
+            block postscript
 
   section(data-narration="/jade/7.mp3")
+    h2 Example: Extends
+    pre
+      code.
+        // in login.jade
+        extends layout.jade
+
+        block head
+          title Login
+          link(rel="stylesheet", href="css/login.css")
+
+        block body
+          form.login
+            input#username
+            input#password
+            button(type="submit") Login
+
+        block postscript
+          script(src="js/login.js")
+
+  section(data-narration="/jade/8.mp3")
     h2 A Word of Caution
     p Like everything else, templates have their place.
     p Don't write your whole app in a template!
 
-  section(data-narration="/jade/8.mp3")
+  section(data-narration="/jade/9.mp3")
     h2 Demo: Express Jade Madlibs
     p Views, context, POST
 
@@ -45,7 +79,7 @@ block slides
     h4 Demo: Express Jade Madlibs
     video(src="#{process.env['VIDEO_ROOT']}/jade/madlibs.mov", width="100%", controls)
 
-  section(data-narration="/express/10.mp3")
+  section(data-narration="/jade/11.mp3")
     h2 Review
     ul
       li Static markup

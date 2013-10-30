@@ -2,3 +2,9 @@
     font-family: monospace;
     text-transform: none;
 }
+
+.reveal .jsbin-embed {
+    border: 1px solid #999;
+    width: 100%;
+    min-height: 450px;
+}
