@@ -18,6 +18,12 @@ If time permits, try to review these resources before the meet-up. If you can't,
 
 * Read the `RESTful Web APIs <http://en.wikipedia.org/wiki/Representational_state_transfer#RESTful_web_APIs>`_ section of the Representational state transfer (REST) page on Wikipedia. Then skim the rest of the page. (~10 minutes).
 * Read `Understanding Express.js <http://evanhahn.com/understanding-express-js/>`_ (~20 minutes).
+* Watch the `TotT Express slidecast <../_static/casts/express.html>`_ (~35 minutes) which includes live demos of:
+
+  * `Starting an Express Applicaiton and Server <../_static/casts/express.html#/5>`_ (~9 minutes)
+  * `Handling Requests and Responding in Express Routes <../_static/casts/express.html#/7>`_ (~9 minutes)
+  * `Using Express Middleware <../_static/casts/express.html#/9>`_ (~10 minutes)
+
 * Watch `Learning the Jade Templating Engine Syntax <http://cssdeck.com/labs/learning-the-jade-templating-engine-syntax>`_ (~15 minutes). Note the play button and speed controls are in the bottom right of the CSSDeck web app.
 
 Exercises
@@ -40,14 +46,14 @@ Express has a command line utility that will lay out a suggested skeleton for an
 Secure the site
 ###############
 
-The Express skeleton supports HTTP connections out of the box. This setup sends all traffic to and from the web server across the Internet in clear-text. For a dead-drop, this is a big no-no because it allows anyone to sniff the message text on the wire when it is posted or retrieved. 
+The Express skeleton supports HTTP connections out of the box. This setup sends all traffic to and from the web server across the Internet in clear-text. For a dead-drop, this is a big no-no because it allows anyone to sniff the message text on the wire when it is posted or retrieved.
 
 Modify the generated boilerplate to use HTTPS instead of HTTP. Google for an example of how to do it or refer to the NodeJS documentation. (Hint: You'll need to generate a self-signed SSL certificate for the site. Again, Google.)
 
 Add message routes
 ##################
 
-Implement Express routes for creating, retrieving, updating, and deleting messages on the dead-drop site. Keep all messages in memory. Remember to delete a message once it is successfully retrieved. 
+Implement Express routes for creating, retrieving, updating, and deleting messages on the dead-drop site. Keep all messages in memory. Remember to delete a message once it is successfully retrieved.
 
 Manually test your routes using ``curl`` and some sample data at the command line. (Hint: Read the ``curl`` man page or scour the web for examples of how to GET, POST, etc.) Or, if you want to leapfrog ahead, look at a test framework like Mocha_.
 
@@ -64,7 +70,7 @@ Implement an Express middleware function that tracks basic site stats in memory.
 Add stats UI
 ############
 
-Show the stats the dead-drop site has collected when a user visits `/stats` or an equivalent resource. Do some basic formatting of the information, say in justified tables, to make it somewhat simple for users to consume. Use Jade to template the page. 
+Show the stats the dead-drop site has collected when a user visits `/stats` or an equivalent resource. Do some basic formatting of the information, say in justified tables, to make it somewhat simple for users to consume. Use Jade to template the page.
 
 Add expiration
 ##############
