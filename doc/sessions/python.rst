@@ -59,7 +59,7 @@ Bottle it up
 
 Use ``pip`` to install Bottle into the same virtualenv you created for the image resize utility. Then define a web service API for your image resize utility. Support upload of images in common formats and specification of the desired width or height while maintaining aspect. For example, I might access your completed service using ``curl`` like so:
 
-.. code-block::
+.. code-block:: python
 
     curl -X POST -d @myimage.png http://example.com/resize?width=250 --header "Content-Type:image/png"
 
@@ -68,7 +68,7 @@ Show HackerNews
 
 HackerNews is a social new web site for geeks. The site has a `web API <http://api.ihackernews.com/>`_ for hackers to, well, hack.
 
-Use ``pip`` to install the ``thekarangoel/HackerNewsAPI <https://github.com/thekarangoel/HackerNewsAPI>``_, a Python library simplifying access to the HN API. Use it to write a command line tool that can print the top N front page items or newly posted items where the user can specify N.
+Use ``pip`` to install the `thekarangoel/HackerNewsAPI <https://github.com/thekarangoel/HackerNewsAPI>`_, a Python library simplifying access to the HN API. Use it to write a command line tool that can print the top N front page items or newly posted items where the user can specify N.
 
 Add more options to your command line tool as it suits your fancy (e.g., show comments for a given news story and pipe to less for navigation.)
 
