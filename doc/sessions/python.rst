@@ -55,7 +55,7 @@ Create a virtualenv and use ``pip`` to install Pillow. Write a Python script tha
 Bottle it up
 ############
 
-`Bottle <bottlepy.org>`_ is a web microframework for Python. (It's a single .py file!)
+Bottle_ is a web microframework for Python. (It's a single .py file!)
 
 Use ``pip`` to install Bottle into the same virtualenv you created for the image resize utility. Then define a web service API for your image resize utility. Support upload of images in common formats and specification of the desired width or height while maintaining aspect. For example, I might access your completed service using ``curl`` like so:
 
