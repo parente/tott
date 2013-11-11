@@ -159,3 +159,9 @@ References
 
 `NodeJS Docs <http://nodejs.org/api/>`_
   API reference for the NodeJS standard library
+
+`JavaScript Style Guide <https://github.com/airbnb/javascript>`_
+  A JS style guide from Airbnb
+
+`Principles of Writing Consistent, Idiomatic JavaScript <https://github.com/rwaldron/idiomatic.js>`_
+  Another JS style guide
