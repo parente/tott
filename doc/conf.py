@@ -18,6 +18,8 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 # if so, force git submodule update and init
 if on_rtd:
   subprocess.check_call(['git', 'submodule', 'update', '--init'], cwd='..')
+# get the shiny!
+RTD_NEW_THEME = True
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
