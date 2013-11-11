@@ -23,7 +23,6 @@ Tools of the Trade (TotT) is a recurring meet-up for students who want more prac
 We currently have meet-ups planned on the topics listed below with :doc:`many more possibilities for future sessions <other>`. Content and pages will continue to appear over time.
 
 .. toctree:
-   :numbered:
 
    sessions/vagrant
    sessions/bash
