@@ -20,11 +20,10 @@ Tools of the Trade (TotT) is a recurring meet-up for students who want more prac
 #. Meet face-to-face to hack on practice problems or small projects together in a :doc:`common development environment <setup>`.
 #. Help one another and share our experience in-person and online.
 
-.. rubric:: Tools and Topics
+We currently have meet-ups planned on the topics listed in the table of contents on this page with :doc:`many more possibilities for future sessions <other>`. Content and pages will continue to appear over time.
 
-We currently have meet-ups planned on the following topics with :doc:`many more possibilities for future sessions <other>`. Content and pages will continue to appear over time.
-
-.. toctree::
+.. toctree:
+   :hidden:
    :numbered:
 
    sessions/vagrant
