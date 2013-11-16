@@ -1,2 +1,5 @@
-jQuery
-======
+JavaScript and jQuery
+=====================
+
+..
+    css clock
