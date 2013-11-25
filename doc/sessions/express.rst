@@ -41,7 +41,7 @@ Write down as design for the REST API of the site. Account for the case where Al
 Bootstrap the code
 ##################
 
-Express has a command line utility that will lay out a suggested skeleton for an Express-based web application. Learn how to use it and then run it.
+Express has a command line utility that will lay out a suggested skeleton for an Express-based web application. Learn how to use it and then run it. (Hint: ``express`` is already installed globally on *tottbox*, but don't forget to run ``npm install`` in the project skeleton it creates.)
 
 Secure the site
 ###############

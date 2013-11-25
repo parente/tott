@@ -78,7 +78,7 @@ Write a tiny web server using the NodeJS ``http`` module that fetches a quote fr
 Paint a rainbow
 ###############
 
-Make a new directory in your shared *tottbox* folder. Change to that directory and use npm to install the ``colors`` module locally into that folder.
+Make a new directory in your shared *tottbox* folder. Change to that directory and use ``npm`` to install the ``colors`` module locally into that folder.
 
 .. code-block:: console
 
@@ -96,7 +96,7 @@ Make another folder and install the ``moment`` module using ``npm``. Look at the
 Handle args
 ###########
 
-In the same "freedom" folder, NPM install ``optimist``.  Find its documentation and study the examples. Now use it to add support for command line arguments that let the user specify:
+In the same "freedom" folder, ``npm install optimist``.  Find its documentation and study the examples. Now use it to add support for command line arguments that let the user specify:
 
 #. The date of interest, with the end of semester date as the default.
 #. If the output should be humanized or not, with yes, humanize, as the default.
