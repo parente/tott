@@ -44,7 +44,7 @@ Create a shared *tottbox* folder to store your notebooks and start the IPython N
     cd !$
     ipython notebook --ip=0.0.0.0
 
-Open your web browser and visit it on the *tottbox* IP and port printed. Create a new notebook in the web UI.
+Open your web browser and visit it on the *tottbox* IP and port printed, http://192.168.33.10:8888. Create a new notebook in the web UI.
 
 Load the Tar Heel Reader book data
 ##################################
@@ -116,31 +116,94 @@ Picking ``k`` is empirical. We'll try a few values and see what results we get. 
 Prep English titles
 ###################
 
+Use Pandas to get a Series of unique English book titles from the books DataFrame you loaded. This step amounts to a one-liner in which you:
+
+#. Select rows in the DataFrame that have language equal to "en"
+#. Select the title column from the remaining rows
+#. Drop duplicate titles
+
+Once you have the title Series, you need to transform the titles into `feature vectors <http://en.wikipedia.org/wiki/Feature_vector>`_ on which the k-means algorithm can operate. The ``sklearn.feature_extraction.text`` package has a number of classes that can do this with minimal effort. Add the following imports to your notebook:
+
+.. code-block:: python
+
+   from sklearn.feature_extraction.text import CountVectorizer, HashingVectorizer, TfidfVectorizer
+
+Now read the scikit-learn doc about these three classes and use each of them to transform your title Series into a new, independent series: ``count``, ``hash``, ``tfidf``.
+
+Start simply and use defaults where possible. Until you can visualize how the clustering is working, it makes little sense to start turning random knobs.
+
 Cluster English titles
 ######################
 
-Plot English title cluster terms
-################################
+We'll now run the k-means clustering algorithm over each one of your transformed title Series. The immediate goal is to get a sense of how our choice of parameters affects the ability of k-means to decompose the entire set of books into clusters of books related by title.
 
-Prep language classifier data
-#############################
+Add the following import to your notebook:
 
-Train a language classifier
-###########################
+.. code-block:: python
 
-Evaluate a language classifier
-##############################
+   from sklearn.cluster import KMeans
+
+Construct an instance of the class called ``km``. Configure it to create 20 clusters. Then ``fit`` the class to the first of your three title transformation Series, ``count``. Once you've fit the model, create a new DataFrame that pairs the human-readable book titles with the assigned cluster IDs like so:
+
+.. code-block:: python
+
+   # where titles is your untransformed title Series
+   en_titles = pandas.DataFrame(titles)
+   en_titles['count_cluster'] = km.labels_
+
+Re-fit the ``km`` algorithm to your ``hash`` and ``tfidf`` Series. Add each one to ``en_titles`` as a new column.
+
+Now, for each of the three ``*_cluster`` columns you created, determine how many books fall into each of the 20 clusters. (Hint: ``groupby`` should help you here.)
+
+Does the clustering algorithm appear to work better or worse for any of the transformations? What if you choose to create fewer or more clusters? What if you play with other options to the Vectorizer constructors or the KMeans constructor? Try turning some knobs and document what you discover in your notebook.
+
+Visualize your clusters
+#######################
+
+The k-means algorithm assigns each book title to a cluster identified by an integer. That is all. Interpreting the cluster assignments in light of the book titles is the responsibility of the analyst (i.e., you).
+
+Start this task by printing some of the tiles in a cluster with the following code:
+
+.. code-block:: python
+
+   en_titles[en_titles.count_cluster == 0].head(25)
+
+Vary the column name, cluster integer, method of sampling, and sample size. Do you see any patterns within your clusters? Can you assign a category name to any cluster (e.g., books about X).
+
+Studying clusters in this manner is inefficient at best and biased at worst. For instance, just because you look at the first 25 titles in a set of 900 books doesn't mean those 25 are representative of the full set.
+
+Find a way to better visualize and interpret your clusters. Consider manipulations of the titles and clusters using Pandas to show cluster contents compactly and without bias. Consider using matplotlib to display the information graphically in some way. Demonstrate your technique and document its pros and cons.
+
+Interpret your results
+######################
+
+Do your clusters experiments reveal any patterns in book titles? Do they suggest any complementary categorizations or tags for books on the THR site? Do they suggest common topics addressed by THR authors?
+
+Are there clusters that are not easy to explain? Are there books that seem to befuddle clustering? Do you have any ideas about how to study and understand these books better?
 
 Projects
 --------
 
 If you want to try your hand at something larger than an exercise, consider one of the following.
 
+Find books misclassified by language
+####################################
+
+Gary says that some number of books on the Tar Heel Reader site are marked as having the wrong language. Manually finding these misclassifications is a pain. A language classifier could help alleviate these problems. Using the data provided, we could:
+
+#. train the classifier on a set of books with known-to-be-correct language assignments (the *ground truth*),
+#. evaluate the accuracy of the classifier on a hold-out test set of books by comparing its language predictions with the ground-truth,
+#. apply a well-performing classifier to the entire set of books, and
+#. review those books where the classifier predicts a language that mismatches the language assigned by the human author.
+
+The `text document classification example in the scikit-learn documentation <http://scikit-learn.org/stable/auto_examples/mlcomp_sparse_document_classification.html>`_ might help get you started. So might the `sample pipeline for text feature extraction and evaluation <http://scikit-learn.org/stable/auto_examples/grid_search_text_feature_extraction.html>`_ in the scikit-learn doc. In fact, there are many ways to skin this cat using scikit-learn. The key is setting up your notebook to quickly try new experiments in defining features, in picking a classifier algorithm, in choosing classifier parameters, and in evaluating performance.
+
+If you want to tackle this project in earnest, talk with Pete. He has some feature selection code that might help.
+
 Build a recommendation engine
 #############################
 
-Gary has a second dataset derived from the Tar Heel Reader site that captures what books were read by what visitors to the site over time.
-
+Gary has a second dataset derived from the Tar Heel Reader site that captures what books were read by what visitors to the site over time. This data can be used to train a `recommendation engine <http://en.wikipedia.org/wiki/Recommender_system>`_ based on `collaborative filtering <http://en.wikipedia.org/wiki/Collaborative_filtering>`_. Talk with Gary if you are interested in playing with this dataset and building a recommendation engine for the THR site.
 
 References
 ----------
