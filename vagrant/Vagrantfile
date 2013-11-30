@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "tottbox_2013_09_01"
+  config.vm.box = "tottbox_2013_11_29"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
@@ -31,8 +31,8 @@ Vagrant.configure("2") do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
-  config.vm.network :forwarded_port, guest: 9000, host: 9000
-  config.vm.network :forwarded_port, guest: 35729, host: 35729
+  # config.vm.network :forwarded_port, guest: 9000, host: 9000
+  # config.vm.network :forwarded_port, guest: 35729, host: 35729
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -41,8 +41,7 @@ Vagrant.configure("2") do |config|
   # Basic provisioning using inline bash script
   config.vm.provision :shell, :inline => $script
 
-  # Modify the VirtualBox settings to intercept and manage DNS requests, and
-  # to enable symlinks in the shared folder
+  # Modify the VirtualBox settings to intercept and manage DNS requests
   config.vm.provider :virtualbox do |vb|
     vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
   end
