@@ -45,8 +45,6 @@ Visit the `Git Immersion <http://gitimmersion.com/>`_ web site. Starting on `lab
 
 You should perform all the lab exercises in a subfolder under ``/vagrant`` on *tottbox*. For instance, ``/vagrant/version/git_immersion`` or similar will work. Remember, this directory also appears on your laptop in the folder you setup for your course work in the first assignment. Feel free to use SublimeText or your preferred text editor to create and edit the files in the tutorials, but execute the git commands in a *tottbox* terminal.
 
-.. note:: Don't worry about the Ruby code. It's there to help you practice Git, not learn Ruby. We'll cover Ruby later in the course.
-
 Diagram git
 ###########
 

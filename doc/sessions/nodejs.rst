@@ -4,7 +4,7 @@ JavaScript and NodeJS
 Goals
 -----
 
-* Gain the ability to read and write JavaScript code
+* Learn to read and write JavaScript code
 * Recognize the gotchas of JavaScript
 * Know what `NodeJS`_ is
 * Understand how to tap into the NodeJS ecosystem

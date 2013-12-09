@@ -321,7 +321,7 @@ Edit and Test
 #. Address any README.md failures reported by fixing your the file until the tests pass.
 #. Address any *tottbox* failures by asking for help. (They're probably my bugs, not yours.)
 
-.. note:: For this assignment, specifications and tests are overkill. However, I want you to get a glimpse of behavior-driven development (BDD), a topic we can cover later.
+.. note:: For this exercise, specifications and tests are overkill. However, I want you to get a glimpse of behavior-driven development (BDD), a topic we will cover later.
 
 Commit and Push
 ~~~~~~~~~~~~~~~
@@ -342,7 +342,7 @@ What Happened?
 
 You might wonder what just happened behind the scenes. Here's the gist.
 
-* You destroyed your *tottbox* VM and brought up a new one.
+* You destroyed your *tottbox* VM instance and brought up a new one.
 * You created a read-write copy, a *fork*, of the read-only `parente/tott-verify <https://github.com/parente/tott-verify>`_ git repository on GitHub.
 * You made a read-write clone of your fork in your ``tott_dir`` on your laptop for local editing.
 * You edited the README.md to note your personal information.
@@ -353,4 +353,6 @@ You might wonder what just happened behind the scenes. Here's the gist.
 Going Further
 -------------
 
-You just setup a virtually indestructible development environment on your laptop with `numerous interesting, useful tools pre-installed <https://github.com/parente/tott/blob/master/packer/scripts/tools.sh>`_. Play with it. Break it. Put it back together. Read more about the pieces. And just have fun.
+You just setup a virtually indestructible development environment on your laptop with `numerous interesting, useful tools pre-installed <https://github.com/parente/tott/blob/master/packer/scripts/tools.sh>`_. Play with it. Break it. Put it back together. Read more about the pieces. Have fun.
+
+We'll exercise all of the pieces throughout our scheduled meetups.
