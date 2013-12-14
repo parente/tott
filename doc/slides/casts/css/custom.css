@@ -8,3 +8,9 @@
     width: 100%;
     min-height: 450px;
 }
+
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+    text-transform: none;
+}
