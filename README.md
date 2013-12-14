@@ -25,9 +25,11 @@ From the website:
     Makefile            # automate all the things
 ```
 
-## Fork This Course
+## Contribute
 
-I plan to build out the material for our meetings entirely in the public eye. The source for the course web site, code samples, shared Vagrant box, lab exercises, and so on all live or will live under [http://github.com/parente/tott](http://github.com/parente/tott). If you have a suggestion or see a problem, [open an issue](https://github.com/parente/tott/issues) or [fork and submit a pull request](https://github.com/parente/tott/fork).
+I plan to build out the material for this meet-up entirely in the public eye. The source for the web site, slidecasts, tottbox Packer build config, and tottbox Vagrantfile will live under [http://github.com/parente/tott](http://github.com/parente/tott). Starter code for session exercises and projects will reside in separate repositories prefixed with *tott-* under [http://github.com/parente](https://github.com/parente?tab=repositories).
+
+If you have a suggestion or see a problem, [open an issue](https://github.com/parente/tott/issues). If you want to contribute an entire session, [fork and submit a pull request](https://github.com/parente/tott/fork).
 
 ## License
 
