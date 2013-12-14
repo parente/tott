@@ -8,7 +8,7 @@ Tools of the Trade
 
    -- `Abraham Maslow <http://en.wikipedia.org/wiki/Abraham_Maslow>`_
 
-.. important:: Our first session is tentatively scheduled for **Friday, January 10th 2014 at 3 PM in Sitterson Hall, Room 011** on the UNC-CH campus. Please join the `TotT Google+ Community <https://plus.google.com/communities/110370068185265330545>`_ to stay informed of any changes.
+.. important:: Our first session is scheduled for **Friday, January 10th 2014 at 3 PM in Sitterson Hall, Room 011** on the UNC-CH campus. Please join the `TotT Google+ Community <https://plus.google.com/communities/110370068185265330545>`_ to stay informed of any changes.
 
 What
 ====
@@ -39,6 +39,7 @@ We currently have meet-ups planned on the topics listed below with :doc:`many mo
    sessions/backbone
    sessions/ruby
    sessions/rails
+   sessions/docker
 
 When
 ====
@@ -84,3 +85,12 @@ Choosing the right instruments requires awareness of their existence, knowledge 
 I strongly believe practice "hacking" builds this agility. Taking time to discover a new tool, install it, run its "hello world", read its documentation, think about its use, create small examples, apply it to some pet project, compare it to other tools, and so on provides us invaluable experience. It builds our confidence so that we might step-up to unfamiliar tools, learn them quickly, and master them eventually. It adds tools to our belts, albeit few out of millions. It fulfills our desire to learn and build new things. It entertains and provides a chance for collaboration.
 
 Most importantly, it improves our ability to wield the endless tools of our trade.
+
+Attribution
+===========
+
+* `Peter Parente <http://mindtrove.info>`_ conceived the Tools of the Trade meet-up and created the slidecasts, exercises, and project ideas you see on this site.
+* `Gary Bishop <http://cs.unc.edu/~gb>`_ publicized and sponsored the meet-up at UNC, and helped Pete refine the approach to TotT.
+* The `Univesity of North Carolina at Chapel Hill Computer Science Department <http://cs.unc.edu>`_ offered room for the TotT meet-up.
+* The `Emerging Technology Team in IBM Software Group <http://www-01.ibm.com/software/ebusiness/jstart/>`_ gave Pete time to participate.
+* Numerous citizens of the web published code, screencasts, tutorials, articles, documentation, and tools referenced from the TotT web site.

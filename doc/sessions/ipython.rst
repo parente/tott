@@ -90,8 +90,8 @@ Now plot the ``wpp`` Series you created in the prior step using the ``Series.plo
 
 Can you spot a trend in the plot? What if you play with the plotting parameters? Try a scatter plot instead? Takes Markdown notes in your notebook.
 
-Plot the rolling, expand wpp mean
-#################################
+Plot the rolling, expanding wpp mean
+####################################
 
 Pandas has quite a few functions for computing *moving statistics*, stats computed over an ordered sample of data. Try using the moving mean function on the ``wpp`` Series and plot the results. Try a few more times with different parameter values. What does it do? What do you see? Write it in the notebook. (Hint: http://en.wikipedia.org/wiki/Moving_average)
 

@@ -16,7 +16,7 @@ doc:
 	@make -C doc clean html
 
 watch-doc:
-	@wr "make -C doc clean html" doc
+	@wr "make -C doc clean html" doc/*.rst doc/sessions/*.rst doc/conf.py
 
 slides:
 	@cd doc/slides; npm run-script build

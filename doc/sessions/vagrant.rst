@@ -1,5 +1,5 @@
-Vagrant
-=======
+Virtualization and Vagrant
+==========================
 
 Goals
 -----
