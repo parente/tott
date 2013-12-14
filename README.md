@@ -20,7 +20,6 @@ From the website:
         slides/         # slidecast Jade source
     packer/
         tottbox.json    # packer config for building common dev env
-        tottbox_32.json # because an early ver of packer couldn't handle 1 conf
     vagrant/
         Vagrantfile     # vagrant config for managing common dev env
     Makefile            # automate all the things
