@@ -112,7 +112,7 @@ The Python web server hosting the SS web assets already has a ``/gist/:userid/:g
 
 Add elements to the ShortSheet UI to collect this information, and a trigger to send it to the Python server. Add jQuery code to listen for the trigger event and to send a GET request (AJAX request) with the requisite information. Populate the spreadsheet with the response CSV in the same manner as when the file existed locally.
 
-Test your code with the gist you downloaded previously at http://192.168.33.10:8080/gist/parente/7965617 or another CSV gist of your choosing.
+Test your code with the gist you downloaded previously with user ID ``parente`` and gist ID ``7965617``. Or choose another CSV gist located on GitHub as a test.
 
 Add more features
 #################
