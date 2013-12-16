@@ -43,36 +43,42 @@ Spend a few minutes looking at the application UI and its structure on disk. Ope
 Add CSV file import
 ###################
 
-Right now, the SS shows a sample set of data and nothing more. An *Import* button exists at the top of the page but clicking it does nothing yet.
+Right now, the SS shows a sample set of data and nothing more. An *Import* button exists at the top of the page. Clicking it shows a file picker. Selecting a file causes no change. Yet.
 
-Open the ``shortsheet.js`` file. Find the ``TODO`` comment about supporting import. Add code using jQuery that attaches a click-event handler to the import button and invokes the function mentioned in the comment. (Hint: Look in the jQuery doc.)
+Open the ``shortsheet.js`` file. Find the ``TODO`` comment about supporting import. Add code using jQuery that attaches a ``change`` event handler to the ``import-csv'`` file input element and invokes the function mentioned in the comment. (Hint: Look in the jQuery doc.)
 
-`Download this sample CSV <https://gist.github.com/parente/7965617>`_ and try importing it into your spreadsheet. If you hit problems, use the Chrome Developer Tools (or equivalent in your browser of choice) to debug the problem. (Hint: Adding simple ``console.log`` statements to your code and looking for the corresponding output in the developer tools *Console* can go a long way.)
+`Save this second sample CSV file <https://gist.github.com/parente/7965617/row>`_ with a ``.csv`` extension on your machine. Try importing it into your spreadsheet. The spreadsheet should render the new data if your code is working properly. 
+
+If you hit problems, use the Chrome Developer Tools (or equivalent in your browser of choice) to debug the problem. (Hint: Adding simple ``console.log`` statements to your code and looking for their output in the developer tools *Console* tab can go a long way.)
 
 Make cells editable
 ###################
 
-The SS cells are read-only at the moment. We want to make them editable so that users can change values and, later, enter formulas.
+The SS cells are read-only at the moment. We want to make them editable so that you can change values and, later, enter formulas.
 
-Look for the ``TODO`` comment about editable code in the ``shortsheet.js`` file. Add code using jQuery that listens for double click events on all cells in the spreadsheet table (i.e., all <td> HTML elements in the <tbody> element). In the event listener function, set the ``contenteditable`` attribute on the clicked table cell to ``true``. Once set, the browser will put a caret in the cell and let the user edit its contents.
+Look for the ``TODO`` comment about making cells editable in the ``shortsheet.js`` file. Add code using jQuery that listens for double click events on all cells in the spreadsheet table (i.e., all <td> HTML elements in the <tbody> element). In the event listener function, set the ``contenteditable`` attribute on the clicked table cell to ``true``. Then give the cell keyboard focus. (Hint: Again, use the jQuery doc or Google.) 
+
+If your code is working properly, the browser will highlight the cell, show a text caret in it, and let you edit its content.
 
 Make cells read-only again
 ##########################
 
-The code above will put the user into editing mode. Now you must add code to take the user out of this mode. There are many ways the user might leave. Handle two of them for now.
+Allowing edits to a cell is only half the battle. You must also add code to take the cell out of edit mode when you want to cease editing. There are many ways you might do so. Handle two of them for now.
 
-1. If the user double clicks another cell while in editing mode, the current cell should become read-only and the newly clicked cell should be editable.
-2. If the user presses the Enter key, the current cell should become read-only.
+1. If you double click another cell while in editing mode, the current cell should become read-only and the newly clicked cell should be editable.
+2. If the you press the Enter key, the current cell should become read-only.
 
 Again, use jQuery to set event handlers for these conditions. Tracking which cell is currently in editing mode in a variable might help in resetting it.
 
 Support adding rows and columns
 ###############################
 
-The spreadsheet is still pretty static at the moment. The row and column count is fixed at the dimensions of the data you loaded. Add buttons to the UI which the user can click to add a row or column. Add the appropriate jQuery event handlers to monitor for these clicks. When a click occurs, add the appropriate HTML elements:
+The spreadsheet is still pretty static at the moment. The row and column count is fixed at the dimensions of the data you loaded. Add UI to allow addition or removal of rows and columns. Add the appropriate jQuery event handlers to monitor for these elements. When an event occurs, add the appropriate HTML elements:
 
 * For a row, add a <tr> containing a number of <td> elements equal to the current number of columns.
 * For a column, append a <td> element to each row <tr> element currently in the table.
+
+Start by supporting additions at the end of the last row or column. Once you have that code working, consider changing the UI and code to support additions anywhere in the sheet.
 
 Support cell formulas
 #####################
@@ -81,7 +87,7 @@ All spreadsheets have support for formulas. Think about a syntax for  arithmetic
 
 Add code to ``shortsheet.js`` to parse and execute formulas when a cell changes from editable to read-only. Store the formula in a ``data-formula`` attribute on the cell. Parse and execute the formula. Store the result of the formula in the cell itself. 
 
-Re-evaluate any formulas in the sheet when the user adds a new row or column. Change the CSV loading code to add any formulas present in the CSV as ``data-formula`` attributes and evaluate them all.
+Re-evaluate any formulas in the sheet whenever a new row or column is added. Change the CSV loading code to add any formulas present in the CSV as ``data-formula`` attributes and evaluate them all.
 
 Consider editing the ``sample.csv`` file to include a few formulas to test your code.
 
@@ -93,31 +99,37 @@ Take a moment and think about the data model of SS. What happens when you want t
 Support row and column removal
 ##############################
 
-Add buttons and code for removing entire rows and columns from the spreadsheet. Remember to re-execute any formulas after adding either. (Hint: Have you put the code for formula execution in its own reusable function yet?)
+Add UI and code for removing entire rows and columns from the spreadsheet. Remember to re-execute any formulas after adding either. (Hint: Have you put the code for formula execution in its own reusable function yet?)
 
 Add CSV URL import
 ##################
 
-Looking back, it's silly that we had to download a CSV file from a GitHub Gist just to load it from your local machine into your web browser. Why not just fetch it directly from the Gist URL?
+Looking back, it's silly that you had to download a CSV file from a GitHub Gist just to load it from your local machine into your web browser. Why not just fetch it directly from the Gist URL?
 
 One complicating factor is that JavaScript running in a web browser can only send requests to the same origin that served up the HTML page that includes it. This security precaution is known as the `same origin policy <http://en.wikipedia.org/wiki/Same-origin_policy>`_  and is meant to prevent `cross-site scripting attacks <http://en.wikipedia.org/wiki/Cross-site_scripting>`_. Web applications have ways of working around this limitation, one of is to simply make such requests on the server side, not the client-side.
 
 The Python web server hosting the SS web assets already has a ``/gist/:userid/:gistid`` resource. Sending an HTTP GET request to this resource with a valid GitHub username and Gist ID will cause the server to respond with the raw text of the Gist.
 
-Add elements to the ShortSheet UI to collect this information from the user, and a trigger for sending it to the Python server. Add jQuery code to listen for the trigger event and to send a GET request (AJAX request) with the requisite information. Populate the spreadsheet with the response CSV in the same manner as when the file existed locally.
+Add elements to the ShortSheet UI to collect this information, and a trigger to send it to the Python server. Add jQuery code to listen for the trigger event and to send a GET request (AJAX request) with the requisite information. Populate the spreadsheet with the response CSV in the same manner as when the file existed locally.
+
+Test your code with the gist you downloaded previously at http://192.168.33.10:8080/gist/parente/7965617 or another CSV gist of your choosing.
 
 Add more features
 #################
 
 Consider other features most spreadsheets have (or don't have). Implement whatever you wish. Here are some starting ideas.
 
+* Show errors loading spreadsheets, evaluating formulas, and so on using Bootstrap alerts.
 * Support column and row sorting by value.
 * Support column and row re-ordering via drag and drop.
 * Support keyboard navigation of the sheet.
 * Support more formula operations.
+* Support progressive loading of large CSV files.
+* Set columns to a fixed, but adjustable, width.
 * Allow users to download modified sheets as CSV files.
 * Add spreadsheet persistence on the server side.
 * Make sheet display more attractive with better styling.
+* Show a busy spinner while loading data.
 
 Projects
 --------
