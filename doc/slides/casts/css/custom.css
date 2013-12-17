@@ -23,5 +23,5 @@ html body {
   background: -o-radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
   background: -ms-radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
   background: radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
-  background-color: #f7fbfc; 
+  background-color: #f7fbfc;
 }

@@ -1,4 +1,5 @@
 extends layout
+include util
 
 block head
   title JS Ecosystem - TotT
@@ -58,7 +59,7 @@ block slides
 
   section
     h4 Demo: NPM Basics
-    video(src="#{process.env['VIDEO_ROOT']}/nodejs/npm.mov", width="100%", controls)
+    +screencast("/nodejs/npm")
 
   section(data-narration="/npm/7.mp3")
     h2 <tt>package.json</tt>
@@ -101,8 +102,8 @@ block slides
     p npm, package.json, colors
 
   section
-    h4 Demo: <tt>package.json</tt> Pizzazz 
-    video(src="#{process.env['VIDEO_ROOT']}/nodejs/colors.mov", width="100%", controls)
+    h4 Demo: <tt>package.json</tt> Pizzazz
+    +screencast("/nodejs/colors")
 
   section(data-narration="/npm/11.mp3")
     h2 JS Client Side (Browsers)

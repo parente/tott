@@ -1,4 +1,5 @@
 extends layout
+include util
 
 block head
   title CLI - TotT
@@ -68,7 +69,7 @@ block slides
 
   section
     h4 Demo: Bash Basics
-    video(src="#{process.env['VIDEO_ROOT']}/cli/basics.mov", width="100%", controls)
+    +screencast("/cli/basics")
 
   section(data-narration="/cli/9.mp3")
     h2 Demo: Bash Basics++
@@ -76,7 +77,7 @@ block slides
 
   section
     h4 Demo: Bash Basics++
-    video(src="#{process.env['VIDEO_ROOT']}/cli/basics2.mov", width="100%", controls)
+    +screencast("/cli/basics2")
 
   section(data-narration="/cli/11.mp3")
     h2 Secure Shell (SSH)
@@ -130,7 +131,7 @@ block slides
 
   section
     h4 Demo: Simple Editing
-    video(src="#{process.env['VIDEO_ROOT']}/cli/vi.mov", width="100%", controls)
+    +screencast("/cli/vi")
 
   section(data-narration="/cli/18.mp3")
     h2 More vi Commands
@@ -167,7 +168,7 @@ block slides
 
   section
     h4 Demo: Working in Screen
-    video(src="#{process.env['VIDEO_ROOT']}/cli/screen.mov", width="100%", controls)
+    +screencast("/cli/screen")
 
   section(data-narration="/cli/23.mp3")
     h2 More Screen Commands

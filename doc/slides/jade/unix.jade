@@ -1,4 +1,5 @@
 extends layout
+include util
 
 block head
   title Unix Philosophy - TotT
@@ -52,7 +53,7 @@ block slides
 
   section
     h4 Demo: Small Superlatives
-    video(src="#{process.env['VIDEO_ROOT']}/unix/small_super.mov", width="100%", controls)
+    +screencast("unix/small_super")
 
   section(data-narration="/unix/9.mp3")
     h2 Demo: Text Everywhere
@@ -60,7 +61,7 @@ block slides
 
   section
     h4 Demo: Text Everywhere
-    video(src="#{process.env['VIDEO_ROOT']}/unix/text.mov", width="100%", controls)
+    +screencast("unix/text")
 
   section(data-narration="/unix/11.mp3")
     h2 Standard Streams
@@ -85,7 +86,7 @@ block slides
 
   section
     h4 Demo: Pipes and Redirects
-    video(src="#{process.env['VIDEO_ROOT']}/unix/pipes.mov", width="100%", controls)
+    +screencast("unix/pipes")
 
   section(data-narration="/unix/15.mp3")
     h2 Review

@@ -1,4 +1,5 @@
 extends layout
+include util
 
 block head
   title Vagrant - TotT
@@ -70,7 +71,7 @@ block slides
 
   section
     h4 Demo: Vagrant Basics
-    video(src="#{process.env['VIDEO_ROOT']}/vagrant/basics.mov", width="100%", controls)
+     +screencast("/vagrant/basics")
 
   section(data-narration="/vagrant/10.mp3")
     h2 Vagrantfile

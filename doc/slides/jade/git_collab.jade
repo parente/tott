@@ -1,4 +1,5 @@
 extends layout
+include util
 
 block head
   title Social Git - TotT
@@ -60,7 +61,7 @@ block slides
 
   section
     h4 Demo: Central Repository Workflow
-    video(src="#{process.env['VIDEO_ROOT']}/github/central-repo.mov", width="100%", controls)
+    +screencast("github/central-repo")
 
   section(data-narration="/github/9.mp3")
     h2 Demo: Pull-Request Workflow
@@ -70,7 +71,7 @@ block slides
 
   section
     h4 Demo: Pull-Request Workflow
-    video(src="#{process.env['VIDEO_ROOT']}/github/pull-request.mov", width="100%", controls)
+    +screencast("github/pull-request")
 
   section(data-narration="/github/11.mp3")
     h2 Review

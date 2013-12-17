@@ -5,14 +5,14 @@
   "dependencies": {
   },
   "devDependencies": {
-    "jade": "~0.27.6",
+    "jade": "~0.35.0",
     "markdown": "~0.4.0"
   },
   "engines": {
     "node": ">0.6.x"
   },
   "scripts": {
-    "build": "./node_modules/.bin/jade jade/*.jade -O casts",
-    "watch": "./node_modules/.bin/jade -w jade/*.jade -O casts"
+    "build": "./node_modules/.bin/jade --out casts jade/*.jade ",
+    "watch": "./node_modules/.bin/jade -w --out casts jade/*.jade"
   }
 }

@@ -1,0 +1,5 @@
+//- Screencast mixin to prevent embed typos
+mixin screencast(path)
+  video.screencast(width="100%", controls)
+    source(src="#{process.env['VIDEO_ROOT']}#{path}.mov", type='video/mp4')
+    source(src="#{process.env['VIDEO_ROOT']}#{path}.ogv", type='video/ogg')
