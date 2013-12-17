@@ -144,7 +144,7 @@ See `Gary's Stateless Server Idea <http://cs.unc.edu/~gb/blog/2013/06/14/statele
 Slidecast Framework
 ###################
 
-Pete hacked together `a little JS module <>`_ for `reveal.js`_ to support the self-narrating slidecasts you see on the TotT session pages. Extract this code out of the `TotT GitHub repository <>`_ and migrate it to its own repo. Then spend some time cleaning it up, making it more general purpose, and documenting it so others can use it to build their own slidecasts.
+Pete hacked together `a little JS module <https://github.com/parente/tott/blob/master/doc/slides/casts/js/narrator.js>`_ for `reveal.js`_ to support the self-narrating slidecasts you see on the TotT session pages. Extract this code out of the `TotT GitHub repository <https://github.com/parente/tott>`_ and migrate it to its own repo. Then spend some time cleaning it up, making it more general purpose, and documenting it so others can use it to build their own slidecasts.
 
 Hosted Slidecasts
 #################

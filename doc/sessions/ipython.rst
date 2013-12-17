@@ -51,7 +51,7 @@ Load the Tar Heel Reader book data
 
 Gary runs a web site called `Tar Heel Reader (THR) <http://tarheelreader.org/>`_. It hosts a collection of community-contributed, easy-to-read, accessible books. If you haven't seen it, visit the site now and read a book. In the following exercises, we will analyze a November, 2013 snapshot of the books hosted on the site (approximately 30,000).
 
-THR books reside in a SQL database. To ease our exploration, I've converted the ``books`` SQL database table into a `Pandas DataFrame <http://pandas.pydata.org/pandas-docs/stable/dsintro.html#dataframe>`_ and serialized it to disk. `Download a zipped copy of the DataFrame <https://dl.dropboxusercontent.com/u/264241/tott/thr.dataframe.zip>`_ to your laptop. Unzip it and move the ``*.dataframe`` object into a shared *tottbox* folder (e.g., putting it in the ``notebooks`` folder you created is fine for now).
+THR books reside in a SQL database. To ease our exploration, I've converted the ``books`` SQL database table into a `Pandas DataFrame <http://pandas.pydata.org/pandas-docs/stable/dsintro.html#dataframe>`_ and serialized it to disk. `Download a zipped copy of the DataFrame <http://static.mindtrove.info/tott/tott/thr.dataframe.zip>`_ to your laptop. Unzip it and move the ``*.dataframe`` object into a shared *tottbox* folder (e.g., putting it in the ``notebooks`` folder you created is fine for now).
 
 In the notebook you created, import the ``pandas`` package and load the DataFrame with the code below.
 

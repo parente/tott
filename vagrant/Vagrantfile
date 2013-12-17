@@ -22,7 +22,7 @@ Vagrant.configure("2") do |config|
     config.vm.box_url = "./#{config.vm.box}.box"
   elsif ! ENV['TOTT_DEV']
     # remote in my dropbox
-    config.vm.box_url = "https://dl.dropboxusercontent.com/u/264241/#{config.vm.box}.box"
+    config.vm.box_url = "http://static.mindtrove.info/tott/#{config.vm.box}.box"
   else
     # local in my dropbox (dev)
     config.vm.box_url = "~/Dropbox/Public/#{config.vm.box}.box"

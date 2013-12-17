@@ -40,6 +40,7 @@
 
 .. _REST: http://en.wikipedia.org/wiki/Representational_state_transfer
 .. _Bottle: http://bottlepy.org/docs/dev/
+.. _Flask: http://flask.pocoo.org/
 .. _Express: http://expressjs.com/
 .. _Jade: http://jade-lang.com/
 .. _MongoDB: http://mongodb.org‎
@@ -82,6 +83,7 @@
 .. _Chef: http://www.opscode.com/chef/
 .. _Puppet: https://puppetlabs.com/
 .. _Ansible: http://www.ansibleworks.com/
+.. _CoreOS: http://coreos.com
 
 .. _Nose: https://nose.readthedocs.org/en/latest/
 .. _Should.js: https://github.com/visionmedia/should.js/

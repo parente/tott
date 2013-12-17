@@ -1,7 +1,7 @@
 .PHONY: clean doc watch-doc watch-slides
 
-export AUDIO_ROOT=https://dl.dropboxusercontent.com/u/264241/tott/audio
-export VIDEO_ROOT=https://dl.dropboxusercontent.com/u/264241/tott/video
+export AUDIO_ROOT=http://static.mindtrove.info/tott/audio
+export VIDEO_ROOT=http://static.mindtrove.info/tott/video
 
 build:
 	@git submodule update --init

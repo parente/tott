@@ -86,7 +86,7 @@ block slides
         Vagrant.configure("2") do |config|
           # fetches a box (i.e., VM image)
           config.vm.box = "tottbox_2013_07_31"
-          config.vm.box_url = "https://dl.dropboxusercontent.com/u/264241/\#{config.vm.box}.box"
+          config.vm.box_url = "http://static.mindtrove.info/tott/\#{config.vm.box}.box"
 
           # configures it
           config.vm.network :private_network, ip: "192.168.33.10"
