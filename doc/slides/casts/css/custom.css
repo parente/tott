@@ -14,3 +14,14 @@
 .reveal h4 {
     text-transform: none;
 }
+
+html body {
+  background: #2980b9;
+  background: -moz-radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #2980b9));
+  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
+  background: -o-radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
+  background: -ms-radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
+  background: radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
+  background-color: #f7fbfc; 
+}
