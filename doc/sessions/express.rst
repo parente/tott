@@ -25,6 +25,12 @@ If time permits, try to review these resources before the meet-up. If you can't,
   * `Using Express Middleware <../_static/casts/express.html#/9>`_ (~10 minutes)
 
 * Watch `Learning the Jade Templating Engine Syntax <http://cssdeck.com/labs/learning-the-jade-templating-engine-syntax>`_ (~15 minutes). Note the play button and speed controls are in the bottom right of the CSSDeck web app.
+* Watch the `TotT Jade slidecast <../_static/casts/jade.html>`_ which includes a live demo of:
+
+  * `Rendering Static HTML <../_static/casts/jade.html#/3>`_ (~3 minutes)
+  * `Embedding JS in Templates <../_static/casts/jade.html#/4>`_ (~2 minutes)
+  * `Jade Mixins <../_static/casts/jade.html#/5>`_ (~3 minutes)
+  * `Rendering Jade Views in Express <../_static/casts/jade.html#/10>`_
 
 Exercises
 ---------

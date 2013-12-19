@@ -1,10 +1,11 @@
 doc/_build
+doc/_themes
 .vagrant/
-*.box
 packer_cache/
-*.sublime-workspace
-sandbox
+sandbox/
 .ssh/
-.gitconfig
 node_modules/
 demo/
+*.box
+*.sublime-workspace
+.gitconfig
