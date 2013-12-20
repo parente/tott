@@ -13,6 +13,8 @@ Goals
 Prep Materials
 --------------
 
+If time permits, try to review these resources before the meet-up. If you can't, come anyway.
+
 * Skim the `Python Wikipedia article <http://en.wikipedia.org/wiki/Python_(programming_language)>`_ (~10 minutes).
 * Read `Python Enhacement Proposal (PEP) #20:  The Zen of Python <http://www.python.org/dev/peps/pep-0020/>`_ (5 minutes).
 * Read `The Basics at learnpython.org <http://learnpython.org>`_ and try a few of the exercises (~30 minutes).
@@ -93,6 +95,8 @@ The Python Package Index (PyPI) is host to `quite a few libraries <http://ssabou
 
 Projects
 --------
+
+If you want to try your hand at something larger than an exercise, consider one of the following.
 
 Create *The Daily Dose*
 #######################
