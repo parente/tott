@@ -34,7 +34,7 @@ Run python -m
 
 Run the following command at the prompt.
 
-.. code-block: console
+.. code-block:: console
 
     python -m SimpleHTTPServer
 
