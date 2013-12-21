@@ -5,15 +5,15 @@ block head
   title Vagrant - TotT
 
 block slides
-  section(data-narration="/vagrant/0.mp3")
+  section(data-narration="/vagrant/0")
     h1 Vagrant
     h2 TotT 2014
 
-  section(data-narration="/vagrant/1.mp3")
+  section(data-narration="/vagrant/1")
     h2 System Virtual Machines
     blockquote "a complete system platform which supports the execution of a complete operating system (OS)" <br />- <a href="http://en.wikipedia.org/wiki/Virtual_machine">Wikipedia</a>
 
-  section(data-narration="/vagrant/2.mp3")
+  section(data-narration="/vagrant/2")
     h2 Use Cases
     ul
       li Multiple OSes
@@ -23,7 +23,7 @@ block slides
       li Disaster recovery
       li <strong>Environment consistency</strong>
 
-  section(data-narration="/vagrant/3.mp3")
+  section(data-narration="/vagrant/3")
     h2 Consistency
     ul
       li <strong>Working with a team</strong>
@@ -31,7 +31,7 @@ block slides
       li Deploying to production
       li Shipping to a customer
 
-  section(data-narration="/vagrant/4.mp3")
+  section(data-narration="/vagrant/4")
     h2 Downsides
     ul
       li Guest OS weight
@@ -39,7 +39,7 @@ block slides
       li Resource competition
       li Not entirely portable
 
-  section(data-narration="/vagrant/5.mp3")
+  section(data-narration="/vagrant/5")
     h2 VirtualBox
     ul
       li Type 2 Hypervisor <br />
@@ -47,7 +47,7 @@ block slides
       li Manages VM <em>images</em>
       li Runs VM <em>instances</em>
 
-  section(data-narration="/vagrant/6.mp3")
+  section(data-narration="/vagrant/6")
     h2 Vagrant
     p Developer-centric VM management
     ol
@@ -57,7 +57,7 @@ block slides
       li Run it.
       li Share it with your team.
 
-  section(data-narration="/vagrant/7.mp3")
+  section(data-narration="/vagrant/7")
     h2 Vagrant CLI
     p Three commands to master:
     pre
@@ -66,21 +66,21 @@ block slides
         $ vagrant ssh
         $ vagrant destroy
 
-  section(data-narration="/vagrant/8.mp3")
+  section(data-narration="/vagrant/8")
     h2 Demo: Vagrant Basics
 
   section
     h4 Demo: Vagrant Basics
      +screencast("/vagrant/basics")
 
-  section(data-narration="/vagrant/10.mp3")
+  section(data-narration="/vagrant/10")
     h2 Vagrantfile
     ol
       li States the box to use
       li States how to configure the box (e.g., networking)
       li States how to provision software on the box
 
-  section(data-narration="/vagrant/11.mp3")
+  section(data-narration="/vagrant/11")
     h2 Example: Simple Vagrantfile
     pre
       code.
@@ -97,14 +97,14 @@ block slides
           config.vm.provision :shell, :inline => "sudo apt-get -y update"
         end
 
-  section(data-narration="/vagrant/12.mp3")
+  section(data-narration="/vagrant/12")
     h2 tottbox
     ul
       li Our Vagrant box
       li Our shared dev environment
       li Pre-configured with many tools
 
-  section(data-narration="/vagrant/13.mp3")
+  section(data-narration="/vagrant/13")
     h2 Review
     ul
       li Virtual machines

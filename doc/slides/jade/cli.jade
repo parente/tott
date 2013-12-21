@@ -6,15 +6,15 @@ block head
 
 block slides
 
-  section(data-narration="/cli/0.mp3")
+  section(data-narration="/cli/0")
     h1 CLI
     h2 TotT 2014
 
-  section(data-narration="/cli/1.mp3")
+  section(data-narration="/cli/1")
     h2 Command Line Interface
     blockquote "a means of interacting with a computer program where the user (or client) issues commands to the program in the form of successive lines of text." <br />- <a href="http://en.wikipedia.org/wiki/Command-line_interface">Wikipedia</a>
 
-  section(data-narration="/cli/2.mp3")
+  section(data-narration="/cli/2")
     h2 Use Cases
     ul
       li Large vocab interaction
@@ -23,7 +23,7 @@ block slides
       li Automation
       li Toolchains
 
-  section(data-narration="/cli/3.mp3")
+  section(data-narration="/cli/3")
     h2 Tools
     p We'll bootstrap our work with four:
     ol
@@ -32,14 +32,14 @@ block slides
       li Vi
       li Screen
 
-  section(data-narration="/cli/4.mp3")
+  section(data-narration="/cli/4")
     h2 Bash Shell
     ul
       li Command language interpreter
       li Reads commands from user or script
       li Concerned with manipulation of files, execution of other programs
 
-  section(data-narration="/cli/5.mp3")
+  section(data-narration="/cli/5")
     h2 Bash Language
     ul
       li Scripting language to automate shell functions
@@ -54,7 +54,7 @@ block slides
           echo "Hello, $1!"
         fi
 
-  section(data-narration="/cli/6.mp3")
+  section(data-narration="/cli/6")
     h2 Basic Bash Concepts
     ul
       li File
@@ -63,7 +63,7 @@ block slides
       li Process
       li Script
 
-  section(data-narration="/cli/7.mp3")
+  section(data-narration="/cli/7")
     h2 Demo: Bash Basics
     p pwd, ls, cd, mkdir, touch, cp, mv, less, man
 
@@ -71,7 +71,7 @@ block slides
     h4 Demo: Bash Basics
     +screencast("/cli/basics")
 
-  section(data-narration="/cli/9.mp3")
+  section(data-narration="/cli/9")
     h2 Demo: Bash Basics++
     p find, grep, history, pkill
 
@@ -79,11 +79,11 @@ block slides
     h4 Demo: Bash Basics++
     +screencast("/cli/basics2")
 
-  section(data-narration="/cli/11.mp3")
+  section(data-narration="/cli/11")
     h2 Secure Shell (SSH)
     blockquote "cryptographic network protocol for secure data communication, remote command-line login, remote command execution, and other secure network services between two networked computers" <br />- <a href="http://en.wikipedia.org/wiki/Secure_Shell">Wikipedia</a>
 
-  section(data-narration="/cli/12.mp3")
+  section(data-narration="/cli/12")
     h2 SSH Client
     ul
       li <tt>ssh</tt>
@@ -91,7 +91,7 @@ block slides
       li Runs a shell session through the connection
       li Can tunnel other traffic too
 
-  section(data-narration="/cli/13.mp3")
+  section(data-narration="/cli/13")
     h2 SSH Basics
     pre
       code.
@@ -107,7 +107,7 @@ block slides
         # copy a file from remote to local
         $ scp some.machine.com:my_scripts/do_stuff.sh .
 
-  section(data-narration="/cli/14.mp3")
+  section(data-narration="/cli/14")
     h2 Other SSH Topics
     p Google these if interested:
     ul
@@ -117,7 +117,7 @@ block slides
       li Pub-key auth
       li <tt>~/.ssh/config</tt>
 
-  section(data-narration="/cli/15.mp3")
+  section(data-narration="/cli/15")
     h2 vi
     ul
       li Screen oriented text editor
@@ -125,7 +125,7 @@ block slides
       li Good for remote editing over ssh
       li Some people swear by it for all work
 
-  section(data-narration="/cli/16.mp3")
+  section(data-narration="/cli/16")
     h2 Demo: Simple Editing
     p Navigation, modes, yanking, pasting, deleting, saving, quitting
 
@@ -133,20 +133,20 @@ block slides
     h4 Demo: Simple Editing
     +screencast("/cli/vi")
 
-  section(data-narration="/cli/18.mp3")
+  section(data-narration="/cli/18")
     h2 More vi Commands
     ul
       li Google for a vi cheat sheet. There's tons.
       li For example: <a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html">vi Graphical Cheat Sheet</a>
 
-  section(data-narration="/cli/19.mp3")
+  section(data-narration="/cli/19")
     h2 GNU Screen
     ul
       li CLI window manager
       li Allows fast switching among shell sessions
       li Allows detached process execution
 
-  section(data-narration="/cli/20.mp3")
+  section(data-narration="/cli/20")
     h2 Running / Resuming Screens
     pre
       code.
@@ -162,7 +162,7 @@ block slides
         # connect to a running screen
         $ screen -rx my_name
 
-  section(data-narration="/cli/21.mp3")
+  section(data-narration="/cli/21")
     h2 Demo: Working in Screen
     p Create window, switch window, kill window, rename window, scrollback, disconnect
 
@@ -170,13 +170,13 @@ block slides
     h4 Demo: Working in Screen
     +screencast("/cli/screen")
 
-  section(data-narration="/cli/23.mp3")
+  section(data-narration="/cli/23")
     h2 More Screen Commands
     ul
       li Again, Google for a cheat sheet.
       li Or see the <a href="http://www.gnu.org/software/screen/manual/screen.html">GNU Screen manual</a>.
 
-  section(data-narration="/cli/24.mp3")
+  section(data-narration="/cli/24")
     h2 Review
     ul
       li CLI
