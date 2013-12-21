@@ -205,6 +205,19 @@ Build a recommendation engine
 
 Gary has a second dataset derived from the Tar Heel Reader site that captures what books were read by what visitors to the site over time. This data can be used to train a `recommendation engine <http://en.wikipedia.org/wiki/Recommender_system>`_ based on `collaborative filtering <http://en.wikipedia.org/wiki/Collaborative_filtering>`_. Talk with Gary if you are interested in playing with this dataset and building a recommendation engine for the THR site.
 
+Improve the IPython Notebook UI
+###############################
+
+`jtyberg <https://github.com/jtyberg>`_ writes:
+  
+  I love IPython notebook for ad-hoc analysis. However, there are a few shortcomings of the web UI that lessen my user experience. Among them is the tedious nature of reordering cells (moving them up or down) within a notebook. I would like to be able to select multiple cells and move them up/down the page all at once.
+
+  A possible solution would be to enable grouping of cells. Can we modify the underlying DOM structure by adding cell elements into the same parent? Then we can manipulate the parent element.
+
+  Another idea would be a gutter view within the notebook that shows a condensed view of the notebook content (think Sublime text editor). What if we could select individual cells or cell groups and move them up/down the page by dragging and dropping from within the gutter? That would be sweet.
+
+This is more of a JavaScript project and is posted again in the :doc:`jQuery session project list <jquery>`. The IPython Notebook has an `unstable but working JavaScript API <https://github.com/ipython/ipython/tree/master/IPython/html/static/notebook/js>`_ that might be useful in accomplishing either or both of these.
+
 References
 ----------
 

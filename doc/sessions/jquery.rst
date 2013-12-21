@@ -152,12 +152,25 @@ Hosted Slidecasts
 Take the slidecast framework mentioned above and build a cloud-hosted version. One approach could be:
 
 1. A user signs in.
-2. The user links her slidecast account to her DropBox accounts.
+2. The user links her slidecast account to her DropBox account.
 3. The user enters Markdown_ to construct her slides.
 4. The user records audio right on the site via the `HTML5 getUserMedia API <http://www.html5rocks.com/en/tutorials/getusermedia/intro/>`_.
 5. The site persists the slideshow in the user's DropBox account.
 
 This project would be a large undertaking, but unique on the web at the moment, as best as I can tell. 
+
+Improve the IPython Notebook UI
+###############################
+
+`jtyberg <https://github.com/jtyberg>`_ writes:
+  
+  I love IPython notebook for ad-hoc analysis. However, there are a few shortcomings of the web UI that lessen my user experience. Among them is the tedious nature of reordering cells (moving them up or down) within a notebook. I would like to be able to select multiple cells and move them up/down the page all at once.
+
+  A possible solution would be to enable grouping of cells. Can we modify the underlying DOM structure by adding cell elements into the same parent? Then we can manipulate the parent element.
+
+  Another idea would be a gutter view within the notebook that shows a condensed view of the notebook content (think Sublime text editor). What if we could select individual cells or cell groups and move them up/down the page by dragging and dropping from within the gutter? That would be sweet.
+
+The IPython Notebook has an `unstable but working JavaScript API <https://github.com/ipython/ipython/tree/master/IPython/html/static/notebook/js>`_ that might be useful in accomplishing either or both of these.
 
 References
 ----------
