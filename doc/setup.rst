@@ -1,83 +1,22 @@
 Setting Up
 ==========
 
-You need to prepare your laptop to use the numerous tools outlined in our planned meet-ups. To do so, read this page and follow its instructions, step-by-step. You will find a a verification procedure at the end of the document that will ensure that you have a working development environment.
+You need to prepare your laptop to use the numerous tools in our planned meet-ups. To do so, read this page and follow its instructions, step-by-step. You will find a a verification procedure at the end of the document that will ensure that you have a working development environment.
 
 At a glance, you will configure all of the following:
 
-#. SublimeText_ or an equivalent programmer's text editor
-#. `Package Control`_ for SublimeText and some useful extensions
-#. `Google Chrome`_ for web development
-#. *tottbox*, an Ubuntu virtual machine (VM) prepared to run all of our tools
-#. VirtualBox_ to run *tottbox*
-#. Vagrant_ to control *tottbox*
+#. *tottbox* (v2013-11-29), an Ubuntu virtual machine (VM) prepared to run all of our tools
+#. VirtualBox_ (v4.3.6) to run *tottbox*
+#. Vagrant_ (v1.4.1) to control *tottbox*
 #. Git_ for version control
 #. A GitHub_ account for code backup, collaboration, and submission
+#. SublimeText_ for code editing (optional)
+#. `Package Control`_ for SublimeText and some useful extensions (optional)
+#. `Google Chrome`_ for web development (optional)
 
-Some of the steps will vary depending on your operating system (e.g., Windows, Mac, Linux). Make sure you follow the appropriate instructions.
+Some of the steps will vary depending on your operating system (e.g., Windows, Mac, Linux). Make sure you follow the appropriate instructions. 
 
-SublimeText
------------
-
-SublimeText 2 is a cross-platform programmer's text editor with a powerful extension system. To get a sense of what it can do, visit http://www.sublimetext.com/, watch the animation on the front page, and read some of the features further down the page. While I will not go so far as to require you to use a particular editor, I highly recommend it. I've been through Emacs, Eclipse, TextMate, and others: I've been the most productive with Sublime.
-
-#. Visit the SublimeText home page.
-#. Click the download link for your operating system below the animation or visit the Download tab.
-#. Install SublimeText.
-
-   * Windows: Double-click the downloaded installer and follow its instructions.
-   * Mac: Double-click the downloaded disk image and drag SublimeText to your Applications folder.
-   * Linux: ``tar xjf Sublime*.bz2`` and make sure the ``sublime_text`` executable is in your ``$PATH``.
-
-#. Run SublimeText.
-
-   * Windows: Click the SublimeText icon in the Start menu.
-   * Mac: Double click the SublimeText icon in your Applications folder.
-   * Linux: Run ``sublime_text`` in a terminal in your desktop environment.
-
-Take a few minutes to try some of the features noted on the SublimeText home page before continuing. Pay extra attention to the Goto Anything and Command Palette features.
-
-Package Control
-~~~~~~~~~~~~~~~
-
-`Package Control`_ is an extension for SublimeText that lets you easily install a host of additional extensions from within Sublime.
-
-#. Visit the Package Control home page.
-#. Click the Installation tab.
-#. Follow the instructions to install Package Control for the version of SublimeText you installed.
-
-Once you have Package Control installed, do the following to install some extensions that will benefit you.
-
-#. Press Ctrl-Shift-P (Windows/Linux) or Cmd-Shift-P (Mac) to open the SublimeText Command Palette.
-#. Start typing *install* until Package Control: Install Package is the selected item.
-#. Press Enter.
-#. Start typing *GitGutter* until that package is selected.
-#. Press Enter to install it.
-
-Voila. You've installed a package that can show you which lines in your code you've changed since you last committed your code to version control. (If the last sentence was gibberish, don't fret. We're going to cover version control with git and these extensions will make a lot more sense in context.)
-
-Repeat the procedure you just followed to install GitGutter for the following additional packages:
-
-* SublimeLinter
-* SidebarEnhancements
-* HTML5
-
-After installing these, take a few minutes to browse the `Package Control community repository <http://wbond.net/sublime_packages/community>`_ to get a sense of the tools available.
-
-Google Chrome
--------------
-
-The desktop browser scene is not as messy as it was some years back. The big browser vendors are largely converging on a common feature set defined by HTML5, CSS3, and so on. Firefox_, Safari_, `Google Chrome`_, `Opera`, and even recent versions of `Internet Explorer`_ are all fine for browsing the web. Most are pretty good for web development too. We will practice using the Google Chrome Developer Tools at some point.
-
-#. If you do not already have Chrome installed, download it from its Google home page.
-#. Follow the instructions that appear one you accept the license agreement to get it installed.
-#. Run Chrome.
-
-   * Windows: Click the Chrome icon in the Start menu.
-   * Mac: Double click the Chrome icon in your Applications folder.
-   * Linux: Run ``chrome`` in a terminal in your desktop environment.
-
-Chrome will prompt you to create or login to a Google Account. You do not need to do so for the purposes of our meetings, but you can if you wish.
+.. note:: If you are following these steps during one of our meet-ups, you can save time by borrowing a thumbdrive with all of the required installers (Windows and OS X, sorry Linux users) and VM images on it. If you do, copy all of the files from the thumbdrive to a temporary folder somewhere on your laptop. Then use them in place of fresh downloads throughout this document.
 
 VirtualBox
 ----------
@@ -87,11 +26,14 @@ VirtualBox_ is an open source virtualizer, an application that can run an entire
 1. A common, consistent environment for running code and tools
 2. The ability to "reset-to-zero" at any time
 
-Do the following to install VirtualBox.
+Do the following to install VirtualBox 4.3.6, the latest stable version tested for this meetup.
 
-#. Visit the VirtualBox home page.
-#. Click the Downloads link.
-#. Download the installer matching your laptop operating system under *Virtualbox platform packages*.
+#. Download the installer for your laptop operating system using the links below.
+
+   * `VirtualBox 4.3.6 for Windows hosts <http://download.virtualbox.org/virtualbox/4.3.6/VirtualBox-4.3.6-91406-Win.exe>`_
+   * `VirtualBox 4.3.6 for OS X hosts <http://download.virtualbox.org/virtualbox/4.3.6/VirtualBox-4.3.6-91406-OSX.dmg>`_
+   * `VirtualBox 4.3.6 for Linux hosts <https://www.virtualbox.org/wiki/Linux_Downloads>`_ (requires that you pick your distro)
+
 #. Run the installer, choosing all of the default options.
 
    * Windows: Grant the installer access every time you receive a security prompt.
@@ -106,12 +48,14 @@ Vagrant
 
 Vagrant_ is an open source command line utility for managing reproducible developer environments. While we could use the VirtualBox GUI to juggle virtual machines, their settings, and their distribution, Vagrant hides the complexity as you'll see in the next section.
 
-First, however, you need to install Vagrant.
+First, however, you need to install Vagrant 1.4.1, the latest stable version tested for this meetup.
 
-#. Visit the Vagrant home page.
-#. Click the Download link.
-#. Choose the latest version of Vagrant at the top of the list.
-#. Download the installer for your platform.
+#. Download the installer for your laptop operating system using the links below.
+
+   * `Vagrant 1.4.1 for Windows hosts <https://dl.bintray.com/mitchellh/vagrant/Vagrant_1.4.1.msi>`_
+   * `Vagrant 1.4.1 for OS X hosts <https://dl.bintray.com/mitchellh/vagrant/Vagrant-1.4.1.dmg>`_
+   * `Vagrant 1.4.1 for Linux hosts <http://www.vagrantup.com/downloads.html>`_ (requires that you pick your distro)
+
 #. Run the installer, choosing all defaults.
 #. Reboot your laptop if prompted to do so when installation completes.
 
@@ -133,9 +77,9 @@ Installing Cygwin just to get SSH is overkill for our needs. A lower-overhead so
 tottbox
 -------
 
-With VirtualBox and Vagrant installed, you're now ready to bring up the virtual machine running Ubuntu Linux Server 12.04 we'll be using in our meet-ups, affectionately named *tottbox*. This VM already has most of the tools we will explore pre-installed, pre-configured, and ready-for-use.
+With VirtualBox and Vagrant installed, you're now ready to bring up the virtual machine (VM) running we'll be using in our meet-ups, affectionately named *tottbox*. The VM has Ubuntu Linux Server 12.04 installed along with many of the tools we need to boostrap our explorations. It will be our common developer environment.
 
-To make it clear where we are running commands, from now on we will call the operating system running on your laptop the *host box* and the virtual machine *tottbox*.
+.. note:: To make it clear where we are running commands, from now on this doc will call the operating system running on your laptop the *host box* and the virtual machine, *tottbox*.
 
 #. Create a folder that will serve as the container for all of your practice work on your host box. We'll call this the ``tott_dir`` from now on. Some suggestions:
 
@@ -153,20 +97,10 @@ To make it clear where we are running commands, from now on we will call the ope
    * Windows: ``cd \Users\your_username\projects\tott``
    * Mac/Linux: ``cd ~/projects/tott``
 
-#. Decide which of the following two statements applies to you and follow the related instructions.
-
-   #. You are following these steps in one of our meet-ups.
-
-      #. Ask me for a thumbdrive containing the *tottbox* VM image and Vagrantfile, a config that tells Vagrant how to run *tottbox*.
-      #. Copy the Vagrantfile from the thumbdrive into the ``tott_dir``.
-      #. Copy the file ending in ``.box`` from the thumbdrive to the same folder.
-
-   #. You are performing these steps on your own time.
-
-      #. Download `the TotT Vagrantfile <https://raw.github.com/parente/tott/master/vagrant/Vagrantfile>`_, a config that tells Vagrant how to run *tottbox*.
-      #. Put the Vagrantfile you just downloaded into the ``tott_dir``.
-      #. Pause here until you have a stable Internet connection and time to leave your laptop downloading the *tottbox* virtual machine image (~700 MB) in the next command.
-
+#. Download `the TotT Vagrantfile <https://raw.github.com/parente/tott/master/Vagrantfile>`_, a config that tells Vagrant how to run *tottbox*.
+#. Place the Vagrantfile in the ``tott_dir`` you created.
+#. If you copied files off the borrowed thumbdrive, copy the files ending in ``.box`` to the ``tott_dir`` as well.
+#. If have **not** borrowed the thumbdrive, pause here until you have a stable Internet connection and time to leave your laptop downloading the *tottbox* virtual machine image (~700 MB) in the next command.
 #. Enter the following command: ``vagrant up``.
 
    * Vagrant will download the *tottbox* virtual machine image or copy it off from ``tott_dir`` for safe keeping.
@@ -257,6 +191,70 @@ Your GitHub account is now ready for use. We'll test it in a few minutes to conf
    Typically, keypairs live in a ``.ssh`` directory in your home folder. We deviate from the norm here because we want our keys to continue to exist even if we destroy and recreate *tottbox*. So, instead, we store the keys in the ``/vagrant`` folder which keeps them  synced with our host box.
 
    Vagrant does support `agent forwarding <http://docs.vagrantup.com/v2/vagrantfile/ssh_settings.html>`_ which would allow us to store the keys more securely on our host box. Setting up forwarding is a bit of a pain on some OSes, however, so we'll stick with the sync'ed folder approach.
+
+
+SublimeText (Optional)
+----------------------
+
+SublimeText is a cross-platform programmer's text editor with a powerful extension system. To get a sense of what it can do, visit http://www.sublimetext.com/, watch the animation on the front page, and read some of the features further down the page. While I will not go so far as to require that you use a particular editor, I highly recommend it. I've been through Emacs, Vim, Eclipse, TextMate, and others: I've been the most productive with Sublime.
+
+#. Visit the SublimeText home page.
+#. Click the download link for your operating system below the animation or visit the Download tab.
+#. Install SublimeText.
+
+   * Windows: Double-click the downloaded installer and follow its instructions.
+   * Mac: Double-click the downloaded disk image and drag SublimeText to your Applications folder.
+   * Linux: ``tar xjf Sublime*.bz2`` and make sure the ``sublime_text`` executable is in your ``$PATH``.
+
+#. Run SublimeText.
+
+   * Windows: Click the SublimeText icon in the Start menu.
+   * Mac: Double click the SublimeText icon in your Applications folder.
+   * Linux: Run ``sublime_text`` in a terminal in your desktop environment.
+
+Take a few minutes to try some of the features noted on the SublimeText home page before continuing. Pay extra attention to the Goto Anything and Command Palette features.
+
+SublimeText Package Control
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+`Package Control`_ is an extension for SublimeText that lets you easily install a host of additional extensions from within Sublime.
+
+#. Visit the Package Control home page.
+#. Click the Installation tab.
+#. Follow the instructions to install Package Control for the version of SublimeText you installed.
+
+Once you have Package Control installed, do the following to install some extensions that will benefit you.
+
+#. Press Ctrl-Shift-P (Windows/Linux) or Cmd-Shift-P (Mac) to open the SublimeText Command Palette.
+#. Start typing *install* until Package Control: Install Package is the selected item.
+#. Press Enter.
+#. Start typing *GitGutter* until that package is selected.
+#. Press Enter to install it.
+
+Voila. You've installed a package that can show you which lines in your code you've changed since you last committed your code to version control. (If the last sentence was gibberish, don't fret. We're going to cover version control with git and these extensions will make a lot more sense in context.)
+
+Repeat the procedure you just followed to install GitGutter for the following additional packages:
+
+* SublimeLinter
+* SidebarEnhancements
+* HTML5
+
+After installing these, take a few minutes to browse the `Package Control community repository <http://wbond.net/sublime_packages/community>`_ to get a sense of the tools available.
+
+Google Chrome (Optional)
+------------------------
+
+The desktop browser scene is not as messy as it was some years back. The big browser vendors are largely converging on a common feature set defined by HTML5, CSS3, and so on. Firefox_, Safari_, `Google Chrome`_, `Opera`, and even recent versions of `Internet Explorer`_ are all fine for browsing the web. Most are pretty good for web development too. I recommend using Google Chrome for its excellent developer tools, but any modern browser should suffice.
+
+#. Download the `Chrome installer <https://www.google.com/intl/en/chrome/browser/>`_.
+#. Follow the instructions that appear one you accept the license agreement to get it installed.
+#. Run Chrome.
+
+   * Windows: Click the Chrome icon in the Start menu.
+   * Mac: Double click the Chrome icon in your Applications folder.
+   * Linux: Run ``chrome`` in a terminal in your desktop environment.
+
+Chrome will prompt you to create or login to a Google Account. You do not need to do so for the purposes of our meetings, but you can if you wish.
 
 Verification
 ------------
@@ -350,9 +348,14 @@ You might wonder what just happened behind the scenes. Here's the gist.
 * You committed your edits to the README.md in your local clone of the repository.
 * You pushed the commit from your local clone up to your fork on GitHub.
 
-Going Further
--------------
+Cleanup
+-------
+
+If you borrowed a thumbdrive, you can delete everything you copied to your hardrive, **except the Vagrantfile**. You **can** delete the ``.box`` file you copied into ``tott_dir``. Vagrant has safely stashed it away in its own directory.
+
+Success
+-------
 
 You just setup a virtually indestructible development environment on your laptop with `numerous interesting, useful tools pre-installed <https://github.com/parente/tott/blob/master/packer/scripts/tools.sh>`_. Play with it. Break it. Put it back together. Read more about the pieces. Have fun.
 
-We'll exercise all of the pieces throughout our scheduled meetups.
+We'll exercise all of the pieces during our meetups.

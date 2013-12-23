@@ -9,3 +9,4 @@ demo/
 *.box
 *.sublime-workspace
 .gitconfig
+thumb/
