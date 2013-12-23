@@ -20,12 +20,9 @@ Vagrant.configure("2") do |config|
   if FileTest.exists?("#{config.vm.box}.box")
     # local, copied from thumbdrive
     config.vm.box_url = "./#{config.vm.box}.box"
-  elsif ! ENV['TOTT_DEV']
-    # remote in my dropbox
-    config.vm.box_url = "http://static.mindtrove.info/tott/#{config.vm.box}.box"
   else
-    # local in my dropbox (dev)
-    config.vm.box_url = "~/Dropbox/Public/#{config.vm.box}.box"
+    # remote on web host
+    config.vm.box_url = "https://static.mindtrove.info/tott/#{config.vm.box}.box"
   end
 
   # Create a forwarded port mapping which allows access to a specific port
@@ -41,8 +38,9 @@ Vagrant.configure("2") do |config|
   # Basic provisioning using inline bash script
   config.vm.provision :shell, :inline => $script
 
-  # Modify the VirtualBox settings to intercept and manage DNS requests
+  # Use up to 4 GB of RAM and use DNS resolver from host.
   config.vm.provider :virtualbox do |vb|
+    vb.customize ["modifyvm", :id, "--memory", "4096"]
     vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
   end
 end

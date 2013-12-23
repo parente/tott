@@ -20,8 +20,7 @@ From the website:
         slides/         # slidecast Jade source
     packer/
         tottbox.json    # packer config for building common dev env
-    vagrant/
-        Vagrantfile     # vagrant config for managing common dev env
+    Vagrantfile         # vagrant config for managing common dev env
     Makefile            # automate all the things
 ```
 
