@@ -47,10 +47,22 @@
         }
     };
 
+    var set_replit = function(slide) {
+        if(slide.dataset && slide.dataset.replit) {
+            var path = slide.dataset.replit;
+            var iframe = slide.querySelector('.replit-embed');
+            if(!iframe.src) {
+                iframe.src = 'http://repl.it'+path;
+            }
+        }
+    };
+
     Reveal.addEventListener('slidechanged', function(event) {
         set_narration(event.currentSlide);
         set_jsbin(event.currentSlide);
+        set_replit(event.currentSlide);
     });
     set_narration(Reveal.getCurrentSlide());
     set_jsbin(Reveal.getCurrentSlide());
+    set_replit(Reveal.getCurrentSlide());
 }());

@@ -3,10 +3,12 @@
     text-transform: none;
 }
 
-.reveal .jsbin-embed {
+.reveal .jsbin-embed,
+.reveal .replit-embed {
     border: 1px solid #999;
     width: 100%;
     min-height: 450px;
+    background-color: white
 }
 
 .reveal h2,
