@@ -25,7 +25,7 @@ If time permits, try to review these resources before the meet-up. If you can't,
   * `Generators <../_static/casts/python.html#/7>`_ (~3 minutes)
   * `Comprehensions <../_static/casts/python.html#/8>`_ (~6 minutes)
   * `Keyword Arguments <../_static/casts/python.html#/9>`_ (~4 minutes)
-  * `Variadic Functions <../_static/casts/python.html#/10>`_ (~7 minutes)
+  * `Variadic Functions <../_static/casts/python.html#/10>`_ (~3 minutes)
   * `Working with Python <../_static/casts/python.html#/13>`_
 
 * Read `The Basics at learnpython.org <http://learnpython.org>`_ and try a few of the exercises (~30 minutes).
