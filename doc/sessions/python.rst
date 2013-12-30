@@ -17,6 +17,17 @@ If time permits, try to review these resources before the meet-up. If you can't,
 
 * Skim the `Python Wikipedia article <http://en.wikipedia.org/wiki/Python_(programming_language)>`_ (~10 minutes).
 * Read `Python Enhacement Proposal (PEP) #20:  The Zen of Python <http://www.python.org/dev/peps/pep-0020/>`_ (5 minutes).
+* Watch the `TotT Python slidecast <../_static/casts/python.html>`_ (~35 minutes) which includes live demos of:
+
+  * `Syntax <../_static/casts/python.html#/4>`_ (~3 minutes)
+  * `Rich Types <../_static/casts/python.html#/5>`_ (~2 minutes)
+  * `Classical Inheritence <../_static/casts/python.html#/6>`_ (~5 minutes)
+  * `Generators <../_static/casts/python.html#/7>`_ (~3 minutes)
+  * `Comprehensions <../_static/casts/python.html#/8>`_ (~6 minutes)
+  * `Keyword Arguments <../_static/casts/python.html#/9>`_ (~4 minutes)
+  * `Variadic Functions <../_static/casts/python.html#/10>`_ (~7 minutes)
+  * `Working with Python <../_static/casts/python.html#/13>`_
+
 * Read `The Basics at learnpython.org <http://learnpython.org>`_ and try a few of the exercises (~30 minutes).
 * Read the `pip package manager Wikipedia article <http://en.wikipedia.org/wiki/Pip_(package_manager)>`_ (5 minutes).
 * Read the `virtualenv front page <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_ (~10 minutes).
