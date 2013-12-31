@@ -17,13 +17,28 @@
     text-transform: none;
 }
 
+.reveal pre {
+    display: block; padding: 0.5em;
+    background: #3F3F3F;
+    color: #DCDCDC;
+}
+
+.reveal .footnote {
+    padding-top: 2em;
+    font-size: 0.5em;
+}
+
+.reveal section img {
+    background-color: white;
+}
+
 html body {
-  background: #2980b9;
-  background: -moz-radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #2980b9));
-  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
-  background: -o-radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
-  background: -ms-radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
-  background: radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
-  background-color: #f7fbfc;
+    background: #2980b9;
+    background: -moz-radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #2980b9));
+    background: -webkit-radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
+    background: -o-radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
+    background: -ms-radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
+    background: radial-gradient(center, circle cover, #f7fbfc 10%, #2980b9 100%);
+    background-color: #f7fbfc;
 }

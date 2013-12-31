@@ -21,7 +21,7 @@ block slides
     h2 Example: <tt>exports</tt>, <tt>require</tt>
     p In <tt>foo.js</tt>
     pre
-      code.
+      code.javascript.
         module.exports.double = function(x) {
           return x * 2;
         };
@@ -32,7 +32,7 @@ block slides
 
     p In <tt>bar.js</tt>
     pre
-      code.
+      code.javascript.
         var foo = require('./foo');
         var z = foo.double(5);
         console.log(z);
@@ -71,7 +71,7 @@ block slides
   section(data-narration="/npm/8")
     h2 Example: <tt>package.json</tt>
     pre
-      code.
+      code.json.
         {
           "name": "totter",
           "version": "0.0.1",

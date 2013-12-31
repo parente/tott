@@ -60,11 +60,10 @@ block slides
   section(data-narration="/vagrant/7")
     h2 Vagrant CLI
     p Three commands to master:
-    pre
-      code.
-        $ vagrant up
-        $ vagrant ssh
-        $ vagrant destroy
+    pre.
+      $ vagrant up
+      $ vagrant ssh
+      $ vagrant destroy
 
   section(data-narration="/vagrant/8")
     h2 Demo: Vagrant Basics
@@ -83,7 +82,7 @@ block slides
   section(data-narration="/vagrant/11")
     h2 Example: Simple Vagrantfile
     pre
-      code.
+      code.ruby.
         Vagrant.configure("2") do |config|
           # fetches a box (i.e., VM image)
           config.vm.box = "tottbox_2013_07_31"
