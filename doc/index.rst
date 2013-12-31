@@ -77,12 +77,12 @@ Like most artisans, we software developers use many specialized tools to practic
 
 Choosing the right instruments requires awareness of their existence, knowledge of their function, practice in their application, and evaluation of their alternatives. Here, our discipline presents both a unique opportunity and challenge: the population of tools at our immediate disposal is mind-boggling and growing at an accelerating pace. There is almost certainly a perfect combination of tools for every software development project, and there is almost certainly a project using any particular combination of tools. We cannot hope to master, let alone know about, all of them a priori. We must be nimble in our ability to find, learn, apply, and evaluate tools as the situation (our problem, our team, our client, our employer, etc.) demands.
 
-.. figure:: _images/github.png
+.. figure:: https://f.cloud.github.com/assets/4483/1803667/b0ed664e-6c24-11e3-9559-e5702215c47a.png
    :align: center
    :width: 600px
    :alt: Graph of GitHub repository growth since its inception.
 
-   Numbers from `Wikipedia <https://en.wikipedia.org/wiki/GitHub#Statistics>`_ and its references.
+   Graph from the `10 Million Repositories post <https://github.com/blog/1724-10-million-repositories>`_ on the GitHub Blog
 
 I strongly believe practice "hacking" builds this agility. Taking time to discover a new tool, install it, run its "hello world", read its documentation, think about its use, create small examples, apply it to some pet project, compare it to other tools, and so on provides us invaluable experience. It builds our confidence so that we might step-up to unfamiliar tools, learn them quickly, and master them eventually. It adds tools to our belts, albeit few out of millions. It fulfills our desire to learn and build new things. It entertains and provides a chance for collaboration.
 
