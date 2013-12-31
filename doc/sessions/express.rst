@@ -47,7 +47,7 @@ Write down as design for the REST API of the site. Account for the case where Al
 Bootstrap the code
 ##################
 
-Express has a command line utility that will lay out a suggested skeleton for an Express-based web application. Learn how to use it and then run it. (Hint: ``express`` is already installed globally on *tottbox*, but don't forget to run ``npm install`` in the project skeleton it creates.)
+Express has a command line utility that will lay out a suggested skeleton for an Express-based web application. I used it in the Jade screencast. Use ``npm`` to install the Express module now (globally or locally, your choice) and then use the ``express`` command line to generate a new skeleton for your dead-drop. (Hint: Don't forget to run ``npm install`` in the project skeleton too.)
 
 Secure the site
 ###############
