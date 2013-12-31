@@ -4,7 +4,7 @@
 if __name__ == '__main__':
   # this block executes if we run startup.py directly but
   # not if this module is imported by another
-  worker.run()</code></pre><p>In <tt>worker.py</tt>:</p><pre><code class="python">import sleep
+  worker.run()</code></pre><p>In <tt>worker.py</tt>:</p><pre><code class="python">import time
 
 def run():
   while 1:
@@ -12,6 +12,7 @@ def run():
     time.sleep(1)
     </code></pre></section><section data-narration="/pypi/3"><h2>Example: Packages</h2><p>Packages are collections of modules.</p><pre>myproject
   |- main.py
+  |- worker.py
   |- widgets
      |- __init__.py
      |- button.py
@@ -29,6 +30,7 @@ class MyApp(object):
     
 if __name__ == '__main__':
   app = MyApp()
+  app.run()
   </code></pre></section><section data-narration="/pypi/5"> <h2>Example: Packages</h2><p>In <tt>widgets/__init__.py</tt>:</p><pre><code class="python">from .button import Button
 from .combobox import Combobox</code></pre><p>In <tt>widgets/listbox.py</tt>:</p><pre><code class="python">from .button import Button
 from .listbox import Listbox

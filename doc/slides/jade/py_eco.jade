@@ -32,7 +32,7 @@ block slides
     p In <tt>worker.py</tt>:
     pre
       code.python.
-        import sleep
+        import time
 
         def run():
           while 1:
@@ -45,6 +45,7 @@ block slides
     pre.
       myproject
         |- main.py
+        |- worker.py
         |- widgets
            |- __init__.py
            |- button.py
@@ -68,6 +69,7 @@ block slides
 
         if __name__ == '__main__':
           app = MyApp()
+          app.run()
 
   section(data-narration="/pypi/5") 
     h2 Example: Packages
