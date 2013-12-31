@@ -77,8 +77,9 @@ block slides
     pre
       code.python.
         from .button import Button
+        from .listbox import Listbox
         from .combobox import Combobox
-    p In <tt>widgets/listbox.py</tt>:
+    p In <tt>widgets/combobox.py</tt>:
     pre
       code.python.
         from .button import Button
@@ -175,8 +176,14 @@ block slides
     h2 Example: <tt>requirements.txt</tt>
     pre.
       ipython==1.1.0
+      tornado==3.1.1
+      Jinja2==2.7.1
+      pyzmq==14.0.1
       numpy==1.8.0
       pandas&gt;=0.12.0
+    p To process this file we run:
+    pre.
+      $ pip install -r requirements.txt
 
   section(data-narration="/pypi/17")
     h2 <tt>site-packages</tt>
