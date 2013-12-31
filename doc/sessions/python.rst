@@ -5,7 +5,7 @@ Goals
 -----
 
 * Gain the ability to read and write Python code
-* Recognize Python's strength as a glue language
+* Recognize Python's strengths as a language
 * Understand how to tap into the Python ecosystem
 * Practice writing Python
 * Practice using pip_ and virtualenv_
@@ -17,7 +17,7 @@ If time permits, try to review these resources before the meet-up. If you can't,
 
 * Skim the `Python Wikipedia article <http://en.wikipedia.org/wiki/Python_(programming_language)>`_ (~10 minutes).
 * Read `Python Enhacement Proposal (PEP) #20:  The Zen of Python <http://www.python.org/dev/peps/pep-0020/>`_ (5 minutes).
-* Watch the `TotT Python slidecast <../_static/casts/python.html>`_ (~35 minutes) which includes live demos of:
+* Watch the `TotT Python slidecast <../_static/casts/python.html>`_ which includes live demos of:
 
   * `Syntax <../_static/casts/python.html#/4>`_ (~3 minutes)
   * `Rich Types <../_static/casts/python.html#/5>`_ (~2 minutes)
@@ -31,6 +31,10 @@ If time permits, try to review these resources before the meet-up. If you can't,
 * Read `The Basics at learnpython.org <http://learnpython.org>`_ and try a few of the exercises (~30 minutes).
 * Read the `pip package manager Wikipedia article <http://en.wikipedia.org/wiki/Pip_(package_manager)>`_ (5 minutes).
 * Read the `virtualenv front page <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_ (~10 minutes).
+* Watch the `TotT Python Ecosystem slidecast <../_static/casts/py_eco.html>`_ which includes a live demo of:
+
+  * `Using pip <../_static/casts/py_eco.html#/14>`_
+  * `Using virtualenv <../_static/casts/py_eco.html#/21>`_
 
 Exercises
 ---------

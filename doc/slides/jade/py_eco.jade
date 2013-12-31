@@ -1,0 +1,225 @@
+extends layout
+include util
+
+block head
+  title Python Ecosystem - TotT
+
+block slides
+
+  section(data-narration="/pypi/0")
+    h1 Python Ecosystem
+    h2 TotT: 2014
+
+  section(data-narration="/pypi/1")
+    h2 Python Libraries
+    ul
+      li Load code with the <tt>import</tt> statement
+      li Single file modules
+      li Multi-module packages
+      li C-code extensions
+
+  section(data-narration="/pypi/2")
+    h2 Example: Modules
+    p In <tt>startup.py</tt>:
+    pre
+      code.python.
+        import worker
+
+        if __name__ == '__main__':
+          # this block executes if we run startup.py directly but
+          # not if this module is imported by another
+          worker.run()
+    p In <tt>worker.py</tt>:
+    pre
+      code.python.
+        import sleep
+
+        def run():
+          while 1:
+            print "I'm running!"
+            time.sleep(1)
+
+  section(data-narration="/pypi/3")
+    h2 Example: Packages
+    p Packages are collections of modules.
+    pre.
+      myproject
+        |- main.py
+        |- widgets
+           |- __init__.py
+           |- button.py
+           |- listbox.py
+           |- combobox.py
+  
+  section(data-narration="/pypi/4")
+    h2 Example: Packages
+    p In <tt>main.py</tt>:
+    pre
+      code.python.
+        import widgets
+        import worker
+
+        class MyApp(object):
+          def __init__(self):
+            self.combo = widgets.Combobox(['NC', 'SC', 'GA', 'VA'], 'Search')
+
+          def run(self):
+            worker.run()
+
+        if __name__ == '__main__':
+          app = MyApp()
+
+  section(data-narration="/pypi/5") 
+    h2 Example: Packages
+    p In <tt>widgets/__init__.py</tt>:
+    pre
+      code.python.
+        from .button import Button
+        from .combobox import Combobox
+    p In <tt>widgets/listbox.py</tt>:
+    pre
+      code.python.
+        from .button import Button
+        from .listbox import Listbox
+        
+        class Combobox(object):
+          def __init__(self, items, button_label='Submit'):
+            self.listbox = Listbox(items)
+            self.button = Button(button_label)
+
+  section(data-narration="/pypi/6")
+    h2 Example: Absolute Imports
+    pre
+      code.python.
+        # import math module, assign to variable 'math' in this
+        # module's global namespace
+        import math
+        
+        # import math module, assign to variable 'm' in this
+        # module's global namespace
+        import math as m
+        
+        # import 'sin' and 'cos' from module math
+        # assign to 'sin' and 'cos' variables
+        from math import sin, cos
+
+        # import everything from math and assign to vars in this
+        # module's global namespace; typically considered bad form
+        from math import *
+
+  section(data-narration="/pypi/7")
+    h2 Example: Relative Imports
+    p These are only possible within a package.
+    pre
+      code.python.
+        # import 'parse' from a peer module named 'minidom' within
+        # the same package as this module
+        from .minidom import parse
+
+        # import everything from 'etree', a peer of this module's package;
+        # using * for relative imports within your own package structure 
+        # is more acceptable than absolute * imports
+        from ..etree import *
+
+  section(data-narration="/pypi/8")
+    h2 Absolute Import Search
+    ul
+      li <tt>sys.path</tt> list governs module/package lookup
+      li Interpreter seeds <tt>sys.path</tt> with common locations
+      li You can modify <tt>sys.path</tt> at runtime
+
+  section(data-narration="/pypi/9")
+    h2 <tt>sys.path</tt> Defaults
+    ol
+      li Directory containing the input script
+      li <tt>PYTHONPATH</tt> environment variable paths
+      li Installation-dependent directories
+
+  section(data-narration="/pypi/10")
+    h2 Python Package Index (PyPI)
+    ul
+      li A hosted index of Python libraries
+      li No more, no less
+      li 
+        a(href="https://pypi.python.org/") https://pypi.python.org
+
+  section(data-narration="/pypi/11")
+    h2 <tt>pip</tt>
+    blockquote "A tool for installing Python packages." <br />- <a href="http://www.pip-installer.org/en/latest/index.html">pip Homepage</a>
+
+  section(data-narration="/pypi/12")
+    h2 <tt>pip</tt> Basics
+    p Commands to master:
+    pre.
+      $ pip search
+      $ pip install
+      $ pip uninstall
+
+  section(data-narration="/pypi/13")
+    h2 Demo: Using <tt>pip</tt>
+    p search, install, uninstall
+
+  section
+    h4 Demo: Using <tt>pip</tt>
+    +screencast("/pyeco/pip")
+
+  section(data-narration="/pypi/15")
+    h2 <tt>requirements.txt</tt>
+    ul
+      li States project dependencies
+      li Can be used by <tt>pip</tt>
+
+  section(data-narration="/pypi/16")
+    h2 Example: <tt>requirements.txt</tt>
+    pre.
+      ipython==1.1.0
+      numpy==1.8.0
+      pandas&gt;=0.12.0
+
+  section(data-narration="/pypi/17")
+    h2 <tt>site-packages</tt>
+    ul
+      li Python adds a system-wide <tt>site-packages</tt> folder to <tt>sys.path</tt>
+      li <tt>pip</tt> and other tools install here by default
+      li <tt>site-packages</tt> are global, for better or worse
+
+  section(data-narration="/pypi/18")
+    h2 <tt>virtualenv</tt>
+    blockquote "virtualenv is a tool to create isolated Python environments."  <br />- <a href="http://www.virtualenv.org/en/latest/virtualenv.html">virtualenv Introduction</a>
+
+  section(data-narration="/pypi/19")
+    h2 <tt>virtualenv</tt> Basics
+    p Commands to master:
+    pre.
+      $ virtualenv [--no-site-packages] &lt;name&gt;
+      $ &lt;name&gt;/bin/activate
+      (name)$ deactivate
+
+  section(data-narration="/pypi/20")
+    h2 Demo: Using <tt>virtualenv</tt>
+    p virtualenv, activate, pip, deactivate
+
+  section
+    h4 Demo: Installing Python Libraries
+    +screencast("/pyeco/virtualenv")
+
+  section(data-narration="/pypi/22")
+    h2 Other Pythons
+    ul
+      li CPython is the original
+      li <a href="http://www.jython.org/">Jython</a> is Python for the JVM
+      li <a href="http://www.pypy.org">PyPy</a> is an interpreter with a JIT 
+      li <a href="http://ironpython.net/">IronPython</a> is Python for .NET / Mono
+      li <a href="http://cython.org/">Cython</a> is static compiler for Python
+    footer.footnote See <a href="https://wiki.python.org/moin/PythonImplementations">https://wiki.python.org/moin/PythonImplementations</a> for more.
+
+  section(data-narration="/pypi/23")
+    h2 Review
+    ul
+      li Modules
+      li Packages
+      li <tt>sys.path</tt>
+      li <tt>site-packages</tt>
+      li <tt>pip</tt>
+      li <tt>virtualenv</tt>
+      li Other implementations
