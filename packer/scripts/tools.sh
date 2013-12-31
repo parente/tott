@@ -18,22 +18,25 @@ ln -s /vagrant/.gitconfig ~/.gitconfig
 
 # pip and virtualenv
 sudo apt-get -y install python-dev python-pip
-sudo pip install virtualenv
-sudo pip install -U distribute
+sudo pip install pip==1.4.1
+sudo pip install virtualenv==1.10.1
+sudo pip install -U distribute==0.7.3
 
 # ipython, pandas, matplotlib, etc.
-sudo apt-get -y install freetype* libpng-dev g++
-sudo pip install pyzmq
-sudo pip install jinja2
-sudo pip install ipython
-sudo pip install numpy
-sudo pip install pandas
-sudo pip install matplotlib
-sudo pip install scipy
-sudo pip install scikit-learn
+sudo apt-get -y install freetype* libpng-dev g++ gfortran liblapack-dev
+sudo pip install pyzmq==14.0.1
+sudo pip install jinja2==2.7.1
+sudo pip install ipython==1.1.0
+sudo pip install numpy==1.8.0
+sudo pip install pandas==0.12.0
+sudo pip install matplotlib==1.3.1
+sudo pip install scipy==0.13.2
+sudo pip install scikit-learn==0.14.1
+# clean up compile time deps
+sudo apt-get -y remove gfortran liblapack-dev
 
 # behave
-sudo pip install behave
+sudo pip install behave==1.2.3
 
 # nodejs, npm, nvm
 wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
@@ -42,8 +45,8 @@ echo '. /home/vagrant/.profile' >> /home/vagrant/.bash_profile
 nvm install v0.10.22
 nvm alias default v0.10.22
 
-# express, mocha, and bower
-npm install -g bower mocha
+# mocha and bower
+npm install -g bower@1.2.7
 npm cache clean
 
 # rvm, ruby
