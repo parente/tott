@@ -5,7 +5,7 @@ You need to prepare your laptop to use the numerous tools in our planned meet-up
 
 At a glance, you will configure all of the following:
 
-#. *tottbox* (v2013-11-29), an Ubuntu virtual machine (VM) prepared to run all of our tools
+#. *tottbox* (v2013-12-31), an Ubuntu virtual machine (VM) prepared to run all of our tools
 #. VirtualBox_ (v4.3.6) to run *tottbox*
 #. Vagrant_ (v1.4.1) to control *tottbox*
 #. Git_ for version control
@@ -99,7 +99,7 @@ With VirtualBox and Vagrant installed, you're now ready to bring up the virtual 
 
 #. Download `the TotT Vagrantfile <https://raw.github.com/parente/tott/master/Vagrantfile>`_, a config that tells Vagrant how to run *tottbox*.
 #. Place the Vagrantfile in the ``tott_dir`` you created.
-#. If you copied files off the borrowed thumbdrive, copy the files ending in ``.box`` to the ``tott_dir`` as well.
+#. If you copied files off the borrowed thumbdrive, copy the file ending in ``.box`` to the ``tott_dir`` as well.
 #. If have **not** borrowed the thumbdrive, pause here until you have a stable Internet connection and time to leave your laptop downloading the *tottbox* virtual machine image (~700 MB) in the next command.
 #. Enter the following command: ``vagrant up``.
 
