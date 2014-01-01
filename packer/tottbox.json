@@ -23,7 +23,7 @@
       "ssh_password": "vagrant",
       "ssh_port": 22,
       "ssh_username": "vagrant",
-      "ssh_wait_timeout": "800s",
+      "ssh_wait_timeout": "8000s",
       "type": "virtualbox",
       "vboxmanage": [
         [
@@ -65,7 +65,7 @@
       "ssh_password": "vagrant",
       "ssh_port": 22,
       "ssh_username": "vagrant",
-      "ssh_wait_timeout": "800s",
+      "ssh_wait_timeout": "8000s",
       "type": "virtualbox",
       "vboxmanage": [
         [
