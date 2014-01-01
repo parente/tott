@@ -31,7 +31,7 @@ If time permits, try to review these resources before the meet-up. If you can't,
 * Read `The Basics at learnpython.org <http://learnpython.org>`_ and try a few of the exercises (~30 minutes).
 * Read the `pip package manager Wikipedia article <http://en.wikipedia.org/wiki/Pip_(package_manager)>`_ (5 minutes).
 * Read the `virtualenv front page <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_ (~10 minutes).
-* Watch the `TotT Python Ecosystem slidecast <../_static/casts/py_eco.html>`_ which includes a live demo of:
+* Watch the `TotT Python Ecosystem slidecast <../_static/casts/py_eco.html>`_ which includes live demos of:
 
   * `Using pip <../_static/casts/py_eco.html#/14>`_
   * `Using virtualenv <../_static/casts/py_eco.html#/21>`_
