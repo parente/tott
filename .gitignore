@@ -10,3 +10,5 @@ demo/
 *.sublime-workspace
 .gitconfig
 thumb/
+media/video
+media/audio
