@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Python Ecosystem - TotT</title><link rel="stylesheet" href="reveal.js/css/reveal.min.css"><link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme"><link rel="stylesheet" href="reveal.js/lib/css/zenburn.css"><link rel="stylesheet" href="css/custom.css"><link rel="stylesheet" href="css/narrator.css"><script>document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-</script><!--[if lt IE 9]><script src="reveal.js/lib/js/html5shiv.js"></script><![endif]--></head><body><div class="reveal"><div class="slides"><section data-narration="/pypi/0"><h1>Python Ecosystem</h1><h2>TotT: 2014</h2></section><section data-narration="/pypi/1"><h2>Python Libraries</h2><ul><li>Load code with the <tt>import</tt> statement</li><li>Single file modules</li><li>Multi-module packages</li><li>C-code extensions</li></ul></section><section data-narration="/pypi/2"><h2>Example: Modules</h2><p>In <tt>startup.py</tt>:</p><pre><code class="python">import worker
+</script><!--[if lt IE 9]><script src="reveal.js/lib/js/html5shiv.js"></script><![endif]--></head><body><div class="reveal"><div class="slides"><section data-narration="/pyeco/0"><h1>Python Ecosystem</h1><h2>TotT: 2014</h2></section><section data-narration="/pyeco/1"><h2>Python Libraries</h2><ul><li>Load code with the <tt>import</tt> statement</li><li>Single file modules</li><li>Multi-module packages</li><li>C-code extensions</li></ul></section><section data-narration="/pyeco/2"><h2>Example: Modules</h2><p>In <tt>startup.py</tt>:</p><pre><code class="python">import worker
 
 if __name__ == '__main__':
   # this block executes if we run startup.py directly but
@@ -10,7 +10,7 @@ def run():
   while 1:
     print "I'm running!"
     time.sleep(1)
-    </code></pre></section><section data-narration="/pypi/3"><h2>Example: Packages</h2><p>Packages are collections of modules.</p><pre>myproject
+    </code></pre></section><section data-narration="/pyeco/3"><h2>Example: Packages</h2><p>Packages are collections of modules.</p><pre>myproject
   |- main.py
   |- worker.py
   |- widgets
@@ -18,7 +18,7 @@ def run():
      |- button.py
      |- listbox.py
      |- combobox.py
-     </pre></section><section data-narration="/pypi/4"><h2>Example: Packages</h2><p>In <tt>main.py</tt>:</p><pre><code class="python">import widgets
+     </pre></section><section data-narration="/pyeco/4"><h2>Example: Packages</h2><p>In <tt>main.py</tt>:</p><pre><code class="python">import widgets
 import worker
 
 class MyApp(object):
@@ -31,7 +31,7 @@ class MyApp(object):
 if __name__ == '__main__':
   app = MyApp()
   app.run()
-  </code></pre></section><section data-narration="/pypi/5"> <h2>Example: Packages</h2><p>In <tt>widgets/__init__.py</tt>:</p><pre><code class="python">from .button import Button
+  </code></pre></section><section data-narration="/pyeco/5"> <h2>Example: Packages</h2><p>In <tt>widgets/__init__.py</tt>:</p><pre><code class="python">from .button import Button
 from .listbox import Listbox
 from .combobox import Combobox</code></pre><p>In <tt>widgets/combobox.py</tt>:</p><pre><code class="python">from .button import Button
 from .listbox import Listbox
@@ -40,7 +40,7 @@ class Combobox(object):
   def __init__(self, items, button_label='Submit'):
     self.listbox = Listbox(items)
     self.button = Button(button_label)
-    </code></pre></section><section data-narration="/pypi/6"><h2>Example: Absolute Imports</h2><pre><code class="python"># import math module, assign to variable 'math' in this
+    </code></pre></section><section data-narration="/pyeco/6"><h2>Example: Absolute Imports</h2><pre><code class="python"># import math module, assign to variable 'math' in this
 # module's global namespace
 import math
 
@@ -55,7 +55,7 @@ from math import sin, cos
 # import everything from math and assign to vars in this
 # module's global namespace; typically considered bad form
 from math import *
-</code></pre></section><section data-narration="/pypi/7"><h2>Example: Relative Imports</h2><p>These are only possible within a package.</p><pre><code class="python"># import 'parse' from a peer module named 'minidom' within
+</code></pre></section><section data-narration="/pyeco/7"><h2>Example: Relative Imports</h2><p>These are only possible within a package.</p><pre><code class="python"># import 'parse' from a peer module named 'minidom' within
 # the same package as this module
 from .minidom import parse
 
@@ -63,19 +63,19 @@ from .minidom import parse
 # using * for relative imports within your own package structure 
 # is more acceptable than absolute * imports
 from ..etree import *
-</code></pre></section><section data-narration="/pypi/8"><h2>Absolute Import Search</h2><ul><li><tt>sys.path</tt> list governs module/package lookup</li><li>Interpreter seeds <tt>sys.path</tt> with common locations</li><li>You can modify <tt>sys.path</tt> at runtime</li></ul></section><section data-narration="/pypi/9"><h2><tt>sys.path</tt> Defaults</h2><ol><li>Directory containing the input script</li><li><tt>PYTHONPATH</tt> environment variable paths</li><li>Installation-dependent directories</li></ol></section><section data-narration="/pypi/10"><h2>Python Package Index (PyPI)</h2><ul><li>A hosted index of Python libraries</li><li>No more, no less</li><li> <a href="https://pypi.python.org/">https://pypi.python.org</a></li></ul></section><section data-narration="/pypi/11"><h2><tt>pip</tt></h2><blockquote>"A tool for installing Python packages." <br />- <a href="http://www.pip-installer.org/en/latest/index.html">pip Homepage</a></blockquote></section><section data-narration="/pypi/12"><h2><tt>pip</tt> Basics</h2><p>Commands to master:</p><pre>$ pip search
+</code></pre></section><section data-narration="/pyeco/8"><h2>Absolute Import Search</h2><ul><li><tt>sys.path</tt> list governs module/package lookup</li><li>Interpreter seeds <tt>sys.path</tt> with common locations</li><li>You can modify <tt>sys.path</tt> at runtime</li></ul></section><section data-narration="/pyeco/9"><h2><tt>sys.path</tt> Defaults</h2><ol><li>Directory containing the input script</li><li><tt>PYTHONPATH</tt> environment variable paths</li><li>Installation-dependent directories</li></ol></section><section data-narration="/pyeco/10"><h2>Python Package Index (PyPI)</h2><ul><li>A hosted index of Python libraries</li><li>No more, no less</li><li> <a href="https://pypi.python.org/">https://pypi.python.org</a></li></ul></section><section data-narration="/pyeco/11"><h2><tt>pip</tt></h2><blockquote>"A tool for installing Python packages." <br />- <a href="http://www.pip-installer.org/en/latest/index.html">pip Homepage</a></blockquote></section><section data-narration="/pyeco/12"><h2><tt>pip</tt> Basics</h2><p>Commands to master:</p><pre>$ pip search
 $ pip install
 $ pip uninstall
-</pre></section><section data-narration="/pypi/13"><h2>Demo: Using <tt>pip</tt></h2><p>search, install, uninstall</p></section><section><h4>Demo: Using <tt>pip</tt></h4><video width="100%" controls="controls" class="screencast"><source src="http://static.mindtrove.info/tott/video/pyeco/pip.mov" type="video/mp4"/><source src="http://static.mindtrove.info/tott/video/pyeco/pip.ogv" type="video/ogg"/></video></section><section data-narration="/pypi/15"><h2><tt>requirements.txt</tt></h2><ul><li>States project dependencies</li><li>Can be used by <tt>pip</tt></li></ul></section><section data-narration="/pypi/16"><h2>Example: <tt>requirements.txt</tt></h2><pre>ipython==1.1.0
+</pre></section><section data-narration="/pyeco/13"><h2>Demo: Using <tt>pip</tt></h2><p>search, install, uninstall</p></section><section><h4>Demo: Using <tt>pip</tt></h4><video width="100%" controls="controls" class="screencast"><source src="http://static.mindtrove.info/tott/video/pyeco/pip.mov" type="video/mp4"/><source src="http://static.mindtrove.info/tott/video/pyeco/pip.ogv" type="video/ogg"/></video></section><section data-narration="/pyeco/15"><h2><tt>requirements.txt</tt></h2><ul><li>States project dependencies</li><li>Can be used by <tt>pip</tt></li></ul></section><section data-narration="/pyeco/16"><h2>Example: <tt>requirements.txt</tt></h2><pre>ipython==1.1.0
 tornado==3.1.1
 Jinja2==2.7.1
 pyzmq==14.0.1
 numpy==1.8.0
 pandas&gt;=0.12.0</pre><p>To process this file we run:</p><pre>$ pip install -r requirements.txt
-</pre></section><section data-narration="/pypi/17"><h2><tt>site-packages</tt></h2><ul><li>Python adds a system-wide <tt>site-packages</tt> folder to <tt>sys.path</tt></li><li><tt>pip</tt> and other tools install here by default</li><li><tt>site-packages</tt> are global, for better or worse</li></ul></section><section data-narration="/pypi/18"><h2><tt>virtualenv</tt></h2><blockquote>"virtualenv is a tool to create isolated Python environments."  <br />- <a href="http://www.virtualenv.org/en/latest/virtualenv.html">virtualenv Introduction</a></blockquote></section><section data-narration="/pypi/19"><h2><tt>virtualenv</tt> Basics</h2><p>Commands to master:</p><pre>$ virtualenv [--no-site-packages] &lt;name&gt;
+</pre></section><section data-narration="/pyeco/17"><h2><tt>site-packages</tt></h2><ul><li>Python adds a system-wide <tt>site-packages</tt> folder to <tt>sys.path</tt></li><li><tt>pip</tt> and other tools install here by default</li><li><tt>site-packages</tt> are global, for better or worse</li></ul></section><section data-narration="/pyeco/18"><h2><tt>virtualenv</tt></h2><blockquote>"virtualenv is a tool to create isolated Python environments."  <br />- <a href="http://www.virtualenv.org/en/latest/virtualenv.html">virtualenv Introduction</a></blockquote></section><section data-narration="/pyeco/19"><h2><tt>virtualenv</tt> Basics</h2><p>Commands to master:</p><pre>$ virtualenv [--no-site-packages] &lt;name&gt;
 $ &lt;name&gt;/bin/activate
 (name)$ deactivate
-</pre></section><section data-narration="/pypi/20"><h2>Demo: Using <tt>virtualenv</tt></h2><p>virtualenv, activate, pip, deactivate</p></section><section><h4>Demo: Installing Python Libraries</h4><video width="100%" controls="controls" class="screencast"><source src="http://static.mindtrove.info/tott/video/pyeco/virtualenv.mov" type="video/mp4"/><source src="http://static.mindtrove.info/tott/video/pyeco/virtualenv.ogv" type="video/ogg"/></video></section><section data-narration="/pypi/22"><h2>Other Pythons</h2><ul><li>CPython is the original</li><li><a href="http://www.jython.org/">Jython</a> is Python for the JVM</li><li><a href="http://www.pypy.org">PyPy</a> is an interpreter with a JIT </li><li><a href="http://ironpython.net/">IronPython</a> is Python for .NET / Mono</li><li><a href="http://cython.org/">Cython</a> is static compiler for Python</li></ul><footer class="footnote">See <a href="https://wiki.python.org/moin/PythonImplementations">https://wiki.python.org/moin/PythonImplementations</a> for more.</footer></section><section data-narration="/pypi/23"><h2>Review</h2><ul><li>Modules</li><li>Packages</li><li><tt>sys.path</tt></li><li><tt>site-packages</tt></li><li><tt>pip</tt></li><li><tt>virtualenv</tt></li><li>Other implementations</li></ul></section></div></div><script src="reveal.js/lib/js/head.min.js"></script><script src="reveal.js/js/reveal.min.js"></script><script>// Full list of configuration options available here:
+</pre></section><section data-narration="/pyeco/20"><h2>Demo: Using <tt>virtualenv</tt></h2><p>virtualenv, activate, pip, deactivate</p></section><section><h4>Demo: Installing Python Libraries</h4><video width="100%" controls="controls" class="screencast"><source src="http://static.mindtrove.info/tott/video/pyeco/virtualenv.mov" type="video/mp4"/><source src="http://static.mindtrove.info/tott/video/pyeco/virtualenv.ogv" type="video/ogg"/></video></section><section data-narration="/pyeco/22"><h2>Other Pythons</h2><ul><li>CPython is the original</li><li><a href="http://www.jython.org/">Jython</a> is Python for the JVM</li><li><a href="http://www.pypy.org">PyPy</a> is an interpreter with a JIT </li><li><a href="http://ironpython.net/">IronPython</a> is Python for .NET / Mono</li><li><a href="http://cython.org/">Cython</a> is static compiler for Python</li></ul><footer class="footnote">See <a href="https://wiki.python.org/moin/PythonImplementations">https://wiki.python.org/moin/PythonImplementations</a> for more.</footer></section><section data-narration="/pyeco/23"><h2>Review</h2><ul><li>Modules</li><li>Packages</li><li><tt>sys.path</tt></li><li><tt>site-packages</tt></li><li><tt>pip</tt></li><li><tt>virtualenv</tt></li><li>Other implementations</li></ul></section></div></div><script src="reveal.js/lib/js/head.min.js"></script><script src="reveal.js/js/reveal.min.js"></script><script>// Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
   controls: true,
