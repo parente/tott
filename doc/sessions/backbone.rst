@@ -15,7 +15,7 @@ Prep Materials
 
 If time permits, try to review these resources before the meet-up. If you can't, come anyway.
 
-* Read the `Wikipedia Model-vice-controller article <http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller>`_ (~10 minutes)
+* Read the `Wikipedia Model-view-controller article <http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller>`_ (~10 minutes)
 * Read `the Introduction section of the Backbone doc <http://backbonejs.org/#introduction>`_ (~5 minutes)
 * Read `Why you should use MV* front-end frameworks like Backbone, Ember, and Angular <http://maximilianschmitt.me/blog/web-development/why-you-should-use-mv-front-end-frameworks-like-backbone-ember-and-angular/>`_ (~10 minutes)
 * Read `the annotated Todos.js Backbone example code <http://backbonejs.org/docs/todos.html>`_ (~15 minutes)
