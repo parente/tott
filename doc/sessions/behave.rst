@@ -159,12 +159,12 @@ Notice that ``context.model`` is assumed to exist. That is, the test steps assum
 
 .. code-block:: python
 
-    from ...model import Model
+    from model import Model
 
     def before_all(context):
         context.model = Model()
 
-Notice that this module assumes the game model is located two folders up and is a class called ``Model``. Add the following empty class to ``model.py`` to ensure the test setup doesn't die immediately the next time you run behave.
+For this import to succeed, you must add a class named ``Model`` to the ``model.py`` file in the root of the project. Add the following empty class to that file.
 
 .. code-block:: python
 
