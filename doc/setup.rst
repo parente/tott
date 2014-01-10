@@ -285,7 +285,6 @@ Create and Clone
 #. Visit GitHub_ and login.
 #. Visit https://github.com/parente/tott-verify.
 #. Click the Fork button.
-#. On the dashboard page, click Create repository (or Create, or Create a repository).
 #. Clone your *tott-verify* fork for local editing with the following commands on *tottbox*, replacing ``your_username`` with your GitHub username.
 
    .. code-block:: console
