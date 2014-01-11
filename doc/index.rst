@@ -8,7 +8,12 @@ Tools of the Trade
 
    -- `Abraham Maslow <http://en.wikipedia.org/wiki/Abraham_Maslow>`_
 
-.. important:: Our first session is scheduled for **Friday, January 10th 2014 at 3 PM in Sitterson Hall, Room 011** on the UNC-CH campus. Please join the `TotT Google+ Community <https://plus.google.com/communities/110370068185265330545>`_ to stay informed of any changes.
+The Gist
+========
+
+We're meeting most Fridays at 3 PM in Sitterson 011 at UNC-CH to practice using a variety of software development tools to build our experience and confidence. Join our `G+ community <https://plus.google.com/communities/110370068185265330545>`_ for invites and reminders.
+
+Keep reading for details.
 
 What
 ====
@@ -17,7 +22,7 @@ Tools of the Trade (TotT) is a recurring meet-up for students who want more prac
 
 #. Pick a tool or topic of interest (e.g., Git, Ruby, Backbone, Pandas, BDD, ...)
 #. Do a bit of background reading or video watching as time permits to prep for our meeting.
-#. Meet face-to-face to hack on practice problems or small projects together in a :doc:`common development environment <setup>`.
+#. Meet face-to-face to hack on practice problems and small projects together.
 #. Help one another and share our experience in-person and online.
 
 We currently have meet-ups planned on the topics listed in the navbar with :doc:`many more possibilities for future sessions <other>`. Content and pages will continue to appear over time.
@@ -46,7 +51,7 @@ We currently have meet-ups planned on the topics listed in the navbar with :doc:
 When
 ====
 
-We're planning to have our meet-ups most Fridays in the Spring 2014 starting at 3 PM. Try to arrive at the start of the session to catch the introductory materials and jump on the exercises at the same time as your peers. We'll have the room until 5 PM and you're welcome to stay for that long, but you can feel free to leave any time before then.
+We'll meet on most Fridays in the Spring 2014 semester starting at 3 PM. Try to arrive at the start of the session to catch the session introduction and start on the exercises at the same time as your peers. We'll have the room until 5 PM. You're welcome to stay for that long or leave any time before then.
 
 Where
 =====
