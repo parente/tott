@@ -3,7 +3,7 @@ Setting Up
 
 You need to prepare your laptop to use the numerous tools in our planned meet-ups. To do so, read this page and follow its instructions, step-by-step. You will find a a verification procedure at the end of the document that will ensure that you have a working development environment.
 
-At a glance, you will configure all of the following:
+At a glance, you will configure all of the following. Don't download these now, just glance at the list to get a sense of what you're setting up.
 
 #. *tottbox* (v2013-12-31), an Ubuntu virtual machine (VM) prepared to run all of our tools
 #. VirtualBox_ (v4.3.6) to run *tottbox*
@@ -62,9 +62,9 @@ First, however, you need to install Vagrant 1.4.1, the latest stable version tes
 SSH for Windows Users
 ~~~~~~~~~~~~~~~~~~~~~
 
-If you are running Windows on your laptop and have not installed Cygwin_ or the like, you'll need to perform a few additional steps before Vagrant will be useful to you. Namely, you need to get a SSH, secure shell, client in order to connect to the virtual machine running on your laptop.
+If you are running Windows on your laptop and have not installed Cygwin_ or the like, you'll need to perform a few additional steps before Vagrant will be useful to you. Namely, you need to get a command line SSH (Secure SHell) client in order to connect to the virtual machine running on your laptop.
 
-Installing Cygwin just to get SSH is overkill for our needs. A lower-overhead solution is to install git_ for Windows. This Windows installer includes a few common Unix command line utilities including the necessary ``ssh``.
+Installing Cygwin just to get SSH is overkill for our needs. A lower-overhead solution is to install git_ for Windows. This Windows installer includes a few common Unix command line utilities including the necessary ``ssh``. (We're not actually going to use git on Windows: we just want this package for its bundled copy of ssh.)
 
 #. Visit http://git-scm.com/download/win.
 #. If the installer does not download automatically, click to download it.
@@ -81,41 +81,53 @@ With VirtualBox and Vagrant installed, you're now ready to bring up the virtual 
 
 .. note:: To make it clear where we are running commands, from now on this doc will call the operating system running on your laptop the *host box* and the virtual machine, *tottbox*.
 
-#. Create a folder that will serve as the container for all of your practice work on your host box. We'll call this the ``tott_dir`` from now on. Some suggestions:
-
-   * Windows: ``C:\Users\your_username\projects\tott``
-   * Mac/Linux: ``~/projects/tott``
-
 #. Open a terminal window.
 
    * Windows: In the Start Menu, search for and run the Command Prompt application (cmd.exe). If you have Cygwin installed, you can run the Cygwin Bash Shell instead.
    * Mac: Run Terminal in the Applications folder.
    * Linux: You know what to do.
 
-#. Navigate to the folder you created in the terminal.
+#. Create a folder that will serve as the container for all of your practice work on your host box. In these instructions, we'll call this the ``tott_dir`` from now on. Enter the following to create the folder.
+
+   * Windows: ``mkdir C:\Users\your_username\projects\tott``
+   * Mac/Linux: ``mkdir -p ~/projects/tott``
+
+#. Switch to the folder you just created in the terminal.
 
    * Windows: ``cd \Users\your_username\projects\tott``
    * Mac/Linux: ``cd ~/projects/tott``
 
-#. Download `the TotT Vagrantfile <https://raw.github.com/parente/tott/master/Vagrantfile>`_, a config that tells Vagrant how to run *tottbox*.
-#. Place the Vagrantfile in the ``tott_dir`` you created.
+#. Download `the TotT Vagrantfile <https://raw.github.com/parente/tott/master/Vagrantfile>`_, a config that tells Vagrant how to run *tottbox*. 
+#. Strip any ``.txt`` or other extension your browser gives to the ``Vagrantfile``. You can do this using the Windows/OSX/Linux desktop environment or when you move the file via the terminal in the next step.
+#. Place the ``Vagrantfile`` in the ``tott_dir`` you created. You can do this by downloading it directly to ``tott_dir``, using the Windows/OSX/Linux desktop environment to drag/drop it in, or using the move command in your terminal. For example:
+
+   * Windows: ``move \Users\your_username\Downloads\Vagrantfile \Users\your_username\projects\tott``
+   * Mac/Linux: ``~/Downloads/Vagrantfile ~/projects/tott/``
+
 #. If you copied files off the borrowed thumbdrive, copy the file ending in ``.box`` to the ``tott_dir`` as well.
 #. If have **not** borrowed the thumbdrive, pause here until you have a stable Internet connection and time to leave your laptop downloading the *tottbox* virtual machine image (~700 MB) in the next command.
-#. Enter the following command: ``vagrant up``.
+#. Enter the following command: ``vagrant up``. You **must** be connected to the Internet whenever you issue this command.
 
    * Vagrant will download the *tottbox* virtual machine image or copy it off from ``tott_dir`` for safe keeping.
    * It will make a hidden copy of the image in the folder you created.
    * It will launch and configure an instance of the virtual machine.
    * After some log messages and scary looking (but OK!) text, Vagrant returns you to the command prompt.
 
-#. Type ``vagrant ssh``.
+#. Type ``vagrant ssh`` in the terminal.
 #. After a moment, you should land at a prompt like ``vagrant@tottbox:~$``.
 
-You are now in a shell running on your copy of *tottbox*. Leave this shell open for the remainder of the steps in this tutorial. If you close your laptop or reboot it, you can reconnect to *tottbox* by opening a terminal, returning to ``tott_dir``, typing ``vagrant up``, and then ``vagrant ssh``.
+.. important:: On Windows, if you get an error about the VM being halted right after bringing it up, you likely need to enable support for virtualization on your laptop. This involves rebooting it, going into the BIOS setup, and finding the setting that says something like "Enable Virtualization Support". Unfortunately, the steps for doing this vary widely across machines. Try to look for it, but ask for help if you can't find it.
+
+The *tottbox* shell
+~~~~~~~~~~~~~~~~~~~
+
+You are now in a shell running on your copy of *tottbox*. When you ``vagrant ssh``, you are in the home directory of the ``vagrant`` user on the virtual machine. You can change to other directories using the shell command ``cd`` and list the contents of directories using the command ``ls``. (We'll cover these command and others in the sesson on :doc:`/sessions/bash`).
+
+Leave this shell open for the remainder of the steps in this tutorial. If you close your laptop or reboot it, you can reconnect to *tottbox* by opening a new terminal, returning to ``tott_dir`` using the ``cd`` command, typing ``vagrant up``, and then running ``vagrant ssh``.
 
 If you want to explore, feel free. Anything you do on the VM file system is temporary. You can reset your *tottbox* at any time by running ``vagrant destroy`` followed by ``vagrant up`` on your host box.
 
-There is one exception to the reset rule: the ``/vagrant`` directory on *tottbox* is a synchronized mirror of the ``tott_dir`` in which you ran ``vagrant up`` on your host box. Anything you do in ``/vagrant`` on the VM will also happen in the corresponding folder on your host box. Likewise, anything you do in the ``tott_dir`` on your host box will appear in the ``/vagrant`` folder on *tottbox*. **This feature is critical**: it will allow us to edit code and view web apps in our desktop environment, but run them in the stable *tottbox* environment.
+There is one exception to the reset rule: the ``/vagrant`` directory on *tottbox* is a synchronized mirror of the ``tott_dir`` in which you ran ``vagrant up`` on your host box. Anything you do in ``/vagrant`` on the VM will also happen in the corresponding folder on your host box. Likewise, anything you do in the ``tott_dir`` on your host box will appear in the ``/vagrant`` folder on *tottbox*. **This feature is critical**: it will allow us to edit code and view web apps in our desktop environment, but run them in the stable *tottbox* environment. You'll get to see this in action in a few minutes down below.
 
 .. note: You should try to keep your ``/vagrant`` / ``tott_dir`` organized across our meet-ups. It's going to see a lot of use, and you don't want to get lost in a mess later. For example, you might consider organizing it by meet-up like so:
 
@@ -165,33 +177,36 @@ At this point you've got a GitHub account, but no way to push code to it for ver
 
    .. code-block:: console
 
-      mkdir -p /vagrant/.ssh
-      cd /vagrant/.ssh
-      ssh-keygen -f /vagrant/.ssh/github
+      mkdir -p /vagrant/.keys
+      cd /vagrant/.keys
+      ssh-keygen -f /vagrant/.keys/github
 
-8. When prompted, enter a password of your choosing to protect the key pair.
-#. Run ``less github.pub``.
+8. When prompted, enter a password of your choosing to protect the key pair. You'll only need to enter it once each time you bring up a new *tottbox* instance, so giving it a password is not painful and it's The-Right-Thing-To-Do (TM).
+#. Run ``less github.pub`` in the *tottbox* terminal.
 #. Copy the entire output, the public key, to the clipboard.
 #. Back on the GitHub site, paste the entire output into the Key field.
 #. Click Add key.
 
-Your GitHub account is now ready for use. We'll test it in a few minutes to confirm your environment is configured properl. For the moment, check that the ``/vagrant`` directory on your *tottbox* and the ``tott_dir`` on your host box look something like:
+Your GitHub account is now ready for use. We'll test it in a few minutes to confirm your environment is configured properl. For the moment, check that the ``/vagrant`` directory on your *tottbox* has the proper files.
 
-.. code-block:: console
+#. Run the command ``find /vagrant`` in the *tottbox* terminal.
+#. Verify the output looks something like the following. (It's OK if there are other files too.)
 
-   vagrant
-   ├── .gitconfig
-   ├── .ssh
-   │   ├── github
-   │   └── github.pub
-   └── Vagrantfile
+   .. code-block:: console
+
+      vagrant
+      vagrant
+      vagrant/Vagrantfile
+      vagrant/.keys
+      vagrant/.keys/github.pub
+      vagrant/.keys/github
+      vagrant/.gitconfig
 
 .. note::
 
-   Typically, keypairs live in a ``.ssh`` directory in your home folder. We deviate from the norm here because we want our keys to continue to exist even if we destroy and recreate *tottbox*. So, instead, we store the keys in the ``/vagrant`` folder which keeps them  synced with our host box.
+   Typically, keypairs live in a ``.ssh`` directory in your home folder. We deviate from the norm here because we want our keys to continue to exist even if we destroy and recreate *tottbox*. So, instead, we store the keys in the ``/vagrant`` folder which keeps them synced with our host box. When the you run ``vagrant up`` a little script copies the keys from the ``/vagrant/.keys`` folder into the right location in your *tottbox* instance.
 
    Vagrant does support `agent forwarding <http://docs.vagrantup.com/v2/vagrantfile/ssh_settings.html>`_ which would allow us to store the keys more securely on our host box. Setting up forwarding is a bit of a pain on some OSes, however, so we'll stick with the sync'ed folder approach.
-
 
 SublimeText (Optional)
 ----------------------
@@ -305,9 +320,8 @@ Edit and Test
 #. Replace the information about me with the equivalent information about you.
 
    * If you're using SublimeText and have installed GitGutter, you should see little markers in the left gutter of the editor when you save. These are the lines you've modified in comparison with the latest copy of the README in version control.
-   * You don't have to put your real information, but you should. When you push it to GitHub, the webhook you setup when creating your fork will push it to our meet-up roster which we might use later on.
+   * You don't have to put your real name and email. It's just a test case for pushing code to GitHub.
 
-#. Open the `features/*.features` files and review their content.
 #. Back at the *tottbox* prompt, do the following to execute a test suite checking the README.md file and *tottbox* environment against the specs.
 
    .. code-block:: console
@@ -318,7 +332,7 @@ Edit and Test
 #. Address any README.md failures reported by fixing your the file until the tests pass.
 #. Address any *tottbox* failures by asking for help. (They're probably my bugs, not yours.)
 
-.. note:: For this exercise, specifications and tests are overkill. However, I want you to get a glimpse of behavior-driven development (BDD), a topic we will cover later.
+.. note:: For this exercise, specifications and tests are overkill. However, I want you to get a glimpse of behavior-driven development (BDD), a topic we will cover later. If you're curious about what's going on, open ``features/*.features`` files in your editor and review their contents. They open the associated ``features/steps/*.py`` files and match up code with specification.
 
 Commit and Push
 ~~~~~~~~~~~~~~~
@@ -347,6 +361,8 @@ You might wonder what just happened behind the scenes. Here's the gist.
 * You committed your edits to the README.md in your local clone of the repository.
 * You pushed the commit from your local clone up to your fork on GitHub.
 
+Don't worry if the above description leaves you with even more questions. We have an upcoming session on :doc:`/sessions/git`.
+
 Cleanup
 -------
 
@@ -357,4 +373,4 @@ Success
 
 You just setup a virtually indestructible development environment on your laptop with `numerous interesting, useful tools pre-installed <https://github.com/parente/tott/blob/master/packer/scripts/tools.sh>`_. Play with it. Break it. Put it back together. Read more about the pieces. Have fun.
 
-We'll exercise all of the pieces during our meetups.
+We'll exercise all of the pieces during our coming sessions.

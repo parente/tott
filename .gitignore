@@ -4,6 +4,7 @@ doc/_themes
 packer_cache/
 sandbox/
 .ssh/
+.keys/
 node_modules/
 demo/
 *.box
