@@ -98,7 +98,7 @@ With VirtualBox and Vagrant installed, you're now ready to bring up the virtual 
    * Mac/Linux: ``cd ~/projects/tott``
 
 #. Download `the TotT Vagrantfile <https://raw.github.com/parente/tott/master/Vagrantfile>`_, a config that tells Vagrant how to run *tottbox*.
-#. Place the Vagrantfile in the ``tott_dir`` you created.
+#. Save this file as Vagrantfile with no filename extension and place it in the ``tott_dir`` you created.
 #. If you copied files off the borrowed thumbdrive, copy the file ending in ``.box`` to the ``tott_dir`` as well.
 #. If have **not** borrowed the thumbdrive, pause here until you have a stable Internet connection and time to leave your laptop downloading the *tottbox* virtual machine image (~700 MB) in the next command.
 #. Enter the following command: ``vagrant up``.
