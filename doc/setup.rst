@@ -97,8 +97,8 @@ With VirtualBox and Vagrant installed, you're now ready to bring up the virtual 
    * Windows: ``cd \Users\your_username\projects\tott``
    * Mac/Linux: ``cd ~/projects/tott``
 
-#. Download `the TotT Vagrantfile <https://raw.github.com/parente/tott/master/Vagrantfile>`_, a config that tells Vagrant how to run *tottbox*. 
-#. Strip any ``.txt`` or other extension your browser gives to the ``Vagrantfile``. You can do this using the Windows/OSX/Linux desktop environment or when you move the file via the terminal in the next step.
+#. Download `the TotT Vagrantfile <https://raw.github.com/parente/tott/master/Vagrantfile>`_, a config that tells Vagrant how to run *tottbox*. Do not give the file any extension if your browser prompts you for a download file name.
+#. Double-check the file name after downloading. Strip any ``.txt`` or other extension your browser gives to the ``Vagrantfile``. You can do this using the Windows/OSX/Linux desktop environment or when you move the file via the terminal in the next step.
 #. Place the ``Vagrantfile`` in the ``tott_dir`` you created. You can do this by downloading it directly to ``tott_dir``, using the Windows/OSX/Linux desktop environment to drag/drop it in, or using the move command in your terminal. For example:
 
    * Windows: ``move \Users\your_username\Downloads\Vagrantfile \Users\your_username\projects\tott``
