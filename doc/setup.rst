@@ -89,7 +89,7 @@ With VirtualBox and Vagrant installed, you're now ready to bring up the virtual 
 
 #. Create a folder that will serve as the container for all of your practice work on your host box. In these instructions, we'll call this the ``tott_dir`` from now on. Enter the following to create the folder.
 
-   * Windows: ``mkdir C:\Users\your_username\projects\tott``
+   * Windows: ``mkdir \Users\your_username\projects\tott``
    * Mac/Linux: ``mkdir -p ~/projects/tott``
 
 #. Switch to the folder you just created in the terminal.
