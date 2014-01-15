@@ -42,7 +42,7 @@ Design a dead-drop
 
 Imagine you want to build a semi-secure dead-drop web site. Two parties can use your site to exchange private messages without authenticating as long as they both agree upon a secret key ahead of time. For example, Alice and Bob might decide, face-to-face, that Alice will post the first message to Bob under the alias ``qwerasidfj98324wer`` on the site starting tomorrow at 11 PM. Alice posts her message to Bob at ``http://thesite.com/messages/qwerasidfj98324wer`` and includes another secret alias for Bob to use when responding and a time at which Alias will check for Bob's reply. Bob visits the URL including the agreed upon alias and retrieves Alices message, at which point it is promptly deleted from the site. Bob posts a message back to Alice at a new alias, including yet another  new alias and retrieval time in his message. Message drops continue in the same manner indefinitely. Of course, all traffic to and from the site is encrypted.
 
-Write down as design for the REST API of the site. Account for the case where Alice needs to update or delete her message after posting it, before Bob can retrieve it (or vice versa).
+Write down a design for the REST API of the site. Account for the case where Alice needs to update or delete her message after posting it, before Bob can retrieve it (or vice versa).
 
 Bootstrap the code
 ##################
