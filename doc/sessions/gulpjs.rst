@@ -37,7 +37,7 @@ Gulp.js is a new task runner that automates repetitive build tasks. It can autom
 Install Gulp.js
 ###############
 
-The first step is to install the `gulp <https://npmjs.org/package/gulp>`_ npm package globally. If you aren't sure how to do, enter ``npm help install`` or ask for help.
+The first step is to install the `gulp <https://npmjs.org/package/gulp>`_ npm package globally. If you aren't sure how to do this, enter ``npm help install`` or ask for help.
 
 Alright, this session will involve an example project for you to work with. If you already have a website or some kind of web related project (your project should probably have something to do with front-end web dev), you can try to integrate gulp into your project instead of using my example project. If you want to use the example project, just clone `this repository <https://github.com/Coalman/tott-gulpjs>`_. Make sure to read the project's readme to get a sense of the folder structure and complete the initial setup.
 
@@ -80,7 +80,7 @@ Unfortunately, this step is not well documented on the ``gulp-jade`` repository 
 
 There is an interesting choice to make when it comes to your portrait. You could choose to use gravatar (github uses this service to get your github profile picture) to generate the url of your gravatar portrait or insert the link here manually. It's purely up to you to choose.
 
-Also, feel free to change the markdown text in the ``index.jade`` file to say a little bit about yourself!
+Also, feel free to change the `markdown <http://daringfireball.net/projects/markdown/>`_ text in the ``index.jade`` file to say a little bit about yourself!
 
 Setup Local Web server
 ######################
