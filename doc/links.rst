@@ -37,6 +37,7 @@
 .. _Bootstrap: http://twitter.github.io/bootstrap/
 .. _AngularJS: http://angularjs.org/
 .. _Backbone: http://backbonejs.org/
+.. _Underscore: http://underscorejs.org/
 
 .. _REST: http://en.wikipedia.org/wiki/Representational_state_transfer
 .. _Bottle: http://bottlepy.org/docs/dev/
