@@ -47,7 +47,7 @@ The shell prompt is stateful. We often say we are "in" such-and-such a directory
 
 Enter the following commands exactly as shown. As you go along, document what each command does and where you wind up as a result.
 
-.. code-block::
+.. code-block:: bash
 
    cd /vagrant
    ls
