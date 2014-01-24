@@ -40,6 +40,31 @@ Exercises
 
 You will need to complete the :doc:`/setup` instructions before you proceed with these exercises. Once you are set up, SSH into *tottbox* using the ``vagrant ssh`` command from the setup instructions. Then tackle the problems below. `Document what you find in a gist <https://gist.github.com/>`_ and share it in the `TotT community`_ later.
 
+Learn to navigate
+#################
+
+The shell prompt is stateful. We often say we are "in" such-and-such a directory and that we "go to" other directories. How we refer to files at the command prompt depends on our current working directory.
+
+Enter the following commands exactly as shown. As you go along, document what each command does and where you wind up as a result.
+
+.. code-block::
+
+   cd /vagrant
+   ls
+   ls -l
+   ls -al
+   cd ..
+   pwd
+   cd .
+   pwd
+   cd ~
+   pwd
+   ls
+   ls ..
+   ls ../..
+   cd -
+   pwd
+
 Count on ``man``
 ################
 
@@ -63,6 +88,7 @@ Run the following commands:
   cd ~
   git clone https://github.com/ether/etherpad-lite.git
   cd etherpad-lite
+  git checkout 1.3.0
   bin/run.sh &
 
 Wait a bit. When the console finally states "You can access your Etherpad-Lite instance at http://0.0.0.0:9001/", visit http://192.168.33.10:9001 in your web browser. Enter a pad name. Click new pad and enter some text. (Bonus: What happens when you try to access 0.0.0.0? What is 0.0.0.0? Why does it tell you this?)
@@ -80,28 +106,21 @@ Open a new ssh connection to *tottbox*. Run the commands:
 
 Refresh your web browser. What happens? Type ``exit`` in the *tottbox* terminal. What do you see in the browser? What's different this time?
 
-SSH back into *tottbox* and type ``screen -S etherpad -X quit``. What does this command do?
+SSH back into *tottbox* and type ``screen -S etherpad -X quit``. Try etherpad in your browser again. What does this command do? Where should you look if you can't figure it out?
 
 Automate with bash
 ##################
 
 Start ``screen``. Create a second screen window (Ctrl-A, c). Start ``vi``. Practice flipping back and forth between the ``vi`` editor and prompt with the screen hotkey: Ctrl-A, Space.
 
-When you're comfortable, use ``vi`` to write a script named ``etherpad.sh`` that automates the cloning and running steps you performed in the last section (the path using ``screen``, that is). Use the terminal in the other screen window to try running your script. Flip back and forth between the two windows to debug any problems.
-
-Include your script in your gist. When complete, it should:
-
-#. Clone etherpad-lite from GitHub
-#. Start a ``screen`` session
-#. Run etherpad-lite in ``screen``
-#. Disconnect from the ``screen`` session immediately
+When you're comfortable, use ``vi`` to write a script named ``etherpad.sh`` that automates the cloning and running steps you performed in the last section (without screen or &). Use the terminal in the other screen window to try running your script. Flip back and forth between the two windows to debug any problems.
 
 Provision on ``vagrant up``
 ###########################
 
 Check if you have etherpad running in a screen still using ``screen -ls``. If so, kill it before continuing.
 
-Open your ``/vagrant/Vagrantfile`` in ``vi``. Modify it so that when *tottbox* starts, it executes your etherpad clone-and-run script. Test to see if it works using the ``vagrant provision`` on your laptop (**not** on *tottbox*). What does ``vagrant provision`` do again? When might provisioning be useful?
+Open your ``/vagrant/Vagrantfile`` in ``vi``. Modify it so that when *tottbox* starts, it executes your etherpad clone-and-run script in a screen session. Test to see if it works using the ``vagrant provision`` on your laptop (**not** on *tottbox*). What does ``vagrant provision`` do again? When might provisioning be useful?
 
 Provision from a gist
 #####################
