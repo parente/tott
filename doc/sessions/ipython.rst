@@ -11,10 +11,12 @@ Goals
 * Practice plotting using matplotlib_
 * Practice machine learning with scikit-learn_
 
-Prep Materials
---------------
+Introduction
+------------
 
-If time permits, try to review these resources before the meet-up. If you can't, come anyway.
+TODO: intro and slidecasts
+
+If time permits, review these additional pages:
 
 * Read `What is Data Science? <http://www.kaggle.com/wiki/WhatIsDataScience>`_ at Kaggle. (~1 minute)
 * Read the `Data Science article <http://en.wikipedia.org/wiki/Data_science>`_ on Wikipedia. (~10 minutes)

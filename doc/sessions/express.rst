@@ -8,29 +8,32 @@ Goals
 * Know what the Jade_ template language is
 * Learn how to bootstrap a basic web application
 * Understand Express routes, views, and middleware
-* Practice implementing REST APIs using Express
+* Practice implementing web APIs using Express
 * Practice implementing static web UIs using Jade
 
-Prep Materials
---------------
+Introduction
+------------
 
-If time permits, try to review these resources before the meet-up. If you can't, come anyway.
+Express is a JavaScript framework that aids the development of web servers and web APIs. Jade is a templating language for web pages with dynamic values. Together, they enable NodeJS developers to create dynamic web sites.
+
+To get started, watch the `Express slidecast <../_static/casts/express.html>`_ (~35 minutes) demonstrating the use of Express to build a simple web application. The slide cast includes live demos of the following:
+
+  * `Starting an Express Application and Server on slide 5 <../_static/casts/express.html#/5>`_ (~9 minutes)
+  * `Handling Requests and Responding in Express Routes on slide 7 <../_static/casts/express.html#/7>`_ (~9 minutes)
+  * `Using Express Middleware on slide 9 <../_static/casts/express.html#/9>`_ (~10 minutes)
+
+Now watch the `Jade slidecast <../_static/casts/jade.html>`_ showing the use of Jade to generate web pages with little markup and variable fields. The slidecast includes live examples of all of the following:
+
+  * `Rendering Static HTML on slide 3 <../_static/casts/jade.html#/3>`_ (~3 minutes)
+  * `Embedding JS in Templates on slide 4 <../_static/casts/jade.html#/4>`_ (~2 minutes)
+  * `Jade Mixins on slide 5 <../_static/casts/jade.html#/5>`_ (~3 minutes)
+  * `Rendering Jade Views in Express on slide 10 <../_static/casts/jade.html#/10>`_
+
+If time permits, review these additional pages:
 
 * Read the `RESTful Web APIs <http://en.wikipedia.org/wiki/Representational_state_transfer#RESTful_web_APIs>`_ section of the Representational state transfer (REST) page on Wikipedia. Then skim the rest of the page. (~10 minutes).
 * Read `Understanding Express.js <http://evanhahn.com/understanding-express-js/>`_ (~20 minutes).
-* Watch the `TotT Express slidecast <../_static/casts/express.html>`_ (~35 minutes) which includes live demos of:
-
-  * `Starting an Express Applicaiton and Server <../_static/casts/express.html#/5>`_ (~9 minutes)
-  * `Handling Requests and Responding in Express Routes <../_static/casts/express.html#/7>`_ (~9 minutes)
-  * `Using Express Middleware <../_static/casts/express.html#/9>`_ (~10 minutes)
-
 * Watch `Learning the Jade Templating Engine Syntax <http://cssdeck.com/labs/learning-the-jade-templating-engine-syntax>`_ (~15 minutes). Note the play button and speed controls are in the bottom right of the CSSDeck web app.
-* Watch the `TotT Jade slidecast <../_static/casts/jade.html>`_ which includes a live demo of:
-
-  * `Rendering Static HTML <../_static/casts/jade.html#/3>`_ (~3 minutes)
-  * `Embedding JS in Templates <../_static/casts/jade.html#/4>`_ (~2 minutes)
-  * `Jade Mixins <../_static/casts/jade.html#/5>`_ (~3 minutes)
-  * `Rendering Jade Views in Express <../_static/casts/jade.html#/10>`_
 
 Exercises
 ---------
@@ -40,9 +43,14 @@ You will need to complete the :doc:`/setup` instructions before you proceed with
 Design a dead-drop
 ##################
 
-Imagine you want to build a semi-secure dead-drop web site. Two parties can use your site to exchange private messages without authenticating as long as they both agree upon a secret key ahead of time. For example, Alice and Bob might decide, face-to-face, that Alice will post the first message to Bob under the alias ``qwerasidfj98324wer`` on the site starting tomorrow at 11 PM. Alice posts her message to Bob at ``http://thesite.com/messages/qwerasidfj98324wer`` and includes another secret alias for Bob to use when responding and a time at which Alias will check for Bob's reply. Bob visits the URL including the agreed upon alias and retrieves Alices message, at which point it is promptly deleted from the site. Bob posts a message back to Alice at a new alias, including yet another  new alias and retrieval time in his message. Message drops continue in the same manner indefinitely. Of course, all traffic to and from the site is encrypted.
+Imagine you want to build a semi-secure dead-drop web site. Two parties can use your site to exchange private messages without authenticating as long as they both agree upon a secret key ahead of time. For example, Alice and Bob might decide, face-to-face, that Alice will post the first message to Bob under the alias ``qwerasidfj98324wer`` on the site starting tomorrow at 11 PM. Alice posts her message to Bob at ``http://thesite.com/messages/qwerasidfj98324wer``, includes another secret alias for Bob to use when responding, and a time at which Alias will check for Bob's reply. Bob visits the URL including the agreed upon alias and retrieves Alices message, at which point it is promptly deleted from the site. Bob posts a message back to Alice at a new alias, including yet another new alias and retrieval time in his message. Message drops continue in the same manner indefinitely. Of course, all traffic to and from the site is encrypted.
 
-Write down a design for the REST API of the site. Account for the case where Alice needs to update or delete her message after posting it, before Bob can retrieve it (or vice versa).
+Here's a start of a web API for the site supporting the creation of a new message and the retrieval of it:
+
+    POST /messages
+    GET /messages/[messageid]
+
+Write down two additional routes supporting supporting the cases where Alice needs to update or delete her message after posting it, before Bob can retrieve it (or vice versa).
 
 Bootstrap the code
 ##################

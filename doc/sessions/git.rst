@@ -11,25 +11,27 @@ Goals
 * Practice a collaborative Git workflow
 * Get acquainted with GitHub_
 
-Prep Materials
---------------
+Introduction
+------------
 
-If time permits, try to review these resources before the meet-up. If you can't, come anyway.
+Git is a tool for version control, a system for recording changes to files over time with the ability to return you to any version. Version control is a cornerstone for modern software development in which multiple developers contribute to a project at the same time.
+
+Watch the `Git Basics slidecast <../_static/casts/git.html>`_ (~35 minutes) demonstrating the use of Git to track files in version control. The slide case includes demos of the following:
+
+  * `Personal, single-branch workflow on slide 14 <../_static/casts/git.html#/16>`_ (~14 minutes)
+  * `Personal, multi-branch workflow on slide 18 <../_static/casts/git.html#/18>`_ (~12 minutes)
+
+Watch the `Social Git slidecast <../_static/casts/git_collab.html>`_ (~40 minutes) showing how Git can enable version control and code sharing across a team. The slidecast contains demos of the following:
+
+  * `Central Repository Workflow on slide 8 <../_static/casts/git_collab.html#/8>`_ (~17 minutes)
+  * `Pull-Request Workflow on slide 10 <../_static/casts/git_collab.html#/10>`_ (~11 minutes)
+
+If time permits, review these additional pages:
 
 * Read `Why Should I Use Source Control? <http://whyshouldiuse.com/source-control>`_ (~5 minutes)
 * Read `Pro Git Chapter 1, Sections 1.1 through 1.3 <http://git-scm.com/book>`_ (~10 minutes)
 * Read the highly opinionated `Why Git is Better Than X <http://thkoch2001.github.io/whygitisbetter/#git-is-standard>`_ (~5 minutes)
-* Watch the `TotT Git Basics slidecast <../_static/casts/git.html>`_ (~35 minutes) which includes live demos of:
-
-  * `Personal, single-branch workflow <../_static/casts/git.html#/16>`_ (~14 minutes)
-  * `Personal, multi-branch workflow <../_static/casts/git.html#/18>`_ (~12 minutes)
-
 * Read `Pro Git Chapter 5 Section 5.1 <http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows>`_ (~5 minutes)
-* Watch the `TotT Social Git slidecast <../_static/casts/git_collab.html>`_ (~40 minutes) which includes live demos of:
-
-  * `Central Repository Workflow <../_static/casts/git_collab.html#/8>`_ (~17 minutes)
-  * `Pull-Request Workflow <../_static/casts/git_collab.html#/10>`_ (~11 minutes)
-
 * Read `Pro Git Chapter 5 Section 5.2 <http://git-scm.com/book/en/Distributed-Git-Contributing-to-a-Project>`_ (~30 minutes)
 
 

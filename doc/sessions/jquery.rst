@@ -12,10 +12,13 @@ Goals
 * Practice invoking REST APIs with jQuery
 * Use the basic panels of the Chrome Developer Tools
 
-Prep Materials
---------------
+Introduction
+------------
 
-If time permits, try to review these resources before the meet-up. If you can't, come anyway.
+TODO: intro and slidecasts
+
+If time permits, review these additional pages:
+
 
 * Skim `DOM Introduction <https://developer.mozilla.org/en-US/docs/DOM/DOM_Reference/Introduction>`_ on the Mozilla Developer Network site (~15 minutes)
 * Read the `AJAX Wikipedia article <http://en.wikipedia.org/wiki/Ajax_(programming)>`_ (15 minutes)

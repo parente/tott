@@ -8,21 +8,22 @@ Goals
 * Realize the benefits of a virtual development environment
 * Practice managing a dev environment using Vagrant_
 
-Prep Materials
---------------
+Introduction
+------------
 
-If time permits, try to review these resources before the meet-up. If you can't, come anyway.
+Vagrant is a tool for creating consistent working environments for teams of software developers using a virtual machine.
+
+To get started, watch the `Vagrant slidecast <../_static/casts/vagrant.html>`_ (~20 minutes) describing Vagrant, virtual machines, and their uses. The slidecast includes a live demo of `Vagrant basics on side 9 <../_static/casts/vagrant.html#/9>`_ (~10 minutes).
+
+If time permits, review these additional pages:
 
 * Read `Hardware virtualization <http://en.wikipedia.org/wiki/Hardware_virtualization>`_ (~10 minutes)
 * Read `How Vagrant Benefits You <http://docs.vagrantup.com/v2/why-vagrant/index.html>`_ (~5 minutes)
-* Watch the `TotT Vagrant slidecast <../_static/casts/vagrant.html>`_ (~20 minutes) which includes a live demo of:
-
-  * `Vagrant basics <../_static/casts/vagrant.html#/9>`_ (~10 minutes)
 
 Exercises
 ---------
 
-You will need to complete the :doc:`/setup` instructions before you proceed with these exercises. 
+You will need to complete the :doc:`/setup` instructions before you proceed with these exercises.
 
 Take notes in Gist
 ##################

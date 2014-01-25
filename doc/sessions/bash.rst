@@ -12,28 +12,31 @@ Goals
 * Understand pipes and redirects
 * Recognize the benefits of the Unix Philosophy
 
-Prep Materials
---------------
+Introduction
+------------
 
-If time permits, try to review these resources before the meet-up. If you can't, come anyway.
+The command line is a means for interacting with a computer by entering simple commands and combining them to express more powerful concepts. Bash is a command line shell for issuing such commands. Vi, Screen, and SSH are all useful programs that operate from the command line.
+
+To get started, watch the `Command line interface slidecast <../_static/casts/cli.html>`_ (~30 minutes) introducing the Bash shell and its basic concepts as well as the useful screen, Vi, and SSH utilities. The slidecast includes live demos of the following:
+
+  * `Bash Basics on slide 8 <../_static/casts/cli.html#/8>`_ (~6 minutes)
+  * `Bash Basics++ on slide 10 <../_static/casts/cli.html#/10>`_ (~4 minutes)
+  * `Vi Simple Editing on slide 17 <../_static/casts/cli.html#/17>`_ (~3 minutes)
+  * `Working in GNU Screen on slide 22 <../_static/casts/cli.html#/22>`_ (~8 minutes)
+
+When you're comfortable with the basics of the command line, watch the `TotT Unix Philosophy screencast <../_static/casts/unix.html>`_ (~25 minutes) explaining the design principles behind Unix-like systems and why it behaves the way it does. The slide casts includes live demos of the following:
+
+  * `Small Superlatives on slide 8 <../_static/casts/unix.html#/8>`_ (~3 minutes)
+  * `Text Everywhere on slide 10 <../_static/casts/unix.html#/10>`_ (~5 minutes)
+  * `Pipes and Redirects on slide 14 <../_static/casts/unix.html#/14>`_ (~8 minutes)
+
+If time permits, review these additional pages:
 
 * Read `Learning the Shell "Why Bother?" and "What is The Shell?" sections <http://linuxcommand.org/lc3_learning_the_shell.php>`_ on linuxcommand.org (~5 minutes)
 * Read the `vi intro and Interface sections on Wikipedia <http://en.wikipedia.org/wiki/Vi>`_ (~5 minutes)
 * Read the `GNU Screen Intro <http://aperiodic.net/screen/start>`_ and `Screen details sections on aperiodic.net <http://aperiodic.net/screen/detailed_description>`_ (~5 minutes)
-* Watch the `TotT CLI slidecast <../_static/casts/cli.html>`_ (~30 minutes) which includes live demos of:
-
-  * `Bash Basics <../_static/casts/cli.html#/8>`_ (~6 minutes)
-  * `Bash Basics++ <../_static/casts/cli.html#/10>`_ (~4 minutes)
-  * `Vi Simple Editing <../_static/casts/cli.html#/17>`_ (~3 minutes)
-  * `Working in GNU Screen <../_static/casts/cli.html#/17>`_ (~8 minutes)
-
 * Read `Unix Philosophy <http://en.wikipedia.org/wiki/Unix_philosophy>`_ on Wikipedia (~10 minutes)
 * Read `Unix Pipeline <http://en.wikipedia.org/wiki/Pipeline_(Unix)>`_ on Wikipedia (~10 minutes)
-* Watch the `TotT Unix Philosophy screencast <../_static/casts/unix.html>`_ (~25 minutes) with live demos of:
-
-  * `Small Superlatives <../_static/casts/unix.html#/8>`_ (~3 minutes)
-  * `Text Everywhere <../_static/casts/unix.html#/10>`_ (~5 minutes)
-  * `Pipes and Redirects <../_static/casts/unix.html#/14>`_ (~8 minutes)
 
 Exercises
 ---------

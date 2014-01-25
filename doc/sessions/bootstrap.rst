@@ -12,10 +12,12 @@ Goals
 * Practice creating basic HTML / CSS sites
 * Practice using Bootstrap_ to build web sites quickly
 
-Prep Materials
---------------
+Introduction
+------------
 
-If time permits, try to review these resources before the meet-up. If you can't, come anyway.
+TODO: intro and slidecasts
+
+If time permits, review these additional pages:
 
 * Skim the `HTML5 article <http://en.wikipedia.org/wiki/HTML5>`_ on Wikipedia. (~15 minutes)
 * Read Chapters 1 through 4 of `CSS Basics <http://www.cssbasics.com/introduction-to-css/>`_. (~10 minutes)

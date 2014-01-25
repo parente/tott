@@ -11,10 +11,12 @@ Goals
 * Practice reading and writing spec with Gherkin
 * Practice BDD with Behave
 
-Prep Materials
---------------
+Introduction
+------------
 
-If time permits, try to review these resources before the meet-up. If you can't, come anyway.
+TODO: intro and slidecasts
+
+If time permits, review these additional pages:
 
 * Skim `Test-driven Development <http://en.wikipedia.org/wiki/Test-driven_development>`_ on Wikipedia. (~20 minutes)
 * Skim `Behavior-driven Development <http://en.wikipedia.org/wiki/Behavior-driven_development>`_ on Wikipedia. (~20 minutes)

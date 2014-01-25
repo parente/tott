@@ -10,31 +10,34 @@ Goals
 * Practice writing Python
 * Practice using pip_ and virtualenv_
 
-Prep Materials
---------------
+Introduction
+------------
 
-If time permits, try to review these resources before the meet-up. If you can't, come anyway.
+Python is language built around clarity, expressiveness, and all around general utility. It is often recommended as a language for beginners, but is equally useful to experienced developers in creating scripts,  gluing together large systems, building web sites, and analyzing data.
+
+To get started, watch the `Python slidecast <../_static/casts/python.html>`_ (~45 minutes) introducing the Python programming language. The slidecast describes the following language features using short, interactive code samples:
+
+  * `Syntax on slide 4 <../_static/casts/python.html#/4>`_ (~3 minutes)
+  * `Rich Types on slide 5 <../_static/casts/python.html#/5>`_ (~2 minutes)
+  * `Classical Inheritence on slide 6 <../_static/casts/python.html#/6>`_ (~5 minutes)
+  * `Generators on slide 7 <../_static/casts/python.html#/7>`_ (~3 minutes)
+  * `Comprehensions on slide 8 <../_static/casts/python.html#/8>`_ (~6 minutes)
+  * `Keyword Arguments on slide 9 <../_static/casts/python.html#/9>`_ (~4 minutes)
+  * `Variadic Functions on slide 10 <../_static/casts/python.html#/10>`_ (~3 minutes)
+  * `Working with Python on slide 13 <../_static/casts/python.html#/13>`_ (~9 minutes)
+
+Now Watch the `Python Ecosystem slidecast <../_static/casts/py_eco.html>`_ (~45 minutes) which sows how to find and install libraries that can save you time in building more advanced Python applications. The slidecast includes demos of the following:
+
+  * `Using pip on slide 14 <../_static/casts/py_eco.html#/14>`_ (~8 minutes)
+  * `Using virtualenv on slide 21 <../_static/casts/py_eco.html#/21>`_ (~4 minutes)
+
+If time permits, review these additional pages:
 
 * Skim the `Python Wikipedia article <http://en.wikipedia.org/wiki/Python_(programming_language)>`_ (~10 minutes).
 * Read `Python Enhacement Proposal (PEP) #20:  The Zen of Python <http://www.python.org/dev/peps/pep-0020/>`_ (5 minutes).
-* Watch the `TotT Python slidecast <../_static/casts/python.html>`_ (~45 minutes) which includes live demos of:
-
-  * `Syntax <../_static/casts/python.html#/4>`_ (~3 minutes)
-  * `Rich Types <../_static/casts/python.html#/5>`_ (~2 minutes)
-  * `Classical Inheritence <../_static/casts/python.html#/6>`_ (~5 minutes)
-  * `Generators <../_static/casts/python.html#/7>`_ (~3 minutes)
-  * `Comprehensions <../_static/casts/python.html#/8>`_ (~6 minutes)
-  * `Keyword Arguments <../_static/casts/python.html#/9>`_ (~4 minutes)
-  * `Variadic Functions <../_static/casts/python.html#/10>`_ (~3 minutes)
-  * `Working with Python <../_static/casts/python.html#/13>`_ (~9 minutes)
-
 * Read `The Basics at learnpython.org <http://learnpython.org>`_ and try a few of the exercises (~30 minutes).
 * Read the `pip package manager Wikipedia article <http://en.wikipedia.org/wiki/Pip_(package_manager)>`_ (5 minutes).
 * Read the `virtualenv front page <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_ (~10 minutes).
-* Watch the `TotT Python Ecosystem slidecast <../_static/casts/py_eco.html>`_ (~45 minutes) which includes live demos of:
-
-  * `Using pip <../_static/casts/py_eco.html#/14>`_ (~8 minutes)
-  * `Using virtualenv <../_static/casts/py_eco.html#/21>`_ (~4 minutes)
 
 Exercises
 ---------

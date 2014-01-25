@@ -11,27 +11,30 @@ Goals
 * Practice writing simple NodeJS applications
 * Practice using the Node Package Manager (npm_)
 
-Prep Materials
---------------
+Introduction
+------------
 
-If time permits, try to review these resources before the meet-up. If you can't, come anyway.
+JavaScript is the programming language of the web. Web browser support for JavaScript has improved drastically over the past decade, giving developers the ability to create slick frontends  GMail, Facebook, Instagram, and Twitter. More recently, thanks to NodeJS, JavaScript has found a foothold in creating applications outside the browser, particularly on web servers.
+
+To get started, watch the `JavaScript slidecast <../_static/casts/javascript.html>`_ (~35 minutes) introducing the JavaScript programming language. The slidecast describes the following language features using short, interactive code samples:
+
+  * `Syntax on slide 6 <../_static/casts/javascript.html#/6>`_ (~5 minutes)
+  * `Rich Types on slide 7 <../_static/javascript.html#/7>`_ (~2 minutes)
+  * `Protypical Inheritence on slide 8 <../_static/casts/javascript.html#/8>`_ (~5 minutes)
+  * `Closures on slide 9 <../_static/casts/javascript.html#/9>`_ (~3 minutes)
+  * `Anonymous Functions on slide 10 <../_static/casts/javascript.html#/10>`_ (~2 minutes)
+  * `Variadic Functions on slide 11 <../_static/casts/javascript.html#/11>`_ (~2 minutes)
+  * `Working with NodeJS on slide 13 <../_static/casts/javascript.html#/13>`_ (~7 minutes)
+
+Now watch the `JavaScript Ecosystem slidecast <../_static/casts/js_eco.html>`_ (~25 minutes) which demonstrates how to find and install useful JavaScript libraries to save you time in building more advanced NodeJS applications. The slidecast includes demos of the following:
+
+  * `NPM Basics on slide 6 <../_static/casts/js_eco.html#/6>`_ (~7 minutes)
+  * `package.json Pizzazz on slide 10 <../_static/casts/js_eco.html#/10>`_ (~7 minutes)
+
+If time permits, review these additional pages:
 
 * Skim `A Re-Introduction to JavaScript <https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript?redirectlocale=en-US&redirectslug=JavaScript%2FA_re-introduction_to_JavaScript>`_ (~15 minutes).
-* Watch the `TotT JavaScript slidecast <../_static/casts/javascript.html>`_ (~35 minutes) which includes live demos of:
-
-  * `Syntax <../_static/casts/javascript.html#/6>`_ (~5 minutes)
-  * `Rich Types <../_static/javascript.html#/7>`_ (~2 minutes)
-  * `Protypical Inheritence <../_static/casts/javascript.html#/8>`_ (~5 minutes)
-  * `Closures <../_static/casts/javascript.html#/9>`_ (~3 minutes)
-  * `Anonymous Functions <../_static/casts/javascript.html#/10>`_ (~2 minutes)
-  * `Variadic Functions <../_static/casts/javascript.html#/11>`_ (~2 minutes)
-  * `Working with NodeJS <../_static/casts/javascript.html#/13>`_ (~7 minutes)
-
 * Read `The node.js Community is ... <http://caines.ca/blog/programming/the-node-js-community-is-quietly-changing-the-face-of-open-source/>`_ (~10 minutes)
-* Watch the `TotT JavaScript Ecosystem slidecast <../_static/casts/js_eco.html>`_ (~25 minutes) which includes live demos of:
-
-  * `NPM Basics <../_static/casts/js_eco.html#/6>`_ (~7 minutes)
-  * `package.json Pizzazz <../_static/casts/js_eco.html#/10>`_ (~7 minutes)
 
 Exercises
 ---------
