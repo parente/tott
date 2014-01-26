@@ -22,13 +22,6 @@ Introduction
 
 So why should we care about task runners? Well, currently front-end development requires a lot of build tasks. We need to minify css/html, compile templates, compress images, compile typescript/coffeescript/dart/sass/less/stylus files, and do all kinds of other things. Task runners can automate all of these tasks. Once you configure a task runner, it can save you huge amounts of time.
 
-For front-end dev, Grunt is a popular task runner that projects like `Yeoman <http://yeoman.io/>` use. However, from my readings and my personal opinion, I believe Gulp.js will replace Grunt as the defacto goto javascript task runner. The biggest reasons are the following:
-
-* Gulp uses node streams, which removes the need for a temporary folder for intermediate build processes
-* Gulp seems to run faster than Grunt
-* gulpfiles are more readable and the code you write is more javascript/node-like
-* gulpfiles are more maintainable than gruntfiles in my opinion, you don't have to agree with this to see the potential of Gulp.js
-
 Exercises
 ---------
 
