@@ -89,6 +89,8 @@
 .. _Nose: https://nose.readthedocs.org/en/latest/
 .. _Should.js: https://github.com/visionmedia/should.js/
 .. _Mocha: http://visionmedia.github.io/mocha/
+.. _Cucumber: http://cukes.info/
+.. _easyb: http://easyb.org/
 
 .. _OSS licenses: http://opensource.org/licenses
 .. _package.json: http://package.json.nodejitsu.com/

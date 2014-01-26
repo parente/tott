@@ -14,7 +14,15 @@ Goals
 Introduction
 ------------
 
-TODO: intro and slidecasts
+Behavior driven development (BDD) is a way of writing software. It starts with describing the behavior software in a story-like format. It then proceeds with developers doing the following repeatedly, what is known as the red-green-refactor cycle:
+
+* Writing a failing test case for a behavior (red)
+* Implementing the minimum code required for the test to pass (green)
+* Refactoring the code to meet project standards (refactor)
+
+Behave is a library for Python supporting this process. It is one library among many supporting behavior- or test-driven development, such as `Cucumber`_ for Ruby, `Mocha`_ for JavaScript, `easyb`_ for Groovy/Java, etc.
+
+TODO: slidecast
 
 If time permits, review these additional pages:
 

@@ -1,0 +1,146 @@
+extends layout
+include util
+
+block head
+  title BDD - TotT
+
+block slides
+
+  section(data-narration="/bdd/0")
+    h1 BDD
+    h2 TotT 2014
+
+  section(data-narration="/bdd/1")
+    h2 TDD
+    p <em>Test-driven development</em> is a short, repetitive process.
+    ol
+      li Write a failing test case for an enhancement (red)
+      li Implement the minimum code to pass the test (green)
+      li Refactor the code to meet project standards (refactor)
+
+  section(data-narration="/bdd/2")
+    h2 Benefits
+    ul
+      li Focus on requirements
+      li Short development cycles
+      li Safety net for refactoring
+
+  section(data-narration="/bdd/3")
+    h2 Use Cases
+      li Maximizing test coverage
+      li Supporting continuous integration
+      li Improving legacy code
+
+  section(data-narration="/bdd/4")
+    h2 But what do you test?
+
+  section(data-narration="/bdd/5")
+    h2 BDD
+    p <em>Behavior-driven development</em> builds on TDD.
+    ol
+      li Specify desired behavior in a consistent format
+      li Write a failing test case for a scenario
+      li Implement the minimum code to pass the test
+      li Refactor the code to meet standards
+
+  section(data-narration="/bdd/6")
+    h2 Use Cases
+    ul
+      li Outlining required tests
+      li Communicating with stakeholders
+      li Documenting design decisions
+
+  section(data-narration="/bdd/7")
+    h2 But what is a consistent format?
+
+  section(data-narration="/bdd/9")
+    h2 One Format: Gherkin
+    ul
+      li Domain specific language
+      li Business readable
+      li From Cucumber BDD (Ruby)
+      li Documents behavior
+      li Binds to test cases
+
+  section(data-narration="/bdd/8")
+    h2 Example: Gherkin
+    pre.
+      Feature: App store validates customer credit card
+
+      Scenario: First-time customer
+        Given a customer is unknown
+        When the customer checks out
+        Then the checkout process should prompt for cc info
+
+      Secnario: Customer credit card expired
+        Given a customer is known
+        And the cc on-file is expired
+        When the customer checks out
+        Then the checkout process should prompt for new cc info
+
+      ...
+
+  section(data-narration="/bdd/10")
+    h2 Behave
+    blockquote "behave is behaviour-driven development, Python style. ... [It]  uses tests written in a natural language style, backed up by Python code." <br />- <a href="http://http://pythonhosted.org/behave/">pythonhosted.org/behave</a>
+
+  section(data-narration="/bdd/11")
+    h2 Components
+    ul
+      li Feature files contain Gherkin scenarios
+      li Step files contain test code
+      li <tt>behave</tt> CLI binds the two
+
+  section(data-narration="/bdd/12")
+    h2 Demo: Fibbonacci Numbers
+    p Spec, test, code, refactor
+
+  section(data-narration="/bdd/13")
+    h4 Demo: Fibbonacci Numbers
+    +screencast("/behave/fib_gherkin")
+
+  section(data-narration="/bdd/7")
+    h2 Is Gherkin the only way?
+
+  section(data-narration="/bdd/16")
+    h2 Example: Mocha
+    pre
+      code.javascript.
+        describe('app store validation', function(){
+          describe('first-time customer', function() {
+            // test setup
+            it('should prompt for cc info', function() {
+              // test assertions
+            });
+          });
+        });
+
+  //- section(data-narration="/bdd/14")
+  //-   h2 But what about non-trivial units?
+  //-   p Say I have a class that uses a database?
+
+  //- section(data-narration="/bdd/15")
+  //-   h2 Dependency Injection
+  //-   ul
+  //-     li Make components pluggable
+  //-     li In production, use real objects (e.g., database)
+  //-     li In test, use "fakes" (e.g., stub database)
+
+  //- section(data-narration="/bdd/16")
+  //-   h2 Example: Stub
+
+  //- section(data-narration="/bdd/16")
+  //-   h2 Other Fakes
+  //-   ul
+  //-     li Spies
+  //-     li Stubs
+  //-     li Mocks
+
+  section(data-narration="/bdd/18")
+    h2 Review
+    ul
+      li TDD and BDD
+      li Gherkin
+      li Behave
+      li Features and steps
+      li Mocha
