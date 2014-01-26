@@ -14,7 +14,7 @@ Goals
 Introduction
 ------------
 
-Git is a tool for version control, a system for recording changes to files over time with the ability to return you to any version. Version control is a cornerstone for modern software development in which multiple developers contribute to a project at the same time.
+Git is a tool for version control, a system for recording changes to files over time with the ability to return you to any version. Version control is a cornerstone of modern software development: it enables multiple developers contribute to a project without fear of losing work.
 
 Watch the `Git Basics slidecast <../_static/casts/git.html>`_ (~35 minutes) demonstrating the use of Git to track files in version control. The slide case includes demos of the following:
 
