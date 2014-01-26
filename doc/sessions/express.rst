@@ -40,41 +40,65 @@ Exercises
 
 You will need to complete the :doc:`/setup` instructions before you proceed with these exercises. Once you are set up, SSH into *tottbox* using the ``vagrant ssh`` command from the setup instructions. Then tackle the problems below. `Document what you find in a gist <https://gist.github.com/>`_ and share it in the `TotT community`_ later.
 
-Design a dead-drop
-##################
+Understand a dead-drop
+######################
 
-Imagine you want to build a semi-secure dead-drop web site. Two parties can use your site to exchange private messages without authenticating as long as they both agree upon a secret key ahead of time. For example, Alice and Bob might decide, face-to-face, that Alice will post the first message to Bob under the alias ``qwerasidfj98324wer`` on the site starting tomorrow at 11 PM. Alice posts her message to Bob at ``http://thesite.com/messages/qwerasidfj98324wer``, includes another secret alias for Bob to use when responding, and a time at which Alias will check for Bob's reply. Bob visits the URL including the agreed upon alias and retrieves Alices message, at which point it is promptly deleted from the site. Bob posts a message back to Alice at a new alias, including yet another new alias and retrieval time in his message. Message drops continue in the same manner indefinitely. Of course, all traffic to and from the site is encrypted.
+Imagine you want to build a semi-secure dead-drop web site. Two parties can use your site to exchange private messages without authenticating as long as they both agree upon a secret key ahead of time. For example, Alice and Bob might decide, face-to-face, that Alice will post the first message to Bob under the alias ``qwerasidfj98324wer`` on the site tomorrow at 11 PM. Alice posts her message to Bob at ``http://thesite.com/messages/qwerasidfj98324wer``, includes another secret alias for Bob to use when responding, and a time at which Alias will check for Bob's reply. Bob visits the URL including the agreed upon alias and retrieves Alice's message, at which point it is promptly deleted from the site. Bob posts a message back to Alice at a new alias, including yet another new alias and retrieval time in his message. Message drops continue in the same manner indefinitely. Of course, all traffic to and from the site is encrypted.
 
-Here's a start of a web API for the site supporting the creation of a new message and the retrieval of it:
-
-    POST /messages
-    GET /messages/[messageid]
-
-Write down two additional routes supporting supporting the cases where Alice needs to update or delete her message after posting it, before Bob can retrieve it (or vice versa).
+In the following exercises, you'll build such a site.
 
 Bootstrap the code
 ##################
 
-Express has a command line utility that will lay out a suggested skeleton for an Express-based web application. I used it in the Jade screencast. Use ``npm`` to install the Express module now (globally or locally, your choice) and then use the ``express`` command line to generate a new skeleton for your dead-drop. (Hint: Don't forget to run ``npm install`` in the project skeleton too.)
+Express has a command line utility that will lay out a suggested skeleton for an Express-based web application. I used it in the Jade screencast. Use ``npm`` to install the Express module now (globally or locally, your choice) and then use the ``express`` command line to generate a new skeleton for your dead-drop. (Hint: Don't forget to run ``npm install`` in the project skeleton too. See the first demo of the Express slidecast if you don't know what I'm talking about.)
+
+Test that the skeleton works by running ``node app.js`` in the project directory and visiting http://192.168.10.33:3000 in your web browser.
 
 Secure the site
 ###############
 
-The Express skeleton supports HTTP connections out of the box. This setup sends all traffic to and from the web server across the Internet in clear-text. For a dead-drop, this is a big no-no because it allows anyone to sniff the message text on the wire when it is posted or retrieved.
+The Express skeleton supports HTTP connections out of the box. This setup sends all traffic to and from the web server across the Internet in clear-text. For a dead-drop, this is a big no-no because it allows anyone to sniff the message text on the wire when it is posted or retrieved. (Read about `man-in-the-middle-attacks <http://en.wikipedia.org/wiki/Man-in-the-middle_attack>`_ if you are interested.)
 
 Modify the generated boilerplate to use HTTPS instead of HTTP. Google for an example of how to do it or refer to the NodeJS documentation. (Hint: You'll need to generate a self-signed SSL certificate for the site. Again, Google.)
 
 Add message routes
 ##################
 
-Implement Express routes for creating, retrieving, updating, and deleting messages on the dead-drop site. Keep all messages in memory. Remember to delete a message once it is successfully retrieved.
+Look at the application skeleton Express generated for you. Open the ``routes/index.js`` file. Remove any boilerplate functions from the file. Then define the following functions for creating and retrieving messages.
 
-Manually test your routes using ``curl`` and some sample data at the command line. (Hint: Read the ``curl`` man page or scour the web for examples of how to GET, POST, etc.) Or, if you want to leapfrog ahead, look at a test framework like Mocha_.
+.. code-block:: javascript
+
+   var get_message = function(req, res) {
+      // TODO: get the message ID from the request, check if we have that message
+      // in memory, return it if so or respond with a 404 error if not, delete the message
+   };
+
+   var post_message = function(req, res) {
+      // TODO: get the message ID and text from the request, store the message in memory
+      // keyed by the ID
+   };
+
+Now open ``app.js`` in the root of the project. Look for the calls to register the boilerplate routes. Remove them and register your new functions like so.
+
+.. code-block:: javascript
+
+   app.get('/messages/:id', routes.get_message);
+   app.post('/messages/:id', routes.post_message);
+
+Now implement the ``get_message`` and ``post_message`` functions as described in the comments. Manually test your POST route using ``curl`` and some sample data at the command line. For example, to test posting a new message:
+
+.. code-block:: bash
+
+   curl -X POST --data-urlencode "message=the cheese flies at midnight; next @12 pm tmw under code 123dfjer3" https://192.168.33.10:3000/messages/qwerasidfj98324wer
+
+Manually test your GET route by visiting https://192.168.33.10:3000/messages/qwerasidfj98324wer in your browser, replacing the last part of the URL with the message ID to retrieve.
+
+Remember to restart your Express application when you make changes to it. (Hint: Google for ways to automate the restart if it gets tedious.)
 
 Add message UI
 ##############
 
-Use Jade to build a view for adding a message under a user-provided alias, mapped to a URL path. Show the UI when the user GETs the messages collection URL. For example, if you designed your REST API around ``/messages/*``, you should render the view for adding a message when the user's browser visits ``/messages``. Use Jade to build a template to render the message in a structured manner.
+Posting messages using ``curl`` works, but we can do better. Use Jade to build a view for adding a message under a user-provided alias, mapped to a URL path. Show the UI when the user GETs the messages collection URL. In other words, add another function to ``routes/index.js`` called ``get_message_form`` and have it render your Jade view. Register this function in ``app.js`` as ``app.get('/messages', routes.get_message_form);``.
 
 Add stats middleware
 ####################
