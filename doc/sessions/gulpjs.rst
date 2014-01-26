@@ -83,14 +83,14 @@ I've included a small static file server using ``express.js`` in the ``preview.j
 Watch files and LiveReload
 ##########################
 
-This exercise is a bit challenging. When you make changes to the jade files, you have to manually run ``gulp build`` to see the changes. You can use ``gulp.watch`` to watch for file changes and automatically rebuild these files.
+This exercise is a bit challenging. When you make changes to the jade files, you have to manually run ``gulp build`` to see the changes. Use gulp.watch in the gulpfile to rebuild the jade files when a change is detected.
 
 Also, you can setup livereload to refresh your browser when these files are rebuilt. You may find `this link <http://robo.ghost.io/getting-started-with-gulp-2/>`_ helpful.
 
-Compress your HTML/CSS files
+Compress your HTML, CSS, and Image files
 ############################
 
-This exercise is a bit challenging. There is a gulp plugin called `gulp-gzip <https://npmjs.org/package/gulp-gzip>`_ that will gzip your files. Use this plugin to compress your generated html/css files. This will reduce the size of the files which decreases bandwidth usage and increases transfer speed.
+This exercise is a bit challenging. There is a gulp plugin called `gulp-gzip <https://npmjs.org/package/gulp-gzip>`_ that will gzip your files. Use this plugin to compress your generated html/css files. This will reduce the size of the files which decreases bandwidth usage and increases transfer speed. You can `read this <http://betterexplained.com/articles/how-to-optimize-your-site-with-gzip-compression/>` for more information on why you should compress your assets.
 
 References
 ----------
