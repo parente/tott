@@ -32,12 +32,12 @@ Install Gulp.js
 
 The first step is to install the `gulp <https://npmjs.org/package/gulp>`_ npm package globally. If you aren't sure how to do this, enter ``npm help install`` or ask for help.
 
-Alright, this session will involve an example project for you to work with. If you already have a website or some kind of web related project (your project should probably have something to do with front-end web dev), you can try to integrate gulp into your project instead of using my example project. If you want to use the example project, just clone `this repository <https://github.com/Coalman/tott-gulpjs>`_. Make sure to read the project's readme to get a sense of the folder structure and complete the initial setup.
+This session will involve an example project for you to work with. If you already have a website or some kind of web related project (your project should probably have something to do with front-end web dev), you can try to integrate gulp into your project instead of using my example project. If you want to use the example project, just git clone `this repository <https://github.com/Coalman/tott-gulpjs>`_. Make sure to read the project's readme to get a sense of the folder structure and complete the initial setup.
 
 Copy Bootstrap css files
 ########################
 
-After running ``bower install``, you should notice a ``bower_components`` folder. In the `gulpfile.js` file, you should see a function that looks like this::
+After running ``bower install``, you should notice a ``bower_components`` folder. In the ``gulpfile.js`` file, you should see a function that looks like this::
 
     gulp.task('vendor', function() {
         console.log('Edit the gulpfile.js file!');
@@ -50,12 +50,12 @@ Render Jade Templates
 
 If you read the example project ``readme.md``, you'll know that the ``src/`` directory has some ``.jade`` files. It's time to compile these files into html. Inside the ``gulpfile.js`` file you should notice a `build` gulp task. Implement this function to use the jade plugin to compile the ``src/*.jade`` files to ``dist/``.
 
-If you want to preview the html files after they are created, feel free to use the ``http-server`` utility we installed in an earlier meetup to view the files.
+If you want to preview the html files after they are created, feel free to use the `http-server <http://tott-meetup.readthedocs.org/en/latest/sessions/vagrant.html>`_ utility we installed in an earlier meetup to view the files.
 
 Pass data to the Jade Templates
 ###############################
 
-If you viewed the files, you'll notice a pleasant domo. Lets change that. If you did the last exercise correctly, you will have a line like this::
+If you viewed the files, you'll notice a pleasant Domo. Lets change that. If you did the last exercise correctly, you will have a line like this::
 
     .pipe(jade())
 
