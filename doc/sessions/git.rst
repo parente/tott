@@ -16,7 +16,7 @@ Introduction
 
 Git is a tool for version control, a system for recording changes to files over time with the ability to return you to any version. Version control is a cornerstone of modern software development: it enables multiple developers contribute to a project without fear of losing work.
 
-Watch the `Git Basics slidecast <../_static/casts/git.html>`_ (~35 minutes) demonstrating the use of Git to track files in version control. The slide case includes demos of the following:
+Watch the `Git Basics slidecast <../_static/casts/git.html>`_ (~35 minutes) demonstrating the use of Git to track files in version control. The slidecast includes demos of the following:
 
   * `Personal, single-branch workflow on slide 14 <../_static/casts/git.html#/16>`_ (~14 minutes)
   * `Personal, multi-branch workflow on slide 18 <../_static/casts/git.html#/18>`_ (~12 minutes)
