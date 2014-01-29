@@ -2,12 +2,12 @@ extends layout
 include util
 
 block head
-  title BDD - TotT
+  title TDD / BDD - TotT
 
 block slides
 
   section(data-narration="/bdd/0")
-    h1 BDD
+    h1 TDD / BDD
     h2 TotT 2014
 
   section(data-narration="/bdd/1")
@@ -24,9 +24,11 @@ block slides
       li Focus on requirements
       li Short development cycles
       li Safety net for refactoring
+      li Forces thoughts about design
 
   section(data-narration="/bdd/3")
     h2 Use Cases
+    ul
       li Maximizing test coverage
       li Supporting continuous integration
       li Improving legacy code
@@ -95,14 +97,30 @@ block slides
     h2 Demo: Fibbonacci Numbers
     p Spec, test, code, refactor
 
-  section(data-narration="/bdd/13")
+  section
     h4 Demo: Fibbonacci Numbers
+    p TODO
     +screencast("/behave/fib_gherkin")
 
-  section(data-narration="/bdd/7")
-    h2 Is Gherkin the only way?
+  section(data-narration="/bdd/14")
+    h2 What about non-trivial units?
+    p Say I have a class that uses a database?
+
+  section(data-narration="/bdd/15")
+    h2 Dependency Injection
+    ul
+      li Make components pluggable
+      li In production, use real objects (e.g., database)
+      li In test, use "fakes" (e.g., stub database)
 
   section(data-narration="/bdd/16")
+    h2 To Be Continued
+    p We'll need a whole other session
+
+  section(data-narration="/bdd/17")
+    h2 Is Gherkin the only way?
+
+  section(data-narration="/bdd/18")
     h2 Example: Mocha
     pre
       code.javascript.
@@ -115,28 +133,7 @@ block slides
           });
         });
 
-  //- section(data-narration="/bdd/14")
-  //-   h2 But what about non-trivial units?
-  //-   p Say I have a class that uses a database?
-
-  //- section(data-narration="/bdd/15")
-  //-   h2 Dependency Injection
-  //-   ul
-  //-     li Make components pluggable
-  //-     li In production, use real objects (e.g., database)
-  //-     li In test, use "fakes" (e.g., stub database)
-
-  //- section(data-narration="/bdd/16")
-  //-   h2 Example: Stub
-
-  //- section(data-narration="/bdd/16")
-  //-   h2 Other Fakes
-  //-   ul
-  //-     li Spies
-  //-     li Stubs
-  //-     li Mocks
-
-  section(data-narration="/bdd/18")
+  section(data-narration="/bdd/19")
     h2 Review
     ul
       li TDD and BDD
