@@ -1,6 +1,9 @@
 JavaScript and jQuery
 =====================
 
+:Author: `Peter Parente <https://github.com/parente>`_
+:Builds-on: :doc:`nodejs`, :doc:`bootstrap`
+
 Goals
 -----
 

@@ -96,7 +96,8 @@ Most importantly, it improves our ability to wield the endless tools of our trad
 Attribution
 ===========
 
-* `Peter Parente <http://mindtrove.info>`_ conceived the Tools of the Trade meet-up and created the slidecasts, exercises, and project ideas you see on this site.
+* `Peter Parente <http://github.com/parente>`_ conceived the Tools of the Trade meet-up and created materials for most of the sessions on this site.
+* `Michael Coalman <https://github.com/coalman>`_ contributed a session on Gulp.js.
 * `Gary Bishop <http://cs.unc.edu/~gb>`_ publicized and sponsored the meet-up at UNC, and helped Pete refine the approach to TotT.
 * The `Univesity of North Carolina at Chapel Hill Computer Science Department <http://cs.unc.edu>`_ offered room for the TotT meet-up.
 * The `Emerging Technology Team in IBM Software Group <http://www-01.ibm.com/software/ebusiness/jstart/>`_ gave Pete time to participate.

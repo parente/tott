@@ -1,6 +1,8 @@
 Bash, Screen, Vi, and SSH
 =========================
 
+:Author: `Peter Parente <https://github.com/parente>`_
+
 Goals
 -----
 

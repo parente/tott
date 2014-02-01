@@ -1,6 +1,9 @@
 Express and Jade
 ================
 
+:Author: `Peter Parente <https://github.com/parente>`_
+:Builds-on: :doc:`nodejs`
+
 Goals
 -----
 

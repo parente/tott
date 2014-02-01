@@ -1,6 +1,9 @@
 BDD and Behave
 ==============
 
+:Author: `Peter Parente <https://github.com/parente>`_
+:Builds-on: :doc:`python`
+
 Goals
 -----
 

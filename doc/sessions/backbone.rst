@@ -1,6 +1,9 @@
 MV* and Backbone
 ================
 
+:Author: `Peter Parente <https://github.com/parente>`_
+:Builds-on: :doc:`jquery`, :doc:`bootstrap`
+
 Goals
 -----
 

@@ -1,6 +1,8 @@
 HTML, CSS, and Bootstrap
 ========================
 
+:Author: `Peter Parente <https://github.com/parente>`_
+
 Goals
 -----
 

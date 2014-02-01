@@ -1,6 +1,8 @@
 Python
 ======
 
+:Author: `Peter Parente <https://github.com/parente>`_
+
 Goals
 -----
 

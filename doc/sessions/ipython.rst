@@ -1,6 +1,9 @@
 Data Science and IPython
 ========================
 
+:Author: `Peter Parente <https://github.com/parente>`_
+:Builds-on: :doc:`python`
+
 Goals
 ------
 

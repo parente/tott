@@ -1,6 +1,8 @@
 Git and GitHub
 ==============
 
+:Author: `Peter Parente <https://github.com/parente>`_
+
 Goals
 -----
 

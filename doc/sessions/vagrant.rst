@@ -1,6 +1,8 @@
 Virtualization and Vagrant
 ==========================
 
+:Author: `Peter Parente <https://github.com/parente>`_
+
 Goals
 -----
 
