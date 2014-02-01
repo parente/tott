@@ -43,6 +43,7 @@ We currently have meet-ups planned on the topics listed in the navbar with :doc:
    sessions/ipython
    sessions/bootstrap
    sessions/jquery
+   sessions/gulpjs
    sessions/backbone
    sessions/ruby
    sessions/rails
