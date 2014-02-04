@@ -17,7 +17,12 @@ Goals
 Introduction
 ------------
 
-TODO: intro and slidecasts
+Data Science is the burgeoning study and practice of extracting knowledge from data. It combines ideas and techniques from many fields including machine learning, statistics, mathematics, data warehousing, parallel and distributed computing, visualization, and many others. As the amount of data available to businesses and researchers continues to grow, so does the need for creative teams and powerful tools to draw insight from it.
+
+Python has a `large ecosystem <http://www.scipy.org/topical-software.html>`_ of tools relevant to data science. In this session we will look at combining a small but very powerful set of them to explore (Pandas), model (scikit-learn), and visualize (matplotlib) information in a web environment for reproducible research (IPython Notebook).
+
+
+TODO: slidecast
 
 If time permits, review these additional pages:
 
