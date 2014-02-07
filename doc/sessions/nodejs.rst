@@ -24,8 +24,8 @@ To get started, watch the `JavaScript slidecast <../_static/casts/javascript.htm
   * `Rich Types on slide 5 <../_static/casts/javascript.html#/5>`_ (~2 minutes)
   * `Protypical Inheritence on slide 6 <../_static/casts/javascript.html#/6>`_ (~5 minutes)
   * `Closures on slide 7 <../_static/casts/javascript.html#/7>`_ (~3 minutes)
-  * `Anonymous Functions on slide 10 <../_static/casts/javascript.html#/10>`_ (~2 minutes)
-  * `Variadic Functions on slide 11 <../_static/casts/javascript.html#/11>`_ (~2 minutes)
+  * `Anonymous Functions on slide 8 <../_static/casts/javascript.html#/8>`_ (~2 minutes)
+  * `Variadic Functions on slide 9 <../_static/casts/javascript.html#/9>`_ (~2 minutes)
   * `Working with NodeJS on slide 13 <../_static/casts/javascript.html#/13>`_ (~7 minutes)
 
 Now watch the `JavaScript Ecosystem slidecast <../_static/casts/js_eco.html>`_ (~25 minutes) which demonstrates how to find and install useful JavaScript libraries to save you time in building more advanced NodeJS applications. The slidecast includes demos of the following:
