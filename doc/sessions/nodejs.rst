@@ -20,10 +20,10 @@ JavaScript is the programming language of the web. Web browser support for JavaS
 
 To get started, watch the `JavaScript slidecast <../_static/casts/javascript.html>`_ (~35 minutes) introducing the JavaScript programming language. The slidecast describes the following language features using short, interactive code samples:
 
-  * `Syntax on slide 6 <../_static/casts/javascript.html#/6>`_ (~5 minutes)
-  * `Rich Types on slide 7 <../_static/javascript.html#/7>`_ (~2 minutes)
-  * `Protypical Inheritence on slide 8 <../_static/casts/javascript.html#/8>`_ (~5 minutes)
-  * `Closures on slide 9 <../_static/casts/javascript.html#/9>`_ (~3 minutes)
+  * `Syntax on slide 4 <../_static/casts/javascript.html#/4>`_ (~5 minutes)
+  * `Rich Types on slide 5 <../_static/casts/javascript.html#/5>`_ (~2 minutes)
+  * `Protypical Inheritence on slide 6 <../_static/casts/javascript.html#/6>`_ (~5 minutes)
+  * `Closures on slide 7 <../_static/casts/javascript.html#/7>`_ (~3 minutes)
   * `Anonymous Functions on slide 10 <../_static/casts/javascript.html#/10>`_ (~2 minutes)
   * `Variadic Functions on slide 11 <../_static/casts/javascript.html#/11>`_ (~2 minutes)
   * `Working with NodeJS on slide 13 <../_static/casts/javascript.html#/13>`_ (~7 minutes)
