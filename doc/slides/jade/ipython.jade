@@ -1,0 +1,103 @@
+extends layout
+include util
+
+block head
+  title IPython Notebook - TotT
+
+block slides
+
+  section(data-narration="/ipy/0")
+    h1 IPython Notebook
+    h2 TotT: 2014
+
+  section(data-narration="/ipy/1")
+    h2 IPython Notebook
+    blockquote "... is a web-based interactive computational environment where you can combine code execution, text, mathematics, plots and rich media into a single document." <br />- <a href="http://ipython.org/notebook.html">ipython.org</a>
+
+  section(data-narration="/ipy/2")
+    h2 Use Cases
+    ul
+      li Exploration and prototyping
+      li Reproducible research
+      li Education
+      li Cheap parallelization
+
+  section(data-narration="/ipy/3")
+    h2 Demo: IPy Basics
+    p Notebooks, cells, code, markdown, magics
+
+  section
+    h2 Demo: IPy Basics
+    +screencast("/ipy/basics")
+
+  section(data-narration="/ipy/5")
+    h2 IPython really shines when you combine it with other Python libraries.
+
+  section(data-narration="/ipy/6")
+    h2 Pandas
+    blockquote "... library providing high-performance, easy-to-use data structures and data analysis tools ..." <br />- <a href="http://pandas.pydata.org/">Pandas</a>
+
+  section(data-narration="/ipy/7")
+    h2 Use Cases
+    ul
+      li Data exploration
+      li Data munging and prep
+      li Basic statistical analysis
+
+  section(data-narration="/ipy/8")
+    h2 Demo: Loading Wine Data
+    p read_csv, head, describe
+
+  section
+    h2 Demo: Loading Wine Data
+    +screencast("/ipy/pandas")
+
+  section(data-narration="/ipy/10")
+    h2 Matplotlib
+    blockquote "... is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms." <br />- <a href="http://matplotlib.org/">matplotlib.org</a>
+
+  section(data-narration="/ipy/11")
+    h2 Demo: Wine Plots
+    p Figure, plot, scatter, axis
+
+  section
+    h2 Demo: Wine Plots
+    +screencast("/ipy/matplotlib")
+
+  section(data-narration="/ipy/12")
+    h2 scikit-learn
+    blockquote "Machine learning in Python" <br />- <a href="http://scikit-learn.org/stable/">scikit-learn.org</a>
+
+  section(data-narration="/ipy/13")
+    h2 Use Cases
+    ul
+      li Classification
+      li Regression
+      li Clustering
+      li Dimenstionality reduction
+
+  section(data-narration="/ipy/14")
+    h2 Demo: Classifying Red/White
+    p TODO
+
+  section
+    h2 Demo: Classifying Red/White
+    +screencast("/ipy/sklearn")
+
+  section(data-narration="/ipy/16")
+    h2 Other Libraries
+    ul
+      li <a href="http://www.scipy.org/">SciPy</a>
+      li <a href="http://scikit-image.org/">scikit-image</a>
+      li <a href="http://networkx.github.io/">NetworkX</a>
+      li <a href="http://textblob.readthedocs.org/en/latest/">Textblob</a>
+      li <a href="http://radimrehurek.com/gensim/">gensim</a>
+      li <a href="http://deeplearning.net/software/theano/">Theano</a>
+
+  section(data-narration="/ipy/17")
+    h2 Review
+    ul
+      li IPython Notebook
+      li Pandas
+      li Matplotlib
+      li scikit-learn
