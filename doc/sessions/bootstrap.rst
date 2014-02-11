@@ -17,7 +17,15 @@ Goals
 Introduction
 ------------
 
-TODO: intro and slidecasts
+The fifth version of the HyperText Markup Language (HTML5) is a standard defining a markup language and APIs for `structuring and presenting content on the Web <http://en.wikipedia.org/wiki/HTML5>`_. An HTML document consists of nested sets of elements represented by tags like `<body>`, `<p>`, and `<video>` which define the semantics of a Web page.
+
+The third version of the Cascading Style Sheets (CSS3) standard defines defining a style language used to express the `look and formatting of documents written in a markup language <http://en.wikipedia.org/wiki/CSS>`_. A CSS file contains blocks of style declarations for colors, fonts, sizes, positions, and so on that can apply to elements in a HTML documents.
+
+Together with JavaScript, HTML and CSS define what can be accomplished on the Web today, and experienced by users of Web browsers.
+
+Bootstrap_ is a front-end framework that makes bootstrapping visually pleasing, mobile and desktop friendly, potentially dynamic Web sites easy. It contains a set of CSS styles that create a consistent, skinnable look-and-feel; a set of components that go beyond the basic constructs of HTML; and a set of JavaScript utilities that enable common, dynamic Web page behaviors.
+
+TODO: slidecast
 
 If time permits, review these additional pages:
 
