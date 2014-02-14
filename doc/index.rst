@@ -45,9 +45,11 @@ We currently have meet-ups planned on the topics listed in the navbar with :doc:
    sessions/jquery
    sessions/gulpjs
    sessions/backbone
+   sessions/docker
    sessions/ruby
    sessions/rails
-   sessions/docker
+   sessions/elasticsearch
+   sessions/hadoop
 
 When
 ====
