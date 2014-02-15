@@ -28,6 +28,8 @@ To get started, watch the `IPython Notebook slidecast <../_static/casts/ipython.
   * `Graphing with Matplotlib on slide 12 <../_static/casts/ipython.html#/12>`_ (~19 minutes)
   * `Classification with scikit-learn on slide 16  <../_static/casts/ipython.html#/16>`_ (~17 minutes)
 
+You can view and/or download a version of the wine analysis notebook built throughout the slidecast `via the IPython Notebook Viewer <http://nbviewer.ipython.org/gist/parente/9023781>`_.
+
 If time permits, review these additional pages:
 
 * Read `What is Data Science? <http://www.kaggle.com/wiki/WhatIsDataScience>`_ at Kaggle. (~1 minute)
