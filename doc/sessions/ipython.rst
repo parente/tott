@@ -21,12 +21,12 @@ Data Science is the burgeoning study and practice of extracting knowledge from d
 
 Python has a `large ecosystem <http://www.scipy.org/topical-software.html>`_ of tools relevant to data science. In this session we will look at combining a small but very powerful set of them to explore (Pandas), model (scikit-learn), and visualize (matplotlib) information in a web environment for reproducible research (IPython Notebook).
 
-To get started, watch the `IPython Notebook slidecast <../_static/casts/ipython.html>`_ (~XX minutes) showing the use of these tools in a basic exploration of the `wine dataset from the UCI Machine Learning Repository <https://archive.ics.uci.edu/ml/datasets/Wine+Quality>`_. The slidecast includes demos of the following:
+To get started, watch the `IPython Notebook slidecast <../_static/casts/ipython.html>`_ (~77 minutes) showing the use of these tools in a basic exploration of the `wine dataset from the UCI Machine Learning Repository <https://archive.ics.uci.edu/ml/datasets/Wine+Quality>`_. The slidecast includes demos of the following:
 
   * `IPython Notebook basics on slide 4 <../_static/casts/ipython.html#/4>`_ (~16 minutes)
-  * `Pandas data prep on slide 9 <../_static/casts/ipython.html#/9>`_ (~14 minutes)
+  * `Data exploration with Pandas on slide 9 <../_static/casts/ipython.html#/9>`_ (~14 minutes)
   * `Graphing with Matplotlib on slide 12 <../_static/casts/ipython.html#/12>`_ (~19 minutes)
-  * `Classification with scikit-learn on slide 16  <../_static/casts/ipython.html#/16>`_ (~XX minutes)
+  * `Classification with scikit-learn on slide 16  <../_static/casts/ipython.html#/16>`_ (~17 minutes)
 
 If time permits, review these additional pages:
 
