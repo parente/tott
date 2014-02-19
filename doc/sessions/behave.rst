@@ -25,9 +25,9 @@ Behavior driven development (BDD) is a way of writing software. It starts with d
 
 There are many libraries supporting behavior- or test-driven development: `Cucumber`_ for Ruby, `Mocha`_ for JavaScript, `easyb`_ for Groovy/Java, etc. In this session, we'll learn using `Behave`_ for Python.
 
-To get started, watch the `TDD / BDD slidecast <../_static/casts/bdd.html>`_ (~45 minutes) introducing test- and behavior-driven development using the Gherkin language for specification and Behave for testing. The slidecast includes a demo writing specs, tests, and code for the following:
+To get started, watch the `TDD / BDD slidecast <../_static/casts/behave.html>`_ (~45 minutes) introducing test- and behavior-driven development using the Gherkin language for specification and Behave for testing. The slidecast includes a demo writing specs, tests, and code for the following:
 
-  * `Fibonnaci Numbers on slide 13 <../_static/casts/bdd.html#/16>`_ (~30 minutes)
+  * `Fibonnaci Numbers on slide 13 <../_static/casts/behave.html#/13>`_ (~30 minutes)
 
 If time permits, review these additional pages:
 
