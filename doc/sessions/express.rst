@@ -101,7 +101,9 @@ Remember to restart your Express application when you make changes to it. (Hint:
 Add message UI
 ##############
 
-Posting messages using ``curl`` works, but we can do better. Use Jade to build a view for adding a message under a user-provided alias, mapped to a URL path. Show the UI when the user GETs the messages collection URL. In other words, add another function to ``routes/index.js`` called ``get_message_form`` and have it render your Jade view. Register this function in ``app.js`` as ``app.get('/messages', routes.get_message_form);``.
+Posting messages using ``curl`` works, but we can do better. Use Jade to build a view for adding a message under a user-provided alias, mapped to a URL path. Show the UI when the user GETs the index page of the site. In other words, modify the `views/index.jade` to show a form the user can complete to submit a message.
+
+If you plan to use a plain old HTML form, you'll probably want to add a request handler that gets the message ID out of the form data. If you want to keep the web API as it is, you'll need to use some Javascript to either modify the form action or submit the request using AJAX.
 
 Add stats middleware
 ####################
