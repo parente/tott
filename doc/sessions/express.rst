@@ -71,12 +71,12 @@ Look at the application skeleton Express generated for you. Open the ``routes/in
 
 .. code-block:: javascript
 
-   var get_message = function(req, res) {
+   exports.get_message = function(req, res) {
       // TODO: get the message ID from the request, check if we have that message
       // in memory, return it if so or respond with a 404 error if not, delete the message
    };
 
-   var post_message = function(req, res) {
+   exports.post_message = function(req, res) {
       // TODO: get the message ID and text from the request, store the message in memory
       // keyed by the ID
    };
@@ -92,7 +92,7 @@ Now implement the ``get_message`` and ``post_message`` functions as described in
 
 .. code-block:: bash
 
-   curl -X POST --data-urlencode "message=the cheese flies at midnight; next @12 pm tmw under code 123dfjer3" https://192.168.33.10:3000/messages/qwerasidfj98324wer
+   curl -k -X POST --data-urlencode "message=the cheese flies at midnight; next @12 pm tmw under code 123dfjer3" https://192.168.33.10:3000/messages/qwerasidfj98324wer
 
 Manually test your GET route by visiting https://192.168.33.10:3000/messages/qwerasidfj98324wer in your browser, replacing the last part of the URL with the message ID to retrieve.
 
