@@ -101,9 +101,16 @@ Remember to restart your Express application when you make changes to it. (Hint:
 Add message UI
 ##############
 
-Posting messages using ``curl`` works, but we can do better. Use Jade to build a view for adding a message under a user-provided alias, mapped to a URL path. Show the UI when the user GETs the index page of the site. In other words, modify the `views/index.jade` to show a form the user can complete to submit a message.
+Posting messages using ``curl`` works, but we can do better. Use Jade to build a view for adding a message under a user-provided ID, mapped to a URL path. Show the UI when the user GETs the home page of the site. In other words, modify the `views/index.jade` to show a form the user can complete to submit a message.
 
 If you plan to use a plain old HTML form, you'll probably want to add a request handler that gets the message ID out of the form data. If you want to keep the web API as it is, you'll need to use some Javascript to either modify the form action or submit the request using AJAX.
+
+Add linking
+###########
+
+Now users can submit messages easily. Retrieving them is a bit clunky. The user has to visit `/messages/:id`, read the message, edit the URL in the address bar, and fill out the form.
+
+Instead of simply returning the message text, render a Jade template that shows the message and includes a link back to the home page. Similarly, render a Jade template that reports success after posting a message and includes a link back to the home page.
 
 Add stats middleware
 ####################
@@ -118,7 +125,7 @@ Show the stats the dead-drop site has collected when a user visits `/stats` or a
 Add expiration
 ##############
 
-Add an automatic 1 hour expiration to all messages posted to the site. That is, if Alice posts a message and Bob fails to retrieve it within 1 hour, the site should delete the message automatically.
+Add an automatic expiration to all messages posted to the site. That is, if Alice posts a message and Bob fails to retrieve it within one hour after a time mentioned in the message, the site should delete the message automatically. If no time is mentioned, the post should self-destruct within one hour of its posting.
 
 You could implement this feature yourself, or you could scour NPM or Google for existing solutions for storing key-value data in memory with an optional expiration. (Hint hint).
 
