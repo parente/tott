@@ -1,0 +1,91 @@
+extends layout
+include util
+
+block head
+  title Bootstrap
+
+block slides
+
+  section(data-narration="/bootstrap/0")
+    h1 Bootstrap
+    h2 TotT 2014
+
+  section(data-narration="/bootstrap/1")
+    h2 Bootstrap
+    blockquote "... front-end framework for developing responsive, mobile first projects on the web."  <br />- <a href="http://getbootstrap.com/">getbootstrap.com</a>
+
+  section(data-narration="/bootstrap/2")
+    h2 Use Cases
+    ul
+      li Responsive design
+      li Site bootstrapping
+      li Site design
+
+  section(data-narration="/bootstrap/3")
+    h2 Major Features
+    ul
+      li Basic styles
+      li Grid layout
+      li Components
+      li JavaScript add-ons
+
+  section(data-narration="/bootstrap/5", data-jsbin="/tetus/5/embed?html,output")
+    h2 Example: Awesome Co.
+    iframe.jsbin-embed
+    p
+      small <sup>*</sup> Resize, rearrange, or hide panels to view the responsive output
+
+  section(data-narration="/bootstrap/4", data-jsbin="/hiyoq/4/embed?html,output")
+    h2 Example: The Grid
+    iframe.jsbin-embed
+    p
+      small <sup>*</sup> Mouse-over the HTML and click the top-right arrow. Resize browser window to study responsiveness.
+
+  section(data-narration="/bootstrap/7", data-jsbin="")
+    h2 Example: Some JavaScript
+    iframe.jsbin-embed
+
+  section(data-narration="/bootstrap/8", data-jsbin="")
+    h2 Opaque?
+    pre
+      code.html.
+        &lt;div class="row"&gt;
+          &lt;div class="span8"&gt;&lt;/div&gt;
+          &lt;div class="span4"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+  section(data-narration="/bootstrap/9")
+    h2 Better?
+    pre
+      code.html.
+        &lt;section class="ingredient"&gt;
+          &lt;div class="ingredient-name"&gt;&lt;/div&gt;
+          &lt;div class="ingredient-amount"&gt;&lt;/div&gt;
+        &lt;/section&gt;
+
+  section(data-narration="/bootstrap/10")
+    h2 Semantics are important.
+    h3 But how can we do it?
+
+  section(data-narration="/bootstrap/11")
+    h2 Less
+    blockquote "... extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable." <br />- <a href="http://lesscss.org/">lesscss.org</a>
+
+  section(data-narration="/bootstrap/12")
+    h2 Demo: Semantic Bootstrap
+    h3 bootstrap.less, Less mixins
+
+  section(data-narration="/bootstrap/13")
+    h2 Demo: Semantic Bootstrap
+    +screencast("/bootstrap/semantic")
+
+  section(data-narration="/bootstrap/14")
+    h2 Review
+    ul
+      li Use Cases
+      li Features
+      li Components
+      li Grid
+      li Styling
+      li Less
+      li Semantics

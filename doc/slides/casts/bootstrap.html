@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Bootstrap</title><link rel="stylesheet" href="reveal.js/css/reveal.min.css"><link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme"><link rel="stylesheet" href="reveal.js/lib/css/zenburn.css"><link rel="stylesheet" href="css/custom.css"><link rel="stylesheet" href="css/narrator.css"><script>document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+</script><!--[if lt IE 9]><script src="reveal.js/lib/js/html5shiv.js"></script><![endif]--></head><body><div class="reveal"><div class="slides"><section data-narration="/bootstrap/0"><h1>Bootstrap</h1><h2>TotT 2014</h2></section><section data-narration="/bootstrap/1"><h2>Bootstrap</h2><blockquote>"... front-end framework for developing responsive, mobile first projects on the web."  <br />- <a href="http://getbootstrap.com/">getbootstrap.com</a></blockquote></section><section data-narration="/bootstrap/2"><h2>Use Cases</h2><ul><li>Responsive design</li><li>Site bootstrapping</li><li>Site design</li></ul></section><section data-narration="/bootstrap/3"><h2>Major Features</h2><ul><li>Basic styles</li><li>Grid layout</li><li>Components</li><li>JavaScript add-ons</li></ul></section><section data-narration="/bootstrap/5" data-jsbin="/tetus/5/embed?html,output"><h2>Example: Awesome Co.</h2><iframe class="jsbin-embed"></iframe><p><small><sup>*</sup> Resize, rearrange, or hide panels to view the responsive output</small></p></section><section data-narration="/bootstrap/4" data-jsbin="/hiyoq/4/embed?html,output"><h2>Example: The Grid</h2><iframe class="jsbin-embed"></iframe><p><small><sup>*</sup> Mouse-over the HTML and click the top-right arrow. Resize browser window to study responsiveness.</small></p></section><section data-narration="/bootstrap/7" data-jsbin=""><h2>Example: Some JavaScript</h2><iframe class="jsbin-embed"></iframe></section><section data-narration="/bootstrap/8" data-jsbin=""><h2>Opaque?</h2><pre><code class="html">&lt;div class="row"&gt;
+  &lt;div class="span8"&gt;&lt;/div&gt;
+  &lt;div class="span4"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></section><section data-narration="/bootstrap/9"><h2>Better?</h2><pre><code class="html">&lt;section class="ingredient"&gt;
+  &lt;div class="ingredient-name"&gt;&lt;/div&gt;
+  &lt;div class="ingredient-amount"&gt;&lt;/div&gt;
+&lt;/section&gt;
+</code></pre></section><section data-narration="/bootstrap/10"><h2>Semantics are important.</h2><h3>But how can we do it?</h3></section><section data-narration="/bootstrap/11"><h2>Less</h2><blockquote>"... extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable." <br />- <a href="http://lesscss.org/">lesscss.org</a></blockquote></section><section data-narration="/bootstrap/12"><h2>Demo: Semantic Bootstrap</h2><h3>bootstrap.less, Less mixins</h3></section><section data-narration="/bootstrap/13"><h2>Demo: Semantic Bootstrap</h2><video width="100%" controls="controls" class="screencast"><source src="http://static.mindtrove.info/tott/video/bootstrap/semantic.mov" type="video/mp4"/><source src="http://static.mindtrove.info/tott/video/bootstrap/semantic.ogv" type="video/ogg"/></video></section><section data-narration="/bootstrap/14"><h2>Review</h2><ul><li>Use Cases</li><li>Features</li><li>Components</li><li>Grid</li><li>Styling</li><li>Less</li><li>Semantics</li></ul></section></div></div><script src="reveal.js/lib/js/head.min.js"></script><script src="reveal.js/js/reveal.min.js"></script><script>// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+  controls: true,
+  progress: true,
+  history: true,
+  center: true,
+  
+  theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+  transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+  narrationRoot: "http://static.mindtrove.info/tott/audio",
+  
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+    { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+    { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+    { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+    { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+    { src: 'js/narrator.js', async: true, condition: function() { return !!document.body.classList; } }
+  ]
+});</script></body></html>
