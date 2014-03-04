@@ -55,7 +55,7 @@ Bootstrap the code
 
 Express has a command line utility that will lay out a suggested skeleton for an Express-based web application. I used it in the Jade screencast. Use ``npm`` to install the Express module now (globally or locally, your choice) and then use the ``express`` command line to generate a new skeleton for your dead-drop. (Hint: Don't forget to run ``npm install`` in the project skeleton too. See the first demo of the Express slidecast if you don't know what I'm talking about.)
 
-Test that the skeleton works by running ``node app.js`` in the project directory and visiting http://192.168.10.33:3000 in your web browser.
+Test that the skeleton works by running ``node app.js`` in the project directory and visiting http://192.168.33.10:3000 in your web browser.
 
 Secure the site
 ###############
