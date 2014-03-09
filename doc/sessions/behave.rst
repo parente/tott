@@ -93,17 +93,19 @@ Given the requirements above, write the Gherkin feature file for the game model 
             # TODO
 
         @wip
-        Scenario: User and computer tie in a round
-            Given the user gesture
+        Scenario Outline: User and computer tie in a round
+            Given the user gesture <user_gesture>
+            And the computer gesture is the same
+            When the game processes the round
+            Then it reports the result as a "tie"
+
+            Example: Gestures
+                | gesture |
                 | rock    |
                 | paper   |
                 | scissors|
                 | lizard  |
                 | spock   |
-            And the computer gesture is the same
-            When the game processes the round
-            Then it reports the result as a "tie"
-
 
         Scenario: User wins the whole game
             Given the user has won 2 rounds
@@ -133,12 +135,12 @@ Add the following test code to your ``features/steps/model.py`` file. It complet
 
     from behave import given, when, then
 
-    @given(u'the user gesture {gesture}')
-    def step_impl(context, gesture):
+    @given(u'the user gesture {user_gesture}')
+    def step_impl(context, user_gesture):
         '''
         Store the user's gesture in the context for later steps.
         '''
-        context.user_gesture = gesture
+        context.user_gesture = user_gesture
 
 
     @given(u'the computer gesture is the same')
@@ -170,7 +172,7 @@ Add the following test code to your ``features/steps/model.py`` file. It complet
         '''
         assert context.result == result
 
-Notice that ``context.model`` is assumed to exist. That is, the test steps assume a game model is available for testing. We can ensure this is the case for each scenario by adding the following code to the ``features/environment.py`` file.
+Notice that ``context.model`` is assumed to exist. That is, the test steps assume a game model is available for testing. We can ensure this is the case for each scenario by adding the following code to the ``features/environment.py`` file. (Yes, the `environment.py` file goes in `features/` not in `features/steps`.)
 
 .. code-block:: python
 
