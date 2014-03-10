@@ -25,12 +25,12 @@ Together with JavaScript, HTML and CSS define what can be accomplished on the We
 
 Bootstrap_ is a front-end framework that makes bootstrapping visually pleasing, mobile and desktop friendly, potentially dynamic Web sites easy. It contains a set of CSS styles that create a consistent, skinnable look-and-feel; a set of components that go beyond the basic constructs of HTML; and a set of JavaScript utilities that enable common, dynamic Web page behaviors.
 
-To get started, watch the `Bootstrap slidecast <../_static/casts/bootstrap.html>`_ (~XX minutes) which shows uses for Bootstrap styles, layouts, components, and JavaScript behaviors. The slidecast includes demos of the following:
+To get started, watch the `Bootstrap slidecast <../_static/casts/bootstrap.html>`_ (~39 minutes) which shows uses for Bootstrap styles, layouts, components, and JavaScript behaviors. The slidecast includes demos of the following:
 
 * `Awesome Co. Homepage on slide 4 <../_static/casts/bootstrap.html#/4>`_ (~8 minutes)
 * `The Grid on slide 5 <../_static/casts/bootstrap.html#/5>`_ (~6 minutes)
 * `Some JavaScript on slide 6 <../_static/casts/bootstrap.html#/6>`_ (~5 minutes)
-* `Semantic Bootstrap on slide 12 <../_static/casts/bootstrap.html#/12>`_ (~X minutes)
+* `Semantic Bootstrap on slide 12 <../_static/casts/bootstrap.html#/12>`_ (~13 minutes)
 
 If time permits, review these additional pages:
 
