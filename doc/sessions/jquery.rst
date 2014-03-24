@@ -18,10 +18,16 @@ Goals
 Introduction
 ------------
 
-TODO: intro and slidecasts
+jQuery is a library that makes writing client-side JavaScript easier than using the standardi HTML document object model (DOM). jQuery presents a simple API for accessing, navigating, and manipulating HTML; handling web page events; and communicating with web servers, all in a manner consistent across web browsers. Although jQuery arose nearly a decade ago, long before HTML5 and wholesale support for Web standards, it remains at the foundation of many web sites, web applications, and web libraries today.
+
+To get started, watch the jQuery slidecast (~X minutes) introducing the primary features of jQuery. The slidecast includes demos of the following:
+
+* `Selections on slide X <../_static/casts/jquery.html#/X>`_
+* `Event handling on slide X <../_static/casts/jquery.html#/X>`_
+* `Ajax on slide X <../_static/casts/jquery.html#/X>`_
+* `Effects on slide X <../_static/casts/jquery.html#/X>`_
 
 If time permits, review these additional pages:
-
 
 * Skim `DOM Introduction <https://developer.mozilla.org/en-US/docs/DOM/DOM_Reference/Introduction>`_ on the Mozilla Developer Network site (~15 minutes)
 * Read the `AJAX Wikipedia article <http://en.wikipedia.org/wiki/Ajax_(programming)>`_ (15 minutes)
