@@ -1,0 +1,66 @@
+extends layout
+include util
+
+block head
+  title jQuery - TotT
+
+block slides
+
+  section(data-narration="/jquery/0")
+    h1 jQuery
+    h2 TotT 2014
+
+  section(data-narration="/jquery/1")
+    h2 jQuery
+    blockquote "... makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers." <br />- <a href="http://jquery.com/">jquery.com</a>
+
+  section(data-narration="/jquery/2")
+    h2 Use Cases
+    ul
+      li Client-side scripting
+      li Small Web applications
+      li HTML DOM simplication
+      li Basis of JS frameworks
+
+  section(data-narration="/jquery/3", data-jsbin="/iqUxemO/7/embed?html,js,output")
+    h2 Example: Selections
+    iframe.jsbin-embed
+
+  section(data-narration="/jquery/4", data-jsbin="/eXEZuYi/15/embed?html,js,output")
+    h2 Example: Traversals
+    iframe.jsbin-embed
+
+  section(data-narration="/jquery/5", data-jsbin="/uRAHEDe/7/embed?html,js,output")
+    h2 Example: Events
+    iframe.jsbin-embed
+
+  section(data-narration="/jquery/5", data-jsbin="/uRAHEDe/7/embed?html,js,output")
+    h2 Example: XHR (Ajax)
+    iframe.jsbin-embed
+
+  section(data-narration="/jquery/5", data-jsbin="/uRAHEDe/7/embed?html,js,output")
+    h2 Example: Effects
+    iframe.jsbin-embed
+
+  section(data-narration="/jquery/9")
+    h2 Demo: Form Submission
+    p Listen, validate, submit, cancel
+
+  section
+    h4 Demo: Form Submission
+    +screencast("/jquery/form")
+
+  section(data-narration="/jquery/8")
+    h2 A Word of Caution
+    p jQuery alone is good for DOM scripting.
+    p Don't design complex web apps around DOM scripting!
+
+  section(data-narration="/jquery/11")
+    h2 Review
+    ul
+      li Selections
+      li Traversals
+      li Events
+      li XHR
+      li Effects
+      li Form submission
