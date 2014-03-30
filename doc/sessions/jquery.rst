@@ -20,13 +20,13 @@ Introduction
 
 jQuery is a library that makes writing client-side JavaScript easier than using the standardi HTML document object model (DOM). jQuery presents a simple API for accessing, navigating, and manipulating HTML; handling web page events; and communicating with web servers, all in a manner consistent across web browsers. Although jQuery arose nearly a decade ago, long before HTML5 and wholesale support for Web standards, it remains at the foundation of many web sites, web applications, and web libraries today.
 
-To get started, watch the `jQuery slidecast <../_static/casts/jquery.html>`_ (~X minutes) introducing the primary features of jQuery. The slidecast includes demos of the following:
+To get started, watch the `jQuery slidecast <../_static/casts/jquery.html>`_ (~25 minutes) introducing the primary features of jQuery. The slidecast includes demos of the following:
 
-* `Selections on slide 3 <../_static/casts/jquery.html#/3>`_ (~X minutes)
-* `Event handling on slide 4 <../_static/casts/jquery.html#/4>`_ (~X minutes)
-* `Effects on slide 5 <../_static/casts/jquery.html#/5>`_ (~X minutes)
-* `Traversals on slide 6 <../_static/casts/jquery.html#/6>`_ (~X minutes)
-* `XHR (Ajax) on slide 7 <../_static/casts/jquery.html#/7>`_ (~X minutes)
+* `Selections on slide 3 <../_static/casts/jquery.html#/3>`_ (~3 minutes)
+* `Event handling on slide 4 <../_static/casts/jquery.html#/4>`_ (~4 minutes)
+* `Effects on slide 5 <../_static/casts/jquery.html#/5>`_ (~2 minutes)
+* `Traversals on slide 6 <../_static/casts/jquery.html#/6>`_ (~5 minutes)
+* `XHR (Ajax) on slide 7 <../_static/casts/jquery.html#/7>`_ (~7 minutes)
 
 If time permits, review these additional pages:
 
