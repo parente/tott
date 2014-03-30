@@ -2,7 +2,7 @@ JavaScript and jQuery
 =====================
 
 :Author: `Peter Parente <https://github.com/parente>`_
-:Builds-on: :doc:`nodejs`, :doc:`bootstrap`
+:Builds-on: :doc:`nodejs`; :doc:`bootstrap`
 
 Goals
 -----
@@ -20,12 +20,13 @@ Introduction
 
 jQuery is a library that makes writing client-side JavaScript easier than using the standardi HTML document object model (DOM). jQuery presents a simple API for accessing, navigating, and manipulating HTML; handling web page events; and communicating with web servers, all in a manner consistent across web browsers. Although jQuery arose nearly a decade ago, long before HTML5 and wholesale support for Web standards, it remains at the foundation of many web sites, web applications, and web libraries today.
 
-To get started, watch the jQuery slidecast (~X minutes) introducing the primary features of jQuery. The slidecast includes demos of the following:
+To get started, watch the `jQuery slidecast <../_static/casts/jquery.html>`_ (~X minutes) introducing the primary features of jQuery. The slidecast includes demos of the following:
 
-* `Selections on slide X <../_static/casts/jquery.html#/X>`_
-* `Event handling on slide X <../_static/casts/jquery.html#/X>`_
-* `Ajax on slide X <../_static/casts/jquery.html#/X>`_
-* `Effects on slide X <../_static/casts/jquery.html#/X>`_
+* `Selections on slide 3 <../_static/casts/jquery.html#/3>`_ (~X minutes)
+* `Event handling on slide 4 <../_static/casts/jquery.html#/4>`_ (~X minutes)
+* `Effects on slide 5 <../_static/casts/jquery.html#/5>`_ (~X minutes)
+* `Traversals on slide 6 <../_static/casts/jquery.html#/6>`_ (~X minutes)
+* `XHR (Ajax) on slide 7 <../_static/casts/jquery.html#/7>`_ (~X minutes)
 
 If time permits, review these additional pages:
 
