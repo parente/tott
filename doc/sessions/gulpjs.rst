@@ -2,7 +2,7 @@ Automation and Gulp.js
 ======================
 
 :Author: `Michael Coalman <https://github.com/Coalman>`_
-:Builds-on: :doc:`nodejs`, :doc:`bootstrap`,  :doc:`jquery`
+:Builds-on: :doc:`nodejs`; :doc:`bootstrap`;  :doc:`jquery`
 
 Goals
 -----

@@ -104,7 +104,7 @@ Return to the original DataFrame. Inspect some of its rows using the ``head`` an
 
 Now plot the ``wpp`` Series you created in the prior step using the ``Series.plot`` method. The y-axis should represent the number words on a page and the x-axis should represent a page in a book. The pages should be sorted in ascending chronological order as x increases.
 
-Can you spot a trend in the plot? What if you play with the plotting parameters? Try a scatter plot instead? Takes Markdown notes in your notebook.
+Can you spot a trend in the plot? What if you play with the plotting parameters? Try a scatter plot instead? Take Markdown notes in your notebook.
 
 Plot the rolling, expanding wpp mean
 ####################################

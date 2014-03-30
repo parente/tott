@@ -44,12 +44,14 @@ We currently have meet-ups planned on the topics listed in the navbar with :doc:
    sessions/bootstrap
    sessions/jquery
    sessions/gulpjs
+   sessions/end1
    sessions/backbone
    sessions/docker
-   sessions/ruby
-   sessions/rails
    sessions/elasticsearch
+   sessions/couchdb
    sessions/hadoop
+   sessions/cf
+   sessions/d3
 
 When
 ====
