@@ -51,7 +51,7 @@ I've seeded a project called ShortSheet (SS) on GitHub at https://github.com/par
 
 To get started, clone SS to your *tottbox* shared folder. Start a bash session on *tottbox*, change to the project directory, and run ``make vendor``. The build will download dependencies of the project, namely Bottle_, jQuery, and Bootstrap. When the build completes, run ``make server`` in the same directory. Then visit ``http://192.168.33.10:8080``` in your browser.
 
-Spend a few minutes looking at the application UI and its structure on disk. Open the ``Makefile`` in the root of the project and look at its contents. What did ``make build`` and ``make server`` do? Open the ``public/index.html`` file. What does it contain? How about the ``public/vendor`` folder? The ``public/js/shortsheet.js``? Share what you find.
+Spend a few minutes looking at the application UI and its structure on disk. Open the ``Makefile`` in the root of the project and look at its contents. What did ``make vendor`` and ``make server`` do? Open the ``public/index.html`` file. What does it contain? How about the ``public/vendor`` folder? The ``public/js/shortsheet.js``? Share what you find.
 
 Add CSV file import
 ###################
