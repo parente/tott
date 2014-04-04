@@ -60,7 +60,7 @@ Right now, the SS shows a sample set of data and nothing more. An *Import* butto
 
 Open the ``shortsheet.js`` file. Find the ``TODO`` comment about supporting import. Add code using jQuery that attaches a ``change`` event handler to the ``import-csv'`` file input element and invokes the function mentioned in the comment. (Hint: Look in the jQuery doc.)
 
-`Save this second sample CSV file <https://gist.github.com/parente/7965617/row>`_ with a ``.csv`` extension on your machine. Try importing it into your spreadsheet. The spreadsheet should render the new data if your code is working properly. 
+`Save this second sample CSV file <https://gist.github.com/parente/7965617/raw>`_ with a ``.csv`` extension on your machine. Try importing it into your spreadsheet. The spreadsheet should render the new data if your code is working properly. 
 
 If you hit problems, use the Chrome Developer Tools (or equivalent in your browser of choice) to debug the problem. (Hint: Adding simple ``console.log`` statements to your code and looking for their output in the developer tools *Console* tab can go a long way.)
 
