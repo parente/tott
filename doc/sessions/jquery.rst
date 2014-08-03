@@ -49,9 +49,9 @@ Clone the ShortSheet project
 
 I've seeded a project called ShortSheet (SS) on GitHub at https://github.com/parente/tott-shortsheet. It is a starting point for building a basic spreadsheet web application. We will build out this application throughout the following exercises.
 
-To get started, clone SS to your *tottbox* shared folder. Start a bash session on *tottbox*, change to the project directory, and run ``make build``. The build will download dependencies of the project, namely Bottle_, jQuery, and Bootstrap. When the build completes, run ``make server`` in the same directory. Then visit ``http://192.168.33.10:8080``` in your browser.
+To get started, clone SS to your *tottbox* shared folder. Start a bash session on *tottbox*, change to the project directory, and run ``make vendor``. The build will download dependencies of the project, namely Bottle_, jQuery, and Bootstrap. When the build completes, run ``make server`` in the same directory. Then visit http://192.168.33.10:8080 in your browser.
 
-Spend a few minutes looking at the application UI and its structure on disk. Open the ``Makefile`` in the root of the project and look at its contents. What did ``make build`` and ``make server`` do? Open the ``public/index.html`` file. What does it contain? How about the ``public/vendor`` folder? The ``public/js/shortsheet.js``? Share what you find.
+Spend a few minutes looking at the application UI and its structure on disk. Open the ``Makefile`` in the root of the project and look at its contents. What did ``make vendor`` and ``make server`` do? Open the ``public/index.html`` file. What does it contain? How about the ``public/vendor`` folder? The ``public/js/shortsheet.js``? Share what you find.
 
 Add CSV file import
 ###################
@@ -60,7 +60,7 @@ Right now, the SS shows a sample set of data and nothing more. An *Import* butto
 
 Open the ``shortsheet.js`` file. Find the ``TODO`` comment about supporting import. Add code using jQuery that attaches a ``change`` event handler to the ``import-csv'`` file input element and invokes the function mentioned in the comment. (Hint: Look in the jQuery doc.)
 
-`Save this second sample CSV file <https://gist.github.com/parente/7965617/row>`_ with a ``.csv`` extension on your machine. Try importing it into your spreadsheet. The spreadsheet should render the new data if your code is working properly. 
+`Save this second sample CSV file <https://gist.github.com/parente/7965617/raw>`_ with a ``.csv`` extension on your machine. Try importing it into your spreadsheet. The spreadsheet should render the new data if your code is working properly. 
 
 If you hit problems, use the Chrome Developer Tools (or equivalent in your browser of choice) to debug the problem. (Hint: Adding simple ``console.log`` statements to your code and looking for their output in the developer tools *Console* tab can go a long way.)
 
