@@ -7,7 +7,7 @@ The first incarnation of the Tools of the Trade (TotT) meet-up ran from January 
 
 Roughly fifty or so students attended the first session to learn more about the meet-up. About half as many returned the following week seeking to participate in earnest. Attendance leveled off at about ten to fifteen regulars each week for the rest of the semester with additional people joining based on interest and availability. The participants were mostly UNC-CS students but a handful came from other departments and nearby universities.
 
-Some people came to TotT with friends to work collaboratively. Others attended alone. The attempted the session exercises, with or without assistance. Some of these were willing to share what they learned with the entire group. One student even contributed and lead a session himself.
+Some people came to TotT with friends to work collaboratively. Others attended alone. Most attempted the session exercises, with or without assistance. Some of these were willing to share what they learned with the entire group. One student even contributed and lead a session himself.
 
 All said, I was pleased with the first offering of TotT. When polled, most students echoed my sentiment by expressing gratitude for our meetings and interest in future sessions. But while there were certainly aspects of TotT that worked well there were also those that could be improved. I wish to bring both the good and the bad to light here in order to make future TotT offerings better.
 
