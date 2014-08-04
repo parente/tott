@@ -21,16 +21,16 @@ Express is a JavaScript framework that aids the development of web servers and w
 
 To get started, watch the `Express slidecast <../_static/casts/express.html>`_ (~35 minutes) demonstrating the use of Express to build a simple web application. The slide cast includes live demos of the following:
 
-  * `Starting an Express Application and Server on slide 5 <../_static/casts/express.html#/5>`_ (~9 minutes)
-  * `Handling Requests and Responding in Express Routes on slide 7 <../_static/casts/express.html#/7>`_ (~9 minutes)
-  * `Using Express Middleware on slide 9 <../_static/casts/express.html#/9>`_ (~10 minutes)
+* `Starting an Express Application and Server on slide 5 <../_static/casts/express.html#/5>`_ (~9 minutes)
+* `Handling Requests and Responding in Express Routes on slide 7 <../_static/casts/express.html#/7>`_ (~9 minutes)
+* `Using Express Middleware on slide 9 <../_static/casts/express.html#/9>`_ (~10 minutes)
 
 Now watch the `Jade slidecast <../_static/casts/jade.html>`_ showing the use of Jade to generate web pages with little markup and variable fields. The slidecast includes live examples of all of the following:
 
-  * `Rendering Static HTML on slide 3 <../_static/casts/jade.html#/3>`_ (~3 minutes)
-  * `Embedding JS in Templates on slide 4 <../_static/casts/jade.html#/4>`_ (~2 minutes)
-  * `Jade Mixins on slide 5 <../_static/casts/jade.html#/5>`_ (~3 minutes)
-  * `Rendering Jade Views in Express on slide 10 <../_static/casts/jade.html#/10>`_
+* `Rendering Static HTML on slide 3 <../_static/casts/jade.html#/3>`_ (~3 minutes)
+* `Embedding JS in Templates on slide 4 <../_static/casts/jade.html#/4>`_ (~2 minutes)
+* `Jade Mixins on slide 5 <../_static/casts/jade.html#/5>`_ (~3 minutes)
+* `Rendering Jade Views in Express on slide 10 <../_static/casts/jade.html#/10>`_
 
 If time permits, review these additional pages:
 
