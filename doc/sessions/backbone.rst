@@ -8,7 +8,7 @@ Goals
 -----
 
 * Learn a bit about MVC, MVP, MVVM, etc. design patterns
-* Learn the basic concepts of the Backbone _ framework
+* Learn the basic concepts of the Backbone_ framework
 * Recognize the MV* pattern in Backbone
 * Understand how Backbone can help structure client-side code
 * Practice writing web applications using Backbone
@@ -16,7 +16,14 @@ Goals
 Introduction
 ------------
 
-TODO: intro and slidecasts
+Backbone is a JavaScript framework that lends structure to frontend code. Its concepts of models, views, collections, and routes help separate the data and logic of a web application from its necessary representation as DOM nodes in a web browser. This separation is critical to keeping the code base of a rich client-side application intelligible and its runtime data in-sync between a backend data store, backend API, and frontend user interface.
+
+To get started, watch the `Backbone slidecast <../_static/casts/backbone.html>` (~XX minutes) introducing the backbone concepts and demonstrating their use. The slidecast includes live demos of the following:
+
+* `Creating a Backbone model <#>`_
+* `Tying a Backbone model to a view <#>`_
+* `Aggregating Backbone models in a collection <#>`_
+* `Routing to initial application states <#>`_
 
 If time permits, review these additional pages:
 
