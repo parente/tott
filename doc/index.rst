@@ -11,9 +11,11 @@ Tools of the Trade
 The Gist
 ========
 
-We met most Fridays in the Spring 2014 semester at UNC-CH to practice using a variety of software development tools to build our experience and confidence. Right now, we're on hiatus. Join our `G+ community <https://plus.google.com/communities/110370068185265330545>`_ for invites and reminders.
+We met most Fridays in the Spring 2014 semester at UNC-CH to practice using a variety of software development tools to build our experience and confidence.
 
-Keep reading for details.
+We're planning to meet again in the Fall 2015 semester. We'll repeat some of the sessions form the first offering and introduce a few new topics.
+
+In the meantime, join our `Gitter chat channel <https://gitter.im/parente/tott>` to stay in touch or keep reading for more details.
 
 What
 ====
