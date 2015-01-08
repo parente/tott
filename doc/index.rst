@@ -15,7 +15,7 @@ We met most Fridays in the Spring 2014 semester at UNC-CH to practice using a va
 
 We're planning to meet again in the Fall 2015 semester. We'll repeat some of the sessions form the first offering and introduce a few new topics.
 
-In the meantime, join our `Gitter chat channel <https://gitter.im/parente/tott>` to stay in touch or keep reading for more details.
+In the meantime, join our `Gitter chat channel <https://gitter.im/parente/tott>`_ to stay in touch or keep reading for more details.
 
 What
 ====
