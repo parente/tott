@@ -49,10 +49,10 @@ We currently have meet-ups planned on the topics listed in the navbar with :doc:
    sessions/end1
    sessions/backbone
    sessions/docker
+   sessions/cf
    sessions/elasticsearch
    sessions/couchdb
    sessions/hadoop
-   sessions/cf
    sessions/d3
 
 When
