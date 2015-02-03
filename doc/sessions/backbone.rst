@@ -18,14 +18,7 @@ Introduction
 
 Backbone is a JavaScript framework that lends structure to frontend code. Its concepts of models, views, collections, and routes help separate the data and logic of a web application from its necessary representation as DOM nodes in a web browser. This separation is critical to keeping the code base of a rich client-side application intelligible and its runtime data in-sync between a backend data store, backend API, and frontend user interface.
 
-To get started, watch the `Backbone slidecast <../_static/casts/backbone.html>` (~XX minutes) introducing the backbone concepts and demonstrating their use. The slidecast includes live demos of the following:
-
-* `Creating a Backbone model <#>`_
-* `Tying a Backbone model to a view <#>`_
-* `Aggregating Backbone models in a collection <#>`_
-* `Routing to initial application states <#>`_
-
-If time permits, review these additional pages:
+To get started, review these materials online:
 
 * Read the `Wikipedia Model-view-controller article <http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller>`_ (~10 minutes)
 * Read `the Introduction section of the Backbone doc <http://backbonejs.org/#introduction>`_ (~5 minutes)
@@ -42,7 +35,7 @@ Clone the Kvetch project
 
 I've seeded a project called Kvetch on GitHub at https://github.com/parente/tott-kvetch. It is a starting point for building a place for people to post anonymous gripes, just like in the Daily Tar Heel. We will build out this application throughout the following exercises.
 
-To get started, clone the project to your *tottbox* shared folder. Start a bash session on *tottbox*, change to the project directory, and run ``make build``. The build will download dependencies of the project, namely Bottle_, jQuery, Bootstrap, and Backbone, and Underscore. When the build completes, run ``make server`` in the same directory. Then visit ``http://192.168.33.10:8080``` in your browser.
+To get started, clone the project to your *tottbox* shared folder. Start a bash session on *tottbox*, change to the project directory, and run ``make build``. The build will download dependencies of the project, namely Bottle_, jQuery, Bootstrap, and Backbone, and Underscore. When the build completes, run ``make server`` in the same directory. Then visit http://192.168.33.10:8080 in your browser.
 
 Spend a few minutes looking at the application UI and its structure on disk. Note the following:
 
@@ -60,7 +53,7 @@ When complete, I would like Kvetch to behave as follows:
 
 * The newest 25 posts appear when the page loads in the *Latest* column
 * The the top 25 posts with the most upvotes appear in the *Favorites* column when the page loads, sorted from most votes to least.
-* Any user my enter a post on the site up to 140 characters in length.
+* Any user may enter a post on the site up to 140 characters in length.
 * The user's post should appear at the top of the *Latest* column when entered.
 * Each post should show the post body text, the date the post was posted, and the number of upvotes the post has received.
 * Each post should also show a ``+1`` button to allow a visiting user to vote for the post *once per page load*.
