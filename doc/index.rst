@@ -58,14 +58,12 @@ We currently have meet-ups planned on the topics listed in the navbar with :doc:
 When
 ====
 
-We'll meet on most Fridays in the Spring 2014 semester starting at 3 PM. Try to arrive at the start of the session to catch the session introduction and start on the exercises at the same time as your peers. We'll have the room until 5 PM. You're welcome to stay for that long or leave any time before then.
+We're organzing session for the Fall 2015 semester. Stay tuned for details.
 
 Where
 =====
 
-We'll meet in Sitterson Hall, Room 011 on the UNC-CH campus.
-
-We will also send announcements and collaborate in the `UNC TotT community on Google+ <https://plus.google.com/communities/110370068185265330545>`_. The community is public, but you must request an invite to join in order to keep spam to a minimum.
+We're organzing session for the Fall 2015 semester. Stay tuned for details.
 
 How
 ===
