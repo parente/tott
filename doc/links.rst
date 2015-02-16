@@ -1,4 +1,4 @@
-.. _TotT community: https://plus.google.com/communities/110370068185265330545
+.. _TotT community: https://gitter.im
 
 .. _SublimeText: http://www.sublimetext.com/
 .. _Package Control: http://wbond.net/sublime_packages/package_control
