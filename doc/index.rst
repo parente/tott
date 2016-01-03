@@ -11,11 +11,9 @@ Tools of the Trade
 The Gist
 ========
 
-We met most Fridays in the Spring 2014 semester at UNC-CH to practice using a variety of software development tools to build our experience and confidence.
+We met most Fridays in the Spring 2014 semester at UNC-CH to practice using a variety of software development tools to build our experience and confidence. This site captures all of the prepatory materials (e.g.,narrated screencasts) and coding exercises we used.
 
-We're planning to meet again in the Fall 2015 semester. We'll repeat some of the sessions form the first offering and introduce a few new topics.
-
-In the meantime, join our `Gitter chat channel <https://gitter.im/parente/tott>`_ to stay in touch or keep reading for more details.
+We don't have a solid plan at the moment about hosting TotT again at UNC. If you're interested in helping out, please speak up in our `Gitter chat channel <https://gitter.im/parente/tott>`_. 
 
 What
 ====
@@ -48,22 +46,22 @@ We currently have meet-ups planned on the topics listed in the navbar with :doc:
    sessions/gulpjs
    sessions/end1
    sessions/backbone
-   sessions/docker
-   sessions/cf
-   sessions/elasticsearch
-   sessions/couchdb
-   sessions/hadoop
-   sessions/d3
+   .. sessions/docker
+   .. sessions/cf
+   .. sessions/elasticsearch
+   .. sessions/couchdb
+   .. sessions/hadoop
+   .. sessions/d3
 
 When
 ====
 
-We're organzing session for the Fall 2015 semester. Stay tuned for details.
+We met on most Fridays in the Spring 2014 semester starting at 3 PM.
 
 Where
 =====
 
-We're organzing session for the Fall 2015 semester. Stay tuned for details.
+We met in Sitterson Hall, Room 011 on the UNC-CH campus.
 
 How
 ===
