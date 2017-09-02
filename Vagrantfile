@@ -22,7 +22,7 @@ Vagrant.configure("2") do |config|
     config.vm.box_url = "./#{config.vm.box}.box"
   else
     # remote on web host
-    config.vm.box_url = "http://static.mindtrove.info/tott/#{config.vm.box}.box"
+    config.vm.box_url = "https://s3.amazonaws.com/tott-meetup/#{config.vm.box}.box"
   end
 
   # Create a forwarded port mapping which allows access to a specific port
